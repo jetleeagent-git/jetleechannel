@@ -33,8 +33,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(13,27,42,.9
 }
 .hero{height:100vh;min-height:600px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:#0d1b2a}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.8}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,27,42,.15) 0%,rgba(13,27,42,.55) 55%,#0d1b2a 100%)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,27,42,.2) 0%,rgba(13,27,42,.88) 70%,#0d1b2a 100%)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:800px}
 .hero-content .badge{display:inline-block;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25);color:var(--gold);padding:6px 18px;border-radius:100px;font-size:.72rem;letter-spacing:.1em;margin-bottom:20px}
 .hero-content h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5.2rem);font-weight:600;color:#fafaf8;margin-bottom:6px;line-height:1.05}
@@ -173,7 +173,7 @@ footer .footer-links a:hover{color:var(--gold)}
 
 <!-- Hero -->
 <section class="hero" id="home">
-  <div class="hero-bg"><img src="/Aurea/images/hero-bright.jpg" alt="Aurea Beach Road" loading="eager"></div>
+  <div class="hero-bg"><img src="/Aurea/images/hero-bg.jpg" alt="Aurea Beach Road" loading="lazy"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content fu">
     <div class="badge">New Launch Â· District D07 Â· Beach Road</div>
@@ -209,7 +209,7 @@ footer .footer-links a:hover{color:var(--gold)}
     </div>
 
     <div class="ov-row fu">
-      <img src="/Aurea/images/hero-bright.jpg" alt="Aurea Development View">
+      <img src="/Aurea/images/hero-bg.jpg" alt="Aurea Development View">
       <div>
         <div class="ov-text" style="margin-bottom:16px"><strong style="color:#fafaf8">Aurea</strong>, developed by <strong style="color:#fafaf8">Far East Organization &amp; Perennial Real Estate</strong>, rises as a stunning 45-storey tower at 802 Beach Road in prestigious District D07 â the heart of Downtown Core and Bugis.</div>
         <div class="ov-text" style="margin-bottom:16px">This highly anticipated <strong style="color:#fafaf8">mixed development</strong> sits on the iconic former Golden Mile Complex site, with 188 exclusive residential units ranging from 2BR to 5BR and Penthouse layouts. Designed by <strong style="color:#fafaf8">DP Architects</strong>, Aurea seamlessly blends heritage with modern luxury.</div>
@@ -312,9 +312,6 @@ footer .footer-links a:hover{color:var(--gold)}
           <tr><td>ð Market</td><td>Cold Storage @ City Gate</td></tr>
         </table>
       </div>
-    </div>
-    <div style="margin-top:20px">
-      <img src="/Aurea/images/location-map-2.jpg" alt="Aurea Location Map - Beach Road D07" style="width:100%;border-radius:12px;cursor:pointer" onclick="openModal(this.src.split('?v=')[0],'Aurea Location Map')" loading="lazy">
     </div>
   </div>
 </section>

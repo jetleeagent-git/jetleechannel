@@ -1,0 +1,9 @@
+# Force fresh HTML — never cache the homepage/articles (prevents stale copies)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html?|htm)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(jpg|jpeg|webp|png|gif|svg|css|js|ico)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>

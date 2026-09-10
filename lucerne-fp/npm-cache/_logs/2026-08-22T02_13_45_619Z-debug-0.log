@@ -1,0 +1,149 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.13.0
+2 info using node@v24.16.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/ubuntu/.openclaw/workspace/lucerne-fp/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm install tesseract.js
+7 verbose argv "install" "tesseract.js" "--no-audit" "--no-fund" "--cache" "./npm-cache"
+8 verbose logfile logs-max:10 dir:/home/ubuntu/.openclaw/workspace/lucerne-fp/npm-cache/_logs/2026-08-22T02_13_45_619Z-
+9 verbose logfile /home/ubuntu/.openclaw/workspace/lucerne-fp/npm-cache/_logs/2026-08-22T02_13_45_619Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:271581184 maxSize:67895296 maxEntrySize:33947648
+12 silly idealTree buildDeps
+13 silly fetch manifest tesseract.js@*
+14 silly packumentCache full:https://registry.npmjs.org/tesseract.js cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/tesseract.js 97ms (cache miss)
+16 silly packumentCache full:https://registry.npmjs.org/tesseract.js set size:undefined disposed:false
+17 silly placeDep ROOT tesseract.js@7.0.0 OK for: lucerne-fp@1.0.0 want: *
+18 silly fetch manifest bmp-js@^0.1.0
+19 silly packumentCache full:https://registry.npmjs.org/bmp-js cache-miss
+20 silly fetch manifest idb-keyval@^6.2.0
+21 silly packumentCache full:https://registry.npmjs.org/idb-keyval cache-miss
+22 silly fetch manifest is-url@^1.2.4
+23 silly packumentCache full:https://registry.npmjs.org/is-url cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/bmp-js 47ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/bmp-js set size:undefined disposed:false
+26 silly fetch manifest node-fetch@^2.6.9
+27 silly packumentCache full:https://registry.npmjs.org/node-fetch cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/is-url 99ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/is-url set size:undefined disposed:false
+30 silly fetch manifest opencollective-postinstall@^2.0.3
+31 silly packumentCache full:https://registry.npmjs.org/opencollective-postinstall cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/idb-keyval 116ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/idb-keyval set size:undefined disposed:false
+34 silly fetch manifest regenerator-runtime@^0.13.3
+35 silly packumentCache full:https://registry.npmjs.org/regenerator-runtime cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/opencollective-postinstall 84ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/opencollective-postinstall set size:undefined disposed:false
+38 silly fetch manifest tesseract.js-core@^7.0.0
+39 silly packumentCache full:https://registry.npmjs.org/tesseract.js-core cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 83ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/regenerator-runtime set size:undefined disposed:false
+42 silly fetch manifest wasm-feature-detect@^1.8.0
+43 silly packumentCache full:https://registry.npmjs.org/wasm-feature-detect cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/node-fetch 210ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/node-fetch set size:undefined disposed:false
+46 silly fetch manifest zlibjs@^0.3.1
+47 silly packumentCache full:https://registry.npmjs.org/zlibjs cache-miss
+48 http fetch GET 200 https://registry.npmjs.org/tesseract.js-core 130ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/tesseract.js-core set size:undefined disposed:false
+50 http fetch GET 200 https://registry.npmjs.org/wasm-feature-detect 153ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/wasm-feature-detect set size:undefined disposed:false
+52 http fetch GET 200 https://registry.npmjs.org/zlibjs 71ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/zlibjs set size:undefined disposed:false
+54 silly fetch manifest encoding@^0.1.0
+55 silly packumentCache full:https://registry.npmjs.org/encoding cache-miss
+56 http fetch GET 200 https://registry.npmjs.org/encoding 45ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/encoding set size:undefined disposed:false
+58 silly placeDep ROOT bmp-js@0.1.0 OK for: tesseract.js@7.0.0 want: ^0.1.0
+59 silly placeDep ROOT idb-keyval@6.3.0 OK for: tesseract.js@7.0.0 want: ^6.2.0
+60 silly placeDep ROOT is-url@1.2.4 OK for: tesseract.js@7.0.0 want: ^1.2.4
+61 silly placeDep ROOT node-fetch@2.7.0 OK for: tesseract.js@7.0.0 want: ^2.6.9
+62 silly placeDep ROOT opencollective-postinstall@2.0.3 OK for: tesseract.js@7.0.0 want: ^2.0.3
+63 silly placeDep ROOT regenerator-runtime@0.13.11 OK for: tesseract.js@7.0.0 want: ^0.13.3
+64 silly placeDep ROOT tesseract.js-core@7.0.0 OK for: tesseract.js@7.0.0 want: ^7.0.0
+65 silly placeDep ROOT wasm-feature-detect@1.9.0 OK for: tesseract.js@7.0.0 want: ^1.8.0
+66 silly placeDep ROOT zlibjs@0.3.1 OK for: tesseract.js@7.0.0 want: ^0.3.1
+67 silly fetch manifest whatwg-url@^5.0.0
+68 silly packumentCache full:https://registry.npmjs.org/whatwg-url cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/whatwg-url 70ms (cache miss)
+70 silly packumentCache full:https://registry.npmjs.org/whatwg-url set size:undefined disposed:false
+71 silly placeDep ROOT whatwg-url@5.0.0 OK for: node-fetch@2.7.0 want: ^5.0.0
+72 silly fetch manifest tr46@~0.0.3
+73 silly packumentCache full:https://registry.npmjs.org/tr46 cache-miss
+74 silly fetch manifest webidl-conversions@^3.0.0
+75 silly packumentCache full:https://registry.npmjs.org/webidl-conversions cache-miss
+76 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 58ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/webidl-conversions set size:undefined disposed:false
+78 http fetch GET 200 https://registry.npmjs.org/tr46 70ms (cache miss)
+79 silly packumentCache full:https://registry.npmjs.org/tr46 set size:undefined disposed:false
+80 silly placeDep ROOT tr46@0.0.3 OK for: whatwg-url@5.0.0 want: ~0.0.3
+81 silly placeDep ROOT webidl-conversions@3.0.1 OK for: whatwg-url@5.0.0 want: ^3.0.0
+82 silly reify moves {}
+83 http cache webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 0ms (cache hit)
+84 http cache tr46@https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz 0ms (cache hit)
+85 http cache whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz 1ms (cache hit)
+86 http cache zlibjs@https://registry.npmjs.org/zlibjs/-/zlibjs-0.3.1.tgz 0ms (cache hit)
+87 http cache wasm-feature-detect@https://registry.npmjs.org/wasm-feature-detect/-/wasm-feature-detect-1.9.0.tgz 0ms (cache hit)
+88 http cache tesseract.js-core@https://registry.npmjs.org/tesseract.js-core/-/tesseract.js-core-7.0.0.tgz 0ms (cache hit)
+89 http cache regenerator-runtime@https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz 0ms (cache hit)
+90 http cache opencollective-postinstall@https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz 0ms (cache hit)
+91 http cache node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz 0ms (cache hit)
+92 http cache is-url@https://registry.npmjs.org/is-url/-/is-url-1.2.4.tgz 0ms (cache hit)
+93 http cache idb-keyval@https://registry.npmjs.org/idb-keyval/-/idb-keyval-6.3.0.tgz 0ms (cache hit)
+94 http cache bmp-js@https://registry.npmjs.org/bmp-js/-/bmp-js-0.1.0.tgz 0ms (cache hit)
+95 http cache tesseract.js@https://registry.npmjs.org/tesseract.js/-/tesseract.js-7.0.0.tgz 0ms (cache hit)
+96 silly tarball no local data for webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz. Extracting by manifest.
+97 silly tarball no local data for tr46@https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz. Extracting by manifest.
+98 silly tarball no local data for whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz. Extracting by manifest.
+99 silly tarball no local data for zlibjs@https://registry.npmjs.org/zlibjs/-/zlibjs-0.3.1.tgz. Extracting by manifest.
+100 silly tarball no local data for wasm-feature-detect@https://registry.npmjs.org/wasm-feature-detect/-/wasm-feature-detect-1.9.0.tgz. Extracting by manifest.
+101 silly tarball no local data for tesseract.js-core@https://registry.npmjs.org/tesseract.js-core/-/tesseract.js-core-7.0.0.tgz. Extracting by manifest.
+102 silly tarball no local data for regenerator-runtime@https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz. Extracting by manifest.
+103 silly tarball no local data for opencollective-postinstall@https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz. Extracting by manifest.
+104 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz. Extracting by manifest.
+105 silly tarball no local data for is-url@https://registry.npmjs.org/is-url/-/is-url-1.2.4.tgz. Extracting by manifest.
+106 silly tarball no local data for idb-keyval@https://registry.npmjs.org/idb-keyval/-/idb-keyval-6.3.0.tgz. Extracting by manifest.
+107 silly tarball no local data for bmp-js@https://registry.npmjs.org/bmp-js/-/bmp-js-0.1.0.tgz. Extracting by manifest.
+108 silly tarball no local data for tesseract.js@https://registry.npmjs.org/tesseract.js/-/tesseract.js-7.0.0.tgz. Extracting by manifest.
+109 http fetch GET 200 https://registry.npmjs.org/npm 1267ms
+110 http fetch GET 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 604ms (cache miss)
+111 http fetch GET 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz 599ms (cache miss)
+112 http fetch GET 200 https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz 591ms (cache miss)
+113 http fetch GET 200 https://registry.npmjs.org/is-url/-/is-url-1.2.4.tgz 592ms (cache miss)
+114 http fetch GET 200 https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz 601ms (cache miss)
+115 http fetch GET 200 https://registry.npmjs.org/wasm-feature-detect/-/wasm-feature-detect-1.9.0.tgz 657ms (cache miss)
+116 http fetch GET 200 https://registry.npmjs.org/idb-keyval/-/idb-keyval-6.3.0.tgz 645ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz 691ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz 688ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/bmp-js/-/bmp-js-0.1.0.tgz 810ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/zlibjs/-/zlibjs-0.3.1.tgz 1192ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/tesseract.js/-/tesseract.js-7.0.0.tgz 1285ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/tesseract.js-core/-/tesseract.js-core-7.0.0.tgz 2275ms (cache miss)
+123 info run tesseract.js@7.0.0 postinstall node_modules/tesseract.js opencollective-postinstall || true
+124 info run tesseract.js@7.0.0 postinstall { code: 0, signal: null }
+125 silly ADD node_modules/webidl-conversions
+126 silly ADD node_modules/tr46
+127 silly ADD node_modules/whatwg-url
+128 silly ADD node_modules/zlibjs
+129 silly ADD node_modules/wasm-feature-detect
+130 silly ADD node_modules/tesseract.js-core
+131 silly ADD node_modules/regenerator-runtime
+132 silly ADD node_modules/opencollective-postinstall
+133 silly ADD node_modules/node-fetch
+134 silly ADD node_modules/is-url
+135 silly ADD node_modules/idb-keyval
+136 silly ADD node_modules/bmp-js
+137 silly ADD node_modules/tesseract.js
+138 verbose cwd /home/ubuntu/.openclaw/workspace/lucerne-fp
+139 verbose os Linux 6.1.0-42-amd64
+140 verbose node v24.16.0
+141 verbose npm  v11.13.0
+142 notice
+142 notice New major version of npm available! 11.13.0 -> 12.0.2
+142 notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+142 notice To update run: npm install -g npm@12.0.2
+142 notice  { force: true, Symbol(proc-log.meta): true }
+143 verbose exit 0
+144 info ok

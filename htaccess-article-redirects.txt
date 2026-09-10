@@ -1,0 +1,34 @@
+# Old root-level article URLs → /articles/ canonical (SEO preservation)
+RewriteEngine On
+
+RedirectMatch 301 ^/article-1km-school-2026\.html$ https://jetleechannel.sg/articles/article-1km-school-2026.html
+RedirectMatch 301 ^/article-absd-guide-2026\.html$ https://jetleechannel.sg/articles/article-absd-guide-2026.html
+RedirectMatch 301 ^/article-absd-timing-trap\.html$ https://jetleechannel.sg/articles/article-absd-timing-trap.html
+RedirectMatch 301 ^/article-amberwood-gcb-enclave\.html$ https://jetleechannel.sg/articles/article-amberwood-gcb-enclave.html
+RedirectMatch 301 ^/article-arcady-boon-keng\.html$ https://jetleechannel.sg/articles/article-arcady-boon-keng.html
+RedirectMatch 301 ^/article-cdl-track-record-lucerne-grand\.html$ https://jetleechannel.sg/articles/article-cdl-track-record-lucerne-grand.html
+RedirectMatch 301 ^/article-crl-phase-3-stations\.html$ https://jetleechannel.sg/articles/article-crl-phase-3-stations.html
+RedirectMatch 301 ^/article-d10-generational-wealth\.html$ https://jetleechannel.sg/articles/article-d10-generational-wealth.html
+RedirectMatch 301 ^/article-elta-balance-units\.html$ https://jetleechannel.sg/articles/article-elta-balance-units.html
+RedirectMatch 301 ^/article-en-bloc-thresholds-2026\.html$ https://jetleechannel.sg/articles/article-en-bloc-thresholds-2026.html
+RedirectMatch 301 ^/article-gcb-scarcity-value\.html$ https://jetleechannel.sg/articles/article-gcb-scarcity-value.html
+RedirectMatch 301 ^/article-hdb-upgrade-guide\.html$ https://jetleechannel.sg/articles/article-hdb-upgrade-guide.html
+RedirectMatch 301 ^/article-hdb-vs-condo-2026\.html$ https://jetleechannel.sg/articles/article-hdb-vs-condo-2026.html
+RedirectMatch 301 ^/article-hdb-waitout-removed\.html$ https://jetleechannel.sg/articles/article-hdb-waitout-removed.html
+RedirectMatch 301 ^/article-home-loan-guide-2026\.html$ https://jetleechannel.sg/articles/article-home-loan-guide-2026.html
+RedirectMatch 301 ^/article-hougang-central-guide\.html$ https://jetleechannel.sg/articles/article-hougang-central-guide.html
+RedirectMatch 301 ^/article-hudson-place-transport\.html$ https://jetleechannel.sg/articles/article-hudson-place-transport.html
+RedirectMatch 301 ^/article-jld-lucerne-grand\.html$ https://jetleechannel.sg/articles/article-jld-lucerne-grand.html
+RedirectMatch 301 ^/article-lentor-gardens-guide\.html$ https://jetleechannel.sg/articles/article-lentor-gardens-guide.html
+RedirectMatch 301 ^/article-lucerne-grand-review\.html$ https://jetleechannel.sg/articles/article-lucerne-grand-review.html
+RedirectMatch 301 ^/article-million-dollar-hdb-buyers\.html$ https://jetleechannel.sg/articles/article-million-dollar-hdb-buyers.html
+RedirectMatch 301 ^/article-omg-record-3290\.html$ https://jetleechannel.sg/articles/article-omg-record-3290.html
+RedirectMatch 301 ^/article-p1-phase-2c-ballots-2026\.html$ https://jetleechannel.sg/articles/article-p1-phase-2c-ballots-2026.html
+RedirectMatch 301 ^/article-quiet-luxury-trend\.html$ https://jetleechannel.sg/articles/article-quiet-luxury-trend.html
+RedirectMatch 301 ^/article-selling-hdb-2026\.html$ https://jetleechannel.sg/articles/article-selling-hdb-2026.html
+RedirectMatch 301 ^/article-tan-boon-liat\.html$ https://jetleechannel.sg/articles/article-tan-boon-liat.html
+RedirectMatch 301 ^/article-top-new-launches-2026\.html$ https://jetleechannel.sg/articles/article-top-new-launches-2026.html
+RedirectMatch 301 ^/article-union-square-investment\.html$ https://jetleechannel.sg/articles/article-union-square-investment.html
+RedirectMatch 301 ^/article-wealth-preservation\.html$ https://jetleechannel.sg/articles/article-wealth-preservation.html
+RedirectMatch 301 ^/article-wealthy-families-condo\.html$ https://jetleechannel.sg/articles/article-wealthy-families-condo.html
+RedirectMatch 301 ^/cov-back-2026\.html$ https://jetleechannel.sg/articles/cov-back-2026.html

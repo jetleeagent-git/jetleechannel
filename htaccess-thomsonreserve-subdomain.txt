@@ -1,0 +1,11 @@
+# Old thomsonreserve.jetleechannel.sg subdomain → thomson-reserve-direct-developer.com
+# Redirect all content to the new domain (SEO preservation)
+RewriteEngine On
+RewriteBase /
+
+# Redirect everything (including article pages) to the same path on the new domain
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ https://thomson-reserve-direct-developer.com/$1 [R=301,L]
+
+# Existing files (like index.html) also redirect to the new domain
+RewriteRule ^(.*)$ https://thomson-reserve-direct-developer.com/$1 [R=301,L]

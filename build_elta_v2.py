@@ -1,0 +1,399 @@
+#!/usr/bin/env python3
+"""ELTA site v2 — external images, SEO/AEO enhancements, new sections"""
+import os
+
+IMG = "https://eltasingapore.jetleechannel.sg/images"
+
+# ===== BUILD HTML =====
+html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="ELTA at 10 & 12 Clementi Avenue 1 - 501 units, 2 towers 39-storey. Limited balance units from $2,233 psf. View floor plans, site plan, location map & FAQ. MCL Land & CSC Land.">
+<meta name="google-site-verification" content="tlUhMT8r2XjxyD0GkiZbW82TFbQTe1mhoxWLzdPMXVg">
+<link rel="canonical" href="https://eltasingapore.jetleechannel.sg/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ELTA Clementi Singapore | Floor Plans & Balance Units | MCL Land">
+<meta property="og:description" content="ELTA at Clementi Ave 1. 1BR to 5BR. Limited units $2,233 psf. View floor plans, location map & FAQ.">
+<meta property="og:site_name" content="ELTA by Jet Lee">
+<meta property="og:locale" content="en_SG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ELTA Clementi | D05 | MCL Land">
+<meta name="twitter:description" content="ELTA 501 units Clementi Ave 1. From $2,233 psf.">
+<title>ELTA Clementi | Floor Plans, Balance Units & FAQ | D05 | MCL Land</title>
+
+<!-- === BREADCRUMB SCHEMA === -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Jet Lee Property","item":"https://jetlee413.com/"},
+{"@type":"ListItem","position":2,"name":"New Launches","item":"https://jetlee413.com/#projects"},
+{"@type":"ListItem","position":3,"name":"ELTA Clementi"}
+]}
+</script>
+
+<!-- === FAQPAGE SCHEMA === -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Where is ELTA located?","acceptedAnswer":{"@type":"Answer","text":"ELTA is at 10 & 12 Clementi Avenue 1, District 5, Singapore. It is about 1km from Clementi MRT and bus interchange, and near NUS, Nan Hua Primary, AYE and PIE."}},
+{"@type":"Question","name":"What unit types does ELTA offer?","acceptedAnswer":{"@type":"Answer","text":"ELTA offers 501 units from 1-Bedroom + Study (506 sqft) to 5-Bedroom (1,776 sqft), including 3BR, 4BR, 4BR Premium, 4BR Dual Key, and 4BR+Study configurations."}},
+{"@type":"Question","name":"How many units are still available at ELTA?","acceptedAnswer":{"@type":"Answer","text":"Approximately 90 balance units remain across all types. Larger layouts like 4BR and 5BR have the most availability. Contact Jet Lee for the latest list."}},
+{"@type":"Question","name":"When is the expected TOP for ELTA?","acceptedAnswer":{"@type":"Answer","text":"ELTA's expected Temporary Occupation Permit (TOP) is 2029. Construction is underway on both 39-storey towers."}},
+{"@type":"Question","name":"Who is the developer of ELTA?","acceptedAnswer":{"@type":"Answer","text":"ELTA is developed by a joint venture between MCL Land and CSC Land Group. They won the Government Land Sales site in November 2023."}},
+{"@type":"Question","name":"What schools are near ELTA?","acceptedAnswer":{"@type":"Answer","text":"ELTA is within 1km of Nan Hua Primary School (top school). Other nearby schools include NUS High School, The Japanese School, NUS, and Singapore Polytechnic."}},
+{"@type":"Question","name":"How far is ELTA from Clementi MRT?","acceptedAnswer":{"@type":"Answer","text":"ELTA is approximately 1km from Clementi MRT (East-West Line), about a 10-12 minute walk. The Clementi bus interchange is also nearby."}},
+{"@type":"Question","name":"What facilities does ELTA have?","acceptedAnswer":{"@type":"Answer","text":"ELTA features two 39-storey towers with full condominium facilities including swimming pool, gym, function rooms, children's playground, BBQ areas, and lush landscaping."}},
+{"@type":"Question","name":"What shopping is near ELTA?","acceptedAnswer":{"@type":"Answer","text":"Clementi Mall is next to Clementi MRT with supermarkets, retail, dining and a cinema. 321 Clementi and Grantral Mall are also nearby."}},
+{"@type":"Question","name":"How do I register interest for ELTA?","acceptedAnswer":{"@type":"Answer","text":"WhatsApp Jet Lee at 8764 9315 or visit eltasingapore.jetleechannel.sg for the latest price list, floor plans, and showflat booking."}}
+]}
+</script>
+
+<!-- === HOWTO SCHEMA === -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":"How to Buy an ELTA Balance Unit","description":"Steps to purchase a balance unit at ELTA Clementi directly from the developer.","step":[
+{"@type":"HowToStep","position":1,"name":"Check Availability","text":"Request the developer's latest balance unit list showing available stacks, floors and prices."},
+{"@type":"HowToStep","position":2,"name":"Compare Units","text":"Review price per sqft, floor level, facing, and layout options across remaining units."},
+{"@type":"HowToStep","position":3,"name":"View Showflat","text":"Visit the ELTA showflat to experience the layout and quality first-hand."},
+{"@type":"HowToStep","position":4,"name":"Secure Booking","text":"Pay the booking fee (typically 5%) and sign the Sale & Purchase Agreement."},
+{"@type":"HowToStep","position":5,"name":"Progressive Payments","text":"Pay in stages tied to construction milestones until TOP in 2029."}
+]}
+</script>
+
+<!-- === PRODUCT SCHEMA === -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"ELTA Clementi Balance Units","description":"Premium balance units at ELTA, 501-unit new launch in Clementi District 5. Smart homes, 39-storey towers.","url":"https://eltasingapore.jetleechannel.sg/","brand":{"@type":"Brand","name":"MCL Land & CSC Land"},"offers":[
+{"@type":"Offer","name":"1BR+Study A1S","description":"506 sqft","price":"1404000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"},
+{"@type":"Offer","name":"2BR+Study B5S","description":"807 sqft","price":"2275000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"},
+{"@type":"Offer","name":"3BR C1","description":"926 sqft","price":"2658000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"},
+{"@type":"Offer","name":"4BR D1","description":"1184 sqft","price":"3330000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"},
+{"@type":"Offer","name":"4BR Premium D2P","description":"1313 sqft","price":"3506000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"},
+{"@type":"Offer","name":"4BR Dual Key D3K","description":"1313 sqft","price":"3396000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"},
+{"@type":"Offer","name":"4BR+Study D4s","description":"1507 sqft","price":"3686000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"},
+{"@type":"Offer","name":"5BR E1","description":"1776 sqft","price":"3965000","priceCurrency":"SGD","availability":"https://schema.org/LimitedAvailability"}
+]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#B8935A;--gold-light:#D4AF7A;--gold-pale:#F5ECD8;--ink:#1A1714;--ink-mid:#3D3530;--ink-soft:#6B5E54;--cream:#FAF7F2;--white:#FFF;--border:rgba(184,147,90,0.25);--ff-display:'Cormorant Garamond',Georgia,serif;--ff-body:'DM Sans',system-ui,sans-serif;--max:1160px}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-body);background:var(--cream);color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(12px);border-bottom:0.5px solid var(--border);padding:0 2rem}
+.nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px}
+.nav-logo{font-family:var(--ff-display);font-size:1.3rem;font-weight:600;color:var(--ink);text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:0.82rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--ink);color:var(--white)!important;padding:0.45rem 1.1rem;border-radius:2px;font-size:0.78rem!important;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--gold)!important}
+.hero{padding-top:62px;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;max-width:var(--max);margin:0 auto;align-items:center;gap:4rem;padding:5rem 2rem}
+.hero h1{font-family:var(--ff-display);font-size:clamp(3.2rem,5vw,5.5rem);font-weight:600;line-height:1.05;color:var(--ink);margin-bottom:1rem}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-img img{width:100%;height:auto;border-radius:4px}
+section{padding:4rem 2rem}
+.section-inner{max-width:var(--max);margin:0 auto}
+.section-title{font-family:var(--ff-display);font-size:2rem;font-weight:600;color:var(--ink);margin-bottom:1.5rem;text-align:center}
+.section-subtitle{text-align:center;color:var(--ink-soft);font-size:0.92rem;margin-bottom:2.5rem}
+.unit-table{width:100%;border-collapse:collapse;font-size:0.88rem;background:var(--white);border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.unit-table th{background:var(--gold);color:var(--white);padding:0.75rem 1rem;text-align:left;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;font-weight:500}
+.unit-table td{padding:0.65rem 1rem;border-bottom:0.5px solid var(--border-soft)}
+.unit-table tr:last-child td{border-bottom:none}
+.unit-table tr:hover{background:var(--gold-pale)}
+.fpg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+.fpc{background:var(--white);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;transition:transform 0.2s;text-align:center}
+.fpc:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
+.fpc img{width:100%;height:auto;display:block}
+.fpc .label{padding:0.75rem;font-size:0.85rem;color:var(--ink-mid)}
+.fpc .label strong{display:block;font-family:var(--ff-display);font-size:1rem;margin-bottom:0.2rem}
+.fpc .label span{color:var(--ink-soft);font-size:0.8rem}
+.loc-wrap{text-align:center}
+.loc-wrap img{max-width:500px;width:100%;height:auto;border-radius:4px;box-shadow:0 2px 12px rgba(0,0,0,0.08)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0.75rem}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:4px;transition:transform 0.2s}
+.gallery img:hover{transform:scale(1.02)}
+.faq-list{max-width:700px;margin:0 auto}
+.faq-item{border-bottom:0.5px solid var(--border-soft)}
+.faq-q{padding:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:500;color:var(--ink);font-size:0.95rem;transition:background 0.2s}
+.faq-q:hover{background:var(--gold-pale)}
+.faq-q::after{content:"+";font-size:1.2rem;color:var(--gold);transition:transform 0.2s}
+.faq-item.open .faq-q::after{content:"\\2212"}
+.faq-a{padding:0 1rem;max-height:0;overflow:hidden;transition:max-height 0.3s ease;color:var(--ink-soft);font-size:0.9rem;line-height:1.7}
+.faq-item.open .faq-a{padding:0 1rem 1rem;max-height:300px}
+.dev-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.dev-card{background:var(--white);border:0.5px solid var(--border);border-radius:4px;padding:1.5rem;text-align:center}
+.dev-card h3{font-family:var(--ff-display);font-size:1.2rem;color:var(--ink);margin-bottom:0.5rem}
+.dev-card p{font-size:0.9rem;color:var(--ink-soft)}
+.nhood-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;margin-top:1.5rem}
+.nhood-item{background:var(--white);border:0.5px solid var(--border);border-radius:4px;padding:1.25rem;text-align:center}
+.nhood-item .icon{font-size:2rem;margin-bottom:0.5rem}
+.nhood-item h4{font-family:var(--ff-display);font-size:1rem;color:var(--ink);margin-bottom:0.3rem}
+.nhood-item p{font-size:0.82rem;color:var(--ink-soft)}
+.contact-form{max-width:500px;margin:0 auto;background:var(--white);padding:2rem;border-radius:4px;border:0.5px solid var(--border)}
+.contact-form input,.contact-form textarea{width:100%;padding:0.7rem;border:0.5px solid var(--border-soft);border-radius:2px;font-family:var(--ff-body);font-size:0.9rem;margin-bottom:1rem;background:var(--cream)}
+.contact-form button{background:var(--gold);color:var(--white);border:none;padding:0.75rem 2rem;font-size:0.85rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:opacity 0.2s;width:100%}
+.contact-form button:hover{opacity:0.85}
+.contact-info{text-align:center;margin-top:2rem}
+.contact-info p{font-size:0.9rem;color:var(--ink-mid);margin-bottom:0.3rem}
+.contact-info a{color:var(--gold);text-decoration:none}
+.paa-box{max-width:700px;margin:0 auto}
+.paa-item{padding:0.75rem 0;border-bottom:0.5px solid var(--border-soft)}
+.paa-item:last-child{border-bottom:none}
+.paa-q{font-weight:500;color:var(--ink);font-size:0.92rem;margin-bottom:0.2rem}
+.paa-a{font-size:0.85rem;color:var(--ink-soft)}
+footer{border-top:0.5px solid var(--border);padding:2rem;text-align:center;background:var(--white)}
+footer p{font-size:0.82rem;color:var(--ink-soft);line-height:1.8}
+footer a{color:var(--gold);text-decoration:none}
+@media(max-width:768px){.hero{grid-template-columns:1fr;padding:4rem 1.5rem 2rem}.nav-links{display:none}.dev-grid{grid-template-columns:1fr}.fpg{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}
+</style>
+</head>
+<body>
+
+<nav><div class="nav-inner">
+<a href="#" class="nav-logo" aria-label="ELTA home">ELTA <span>Clementi</span></a>
+<ul class="nav-links">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#units">Units</a></li>
+<li><a href="#plans">Plans</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#location">Location</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#developer">Developer</a></li>
+<li><a href="#contact" class="nav-cta">Contact</a></li>
+</ul>
+</div></nav>
+
+<!-- HERO -->
+<div class="hero" id="overview">
+<div>
+<span style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.75rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem"><span style="content:"";display:block;width:32px;height:1px;background:var(--gold)"></span>Clementi &middot; District 05</span>
+<h1>ELTA<br><em>Clementi</em></h1>
+<p style="font-size:1.05rem;color:var(--ink-soft);margin-bottom:1.5rem;max-width:480px">501 exclusive homes across two iconic 39-storey towers. Designed for modern living in the heart of Singapore&#39;s most established western estate. Smart homes. Premium finishes. Balance units available from $2,233 psf.</p>
+<p style="font-size:0.85rem;color:var(--ink-mid)"><strong>Tenure:</strong> 99-year leasehold &middot; <strong>TOP:</strong> 2029 &middot; <strong>Developer:</strong> MCL Land &amp; CSC Land</p>
+<p style="margin-top:0.75rem"><a href="#contact" style="display:inline-block;background:var(--gold);color:var(--white);padding:0.65rem 1.8rem;border-radius:2px;text-decoration:none;font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase">Enquire Now</a></p>
+</div>
+<div class="hero-img">
+<img src="''' + IMG + '/hero.jpg' + '''" alt="ELTA Clementi exterior rendering two 39-storey towers" loading="lazy">
+</div>
+</div>
+
+<!-- UNITS -->
+<section id="units">
+<div class="section-inner">
+<h2 class="section-title">Balance Unit Availability</h2>
+<p class="section-subtitle">Current balance units available for direct purchase from developer. Prices updated weekly.</p>
+<table class="unit-table">
+<thead><tr><th>Type</th><th>Bedrooms</th><th>Size (sqft)</th><th>From Price</th><th>Available</th></tr></thead>
+<tbody>
+<tr><td><strong>A1S</strong></td><td>1BR + Study</td><td>506</td><td>$1,404,000</td><td>4</td></tr>
+<tr><td><strong>B5S</strong></td><td>2BR + Study</td><td>807</td><td>$2,275,000</td><td>1</td></tr>
+<tr><td><strong>C1</strong></td><td>3BR</td><td>926</td><td>$2,658,000</td><td>5</td></tr>
+<tr><td><strong>D1</strong></td><td>4BR</td><td>1,184</td><td>$3,330,000</td><td>7</td></tr>
+<tr><td><strong>D2P</strong></td><td>4BR Premium</td><td>1,313</td><td>$3,506,000</td><td>6</td></tr>
+<tr><td><strong>D3K</strong></td><td>4BR Dual Key</td><td>1,313</td><td>$3,396,000</td><td>20</td></tr>
+<tr><td><strong>D4s</strong></td><td>4BR + Study</td><td>1,507</td><td>$3,686,000</td><td>22</td></tr>
+<tr><td><strong>E1</strong></td><td>5BR</td><td>1,776</td><td>$3,965,000</td><td>27</td></tr>
+</tbody>
+</table>
+<p style="margin-top:1rem;font-size:0.8rem;color:var(--ink-soft);text-align:center">Prices indicative and subject to change. Contact Jet Lee for latest developer price list.</p>
+</div>
+</section>
+
+<!-- FLOOR PLANS -->
+<section id="plans">
+<div class="section-inner">
+<h2 class="section-title">Floor Plans</h2>
+<p class="section-subtitle">Tap any floor plan to view full size</p>
+<div class="fpg">
+
+<div class="fpc">
+<a href="''' + IMG + '/siteplan.jpg' + '''" target="_blank"><img src="''' + IMG + '/siteplan_thumb.jpg' + '''" alt="ELTA site plan" loading="lazy"></a>
+<div class="label"><strong>Site Plan</strong><span>Block layout &amp; facilities</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_5br.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_5br_thumb.jpg' + '''" alt="ELTA Type E1 5BR floor plan" loading="lazy"></a>
+<div class="label"><strong>Type E1</strong><span>5-Bedroom &middot; 1,776 sqft<br>27 avail from $3,965,000</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_4br_study.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_4br_study_thumb.jpg' + '''" alt="ELTA Type D4s 4BR+Study floor plan" loading="lazy"></a>
+<div class="label"><strong>Type D4s</strong><span>4-Bedroom + Study &middot; 1,507 sqft<br>22 avail from $3,686,000</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_4br_dual.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_4br_dual_thumb.jpg' + '''" alt="ELTA Type D3K 4BR Dual Key floor plan" loading="lazy"></a>
+<div class="label"><strong>Type D3K</strong><span>4-Bedroom Dual Key &middot; 1,313 sqft<br>20 avail from $3,396,000</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_4br_prem.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_4br_prem_thumb.jpg' + '''" alt="ELTA Type D2P 4BR Premium floor plan" loading="lazy"></a>
+<div class="label"><strong>Type D2P</strong><span>4-Bedroom Premium &middot; 1,313 sqft<br>6 avail from $3,506,000</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_4br_std.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_4br_std_thumb.jpg' + '''" alt="ELTA Type D1 4BR floor plan" loading="lazy"></a>
+<div class="label"><strong>Type D1</strong><span>4-Bedroom &middot; 1,184 sqft<br>7 avail from $3,330,000</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_3br.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_3br_thumb.jpg' + '''" alt="ELTA Type C1 3BR floor plan" loading="lazy"></a>
+<div class="label"><strong>Type C1</strong><span>3-Bedroom &middot; 926 sqft<br>5 avail from $2,658,000</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_2br_study.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_2br_study_thumb.jpg' + '''" alt="ELTA Type B5S 2BR+Study floor plan" loading="lazy"></a>
+<div class="label"><strong>Type B5S</strong><span>2-Bedroom + Study &middot; 807 sqft<br>1 unit from $2,275,000</span></div>
+</div>
+
+<div class="fpc">
+<a href="''' + IMG + '/fp_1br_study.jpg' + '''" target="_blank"><img src="''' + IMG + '/fp_1br_study_thumb.jpg' + '''" alt="ELTA Type A1S 1BR+Study floor plan" loading="lazy"></a>
+<div class="label"><strong>Type A1S</strong><span>1-Bedroom + Study &middot; 506 sqft<br>4 avail from $1,404,000</span></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="background:var(--white)">
+<div class="section-inner">
+<h2 class="section-title">Gallery</h2>
+<p class="section-subtitle">Explore ELTA through our curated image collection</p>
+<div class="gallery">
+<img src="''' + IMG + '/hero.jpg" alt="ELTA exterior" loading="lazy">
+<img src="''' + IMG + '/towers.jpg" alt="ELTA towers" loading="lazy">
+<img src="''' + IMG + '/night.jpg" alt="ELTA at dusk" loading="lazy">
+<img src="''' + IMG + '/arch.jpg" alt="ELTA entrance" loading="lazy">
+<img src="''' + IMG + '/living.jpg" alt="ELTA living room" loading="lazy">
+<img src="''' + IMG + '/lobby.jpg" alt="ELTA lobby" loading="lazy">
+<img src="''' + IMG + '/facilities.jpg" alt="ELTA facilities" loading="lazy">
+<img src="''' + IMG + '/master_bed.jpg" alt="ELTA master bedroom" loading="lazy">
+<img src="''' + IMG + '/g05.jpg" alt="ELTA view 1" loading="lazy">
+<img src="''' + IMG + '/g07.jpg" alt="ELTA view 2" loading="lazy">
+<img src="''' + IMG + '/g10.jpg" alt="ELTA view 3" loading="lazy">
+<img src="''' + IMG + '/g11.jpg" alt="ELTA view 4" loading="lazy">
+<img src="''' + IMG + '/g16.jpg" alt="ELTA view 5" loading="lazy">
+<img src="''' + IMG + '/g17.jpg" alt="ELTA view 6" loading="lazy">
+<img src="''' + IMG + '/g20.jpg" alt="ELTA view 7" loading="lazy">
+<img src="''' + IMG + '/g26.jpg" alt="ELTA view 8" loading="lazy">
+<img src="''' + IMG + '/g27.jpg" alt="ELTA view 9" loading="lazy">
+<img src="''' + IMG + '/g28.jpg" alt="ELTA view 10" loading="lazy">
+</div>
+</div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+<div class="section-inner">
+<h2 class="section-title">Location</h2>
+<p class="section-subtitle">10 &amp; 12 Clementi Avenue 1, Singapore &middot; District 05</p>
+<div class="loc-wrap">
+<img src="''' + IMG + '/location_map.jpg" alt="ELTA location map Clementi MRT" loading="lazy">
+</div>
+
+<!-- NEIGHBORHOOD -->
+<div style="margin-top:3rem">
+<h3 style="font-family:var(--ff-display);font-size:1.3rem;text-align:center;color:var(--ink);margin-bottom:0.5rem">Why Living in Clementi?</h3>
+<p style="text-align:center;color:var(--ink-soft);font-size:0.9rem;margin-bottom:1.5rem">One of Singapore&#39;s most established residential enclaves in District 5</p>
+<div class="nhood-grid">
+<div class="nhood-item"><div class="icon">🚇</div><h4>Transport</h4><p>Clementi MRT (EWL), bus interchange, AYE &amp; PIE within minutes</p></div>
+<div class="nhood-item"><div class="icon">🏫</div><h4>Top Schools</h4><p>Within 1km of Nan Hua Primary, near NUS High, NUS &amp; SP</p></div>
+<div class="nhood-item"><div class="icon">🛍️</div><h4>Shopping</h4><p>Clementi Mall, 321 Clementi, supermarkets and dining</p></div>
+<div class="nhood-item"><div class="icon">💼</div><h4>Employment</h4><p>Near one-north, Science Park and International Business Park</p></div>
+<div class="nhood-item"><div class="icon">🌳</div><h4>Green Spaces</h4><p>Clementi Woods, West Coast Park, Ulu Pandan PCN</p></div>
+<div class="nhood-item"><div class="icon">🏥</div><h4>Healthcare</h4><p>Clinics, NUH, and medical centres nearby</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--white)">
+<div class="section-inner">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<p class="section-subtitle">Everything you need to know about ELTA Clementi</p>
+<div class="faq-list">
+<div class="faq-item"><div class="faq-q">Where is ELTA located?</div><div class="faq-a">ELTA is at 10 &amp; 12 Clementi Avenue 1, District 5, Singapore. About 1km from Clementi MRT, near NUS, Nan Hua Primary, AYE and PIE.</div></div>
+<div class="faq-item"><div class="faq-q">What unit types does ELTA offer?</div><div class="faq-a">ELTA offers 501 units from 1-Bedroom + Study (506 sqft) to 5-Bedroom (1,776 sqft), including 3BR, 4BR, 4BR Premium, 4BR Dual Key, and 4BR+Study configurations.</div></div>
+<div class="faq-item"><div class="faq-q">How many units are still available?</div><div class="faq-a">Approximately 90 balance units remain across all types. Larger layouts like 4BR and 5BR have the most availability.</div></div>
+<div class="faq-item"><div class="faq-q">When is the expected TOP for ELTA?</div><div class="faq-a">ELTA&#39;s expected TOP is 2029. Construction is underway on both 39-storey towers.</div></div>
+<div class="faq-item"><div class="faq-q">Who is the developer of ELTA?</div><div class="faq-a">ELTA is developed by MCL Land and CSC Land Group. MCL Land is known for Parc Esta, J Gateway, Lake Grande. CSC Land is the property arm of CSC Holdings.</div></div>
+<div class="faq-item"><div class="faq-q">What schools are near ELTA?</div><div class="faq-a">Within 1km of Nan Hua Primary School (top school). Also near NUS High School, The Japanese School, NUS, and Singapore Polytechnic.</div></div>
+<div class="faq-item"><div class="faq-q">How far is ELTA from Clementi MRT?</div><div class="faq-a">Approximately 1km, about 10-12 min walk. Nearby Clementi bus interchange and AYE/PIE access.</div></div>
+<div class="faq-item"><div class="faq-q">What facilities does ELTA have?</div><div class="faq-a">Two 39-storey towers with pool, gym, function rooms, children&#39;s playground, BBQ areas, and lush landscaping.</div></div>
+<div class="faq-item"><div class="faq-q">What shopping is near ELTA?</div><div class="faq-a">Clementi Mall (next to MRT), 321 Clementi, and Grantral Mall with supermarkets, food courts and clinics.</div></div>
+<div class="faq-item"><div class="faq-q">How do I register interest?</div><div class="faq-a">WhatsApp Jet Lee at 8764 9315 or visit eltasingapore.jetleechannel.sg for price list and showflat booking.</div></div>
+</div>
+</div>
+</section>
+
+<script>document.querySelectorAll(".faq-q").forEach(function(q){q.addEventListener("click",function(){this.parentElement.classList.toggle("open")})})</script>
+
+<!-- PEOPLE ALSO ASK -->
+<section id="paa">
+<div class="section-inner" style="max-width:700px">
+<h3 style="font-family:var(--ff-display);font-size:1.3rem;text-align:center;color:var(--ink);margin-bottom:1rem">People Also Ask</h3>
+<div class="paa-box">
+<div class="paa-item"><div class="paa-q">Is ELTA near NUS?</div><div class="paa-a">Yes, just a 5-minute drive from NUS Kent Ridge campus. Popular with academics and one-north professionals.</div></div>
+<div class="paa-item"><div class="paa-q">What is the psf for ELTA balance units?</div><div class="paa-a">From approximately $2,100 psf, varying by floor level, facing and unit type. Larger units typically offer better per-sqft value.</div></div>
+<div class="paa-item"><div class="paa-q">Can foreigners buy ELTA?</div><div class="paa-a">ELTA is on 99-year leasehold land. Foreigners may purchase subject to SLA approval under the Residential Property Act.</div></div>
+<div class="paa-item"><div class="paa-q">Is ELTA near Clementi MRT walkable?</div><div class="paa-a">Yes, approximately 1km — a comfortable 10-12 minute walk via covered walkways.</div></div>
+<div class="paa-item"><div class="paa-q">What is the ELTA address?</div><div class="paa-a">10 & 12 Clementi Avenue 1, Singapore, District 5 (Buona Vista/West Coast/Clementi).</div></div>
+</div>
+</div>
+</section>
+
+<!-- DEVELOPER -->
+<section id="developer" style="background:var(--white)">
+<div class="section-inner">
+<h2 class="section-title">Developer</h2>
+<p class="section-subtitle">Built by two trusted names in Singapore property</p>
+<div class="dev-grid">
+<div class="dev-card"><div style="font-size:3rem;margin-bottom:0.5rem">🏗️</div><h3>MCL Land</h3><p>Established developer behind Parc Esta, J Gateway, Lake Grande, and Riversails. Known for quality construction, thoughtful layouts, and reliable after-sales service.</p></div>
+<div class="dev-card"><div style="font-size:3rem;margin-bottom:0.5rem">🏢</div><h3>CSC Land Group</h3><p>Property arm of CSC Holdings (SGX-listed). Delivered Parc Life and The Santorini. Partnership with MCL Land brings combined expertise to ELTA.</p></div>
+</div>
+<p style="text-align:center;margin-top:2rem;font-size:0.85rem;color:var(--ink-soft)">Read more: <a href="https://jetlee413.com/blog/elta-clementi-developer-review" target="_blank" rel="noopener" style="color:var(--gold)">ELTA Developer Review &rarr;</a></p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="section-inner">
+<h2 class="section-title">Register Interest</h2>
+<p class="section-subtitle">Get the latest ELTA price list, showflat appointment, and exclusive updates</p>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="000f5e12-8691-4aa6-baa2-a2bf6a5cf3bc">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<input type="email" name="email" placeholder="Email Address">
+<textarea name="message" rows="3" placeholder="Interested in unit type, floor, or budget?"></textarea>
+<button type="submit">Submit Enquiry</button>
+</form>
+<div class="contact-info">
+<p style="font-size:1.1rem;font-weight:500;font-family:var(--ff-display);color:var(--ink)">Jet Lee</p>
+<p><a href="tel:+6587649315" style="font-size:1.1rem;font-weight:500">&#9742; 8764 9315</a></p>
+<p style="font-size:0.82rem;color:var(--ink-soft)">CEA Reg No. R007613B</p>
+<p style="font-size:0.82rem;color:var(--ink-soft);margin-top:0.25rem"><a href="https://jetlee413.com" target="_blank" rel="noopener">jetlee413.com</a> &middot; <a href="https://jetlee413.com/blog" target="_blank" rel="noopener">Property Blog</a></p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>Jet Lee @ 8764 9315 &middot; CEA Reg No. R007613B &middot; <a href="https://jetlee413.com/">jetlee413.com</a></p>
+<p style="margin-top:0.5rem;font-size:0.75rem;">&copy; 2026 Jet Lee. All rights reserved.</p>
+</footer>
+
+</body>
+</html>'''
+
+with open('/home/ubuntu/.openclaw/workspace/index.html', 'w') as f:
+    f.write(html)
+
+size = len(html.encode('utf-8'))
+print(f"HTML size: {size/1024:.0f} KB")
+print("Done!")

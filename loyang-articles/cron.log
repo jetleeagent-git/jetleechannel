@@ -1,0 +1,184 @@
+📰 Loyang weekly article generator — 2026-08-17T01:00:01.611Z
+Fetched 17 posts from PropNex channel
+✅ Generated commercial-deals-on-track-to-hit-record-in-2026.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://loyangvalleyresidences-official.com/articles/commercial-deals-on-track-to-hit-record-in-2026.html
+📨 Telegram notification sent
+📰 Loyang weekly article generator — 2026-08-21T09:00:03.038Z
+Fetched 19 posts from PropNex channel
+✅ Generated wee-hur-wee-hur-was-founded-in-1980-by-goh-yeow-lian-along-w.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://loyangvalleyresidences-official.com/articles/wee-hur-wee-hur-was-founded-in-1980-by-goh-yeow-lian-along-w.html
+📨 Telegram notification sent
+📰 Loyang weekly article generator — 2026-08-24T09:00:02.756Z
+Fetched 18 posts from PropNex channel
+✅ Generated financial-planners-urge-investors-to-consider-other-options.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://loyangvalleyresidences-official.com/articles/financial-planners-urge-investors-to-consider-other-options.html
+📨 Telegram notification sent
+📰 Loyang weekly article generator — 2026-08-28T09:00:02.627Z
+Fetched 15 posts from PropNex channel
+node:fs:2422
+    return binding.writeFileUtf8(
+                   ^
+
+Error: ENOSPC: no space left on device, write
+    at writeFileSync (node:fs:2422:20)
+    at main (file:///home/ubuntu/.openclaw/workspace/scripts/loyang-weekly-articles.mjs:325:3)
+    at file:///home/ubuntu/.openclaw/workspace/scripts/loyang-weekly-articles.mjs:362:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:633:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write'
+}
+
+Node.js v24.16.0
+📰 Loyang weekly article generator — 2026-08-31T09:00:02.794Z
+Fetched 18 posts from PropNex channel
+node:fs:2422
+    return binding.writeFileUtf8(
+                   ^
+
+Error: ENOSPC: no space left on device, write
+    at writeFileSync (node:fs:2422:20)
+    at main (file:///home/ubuntu/.openclaw/workspace/scripts/loyang-weekly-articles.mjs:325:3)
+    at file:///home/ubuntu/.openclaw/workspace/scripts/loyang-weekly-articles.mjs:362:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:633:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write'
+}
+
+Node.js v24.16.0
+📰 Loyang weekly article generator — 2026-09-04T09:00:02.810Z
+Fetched 17 posts from PropNex channel
+✅ Generated how-a-woman-tried-to-salvage-a-bad-investment-but-lost-1-6m.html
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: curl -s "ftp://191.101.228.66/articles/" --user "u851958941.loyangvalleyresidences-official.com:Loyang12345&" --connect-timeout 15 --max-time 30
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execSync (node:child_process:997:15)
+    at listArticles (file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:17:19)
+    at file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:49:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:633:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 28,
+  signal: null,
+  output: [ null, '', '' ],
+  pid: 8313,
+  stdout: '',
+  stderr: ''
+}
+
+Node.js v24.16.0
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: node /home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: curl -s "ftp://191.101.228.66/articles/" --user "u851958941.loyangvalleyresidences-official.com:Loyang12345&" --connect-timeout 15 --max-time 30
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execSync (node:child_process:997:15)
+    at listArticles (file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:17:19)
+    at file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:49:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:633:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 28,
+  signal: null,
+  output: [ null, '', '' ],
+  pid: 8313,
+  stdout: '',
+  stderr: ''
+}
+
+Node.js v24.16.0
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execSync (node:child_process:997:15)
+    at updateIndex (file:///home/ubuntu/.openclaw/workspace/scripts/loyang-weekly-articles.mjs:213:3)
+    at main (file:///home/ubuntu/.openclaw/workspace/scripts/loyang-weekly-articles.mjs:329:3)
+    at file:///home/ubuntu/.openclaw/workspace/scripts/loyang-weekly-articles.mjs:362:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:633:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '',
+    'node:internal/errors:985\n' +
+      '  const err = new Error(message);\n' +
+      '              ^\n' +
+      '\n' +
+      'Error: Command failed: curl -s "ftp://191.101.228.66/articles/" --user "u851958941.loyangvalleyresidences-official.com:Loyang12345&" --connect-timeout 15 --max-time 30\n' +
+      '    at genericNodeError (node:internal/errors:985:15)\n' +
+      '    at wrappedFn (node:internal/errors:539:14)\n' +
+      '    at checkExecSyncError (node:child_process:925:11)\n' +
+      '    at execSync (node:child_process:997:15)\n' +
+      '    at listArticles (file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:17:19)\n' +
+      '    at file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:49:18\n' +
+      '    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n' +
+      '    at async node:internal/modules/esm/loader:633:26\n' +
+      '    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n' +
+      '  status: 28,\n' +
+      '  signal: null,\n' +
+      "  output: [ null, '', '' ],\n" +
+      '  pid: 8313,\n' +
+      "  stdout: '',\n" +
+      "  stderr: ''\n" +
+      '}\n' +
+      '\n' +
+      'Node.js v24.16.0\n'
+  ],
+  pid: 8303,
+  stdout: '',
+  stderr: 'node:internal/errors:985\n' +
+    '  const err = new Error(message);\n' +
+    '              ^\n' +
+    '\n' +
+    'Error: Command failed: curl -s "ftp://191.101.228.66/articles/" --user "u851958941.loyangvalleyresidences-official.com:Loyang12345&" --connect-timeout 15 --max-time 30\n' +
+    '    at genericNodeError (node:internal/errors:985:15)\n' +
+    '    at wrappedFn (node:internal/errors:539:14)\n' +
+    '    at checkExecSyncError (node:child_process:925:11)\n' +
+    '    at execSync (node:child_process:997:15)\n' +
+    '    at listArticles (file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:17:19)\n' +
+    '    at file:///home/ubuntu/.openclaw/workspace/scripts/rebuild-loyang-index.mjs:49:18\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n' +
+    '    at async node:internal/modules/esm/loader:633:26\n' +
+    '    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n' +
+    '  status: 28,\n' +
+    '  signal: null,\n' +
+    "  output: [ null, '', '' ],\n" +
+    '  pid: 8313,\n' +
+    "  stdout: '',\n" +
+    "  stderr: ''\n" +
+    '}\n' +
+    '\n' +
+    'Node.js v24.16.0\n'
+}
+
+Node.js v24.16.0

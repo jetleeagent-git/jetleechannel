@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^onemarinagardens/?$ /OneMarinaGardens/ [R=301,L,NC]
