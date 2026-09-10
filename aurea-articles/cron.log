@@ -1,0 +1,30 @@
+📰 Aurea weekly article generator — 2026-08-17T01:15:01.836Z
+Fetched 17 posts from PropNex channel
+✅ Generated soilbuild-group-soilbuild-group-was-founded-in-1976-by-lim-c.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/aurea/articles/soilbuild-group-soilbuild-group-was-founded-in-1976-by-lim-c.html
+📨 Telegram notification sent
+📰 Aurea weekly article generator — 2026-08-21T09:15:02.034Z
+Fetched 19 posts from PropNex channel
+✅ Generated two-thirds-of-properties-in-sentosa-cove-resold-at-a-loss-in.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/aurea/articles/two-thirds-of-properties-in-sentosa-cove-resold-at-a-loss-in.html
+📨 Telegram notification sent
+📰 Aurea weekly article generator — 2026-08-24T09:15:01.565Z
+Fetched 18 posts from PropNex channel
+✅ Generated sustained-land-buys-thomson-lane-plot-for-s-578m-plans-condo.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/aurea/articles/sustained-land-buys-thomson-lane-plot-for-s-578m-plans-condo.html
+📨 Telegram notification sent
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
