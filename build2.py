@@ -2,7 +2,7 @@
 """Regenerate zyongrand + promenadepeak + rivergreen from theorie template — section-based, no fragile regexes."""
 import os, re
 
-TPL = open('theorie/index.html', encoding='utf-8').read()
+TPL = open('TheSerra/index.html', encoding='utf-8').read()
 lines = TPL.split('\n')
 
 def lines_between(start_marker, end_marker, include_start=False):
@@ -720,14 +720,10 @@ def build_ticker(p):
 
 def build_head(p):
     h = HEAD
-    h = h.replace('<title>The Orie | 777 Units D12 Toa Payoh | Direct Developer Price | Jet Lee</title>', f'<title>{p["title"]}</title>')
-    h = h.replace('<meta name="description" content="The Orie – 777 units at Lorong 1 Toa Payoh, District 12. 2 towers of 40 storeys by CDL, Frasers Property & Sekisui House. 1BR+Study to 5BR. 99-year leasehold, TOP 2030. Register interest with Jet Lee.">', f'<meta name="description" content="{p["desc"]}">')
-    # canonical/OG/twitter URLs
-    site_path = f'https://jetleechannel.sg/{p["site"]}/'
-    h = h.replace('https://jetleechannel.sg/TheOrie/', site_path)
-    h = h.replace('https://jetleechannel.sg/TheOrie/images/exterior-1.jpg', site_path + 'images/' + (p['hero_img'].split('/')[-1]))
-    # also fix any remaining exterior-1 refs after site path substitution (og/twitter images)
-    h = h.replace(site_path + 'images/exterior-1.jpg', site_path + 'images/' + (p['hero_img'].split('/')[-1]))
+    h = re.sub(r"<title>.*?</title>", f"<title>{p['title']}</title>", h, count=1)
+    h = re.sub(r'<meta name="description" content=".*?">', f'<meta name="description" content="{p["desc"]}">', h, count=1)
+    site_path = f"https://jetleechannel.sg/{p['site']}/"
+    h = h.replace("https://jetleechannel.sg/TheSerra/", site_path)
     return h
 
 def build_hero_css(p):
