@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sen @ Upper Bukit Timah | New Launch Condo by Sustained Land</title>
+<link rel="canonical" href="https://jetleechannel.sg/thesen/">
+<meta name="description" content="The Sen at De Souza Avenue, Upper Bukit Timah. 347 units by Sustained Land. 99-year leasehold. Register for VVIP preview.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#111;color:#fafaf8;min-height:100vh}
+:root{--g:#e8c98a;--mu:rgba(255,255,255,.55);--dark:#111}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(17,17,17,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(232,201,138,.08);padding:0 20px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo img{height:22px;width:auto}
+.nav-logo span{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fafaf8;font-weight:600}
+.nav-links{display:flex;list-style:none;gap:4px;overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links li a{display:block;padding:8px 14px;font-size:.74rem;color:var(--mu);text-decoration:none;letter-spacing:.04em;transition:color .25s;white-space:nowrap;border-radius:6px}
+.nav-links li a:hover{color:#fafaf8}
+.menu-btn{display:none;background:none;border:none;color:#fafaf8;font-size:1.5rem;cursor:pointer}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:rgba(17,17,17,.96);backdrop-filter:blur(12px);flex-direction:column;padding:12px 20px 20px;border-bottom:1px solid rgba(232,201,138,.08)}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+}
+
+/* Hero */
+.hero{height:100vh;min-height:600px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#111}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.78}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(rgba(17,17,17,.15),rgba(17,17,17,.5))}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:700px}
+.hero-content .badge{display:inline-block;background:rgba(232,201,138,.15);border:1px solid rgba(232,201,138,.3);color:#e8c98a;padding:6px 18px;border-radius:100px;font-size:.72rem;letter-spacing:.1em;margin-bottom:20px}
+.hero-content h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,7vw,5rem);font-weight:600;color:#fafaf8;margin-bottom:8px;line-height:1.05}
+.hero-content p{font-size:.95rem;color:var(--mu);max-width:500px;margin:0 auto 28px;line-height:1.7}
+.hero-content .cta{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid rgba(232,201,138,.4);color:#e8c98a;padding:12px 28px;border-radius:6px;text-decoration:none;font-size:.8rem;letter-spacing:.06em;transition:all .3s}
+.hero-content .cta:hover{background:rgba(232,201,138,.1)}
+
+/* Section */
+section{padding:80px 24px;border-bottom:1px solid rgba(255,255,255,.03)}
+.si{max-width:1100px;margin:0 auto}
+.stg{font-size:.7rem;color:#e8c98a;text-transform:uppercase;letter-spacing:.14em;margin-bottom:8px;font-weight:500}
+.sh{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:600;color:#fafaf8;margin-bottom:4px;line-height:1.2}
+.sh em{font-style:italic;color:#e8c98a}
+.gl{width:50px;height:2px;background:#e8c98a;margin:16px 0 28px}
+
+/* Overview */
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:40px}
+.ov-item{background:rgba(232,201,138,.04);border:1px solid rgba(232,201,138,.1);border-radius:10px;padding:20px 16px;text-align:center}
+.ov-item .ol{font-size:.68rem;color:var(--mu);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+.ov-item .ov{font-size:1rem;color:#fafaf8;font-family:'Cormorant Garamond',serif;font-weight:500}
+.ov-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+.ov-row img{width:100%;border-radius:12px}
+.ov-row .ov-text{font-size:.88rem;color:var(--mu);line-height:1.8;font-weight:300}
+
+/* Floor Plans */
+.fp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.fp-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden;transition:all .3s;cursor:pointer}
+.fp-card:hover{border-color:rgba(232,201,138,.25);transform:translateY(-3px)}
+.fp-card img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#1a1a1a;padding:12px}
+.fp-card .fp-body{padding:14px 16px 16px}
+.fp-card .fp-body .fp-name{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:#fafaf8;margin-bottom:2px}
+.fp-card .fp-body .fp-type{font-size:.75rem;color:var(--mu)}
+
+/* Gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.gal-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;transition:transform .4s}
+.gal-grid img:hover{transform:scale(1.02)}
+
+/* Location */
+.loc-map{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+.loc-map img{width:100%;border-radius:12px}
+.loc-table{width:100%;border-collapse:collapse}
+.loc-table th{text-align:left;font-size:.72rem;color:#e8c98a;text-transform:uppercase;letter-spacing:.1em;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.06)}
+.loc-table td{padding:10px 12px;font-size:.82rem;color:var(--mu);border-bottom:1px solid rgba(255,255,255,.04)}
+
+/* Developer */
+.dev-logos{margin-bottom:28px}
+.dev-logos img{width:100%;max-width:800px;border-radius:12px;display:block}
+.dev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-bottom:24px}
+.dev-card{background:rgba(232,201,138,.04);border:1px solid rgba(232,201,138,.1);border-radius:10px;padding:22px}
+.dev-card .dl{font-size:.68rem;color:var(--mu);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+.dev-card .dv{font-size:1rem;color:#fafaf8;font-family:'Cormorant Garamond',serif}
+.dev-desc{background:rgba(232,201,138,.03);border-radius:12px;padding:24px;border:1px solid rgba(232,201,138,.06);margin-bottom:28px}
+.dev-desc p{font-size:.85rem;color:var(--mu);line-height:1.8;font-weight:300}
+.dev-desc strong{color:#fafaf8}
+.track-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.track-item{background:rgba(232,201,138,.03);border:1px solid rgba(232,201,138,.06);border-radius:8px;padding:14px 12px;text-align:center}
+.track-item span{color:#fafaf8;font-family:'Cormorant Garamond',serif;font-size:.9rem}
+
+/* FAQ */
+.faq-grid{max-width:800px}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.05);padding:18px 0}
+.faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:.9rem;color:#fafaf8;font-weight:400}
+.faq-q .faq-icon{font-size:1.3rem;color:#e8c98a;transition:transform .3s;flex-shrink:0;margin-left:12px}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a.open{max-height:600px}
+.faq-a-inner{padding-top:14px;font-size:.82rem;color:var(--mu);line-height:1.7}
+
+/* Floating WhatsApp */
+.fwa{position:fixed;bottom:24px;right:24px;z-index:9999;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35);text-decoration:none;transition:all .3s;animation:waPulse 2s infinite}
+.fwa:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.5)}
+.fwa svg{width:28px;height:28px;fill:#fff}
+@keyframes waPulse{0%{box-shadow:0 4px 20px rgba(37,211,102,.35)}50%{box-shadow:0 4px 30px rgba(37,211,102,.6)}100%{box-shadow:0 4px 20px rgba(37,211,102,.35)}}
+@media(max-width:768px){.fwa{width:50px;height:50px;bottom:16px;right:16px}.fwa svg{width:24px;height:24px}}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.contact-form{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:32px}
+.contact-form h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#fafaf8;margin-bottom:6px}
+.contact-form .cs{font-size:.8rem;color:var(--mu);margin-bottom:20px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fg{margin-bottom:14px}
+.fg label{font-size:.72rem;color:#e8c98a;display:block;margin-bottom:4px;letter-spacing:.06em}
+.fg input,.fg select,.fg textarea{width:100%;padding:10px 14px;border:1px solid rgba(255,255,255,.1);border-radius:8px;background:rgba(17,17,17,.6);color:#fafaf8;font-size:.82rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .3s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:#e8c98a}
+.fg textarea{resize:vertical;min-height:80px}
+.fsub{background:transparent;border:1px solid #e8c98a;color:#e8c98a;padding:12px 28px;border-radius:6px;font-size:.8rem;letter-spacing:.06em;cursor:pointer;transition:all .3s;width:100%}
+.fsub:hover{background:rgba(232,201,138,.1)}
+.contact-info h4{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#fafaf8;margin-bottom:8px}
+.contact-info h4 em{color:#e8c98a;font-style:italic}
+.contact-info .cp{font-size:.82rem;color:var(--mu);margin-bottom:20px;line-height:1.6}
+.crow{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+.cic{width:34px;height:34px;border:1px solid rgba(232,201,138,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.cll{font-size:.7rem;color:var(--mu);text-transform:uppercase;letter-spacing:.08em}
+.clv{font-size:.82rem;color:#fafaf8;margin-top:2px}
+.wa{display:flex;align-items:center;gap:8px;background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.2);color:#25D366;padding:12px 22px;border-radius:6px;text-decoration:none;font-size:.78rem;letter-spacing:.06em;margin-top:24px;transition:all .3s}
+.wa:hover{background:rgba(37,211,102,.15);gap:12px}
+
+/* Footer */
+footer{padding:40px 24px;text-align:center}
+footer .fl{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fafaf8;margin-bottom:6px}
+footer .fd{font-size:.72rem;color:var(--mu);max-width:700px;margin:0 auto 12px;line-height:1.6}
+footer .fb{font-size:.7rem;color:var(--mu)}
+
+@media(max-width:768px){
+  section{padding:56px 16px}
+  .ov-row,.loc-map,.contact-grid{grid-template-columns:1fr}
+  .contact-form{padding:24px 20px}
+}
+
+.fu{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.fu.v{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="images/logo.png" alt="The Sen Logo">
+      <span>The Sen</span>
+    </a>
+    <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="#ov">Overview</a></li>
+      <li><a href="#fp">Floor Plans</a></li>
+      <li><a href="#pricing">Balance Units</a></li>
+      <li><a href="#loc">Location</a></li>
+      <li><a href="#dev">Developer</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://jetleechannel.sg/thesen/articles/" target="_blank" rel="noopener">Articles</a></li>
+    
+    <li><a href="https://jetleechannel.sg/new-launch/" rel="noopener">New Launch</a></li>
+  <li><a href="#ct">Register</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"><img src="images/01-hero.webp" alt="The Sen Upper Bukit Timah" loading="lazy"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content fu">
+    <div class="badge">New Launch · Upper Bukit Timah</div>
+    <h1>The Sen</h1>
+    <p>347 luxury residences by Sustained Land at De Souza Avenue. Resort living steps from Hume MRT and Bukit Timah Nature Reserve.</p>
+    <a href="#ct" class="cta">Register Interest →</a>
+  </div>
+</section>
+
+<section id="ov">
+  <div class="si">
+    <p class="stg fu">Overview</p>
+    <h2 class="sh fu">The Sen <em>at a Glance</em></h2>
+    <div class="gl fu"></div>
+
+    <div class="ov-grid fu">
+      <div class="ov-item"><div class="ol">Units</div><div class="ov">347</div></div>
+      <div class="ov-item"><div class="ol">Tenure</div><div class="ov">99 yrs</div></div>
+      <div class="ov-item"><div class="ol">District</div><div class="ov">D21</div></div>
+      <div class="ov-item"><div class="ol">TOP</div><div class="ov">Aug 2030</div></div>
+      <div class="ov-item"><div class="ol">Storeys</div><div class="ov">5 Blocks × 10</div></div>
+      <div class="ov-item"><div class="ol">Carpark</div><div class="ov">347 Lots</div></div>
+    </div>
+
+    <div class="ov-row fu">
+      <img src="images/04-blocks.webp" alt="The Sen Block View">
+      <div>
+        <div class="ov-text" style="margin-bottom:16px">Nestled in the tranquil enclave of Upper Bukit Timah, The Sen by <strong style="color:#fafaf8">Sustained Land</strong> redefines modern living with luxurious residential offerings along De Souza Avenue.</div>
+        <div class="ov-text">With seamless connectivity via Hume MRT, top schools like Pei Hwa Presbyterian and Methodist Girls', and the lush Bukit Timah Nature Reserve at your doorstep, The Sen offers the perfect balance of urban convenience and serene living.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fp">
+  <div class="si">
+    <p class="stg fu">Floor Plans</p>
+    <h2 class="sh fu">Thoughtfully <em>Designed</em></h2>
+    <div class="gl fu"></div>
+    <p style="font-size:.82rem;color:var(--mu);margin-bottom:24px;font-weight:300" class="fu">Efficient layouts with premium finishes. Click any unit to view.</p>
+    <div class="fp-grid" id="fpGrid" class="fu"></div>
+  </div>
+</section>
+
+<section id="gal">
+  <div class="si">
+    <p class="stg fu">Gallery</p>
+    <h2 class="sh fu">A Glimpse of <em>The Sen</em></h2>
+    <div class="gl fu"></div>
+    <div class="gal-grid fu">
+      <img src="images/01-hero.webp" alt="The Sen Hero" loading="lazy">
+      <img src="images/02-pool.webp" alt="50m Lap Pool" loading="lazy">
+      <img src="images/03-family-pool.webp" alt="Family Pool & BBQ Pavilion" loading="lazy">
+      <img src="images/04-blocks.webp" alt="Residential Blocks" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="loc">
+  <div class="si">
+    <p class="stg fu">Location</p>
+    <h2 class="sh fu">Everything <em>Within Reach</em></h2>
+    <div class="gl fu"></div>
+
+    <div class="loc-map fu">
+      <img src="images/05-location-map.webp" alt="The Sen Location Map">
+    </div>
+    <div class="loc-map fu">
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+        <iframe src="https://www.youtube.com/embed/Lmo5LV4JpVI" 
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" 
+          allowfullscreen title="The Sen | RCR Location at OCR Pricing?"></iframe>
+      </div>
+      <div>
+        <div class="ov-text" style="margin-bottom:16px">The Sen sits in the prestigious Upper Bukit Timah enclave, with <strong style="color:#fafaf8">Hume MRT (DT4)</strong> just 1.1km away and Beauty World MRT 1.6km.</div>
+        <div class="ov-text" style="margin-bottom:16px">Major expressways (BKE, PIE) provide seamless connectivity to the city and beyond.</div>
+
+        <table class="loc-table">
+          <tr><th>Category</th><th>Name</th><th>Distance</th></tr>
+          <tr><td>🚇 MRT</td><td>Hume MRT (DT4)</td><td>1.1 km</td></tr>
+          <tr><td>🚇 MRT</td><td>Beauty World MRT (DT5)</td><td>1.6 km</td></tr>
+          <tr><td>🏫 School</td><td>Pei Hwa Presbyterian</td><td>1.2 km</td></tr>
+          <tr><td>🏫 School</td><td>Bukit Timah Primary</td><td>1.1 km</td></tr>
+          <tr><td>🏫 School</td><td>Methodist Girls' School</td><td>2.0 km</td></tr>
+          <tr><td>🛍️ Mall</td><td>HillV2</td><td>1.9 km</td></tr>
+          <tr><td>🛍️ Mall</td><td>The Rail Mall</td><td>1.5 km</td></tr>
+          <tr><td>🛍️ Mall</td><td>Beauty World Plaza</td><td>1.0 km</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dev">
+  <div class="si">
+    <p class="stg fu">Developer</p>
+    <h2 class="sh fu">Behind the <em>Project</em></h2>
+    <div class="gl fu"></div>
+
+    <div class="dev-logos fu">
+      <img src="images/developer-logo.png" alt="Sustained Land - SL Capital Developer">
+    </div>
+    <div class="dev-grid fu">
+      <div class="dev-card"><div class="dl">Developer</div><div class="dv">Sustained Land — SL Capital (8) Pte Ltd</div></div>
+      <div class="dev-card"><div class="dl">Expected TOP</div><div class="dv">31 August 2030</div></div>
+      <div class="dev-card"><div class="dl">Architect</div><div class="dv">AGA Architects Pte Ltd</div></div>
+    </div>
+    <div class="dev-desc fu">
+      <p style="margin-bottom:14px">The Sen is developed by <strong>Sustained Land — SL Capital</strong>, a developer committed to quality residential projects. The collaboration with <strong>AGA Architects</strong> and <strong>TPS Construction</strong> ensures high build standards and meticulous attention to detail.</p>
+      <p>With <strong>EcoPlan Asia</strong> handling landscape design, residents can expect lush, thoughtfully planned green spaces that complement the natural surroundings of Upper Bukit Timah.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- BALANCE UNITS -->
+<section id="pricing">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="stg">Balance Units</span>
+    <h2 class="sh">Current <em>Balance</em></h2>
+    <div style="height:1px;background:linear-gradient(90deg,var(--gold-light, var(--gl, #e4c97e)),transparent);margin:18px 0 8px"></div>
+    <p style="font-size:13px;color:var(--mu);margin-bottom:18px;font-weight:300">Live availability from developer. Updated daily.</p>
+    <p style="font-size:13px;color:var(--gold);margin-bottom:14px;letter-spacing:0.5px">Current Balance · as of 4 Sept 2026</p>
+    <div class="unit-table" style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;min-width:640px"><thead><tr><th>Unit Type</th><th>No. of Units</th><th>Status</th></tr></thead><tbody>
+          <tr>
+            <td>2 Bedroom</td>
+            <td>45</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>2 Bedroom + Study</td>
+            <td>47</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>3 Bedroom</td>
+            <td>26</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>3 Bedroom + Study</td>
+            <td>36</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>4 Bedroom + Study</td>
+            <td>34</td>
+            <td>Available</td>
+          </tr>
+          <tr class="total">
+            <td>Current Available</td>
+            <td>188 Units</td>
+            <td>—</td>
+          </tr>
+        </tbody></table></div>
+  </div>
+</section>
+<!-- END BALANCE UNITS -->
+<section id="faq">
+  <div class="si">
+    <p class="stg fu">FAQ</p>
+    <h2 class="sh fu">Frequently Asked <em>Questions</em></h2>
+    <div class="gl fu"></div>
+    <p style="font-size:.82rem;color:var(--mu);margin-bottom:8px;font-weight:300">Click any question to expand.</p>
+    <div class="faq-grid fu">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is the tenure of The Sen?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">99-year leasehold commencing from 20 January 2025.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How many units does The Sen have?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">347 residential units across 5 blocks of 10 storeys each.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>When is the expected TOP?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Expected TOP is 31 August 2030 (Non-committal: August 2029). Legal completion by 31 August 2033.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What unit types are available?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">1 Bedroom, 2 Bedroom, 2 Bedroom + Study, 3 Bedroom, 3 Bedroom + Study, and 4 Bedroom + Study layouts.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Who is the developer?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Sustained Land - SL Capital (8) Pte Ltd. Experienced developer with a track record of quality residential projects.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Where is The Sen located?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Along De Souza Avenue / Jalan Jurong Kechil, within District 21 (Clementi Park / Upper Bukit Timah).</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="ct">
+  <div class="si">
+    <div class="contact-grid">
+      <div class="contact-form fu">
+        <h3>Register Interest</h3>
+        <p class="cs">Be first for VVIP preview access, floor plans &amp; exclusive pricing.</p>
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return handleForm(event)">
+          <input type="hidden" name="access_key" value="80bb82c8-aa68-4974-b63b-66bac63a8016">
+          <input type="hidden" name="subject" value="The Sen - New Registration">
+          <input type="hidden" name="from_name" value="The Sen Website">
+          <div class="form-row">
+            <div class="fg"><label>First Name</label><input type="text" name="First Name" placeholder="John" required></div>
+            <div class="fg"><label>Last Name</label><input type="text" name="Last Name" placeholder="Doe" required></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" name="Email" placeholder="john@example.com" required></div>
+          <div class="fg"><label>Mobile</label><input type="tel" name="Mobile" placeholder="+65 9XXX XXXX" required></div>
+          <div class="fg"><label>Unit Interest</label><select name="Unit Interest"><option value="">— Select —</option><option>1 Bedroom</option><option>2 Bedroom</option><option>2 Bedroom + Study</option><option>3 Bedroom</option><option>3 Bedroom + Study</option><option>4 Bedroom + Study</option></select></div>
+          <div class="fg"><label>Message</label><textarea name="Message" placeholder="Any questions..."></textarea></div>
+          <button class="fsub" type="submit">Submit Registration →</button>
+        </form>
+      </div>
+      <div class="contact-info fu">
+        <h4>Let's Find Your<br><em>Perfect</em> Home</h4>
+        <p class="cp">Register for priority access to floor plans, pricing, and VVIP preview before public launch.</p>
+        <div class="crow"><div class="cic">📍</div><div><div class="cll">Location</div><div class="clv">De Souza Ave / 222-230 Jln Jurong Kechil</div></div></div>
+        <div class="crow"><div class="cic">🏢</div><div><div class="cll">Developer</div><div class="clv">Sustained Land — SL Capital (8) Pte Ltd</div></div></div>
+        <div class="crow"><div class="cic">📅</div><div><div class="cll">Expected TOP</div><div class="clv">31 August 2030</div></div></div>
+        <a href="https://wa.me/6587649315?text=Hi%2C%20interested%20in%20The%20Sen%20-%20Upper%20Bukit%20Timah" class="wa" target="_blank"><span>💬</span><span>WhatsApp Us Now</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/6587649315?text=Hi%2C%20interested%20in%20The%20Sen%20-%20Upper%20Bukit%20Timah" class="fwa" target="_blank" title="WhatsApp Us">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<footer>
+  <div class="fl">The Sen · Upper Bukit Timah</div>
+  <p class="fd">All renderings, artist impressions, and specifications are subject to change without prior notice. Floor areas are approximate and subject to survey. This website does not constitute an offer or contract.</p>
+  <div class="fb">© 2026 The Sen · Represented by Jet Lee (CEA R007613B) · Property Journey Advisor Realty Pte Ltd</div>
+  <div class="thomson-promo" style="text-align:center; padding:10px 0; margin-top:10px; border-top:1px solid rgba(255,255,255,0.1); font-size:0.85rem;">
+    🏗️ <a href="https://thomson-reserve-direct-developer.com/" target="_blank" style="color:var(--gold,#c9a24b); text-decoration:none; font-weight:600;">Thomson Reserve</a> — New Launch D20 · Preview Oct 2026 · Direct Developer Price
+  </div>
+
+<!-- ===== Thomson Reserve Promo Banner (injected by scripts/inject-thomson-banner.mjs) ===== -->
+<div class="tr-banner" style="background:linear-gradient(135deg,#141414 0%,#1E1E1E 60%,#2A2318 100%);border-top:1px solid rgba(184,151,90,0.35);border-bottom:1px solid rgba(184,151,90,0.35);padding:0;margin:0;width:100%;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:28px 24px;">
+    <div style="flex:1;min-width:260px;">
+      <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold,#C9A84C);font-weight:600;margin-bottom:6px;">&#127881; Coming Soon &mdash; October 2026</div>
+      <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(24px,3.5vw,38px);font-weight:500;color:#FFFFFF;line-height:1.1;letter-spacing:0.5px;">Thomson Reserve</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:6px;">UOL / CapitaLand / SingLand &middot; Upper Thomson D20 &middot; 1,268 Units &middot; Direct Developer Price</div>
+    </div>
+    <div style="flex-shrink:0;">
+      <a href="https://thomson-reserve-direct-developer.com/" target="_blank" rel="noopener" style="display:inline-block;background:#000;color:var(--gold,#C9A84C);border:1px solid rgba(201,168,76,0.6);padding:12px 30px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;text-decoration:none;transition:all .25s;border-radius:2px;">Learn More &#8594;</a>
+    </div>
+  </div>
+</div>
+<!-- ===== /Thomson Reserve Promo Banner ===== -->
+</footer>
+
+<script>
+// Toggle FAQ
+function toggleFaq(el) {
+  el.classList.toggle('open');
+  const answer = el.nextElementSibling;
+  answer.classList.toggle('open');
+}
+
+// Floor plans data
+const floorplans = [
+  { type: "1 Bedroom", name: "Type A1", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-1-bedroom-type-a1-722x1024.webp" },
+  { type: "2 Bedroom", name: "Type B1", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-2-bedroom-type-b1-710x1024.webp" },
+  { type: "2 Bedroom", name: "Type B2", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-2-bedroom-type-b2-711x1024.webp" },
+  { type: "2 Bedroom", name: "Type B3", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-2-bedroom-type-b3-1024x728.webp" },
+  { type: "2 Bedroom + Study", name: "Type B4", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-2-study-type-b4-1024x728.webp" },
+  { type: "2 Bedroom + Study", name: "Type B4a", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-2-study-type-b4a-718x1024.webp" },
+  { type: "3 Bedroom", name: "Type C1", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-3-bedroom-type-C1-1-716x1024.webp" },
+  { type: "3 Bedroom", name: "Type C2", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-3-bedroom-type-C2-1-1024x728.webp" },
+  { type: "3 Bedroom", name: "Type C3", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-3-bedroom-type-C3-1-1024x728.webp" },
+  { type: "3 Bedroom + Study", name: "Type C4", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-3-bedroom-study-type-C4-1024x728.webp" },
+  { type: "4 Bedroom + Study", name: "Type D1", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-4-bedroom-study-type-D1-1024x728.webp" },
+  { type: "4 Bedroom + Study", name: "Type D1a", img: "https://www.thesen-condo.com.sg/wp-content/uploads/2025/10/the-sen-floor-plan-4-bedroom-study-type-D1a-1024x728.webp" }
+];
+
+const fpGrid = document.getElementById('fpGrid');
+fpGrid.innerHTML = floorplans.map(f => `
+  <div class="fp-card" onclick="openFloorplan('${f.img}','${f.name}')">
+    <img src="${f.img}" alt="${f.type} - ${f.name}" loading="lazy">
+    <div class="fp-body">
+      <div class="fp-name">${f.name}</div>
+      <div class="fp-type">${f.type}</div>
+    </div>
+  </div>
+`).join('');
+
+function openFloorplan(src, name) {
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out;padding:40px';
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = name;
+  img.style.cssText = 'max-width:100%;max-height:100%;border-radius:12px;object-fit:contain';
+  overlay.appendChild(img);
+  overlay.onclick = () => overlay.remove();
+  document.body.appendChild(overlay);
+}
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('v');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: .1 });
+document.querySelectorAll('.fu').forEach(el => observer.observe(el));
+
+// Form handler
+function handleForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.fsub');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  fetch(e.target.action, { method: 'POST', body: new FormData(e.target) })
+    .then(r => r.json())
+    .then(d => { btn.textContent = d.success ? '✓ Submitted!' : 'Error — try WhatsApp'; if(d.success) e.target.reset(); })
+    .catch(() => { btn.textContent = 'Error — try WhatsApp'; })
+    .finally(() => { setTimeout(() => { btn.textContent = 'Submit Registration →'; btn.disabled = false; }, 3000); });
+  return false;
+}
+
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+});
+</script>
+
+<style>
+  .wa-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+    width: 60px; height: 60px; border-radius: 50%;
+    background: #25D366; display: flex; align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,.4);
+    transition: transform .2s, box-shadow .2s; text-decoration: none;
+  }
+  .wa-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,.55); }
+  .wa-float svg { width: 32px; height: 32px; fill: white; }
+  @media (max-width: 600px) {
+    .wa-float { width: 52px; height: 52px; bottom: 18px; right: 18px; }
+    .wa-float svg { width: 28px; height: 28px; }
+  }
+</style>
+<a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20found%20you%20on%20jetleechannel.sg"
+   class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"8210054068964823931e77f5380508d1","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"8210054068964823931e77f5380508d1","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
