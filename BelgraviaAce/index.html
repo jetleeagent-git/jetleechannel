@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belgravia Ace | 107 Freehold Strata Landed Homes D28 Belgravia Drive | Direct Developer Price | Jet Lee</title>
+<meta name="description" content="Belgravia Ace – 104 freehold strata semi-detached + 3 terrace homes at Belgravia Drive, District 28. 3-storey envelope control homes with roof terrace, basement carpark, pool & communal facilities. From $4.53M. TOP Jan 2028. Register interest with Jet Lee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #B8975A;
+    --gold-light: #D4B47A;
+    --gold-dark: #8A6E3A;
+    --dark: #0E0D0B;
+    --dark2: #1A1915;
+    --dark3: #252420;
+    --cream: #F5F0E8;
+    --cream2: #EDE8DC;
+    --text: #2C2A25;
+    --text-light: #7A7668;
+    --white: #FFFFFF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 48px;
+    background: rgba(14,13,11,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,151,90,0.2);
+    transition: all 0.3s ease;
+  }
+  .nav-logo {
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .nav-logo .logo-dh {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 500; letter-spacing: 4px;
+    color: var(--gold); text-transform: uppercase;
+  }
+  .nav-logo .logo-sub {
+    font-size: 9px; letter-spacing: 3px; color: rgba(184,151,90,0.6);
+    text-transform: uppercase;
+  }
+  .nav-links {
+    display: flex; gap: 32px; list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* Hamburger menu — always visible on every page (Jetlee: "should be always there irregardless which page") */
+  .mobile-toggle {
+    display: flex; flex-direction: column; gap: 5px; cursor: pointer;
+    background: none; border: none; padding: 4px; margin-left: auto;
+  }
+  .mobile-toggle span { display: block; width: 24px; height: 2px; background: #fafaf8; transition: .3s; }
+
+  /* ⛔ Blinking Balance Units nav link — HOT pricing info inside (locked Aug 12) */
+  .nav-links a.blink-yellow {
+    color: #FFD700 !important;
+    font-weight: 800 !important;
+    animation: blinkYellow 1s infinite;
+  }
+  @keyframes blinkYellow {
+    0%, 100% { opacity: 1; color: #FFD700; text-shadow: 0 0 8px rgba(255,215,0,0.9); }
+    50% { opacity: 0.45; color: #FFA500; text-shadow: 0 0 12px rgba(255,165,0,0.6); }
+  }
+
+  /* 🔥 Striking CTA banner on homepage hero — static, no blink */
+  .blink-banner {
+    display: inline-block;
+    background: linear-gradient(90deg, #FFD700, #FFAA00);
+    color: #1A1A00 !important;
+    font-weight: 800;
+    padding: 14px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+    box-shadow: 0 0 24px rgba(255,215,0,0.55);
+    margin-top: 18px;
+  }
+  .blink-banner:hover { background: #FFC000; color: #000 !important; }
+
+  /* Dropdown menus */
+  .nav-item {
+    position: relative;
+  }
+  .nav-item > a {
+    display: flex; align-items: center; gap: 5px;
+  }
+  .nav-item > a .caret {
+    font-size: 8px; transition: transform 0.2s;
+  }
+  .nav-item:hover > a .caret { transform: rotate(180deg); }
+  .nav-item:hover > a { color: var(--gold); }
+  .dropdown {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px);
+    background: rgba(14,13,11,0.97);
+    border: 1px solid rgba(184,151,90,0.25);
+    border-top: 2px solid var(--gold);
+    min-width: 260px;
+    padding: 10px 0;
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    z-index: 1100;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+  }
+  .nav-item:hover .dropdown {
+    opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
+  }
+  .dropdown .dd-title {
+    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: rgba(184,151,90,0.55); padding: 8px 22px 4px;
+  }
+  .dropdown a {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 22px;
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 12px; letter-spacing: 0.8px; text-transform: none;
+    transition: all 0.15s; white-space: nowrap;
+  }
+  .dropdown a:hover {
+    color: var(--gold); background: rgba(184,151,90,0.08);
+    padding-left: 26px;
+  }
+  .dropdown a .dd-ico { font-size: 14px; width: 20px; text-align: center; flex-shrink: 0; }
+  .dropdown a .dd-lbl { display: flex; flex-direction: column; }
+  .dropdown a .dd-lbl small {
+    font-size: 10px; color: rgba(255,255,255,0.3); letter-spacing: 0.3px; margin-top: 1px;
+  }
+  .dropdown .dd-link {
+    border-top: 1px solid rgba(255,255,255,0.06); margin-top: 6px; padding-top: 8px;
+    color: var(--gold); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  }
+  .dropdown .dd-link:hover { padding-left: 26px; }
+
+  @media (max-width: 900px) {
+    .dropdown {
+      position: static; transform: none;
+      background: transparent; border: none; border-left: 1px solid rgba(184,151,90,0.2);
+      box-shadow: none; border-radius: 0; margin-left: 14px; padding: 0;
+      min-width: 0;
+      max-height: 0; opacity: 0; visibility: hidden; overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
+    }
+    .nav-item.dropdown-open .dropdown {
+      max-height: 320px; opacity: 1; visibility: visible;
+      padding: 4px 0 4px 12px;
+    }
+    .dropdown .dd-title { padding: 6px 12px 2px; }
+    .dropdown a { padding: 8px 12px; }
+    .dropdown a:hover { padding-left: 16px; background: rgba(184,151,90,0.06); }
+    .nav-item > a .caret { transition: transform 0.2s; }
+    .nav-item.dropdown-open > a .caret { transform: rotate(180deg); }
+    .nav-item:hover > a .caret { transform: none; }
+  }
+  .nav-cta {
+    background: var(--gold); color: var(--dark);
+    padding: 10px 24px; border: none; cursor: pointer;
+    font-family: 'Jost', sans-serif; font-size: 11px;
+    letter-spacing: 2px; text-transform: uppercase; font-weight: 500;
+    text-decoration: none; display: inline-block;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-light); }
+
+  #home {
+    position: relative; height: 100vh; min-height: 700px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    background: var(--dark);
+  }
+  #home .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(14,13,11,0.45) 0%, rgba(14,13,11,0.25) 35%, rgba(14,13,11,0.10) 70%, rgba(14,13,11,0.02) 100%),
+      url('/BelgraviaAce/images/hero.jpg') center / cover no-repeat,
+      var(--dark);
+  }
+  #home .hero-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(14,13,11,0.08) 0%, rgba(14,13,11,0.04) 15%, rgba(14,13,11,0.25) 50%, rgba(14,13,11,0.55) 100%);
+  }
+  .hero-pattern {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: repeating-linear-gradient(
+      0deg, transparent, transparent 60px,
+      rgba(184,151,90,0.5) 60px, rgba(184,151,90,0.5) 61px
+    ),
+    repeating-linear-gradient(
+      90deg, transparent, transparent 60px,
+      rgba(184,151,90,0.5) 60px, rgba(184,151,90,0.5) 61px
+    );
+  }
+  .hero-content {
+    position: relative; z-index: 2; text-align: center;
+    padding: 0 24px;
+    animation: heroFadeIn 1.2s ease forwards;
+  }
+  @keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-tag {
+    display: inline-block;
+    font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--gold); border: 1px solid rgba(184,151,90,0.4);
+    padding: 7px 20px; margin-bottom: 32px;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(56px, 8vw, 100px);
+    font-weight: 300; line-height: 0.95;
+    color: var(--white); letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .hero-title em {
+    font-style: italic; color: var(--gold);
+  }
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-weight: 300; font-style: italic;
+    color: rgba(255,255,255,0.55); letter-spacing: 1px;
+    margin-bottom: 48px;
+  }
+  .relaunchoon {
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: clamp(56px, 10vw, 140px);
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FF1F1F;
+    text-shadow: 0 0 24px rgba(255,31,31,0.55), 0 0 60px rgba(255,31,31,0.3);
+    transform: rotate(-8deg) skewX(-6deg);
+    margin: 8px 0 20px;
+    user-select: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .relaunchoon { animation: none; }
+  }
+  .hero-stats {
+    display: flex; gap: 48px; justify-content: center;
+    margin-bottom: 52px;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px; font-weight: 500; color: var(--gold);
+    display: block; line-height: 1;
+  }
+  .hero-stat .lbl {
+    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: rgba(255,255,255,0.4); margin-top: 6px;
+  }
+  .hero-divider {
+    width: 1px; height: 50px; background: rgba(184,151,90,0.3);
+    align-self: center;
+  }
+  .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold); color: var(--dark);
+    padding: 14px 36px; text-decoration: none;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 600;
+    transition: all 0.2s; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-outline {
+    border: 1px solid rgba(184,151,90,0.5); color: var(--gold);
+    padding: 14px 36px; text-decoration: none;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 400;
+    transition: all 0.2s; display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold); background: rgba(184,151,90,0.08); }
+  .hero-scroll {
+    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    color: rgba(255,255,255,0.3); font-size: 9px; letter-spacing: 3px;
+    text-transform: uppercase; animation: bounce 2s infinite;
+  }
+  .scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, rgba(184,151,90,0.6), transparent);
+  }
+  @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+  section { padding: 100px 48px; }
+  .section-label {
+    font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px; display: block;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 5vw, 60px); font-weight: 300; line-height: 1.1;
+    color: var(--dark); margin-bottom: 24px;
+  }
+  .section-title em { font-style: italic; color: var(--gold-dark); }
+  .section-divider {
+    width: 60px; height: 1px; background: var(--gold); margin-bottom: 40px;
+  }
+
+  .ticker {
+    background: var(--gold); padding: 12px 0; overflow: hidden;
+    white-space: nowrap;
+  }
+  .ticker-inner {
+    display: inline-block; animation: ticker 25s linear infinite;
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--dark); font-weight: 600;
+  }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  #details { background: var(--cream); }
+  .overview-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+    max-width: 1200px; margin: 0 auto;
+    align-items: start;
+  }
+  .overview-text p {
+    font-size: 16px; line-height: 1.8; color: var(--text-light);
+    margin-bottom: 20px;
+  }
+  .overview-text p strong { color: var(--text); }
+  .fact-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+    background: rgba(184,151,90,0.15);
+  }
+  .fact-item {
+    background: var(--cream); padding: 20px 24px;
+  }
+  .fact-label {
+    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 6px;
+  }
+  .fact-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px; font-weight: 500; color: var(--dark);
+  }
+
+  #pricing { background: var(--dark2); }
+  #pricing .section-title { color: var(--white); }
+  #pricing .section-label { color: var(--gold); }
+  .unit-table {
+    width: 100%; border-collapse: collapse; max-width: 960px;
+  }
+  .unit-table thead tr {
+    border-bottom: 1px solid rgba(184,151,90,0.3);
+  }
+  .unit-table th {
+    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--gold); padding: 0 0 16px 0; text-align: left; font-weight: 400;
+  }
+  .unit-table th:not(:first-child) { text-align: center; }
+  .unit-table tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: background 0.2s;
+  }
+  .unit-table tbody tr:hover { background: rgba(184,151,90,0.05); }
+  .unit-table td {
+    padding: 22px 0; color: rgba(255,255,255,0.8);
+    font-size: 14px;
+  }
+  .unit-table td:not(:first-child) { text-align: center; }
+  .unit-table td:first-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-weight: 400; color: var(--white);
+  }
+  .unit-table .total td {
+    border-top: 1px solid rgba(184,151,90,0.4);
+    color: var(--gold); font-weight: 500; font-size: 14px;
+  }
+  .unit-table .total td:first-child {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px; font-weight: 500; color: var(--gold);
+    letter-spacing: 1px;
+  }
+
+  #amenities { background: var(--cream); }
+  .amenities-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    max-width: 1200px; margin: 0 auto;
+  }
+  .amenities-col h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 400; margin-bottom: 20px;
+    color: var(--dark);
+  }
+  .amenity-item {
+    display: flex; gap: 16px; margin-bottom: 18px;
+  }
+  .amenity-item .icon { font-size: 20px; flex-shrink: 0; width: 28px; }
+  .amenity-item .lbl { font-size: 9px; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; }
+  .amenity-item .val { font-size: 15px; color: var(--text); }
+  .amenity-item .val small { color: var(--text-light); font-size: 12px; }
+
+  #faq { background: var(--dark2); }
+  #faq .section-title { color: var(--white); }
+  .faq-item {
+    max-width: 720px; margin: 0 auto;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 20px 0;
+  }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center;
+    cursor: pointer; font-size: 15px; font-weight: 400;
+    color: rgba(255,255,255,0.85); letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .faq-q:hover { color: var(--gold); }
+  .faq-q .arrow {
+    font-size: 12px; transition: transform 0.3s; color: var(--gold);
+  }
+  .faq-q.active .arrow { transform: rotate(180deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden; transition: max-height 0.4s, padding 0.3s;
+    font-size: 13px; line-height: 1.8; color: rgba(255,255,255,0.55);
+  }
+  .faq-a.open { max-height: 400px; padding-top: 16px; }
+
+  #contact {
+    background: var(--dark); color: var(--white);
+  }
+  .contact-wrap {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    max-width: 1200px; margin: 0 auto;
+  }
+  .contact-left h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3vw, 40px); font-weight: 300;
+    margin-bottom: 16px; line-height: 1.2;
+  }
+  .contact-left p { font-size: 14px; opacity: 0.6; line-height: 1.7; margin-bottom: 32px; }
+  .contact-detail {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 16px;
+  }
+  .contact-detail .icon {
+    width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.08); border-radius: 50%;
+    font-size: 16px; flex-shrink: 0;
+  }
+  .contact-detail .lbl { font-size: 9px; letter-spacing: 2px; opacity: 0.5; text-transform: uppercase; }
+  .contact-detail .val { font-size: 14px; opacity: 0.9; }
+  .contact-form {
+    background: rgba(255,255,255,0.06); padding: 36px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .contact-form h3 {
+    font-size: 16px; font-weight: 500; margin-bottom: 24px;
+    color: rgba(255,255,255,0.9);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label {
+    display: block; font-size: 10px; letter-spacing: 1.5px;
+    text-transform: uppercase; margin-bottom: 6px; opacity: 0.6;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,0.12); border-radius: 4px;
+    font-size: 14px; background: rgba(255,255,255,0.06);
+    color: var(--white); font-family: 'Jost', sans-serif;
+    transition: border-color 0.3s;
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.25); }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none; border-color: var(--gold);
+  }
+  .form-group select option { background: var(--dark); color: var(--white); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%; padding: 14px; border: none; border-radius: 4px;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    font-weight: 600; cursor: pointer; transition: all 0.3s;
+    background: var(--gold); color: var(--dark);
+  }
+  .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  footer {
+    background: var(--dark); padding: 32px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .footer-links a {
+    color: rgba(255,255,255,0.35); text-decoration: none;
+    font-size: 11px; letter-spacing: 1.5px; margin-left: 24px;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-note {
+    font-size: 10px; color: rgba(255,255,255,0.2); max-width: 400px;
+    line-height: 1.6;
+  }
+
+  .gallery-section { background: var(--dark2); }
+  .gallery-section .section-title { color: var(--white); }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px; max-width: 1200px; margin: 0 auto;
+  }
+
+  .floorplan-section { background: var(--cream2); }
+  .floorplan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px; max-width: 1200px; margin: 0 auto;
+  }
+  .floorplan-item {
+    border-radius: 4px; overflow: hidden;
+    background: var(--dark3);
+    transition: all 0.3s;
+  }
+  .floorplan-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  }
+  .floorplan-item a {
+    display: block; overflow: hidden;
+  }
+  .floorplan-item img {
+    width: 100%; height: auto; display: block;
+    transition: transform 0.4s;
+  }
+  .floorplan-item:hover img { transform: scale(1.03); }
+  .floorplan-label {
+    padding: 14px 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px; color: var(--white);
+  }
+  .gallery-item {
+    aspect-ratio: 4/3; overflow: hidden; border-radius: 4px;
+    background: var(--dark3);
+    position: relative;
+  }
+  .gallery-item img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.4s;
+  }
+  .gallery-item:hover img { transform: scale(1.05); }
+
+  #siteplan { background: var(--cream); }
+  .siteplan-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    max-width: 1200px; margin: 0 auto;
+  }
+  .siteplan-item {
+    border-radius: 4px; overflow: hidden;
+    background: var(--dark3);
+    transition: all 0.3s;
+  }
+  .siteplan-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  }
+  .siteplan-item img {
+    width: 100%; height: auto; display: block;
+    transition: transform 0.4s;
+  }
+  .siteplan-item:hover img { transform: scale(1.02); }
+
+  .features-section { background: var(--cream2); }
+  .features-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+    max-width: 1200px; margin: 40px auto 0;
+  }
+  .feature-card {
+    background: var(--white); padding: 36px 28px;
+    border-radius: 4px;
+  }
+  .feature-card .f-icon { font-size: 32px; margin-bottom: 16px; }
+  .feature-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; color: var(--dark); margin-bottom: 10px;
+  }
+  .feature-card p {
+    font-size: 13px; line-height: 1.7; color: var(--text-light);
+  }
+
+  .map-wrap {
+    max-width: 1200px; margin: 40px auto 0;
+    border-radius: 4px; overflow: hidden;
+    border: 1px solid rgba(184,151,90,0.2);
+  }
+  .map-wrap iframe { display: block; width: 100%; height: 420px; border: 0; }
+
+  @media (max-width: 900px) {
+    nav { height: 72px; padding: 0 24px; }
+    .mobile-toggle { display: flex; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; margin-left: auto; }
+    .mobile-toggle span { display: block; width: 24px; height: 2px; background: #fafaf8; transition: .3s; }
+    .nav-links { display: none; position: fixed; top: 72px; left: 0; right: 0; height: calc(100vh - 72px); height: calc(100dvh - 72px); background: #0f0f1a; padding: 16px 24px 40px; gap: 14px; border-bottom: 1px solid rgba(201,169,110,.15); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+    .nav-links.open { display: flex; flex-direction: column; }
+    .nav-cta { display: none; }
+    #home .hero-bg {
+      background:
+        linear-gradient(180deg, rgba(14,13,11,0.30) 0%, rgba(14,13,11,0.42) 50%, rgba(14,13,11,0.60) 100%),
+        url('/BelgraviaAce/images/hero.jpg') center bottom / cover no-repeat,
+        var(--dark);
+    }
+    section { padding: 80px 24px; }
+    .overview-grid, .amenities-grid, .contact-wrap { grid-template-columns: 1fr; gap: 48px; }
+    .features-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 24px; flex-wrap: wrap; }
+    footer { flex-direction: column; text-align: center; gap: 16px; }
+    .footer-links a { margin: 0 12px; }
+    .form-row { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .siteplan-grid { grid-template-columns: 1fr; }
+  }
+
+/* Floating WhatsApp button */
+.float-wa {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  width: 56px; height: 56px;
+  background: #25D366; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  transition: all 0.3s; font-size: 1.5rem;
+}
+.float-wa:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
+</style>
+
+  <meta name="keywords" content="Belgravia Ace, Belgravia Drive landed, freehold strata landed Singapore, Belgravia Ace D28, Seletar landed, Yio Chu Kang landed, Fairview Developments, semi-detached freehold, new launch landed, Singapore strata landed">
+  <link rel="canonical" href="https://jetleechannel.sg/BelgraviaAce/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Belgravia Ace | 107 Freehold Strata Landed Homes D28 | Direct Developer Price | Jet Lee">
+  <meta property="og:description" content="104 freehold strata semi-detached + 3 terrace homes at Belgravia Drive, D28. 3-storey homes with roof terrace, basement carpark, pool & communal facilities. From $4.53M. TOP Jan 2028.">
+  <meta property="og:url" content="https://jetleechannel.sg/BelgraviaAce/">
+  <meta property="og:image" content="https://jetleechannel.sg/BelgraviaAce/images/hero.jpg">
+  <meta property="og:site_name" content="Belgravia Ace">
+  <meta property="og:locale" content="en_SG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Belgravia Ace | 107 Freehold Strata Landed Homes D28">
+  <meta name="twitter:description" content="104 freehold strata semi-detached + 3 terrace homes at Belgravia Drive, D28. From $4.53M. TOP Jan 2028.">
+  <meta name="twitter:image" content="https://jetleechannel.sg/BelgraviaAce/images/hero.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Belgravia Ace",
+    "description": "107 freehold strata landed homes (104 semi-detached + 3 terrace) at Belgravia Drive, District 28. 3-storey envelope control homes with roof terrace, basement carpark, swimming pool and communal facilities. By Fairview Developments.",
+    "brand": { "@type": "Brand", "name": "Fairview Developments Pte Ltd" },
+    "offers": { "@type": "AggregateOffer", "offerCount": "107", "availability": "https://schema.org/InStock", "priceCurrency": "SGD", "lowPrice": "4531000" },
+    "address": { "@type": "PostalAddress", "streetAddress": "Belgravia Drive", "addressLocality": "Singapore", "postalCode": "804238", "addressCountry": "SG" }
+  }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LFG5HCYKP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6LFG5HCYKP');
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-dh">Belgravia Ace</div>
+    <div class="logo-sub">Belgravia Drive · District 28</div>
+  </div>
+  <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#details">Overview</a></li>
+    <li><a href="#floorplans">Floorplans</a></li>
+    <li><a href="/BelgraviaAce/balance/" class="blink-yellow">🔴 Balance Units</a></li>
+    <li><a href="#siteplan">Site &amp; Location</a></li>
+    <li class="nav-item"><a href="#home">Info <span class="caret">▼</span></a>
+      <div class="dropdown">
+        <div class="dd-title">Explore</div>
+        <a href="#gallery"><span class="dd-ico">🖼️</span><span class="dd-lbl">Gallery<small>Renders &amp; aerial views</small></span></a>
+        <a href="#amenities"><span class="dd-ico">📍</span><span class="dd-lbl">Amenities<small>Malls · MRT · Schools · Parks</small></span></a>
+        <a href="#features"><span class="dd-ico">✨</span><span class="dd-lbl">Features<small>Freehold · Built-up · Facade</small></span></a>
+        <a href="#developer"><span class="dd-ico">🏗️</span><span class="dd-lbl">Developer<small>Fairview · Tong Eng Group</small></span></a>
+        <a href="#siteplan" class="dd-link">Site &amp; Location →</a>
+      </div>
+    </li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://jetleechannel.sg/BelgraviaAce/articles/" target="_blank" rel="noopener">Articles</a></li>
+    
+    <li><a href="https://jetleechannel.sg/new-launch/" rel="noopener">New Launch</a></li>
+  <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Register Interest</a>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Freehold Strata Landed · District 28</div>
+    <h1 class="hero-title"><em>Belgravia</em> Ace</h1>
+    <div class="relaunchoon">Relaunch Soon</div>
+    <p class="hero-subtitle">Last Few Freehold Strata-Landed in the Landed Enclave.</p>
+    <!-- 🔥 HOT: Indicative Starting Prices — blinking CTA (locked Aug 12) -->
+    <a href="/BelgraviaAce/balance/" class="blink-banner">🔥 Indicative Starting Prices — From S$5.30M — View Balance &amp; Updates →</a>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">107</span><span class="lbl">Homes</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="num">3</span><span class="lbl">Storeys</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="num">Freehold</span><span class="lbl">Tenure</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="num">D28</span><span class="lbl">District</span></div>
+    </div>
+    <div class="hero-actions">
+      <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20Belgravia%20Ace" target="_blank" rel="noopener" class="btn-primary">💬 WhatsApp Jet Lee</a>
+      <a href="#contact" class="btn-outline">Register Interest →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    Scroll
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    BELGRAVIA ACE · BELGRAVIA DRIVE · DISTRICT 28 · FREEHOLD STRATA LANDED · 104 SEMI-D + 3 TERRACES · FAIRVIEW DEVELOPMENTS &nbsp;·&nbsp;&nbsp;&nbsp;
+    BELGRAVIA ACE · BELGRAVIA DRIVE · DISTRICT 28 · FREEHOLD STRATA LANDED · 104 SEMI-D + 3 TERRACES · FAIRVIEW DEVELOPMENTS &nbsp;·&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section id="details">
+  <div class="overview-grid">
+    <div class="overview-text">
+      <span class="section-label">Project Overview</span>
+      <h2 class="section-title">Freehold Land in a <em>Landed Enclave</em></h2>
+      <div class="section-divider"></div>
+      <p><strong>Belgravia Ace</strong> is a freehold strata landed development along <strong>Belgravia Drive</strong> in Singapore's <strong>District 28 (Seletar / Yio Chu Kang)</strong>, developed by <strong>Fairview Developments Pte Ltd</strong>. The project comprises <strong>104 units of 3-storey envelope control strata semi-detached houses</strong> and <strong>3 units of 3-storey envelope control strata terrace houses</strong> — 107 residential homes in total (Phase 3).</p>
+      <p>Each home features a <strong>roof terrace and basement car park</strong>, with provision for a <strong>swimming pool and communal facilities</strong> — a rare blend of landed living and resort-style amenities.</p>
+      <p>Located within an established landed enclave off Belgravia Drive, the project offers the <strong>privacy, space and prestige of landed living</strong> — at a time when new freehold strata-landed projects are becoming increasingly scarce under current guidelines.</p>
+    </div>
+    <div>
+      <div class="fact-grid">
+        <div class="fact-item"><div class="fact-label">Project Name</div><div class="fact-value">Belgravia Ace</div></div>
+        <div class="fact-item"><div class="fact-label">Developer</div><div class="fact-value">Fairview Developments Pte Ltd</div></div>
+        <div class="fact-item"><div class="fact-label">Tenure</div><div class="fact-value">Freehold</div></div>
+        <div class="fact-item"><div class="fact-label">District</div><div class="fact-value">D28 (Seletar / Yio Chu Kang)</div></div>
+        <div class="fact-item"><div class="fact-label">Address</div><div class="fact-value">Belgravia Drive, S(804238)</div></div>
+        <div class="fact-item"><div class="fact-label">Site Area</div><div class="fact-value">26,600 sqm</div></div>
+        <div class="fact-item"><div class="fact-label">Total Units</div><div class="fact-value">107 (104 Semi-D + 3 Terrace)</div></div>
+        <div class="fact-item"><div class="fact-label">Project Type</div><div class="fact-value">Residential Landed (Strata)</div></div>
+        <div class="fact-item"><div class="fact-label">Price</div><div class="fact-value">From $4,531,000</div></div>
+        <div class="fact-item"><div class="fact-label">Expected T.O.P.</div><div class="fact-value">Jan 2028</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label" style="color:var(--gold)">Gallery</span>
+    <h2 class="section-title" style="color:var(--white)">Belgravia <em style="color:var(--gold)">Ace</em></h2>
+    <div class="section-divider"></div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="/BelgraviaAce/images/aerial.jpg" alt="Belgravia Ace aerial view" loading="lazy"></div>
+      <div class="gallery-item"><img src="/BelgraviaAce/images/entrance.jpg" alt="Belgravia Ace entrance" loading="lazy"></div>
+      <div class="gallery-item"><img src="/BelgraviaAce/images/pool.jpg" alt="Belgravia Ace pool" loading="lazy"></div>
+      <div class="gallery-item"><img src="/BelgraviaAce/images/lap-pool.jpg" alt="Belgravia Ace lap pool" loading="lazy"></div>
+      <div class="gallery-item"><img src="/BelgraviaAce/images/courtyard.jpg" alt="Belgravia Ace courtyard" loading="lazy"></div>
+      <div class="gallery-item"><img src="/BelgraviaAce/images/dropoff.jpg" alt="Belgravia Ace drop-off" loading="lazy"></div>
+      <div class="gallery-item"><img src="/BelgraviaAce/images/bbq.jpg" alt="Belgravia Ace BBQ pavilion" loading="lazy"></div>
+      <div class="gallery-item"><img src="/BelgraviaAce/images/whispering-pool.jpg" alt="Belgravia Ace whispering pool" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOOR PLANS -->
+<section class="floorplan-section" id="floorplans">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Floor Plans</span>
+    <h2 class="section-title">Explore the <em>Layouts</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--text-light);font-size:14px;margin-bottom:24px;max-width:600px">
+      Belgravia Ace offers 3-storey envelope control strata homes with basement, furniture loft and roof terrace. Floor plans are indicative — areas subject to final surveyor verification and authority approval.
+    </p>
+    <div class="floorplan-grid">
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/fp-bc-brochure.jpg" target="_blank"><img src="/BelgraviaAce/images/fp-bc-brochure.jpg" alt="Belgravia Ace Type B and Type C floor plans with measurements" loading="lazy"></a>
+        <div class="floorplan-label">Type B &amp; C · With Measurements</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/fp-a.jpg" target="_blank"><img src="/BelgraviaAce/images/fp-a.jpg" alt="Belgravia Ace Type A floor plan" loading="lazy"></a>
+        <div class="floorplan-label">Type A</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/fp-b.jpg" target="_blank"><img src="/BelgraviaAce/images/fp-b.jpg" alt="Belgravia Ace Type B floor plan" loading="lazy"></a>
+        <div class="floorplan-label">Type B</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/fp-c.jpg" target="_blank"><img src="/BelgraviaAce/images/fp-c.jpg" alt="Belgravia Ace Type C floor plan" loading="lazy"></a>
+        <div class="floorplan-label">Type C</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/fp-d1.jpg" target="_blank"><img src="/BelgraviaAce/images/fp-d1.jpg" alt="Belgravia Ace Type D1 floor plan" loading="lazy"></a>
+        <div class="floorplan-label">Type D1</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/fp-d2.jpg" target="_blank"><img src="/BelgraviaAce/images/fp-d2.jpg" alt="Belgravia Ace Type D2 floor plan" loading="lazy"></a>
+        <div class="floorplan-label">Type D2</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/site-plan.jpg" target="_blank"><img src="/BelgraviaAce/images/site-plan.jpg" alt="Belgravia Ace site plan" loading="lazy"></a>
+        <div class="floorplan-label">Site Plan</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/BelgraviaAce/images/elevation-chart.jpg" target="_blank"><img src="/BelgraviaAce/images/elevation-chart.jpg" alt="Belgravia Ace elevation chart" loading="lazy"></a>
+        <div class="floorplan-label">Elevation Chart</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BALANCE UNITS -->
+<section id="pricing">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label" style="color:var(--gold)">Balance Units</span>
+    <h2 class="section-title">Current <em style="color:var(--gold)">Availability</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:rgba(255,255,255,0.5);font-size:14px;margin-bottom:24px;max-width:600px">
+      Belgravia Ace offers 3-storey strata semi-detached homes from approximately 3,929 sqft to 4,370 sqft. Areas are subject to final verification by surveyor and authorities approval.
+    </p>
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);margin-bottom:14px">Current Balance · as of 4 Sept 2026</h3>
+    <div class="unit-table" style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;min-width:640px">
+        <thead>
+          <tr>
+            <th>Unit Type</th>
+            <th>No. of Units</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Semi-Detached</td>
+            <td>23</td>
+            <td>Available</td>
+          </tr>
+          <tr class="total">
+            <td>Current Available</td>
+            <td>23 Units</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:48px;padding:32px;background:rgba(255,255,255,0.04);border:1px solid rgba(184,151,90,0.2);border-radius:4px;text-align:center">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold);margin-bottom:12px">View the Availability Chart</h3>
+      <p style="color:rgba(255,255,255,0.5);font-size:14px;margin-bottom:20px">See the colour-coded site plan — sold vs available lots — plus the live balance table.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="/BelgraviaAce/balance/" class="btn-primary">📊 Balance Units Page</a>
+        <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20Belgravia%20Ace" target="_blank" rel="noopener" class="btn-outline">📱 Full Pricelist on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SITE PLAN & LOCATION -->
+<section id="siteplan" style="background:var(--cream)">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Site &amp; Location</span>
+    <h2 class="section-title">Belgravia Drive <em>Landed Enclave</em></h2>
+    <div class="section-divider"></div>
+    <div class="siteplan-grid">
+      <div class="siteplan-item">
+        <img src="/BelgraviaAce/images/site-plan.jpg" alt="Belgravia Ace site plan" loading="lazy">
+      </div>
+      <div class="siteplan-item">
+        <img src="/BelgraviaAce/images/elevation-chart.jpg" alt="Belgravia Ace elevation chart" loading="lazy">
+      </div>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://maps.google.com/maps?q=Belgravia+Drive,+Singapore+804238&output=embed" title="Belgravia Ace location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section id="amenities">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Nearby</span>
+    <h2 class="section-title">Everything <em>Within Reach</em></h2>
+    <div class="section-divider"></div>
+    <div class="amenities-grid">
+      <div class="amenities-col">
+        <h3>Shopping, Dining &amp; Entertainment</h3>
+        <div class="amenity-item"><div class="icon">🛍️</div><div><div class="lbl">Malls</div><div class="val">Greenwich V · The Seletar Mall · AMK Hub · Hougang 1 · Junction 8 · NEX</div></div></div>
+        <div class="amenity-item"><div class="icon">🍜</div><div><div class="lbl">Dining</div><div class="val">Jalan Kayu Eateries · Seletar Aerospace · MyVillage @ Maju Avenue</div></div></div>
+        <div class="amenity-item"><div class="icon">🚇</div><div><div class="lbl">MRT</div><div class="val">Ang Mo Kio MRT Station · Yio Chu Kang MRT Station</div></div></div>
+        <div class="amenity-item"><div class="icon">🚌</div><div><div class="lbl">Bus</div><div class="val">Bus Stop 72021 along Ang Mo Kio Ave 5</div></div></div>
+        <div class="amenity-item"><div class="icon">🛣️</div><div><div class="lbl">Expressways</div><div class="val">CTE · SLE · TPE · Upcoming North-South Expressway (NSE)</div></div></div>
+        <h3 style="margin-top:36px">Park &amp; Recreation</h3>
+        <div class="amenity-item"><div class="icon">🌳</div><div><div class="lbl">Parks &amp; Clubs</div><div class="val">Seletar Country Club · Hampstead Wetlands Park · Serangoon Gardens CC · Lower Seletar Reservoir · Sengkang Riverside Park · Bishan Park · Punggol Point · Coney Island</div></div></div>
+      </div>
+      <div class="amenities-col">
+        <h3>Education Hub</h3>
+        <div class="amenity-item"><div class="icon">🏫</div><div><div class="lbl">Primary Schools</div><div class="val">Rosyth Primary School · Hougang Primary School</div></div></div>
+        <div class="amenity-item"><div class="icon">🏫</div><div><div class="lbl">Secondary &amp; JC</div><div class="val">Anderson Secondary · Nan Chiau Secondary · Anderson Junior College · Nanyang Junior College</div></div></div>
+        <div class="amenity-item"><div class="icon">🎓</div><div><div class="lbl">Polytechnic</div><div class="val">Nanyang Polytechnic · ITE College Central</div></div></div>
+        <div class="amenity-item"><div class="icon">🌍</div><div><div class="lbl">International</div><div class="val">International French School (IFS)</div></div></div>
+        <h3 style="margin-top:36px">Facilities</h3>
+        <div class="amenity-item"><div class="icon">🏊</div><div><div class="lbl">Pools</div><div class="val">Family Pool · 50m Lap Pool · Cloud Waterplay · Jacuzzi · Hydrotherapy Jets</div></div></div>
+        <div class="amenity-item"><div class="icon">🏋️</div><div><div class="lbl">Wellness</div><div class="val">Clubhouse / Gym · Fitness Corner · Reflexology Path</div></div></div>
+        <div class="amenity-item"><div class="icon">🎉</div><div><div class="lbl">Outdoor</div><div class="val">BBQ Pavilion · Fun Playground · Party Lawn · Grand Pavilion · Reading Pods · Putting Green</div></div></div>
+        <div class="amenity-item"><div class="icon">🌿</div><div><div class="lbl">Gardens</div><div class="val">8 themed zones: Fire, Earth, Metal, Air, Wood, Water, Stone &amp; Light Gardens</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Why Belgravia Ace</span>
+    <h2 class="section-title">Key <em>Selling Points</em></h2>
+    <div class="section-divider"></div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="f-icon">🏡</div>
+        <h4>Freehold Land</h4>
+        <p>Rare freehold tenure in a landed enclave — a lasting legacy asset in an increasingly scarce category under current guidelines.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🏘️</div>
+        <h4>Landed Enclave</h4>
+        <p>Located within an established landed neighbourhood off Belgravia Drive, offering privacy, space and a quiet residential setting.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🏗️</div>
+        <h4>Huge Built-Up</h4>
+        <p>3-storey envelope control homes with roof terrace and basement car park — generous living space for multi-generational families.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">✨</div>
+        <h4>Uniform Facade</h4>
+        <p>Uniquely uniform architectural facades give the enclave a cohesive, premium streetscape.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🔧</div>
+        <h4>Branded Appliances</h4>
+        <p>Quality fittings and branded appliances throughout — move-in ready with peace of mind.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🏊</div>
+        <h4>Resort Amenities</h4>
+        <p>Swimming pool, 50m lap pool, clubhouse, gym and 8 themed garden zones — resort living at landed scale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPER -->
+<section id="developer" style="background:var(--cream)">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Developer</span>
+    <h2 class="section-title">Fairview Developments · <em>Tong Eng Group</em></h2>
+    <div class="section-divider"></div>
+    <div class="overview-grid">
+      <div class="overview-text">
+        <p><strong>Fairview Developments Pte Ltd</strong>, the developer behind Belgravia Ace, is a subsidiary of <strong>Tong Eng Group</strong> — a family-owned property developer with a history spanning <strong>nearly 60 years</strong> and close to <strong>200 acres of land developed</strong> across Singapore.</p>
+        <p><strong>Heritage.</strong> The Tong Eng story began in the <strong>1940s</strong>, when brothers Teo Thye Chor and Teo Thye Hong arrived in Singapore from Fujian, China, and founded Tong Eng Brothers after World War II. They went on to develop some of Singapore's early landed estates, including <strong>Changi Grove</strong>, <strong>West Sea Garden</strong>, <strong>Tong Kong Gardens</strong> and <strong>Tong Eng Heights (now Changi Heights)</strong>, and later built <strong>Tong Eng Building</strong>, a 26-storey landmark in the CBD. Today the group is led by its <strong>third generation</strong>, Group Managing Director Teo Tong Lim.</p>
+        <p><strong>Award-winning Belgravia series.</strong> Belgravia Ace is the <strong>final chapter of the celebrated Belgravia series</strong> on Belgravia Drive. Its predecessor <strong>Belgravia Villas</strong> won PropertyGuru's <strong>Best Landed Development Award in 2015 and 2017</strong>, and the <strong>FIABCI Singapore Property Award for Strata Landed in 2019</strong>. <strong>Belgravia Green</strong> took the PropertyGuru Best Landed Development Award in <strong>2018</strong>. Belgravia Ace itself won PropertyGuru's <strong>Best Strata Landed Development Award</strong>, and Tong Eng was named <strong>Best Landed Developer in 2021</strong>.</p>
+        <p><strong>A track record you can trust.</strong> Other notable Tong Eng projects include <strong>Greenbank Park, Green Meadows, Trendale Tower, Stratton Park, Belgravia Park, Serenade Garden, Kew Cottages, Treasure Place, Eminent Plaza and Poshgrove East</strong> — spanning landed housing, condominiums, offices and retail.</p>
+      </div>
+      <div>
+        <div class="fact-grid">
+          <div class="fact-item"><div class="fact-label">Developer</div><div class="fact-value">Fairview Developments Pte Ltd</div></div>
+          <div class="fact-item"><div class="fact-label">Group</div><div class="fact-value">Tong Eng Group (3rd Gen Family)</div></div>
+          <div class="fact-item"><div class="fact-label">History</div><div class="fact-value">Founded 1940s · ~60 Years</div></div>
+          <div class="fact-item"><div class="fact-label">Land Developed</div><div class="fact-value">~200 Acres across Singapore</div></div>
+          <div class="fact-item"><div class="fact-label">Licence</div><div class="fact-value">Developer Licence C1421</div></div>
+          <div class="fact-item"><div class="fact-label">Awards</div><div class="fact-value">Best Landed Developer 2021</div></div>
+          <div class="fact-item"><div class="fact-label">Architect</div><div class="fact-value">JGP Architecture (S) Pte Ltd</div></div>
+          <div class="fact-item"><div class="fact-label">Track Record</div><div class="fact-value">Belgravia Park · Kew Cottages · More</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label" style="color:var(--gold)">FAQ</span>
+    <h2 class="section-title">Frequently <em style="color:var(--gold)">Asked Questions</em></h2>
+    <div class="section-divider"></div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is Belgravia Ace?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Belgravia Ace is a freehold strata landed development at Belgravia Drive, District 28, comprising 104 semi-detached and 3 terrace homes (107 total) by Fairview Developments.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is the tenure?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Freehold.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">When is TOP?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Expected T.O.P. in January 2028.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What are the home sizes?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Semi-detached homes range from approximately 3,929 sqft to 4,370 sqft, with 3 storeys, roof terrace and basement car park.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Who is the developer?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Fairview Developments Pte Ltd — a reputable developer with a track record of quality landed projects.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How far is it from MRT?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Ang Mo Kio MRT and Yio Chu Kang MRT stations are within reach, with bus stop 72021 along Ang Mo Kio Avenue 5 nearby. CTE, SLE and TPE expressways provide excellent connectivity.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label" style="color:var(--gold)">Contact</span>
+    <h2 class="section-title" style="color:var(--white)">Be First <em style="color:var(--gold)">In Line</em></h2>
+    <div class="section-divider"></div>
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <p>
+          Register for the VVIP preview and get direct developer pricing, exclusive updates,
+          and the latest e-brochure with floor plans and complete pricelist for Belgravia Ace.
+          No obligation, no commission payable.
+        </p>
+        <div class="contact-detail">
+          <div class="icon">📞</div>
+          <div><div class="lbl">Call / WhatsApp</div><div class="val">+65 8764 9315</div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">🏢</div>
+          <div><div class="lbl">Agent</div><div class="val">Jet Lee · PropNex Realty · CEA R007613B</div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">📍</div>
+          <div><div class="lbl">Location</div><div class="val">Belgravia Drive, Singapore 804238</div></div>
+        </div>
+        <div style="margin-top:32px">
+          <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20Belgravia%20Ace" target="_blank" rel="noopener" class="btn-primary">💬 WhatsApp Jet Lee Now</a>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" onsubmit="handleContactSubmit(event)" id="contactForm">
+          <input type="hidden" name="access_key" value="f47a3688-6848-4acc-a968-5174fd191919">
+          <input type="hidden" name="subject" value="Belgravia Ace Enquiry via jetleechannel.sg">
+          <input type="hidden" name="from_name" value="Belgravia Ace Website">
+          <input type="hidden" name="redirect" value="false">
+          <input type="checkbox" name="botcheck" style="display:none">
+          <h3>Register for VVIP Preview</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" name="first_name" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" name="last_name" placeholder="Tan" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>Mobile *</label>
+              <input type="tel" name="phone" placeholder="+65 xxxx xxxx" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Unit Type of Interest</label>
+            <select name="unit_type">
+              <option value="">Select unit type</option>
+              <option>Type A · Semi-Detached</option>
+              <option>Type B · Semi-Detached</option>
+              <option>Type C · Semi-Detached</option>
+              <option>Type D1 · Semi-Detached</option>
+              <option>Type D2 · Semi-Detached</option>
+              <option>Terrace House</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message (Optional)</label>
+            <textarea name="message" placeholder="Any questions or specific requirements?"></textarea>
+          </div>
+          <p style="font-size:11px;line-height:1.7;opacity:0.45;margin-bottom:16px;color:rgba(255,255,255,0.5)">
+            By submitting this form, you consent to being contacted by our sales team regarding Belgravia Ace.
+            All information is kept strictly confidential and used solely for the purpose of this enquiry.
+            No commission payable by buyer.
+          </p>
+          <button type="submit" class="form-submit">Register for VVIP Preview</button>
+        </form>
+        <div id="form-success" style="display:none;margin-top:2rem;text-align:center;color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;">
+          Thank you — your details have been sent via WhatsApp. We'll be in touch shortly!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I%20am%20interested%20in%20Belgravia%20Ace" target="_blank" class="float-wa" title="WhatsApp Jet Lee">💬</a>
+<footer>
+  <div class="footer-note">
+    CEA Reg R007613B · Estate Agent L3008022J · PropNex Realty<br>
+    <a href="https://jetleechannel.sg" style="color:var(--gold);text-decoration:none">jetleechannel.sg</a>
+  </div>
+  <div class="footer-links">
+    <a href="https://jetleechannel.sg">Home</a>
+    <a href="https://www.tiktok.com/@jetleechannel" target="_blank" rel="noopener">@jetleechannel</a>
+    <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20Belgravia%20Ace" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+<!-- ===== Thomson Reserve Promo Banner (injected by scripts/inject-thomson-banner.mjs) ===== -->
+<div class="tr-banner" style="background:linear-gradient(135deg,#00C853 0%,#00E676 100%);padding:0;margin:0;width:100%;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:28px 24px;">
+    <div style="flex:1;min-width:260px;">
+      <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#003311;font-weight:700;margin-bottom:6px;">&#127881; Coming Soon &mdash; October 2026</div>
+      <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(24px,3.5vw,38px);font-weight:600;color:#003311;line-height:1.1;letter-spacing:0.5px;">Thomson Reserve</div>
+      <div style="font-size:13px;color:rgba(0,51,17,0.75);margin-top:6px;">UOL / CapitaLand / SingLand &middot; Upper Thomson D20 &middot; 1,268 Units &middot; Direct Developer Price</div>
+    </div>
+    <div style="flex-shrink:0;">
+      <a href="https://thomson-reserve-direct-developer.com/" target="_blank" rel="noopener" style="display:inline-block;background:#003311;color:#00E676;border:1px solid rgba(0,51,17,0.4);padding:12px 30px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;text-decoration:none;transition:all .25s;border-radius:2px;">Learn More &#8594;</a>
+    </div>
+  </div>
+</div>
+<!-- ===== /Thomson Reserve Promo Banner ===== -->
+</footer>
+
+<script>
+function toggleFaq(el) {
+  el.classList.toggle('active');
+  var answer = el.nextElementSibling;
+  answer.classList.toggle('open');
+}
+function toggleMobileMenu(){
+  var menu = document.getElementById("navLinks");
+  menu.classList.toggle("open");
+  // reset dropdown state so the menu always opens clean next time
+  document.querySelectorAll(".nav-item").forEach(function(li){
+    li.classList.remove("dropdown-open");
+  });
+}
+// Mobile: "Info" dropdown opens on tap (collapsed by default so FAQ/Contact stay visible)
+document.querySelectorAll(".nav-item > a").forEach(function(a){
+  a.addEventListener("click", function(e){
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      e.preventDefault();
+      e.stopPropagation();
+      var li = a.parentElement;
+      li.classList.toggle("dropdown-open");
+      // Keep the menu open so the dropdown items are visible
+      document.getElementById("navLinks").classList.add("open");
+    }
+  });
+});
+// Close the menu when tapping a real destination link (dropdown items, FAQ, Contact, etc.)
+document.querySelectorAll(".nav-links a").forEach(function(a){
+  a.addEventListener("click",function(){
+    if (a.parentElement.classList.contains("nav-item")) return; // the Info toggle itself
+    document.getElementById("navLinks").classList.remove("open");
+  });
+});
+</script>
+
+<script>
+function handleContactSubmit(e) {
+  e.preventDefault();
+  var form = e.target;
+  var first = form.querySelector('input[name="first_name"]').value.trim();
+  var last  = form.querySelector('input[name="last_name"]').value.trim();
+  var email = form.querySelector('input[name="email"]').value.trim();
+  var phone = form.querySelector('input[name="phone"]').value.trim();
+  var unit  = form.querySelector('select[name="unit_type"]').value || 'Not specified';
+  var msg   = form.querySelector('textarea[name="message"]').value.trim();
+  var name  = (first + ' ' + last).trim();
+
+  var formData = new FormData(form);
+  formData.append('name', name);
+  formData.append('email', email);
+  formData.append('phone', phone);
+  formData.append('unit_type', unit);
+  formData.append('message', msg || 'No message');
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    body: formData
+  }).then(function(res){ return res.json(); }).then(function(data){
+    console.log('Web3Forms:', data);
+  }).catch(function(err){ console.log('Web3Forms error:', err); });
+
+
+  form.style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
