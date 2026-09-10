@@ -1,0 +1,926 @@
+{
+  "bagnallhous": {
+    "rows": [
+      {
+        "type": "1BR + Flexi",
+        "units": 2,
+        "minPrice": "$1,367,000",
+        "avgPsf": "$2,780"
+      },
+      {
+        "type": "4BR",
+        "units": 4,
+        "minPrice": "$3,319,000",
+        "avgPsf": "$2,700"
+      },
+      {
+        "type": "4BR + Flexi",
+        "units": 1,
+        "minPrice": "$3,209,000",
+        "avgPsf": "$2,569"
+      },
+      {
+        "type": "5BR",
+        "units": 2,
+        "minPrice": "$3,829,000",
+        "avgPsf": "$2,516"
+      }
+    ],
+    "total": 9,
+    "checkedAt": "2026-09-04T09:00:03.505Z"
+  },
+  "TheOrie": {
+    "rows": [
+      {
+        "type": "1 Bedroom + Study",
+        "units": 28,
+        "minPrice": "$1,467,000",
+        "avgPsf": "$2,947"
+      },
+      {
+        "type": "3 Bedroom Dual Key",
+        "units": 7,
+        "minPrice": "$3,024,000",
+        "avgPsf": "$2,710"
+      }
+    ],
+    "total": 35,
+    "checkedAt": "2026-09-04T09:00:03.765Z"
+  },
+  "upperhouse": {
+    "rows": [
+      {
+        "type": "1 Bedroom + Study",
+        "units": 26,
+        "minPrice": "$1,571,000",
+        "avgPsf": "$3,466"
+      },
+      {
+        "type": "2 Bedroom Premium",
+        "units": 18,
+        "minPrice": "$2,500,000",
+        "avgPsf": "$3,617"
+      },
+      {
+        "type": "4 Bedroom Suite (With Private Lift & Carpark Lot)",
+        "units": 10,
+        "minPrice": "$7,131,000",
+        "avgPsf": "$3,644"
+      }
+    ],
+    "total": 54,
+    "checkedAt": "2026-09-04T09:00:03.839Z"
+  },
+  "promenadepeak": {
+    "rows": [
+      {
+        "type": "1 BEDROOM + STUDY",
+        "units": 37,
+        "minPrice": "$1,462,300",
+        "avgPsf": "$2,965"
+      },
+      {
+        "type": "2 BEDROOM",
+        "units": 18,
+        "minPrice": "$2,058,100",
+        "avgPsf": "$3,096"
+      },
+      {
+        "type": "2 BEDROOM + STUDY",
+        "units": 62,
+        "minPrice": "$2,175,300",
+        "avgPsf": "$3,042"
+      },
+      {
+        "type": "3 BEDROOM",
+        "units": 3,
+        "minPrice": "$3,212,700",
+        "avgPsf": "$3,138"
+      },
+      {
+        "type": "3 BEDROOM PREMIUM (with Private Lift)",
+        "units": 5,
+        "minPrice": "$4,019,900",
+        "avgPsf": "$3,506"
+      },
+      {
+        "type": "4 BEDROOM PREMIUM (with Private Lift)",
+        "units": 18,
+        "minPrice": "$4,634,300",
+        "avgPsf": "$3,382"
+      },
+      {
+        "type": "5 BEDROOM PREMIUM (with Private Lift)",
+        "units": 15,
+        "minPrice": "$6,436,800",
+        "avgPsf": "$3,531"
+      }
+    ],
+    "total": 158,
+    "checkedAt": "2026-09-04T09:00:03.953Z"
+  },
+  "zyongrand": {
+    "rows": [
+      {
+        "type": "1 Bedroom + Study",
+        "units": 27,
+        "minPrice": "$1,453,000",
+        "avgPsf": "$3,144"
+      },
+      {
+        "type": "2 Bedroom Premium + Study",
+        "units": 9,
+        "minPrice": "$2,383,000",
+        "avgPsf": "$3,330"
+      },
+      {
+        "type": "3 Bedroom",
+        "units": 3,
+        "minPrice": "$2,792,000",
+        "avgPsf": "$3,436"
+      },
+      {
+        "type": "4 Bedroom Supreme + Study (With Private Lift)",
+        "units": 11,
+        "minPrice": "$5,395,000",
+        "avgPsf": "$3,440"
+      },
+      {
+        "type": "5 Bedroom Supreme (With Private Lift)",
+        "units": 18,
+        "minPrice": "$6,018,000",
+        "avgPsf": "$3,404"
+      },
+      {
+        "type": "Penthouse (5 Bedroom With Private Lift)",
+        "units": 1,
+        "minPrice": "TBA",
+        "avgPsf": "$0"
+      }
+    ],
+    "total": 69,
+    "checkedAt": "2026-09-04T09:00:04.078Z"
+  },
+  "rivergreen": {
+    "rows": [
+      {
+        "type": "1 Bedroom",
+        "units": 14,
+        "minPrice": "$1,395,000",
+        "avgPsf": "$3,420"
+      },
+      {
+        "type": "1 Bedroom + Study",
+        "units": 2,
+        "minPrice": "$1,542,000",
+        "avgPsf": "$3,425"
+      },
+      {
+        "type": "2 Bedroom (Premium)",
+        "units": 8,
+        "minPrice": "$2,163,000",
+        "avgPsf": "$3,622"
+      },
+      {
+        "type": "2 Bedroom + Study",
+        "units": 1,
+        "minPrice": "$2,337,000",
+        "avgPsf": "$3,557"
+      },
+      {
+        "type": "3 Bedroom",
+        "units": 2,
+        "minPrice": "$3,123,000",
+        "avgPsf": "$3,602"
+      }
+    ],
+    "total": 27,
+    "checkedAt": "2026-09-04T09:00:04.180Z"
+  },
+  "newportresidences": {
+    "rows": [
+      {
+        "type": "1 Bedroom",
+        "units": 10,
+        "minPrice": "$1,447,000",
+        "avgPsf": "$3,312"
+      },
+      {
+        "type": "1 Bedroom + Study",
+        "units": 9,
+        "minPrice": "$1,774,000",
+        "avgPsf": "$3,102"
+      },
+      {
+        "type": "3 Bedroom",
+        "units": 2,
+        "minPrice": "$3,548,000",
+        "avgPsf": "$3,637"
+      },
+      {
+        "type": "3 Bedroom Premium",
+        "units": 4,
+        "minPrice": "$3,737,000",
+        "avgPsf": "$3,122"
+      },
+      {
+        "type": "4 Bedroom Premium",
+        "units": 17,
+        "minPrice": "$8,280,000",
+        "avgPsf": "$4,412"
+      },
+      {
+        "type": "Super Penthouse",
+        "units": 1,
+        "minPrice": "TBA",
+        "avgPsf": "$0"
+      }
+    ],
+    "total": 43,
+    "checkedAt": "2026-09-04T09:00:04.235Z"
+  },
+  "sophiameadow": {
+    "rows": [
+      {
+        "type": "1 Bedroom",
+        "units": 10,
+        "minPrice": "$1,273,000",
+        "avgPsf": "$2,680"
+      },
+      {
+        "type": "1 Bedroom + Study",
+        "units": 4,
+        "minPrice": "$1,399,000",
+        "avgPsf": "$2,530"
+      },
+      {
+        "type": "2 Bedroom",
+        "units": 17,
+        "minPrice": "$1,746,000",
+        "avgPsf": "$2,873"
+      },
+      {
+        "type": "3 Bedroom",
+        "units": 10,
+        "minPrice": "$2,450,000",
+        "avgPsf": "$2,914"
+      }
+    ],
+    "total": 41,
+    "checkedAt": "2026-09-04T09:00:04.264Z"
+  },
+  "elta": {
+    "rows": [
+      {
+        "type": "1 BEDROOM + STUDY",
+        "units": 4,
+        "minPrice": "$1,404,000",
+        "avgPsf": "$2,798"
+      },
+      {
+        "type": "3 BEDROOM",
+        "units": 2,
+        "minPrice": "$2,691,000",
+        "avgPsf": "$2,918"
+      },
+      {
+        "type": "4 BEDROOM",
+        "units": 7,
+        "minPrice": "$3,330,000",
+        "avgPsf": "$2,848"
+      },
+      {
+        "type": "4 BEDROOM + STUDY",
+        "units": 21,
+        "minPrice": "$3,703,000",
+        "avgPsf": "$2,583"
+      },
+      {
+        "type": "4 BEDROOM DUAL KEY",
+        "units": 20,
+        "minPrice": "$3,396,000",
+        "avgPsf": "$2,687"
+      },
+      {
+        "type": "4 BEDROOM PREMIUM",
+        "units": 6,
+        "minPrice": "$3,506,000",
+        "avgPsf": "$2,694"
+      },
+      {
+        "type": "5 BEDROOM",
+        "units": 24,
+        "minPrice": "$3,965,000",
+        "avgPsf": "$2,414"
+      }
+    ],
+    "total": 84,
+    "checkedAt": "2026-09-04T09:00:04.353Z"
+  },
+  "dunearnhouse": {
+    "rows": [
+      {
+        "type": "2 Bedroom",
+        "units": 21,
+        "minPrice": "$1,505,000",
+        "avgPsf": "$2,990"
+      },
+      {
+        "type": "2 Bedroom + Study",
+        "units": 8,
+        "minPrice": "$1,924,000",
+        "avgPsf": "$2,996"
+      },
+      {
+        "type": "2 Bedroom Premium",
+        "units": 43,
+        "minPrice": "$1,803,000",
+        "avgPsf": "$3,083"
+      },
+      {
+        "type": "3 Bedroom + Study",
+        "units": 1,
+        "minPrice": "$3,003,000",
+        "avgPsf": "$3,099"
+      },
+      {
+        "type": "3 Bedroom Premium",
+        "units": 12,
+        "minPrice": "$3,089,000",
+        "avgPsf": "$3,236"
+      },
+      {
+        "type": "4 Bedroom",
+        "units": 4,
+        "minPrice": "$3,588,000",
+        "avgPsf": "$3,070"
+      },
+      {
+        "type": "4 Bedroom Premium",
+        "units": 31,
+        "minPrice": "$4,037,000",
+        "avgPsf": "$3,236"
+      },
+      {
+        "type": "4 Bedroom Premium + Study",
+        "units": 30,
+        "minPrice": "$4,283,000",
+        "avgPsf": "$3,242"
+      }
+    ],
+    "total": 150,
+    "checkedAt": "2026-09-04T09:00:04.440Z"
+  },
+  "arcady": {
+    "rows": [
+      {
+        "type": "1 Bedroom + Study",
+        "units": 1,
+        "minPrice": "$1,419,000",
+        "avgPsf": "$2,693"
+      },
+      {
+        "type": "2 Bedroom",
+        "units": 2,
+        "minPrice": "$1,945,000",
+        "avgPsf": "$2,874"
+      },
+      {
+        "type": "2 Bedroom + Study",
+        "units": 25,
+        "minPrice": "$1,978,000",
+        "avgPsf": "$2,722"
+      },
+      {
+        "type": "3 Bedroom Premium",
+        "units": 19,
+        "minPrice": "$2,767,000",
+        "avgPsf": "$2,644"
+      },
+      {
+        "type": "3 Bedroom Premium + Study",
+        "units": 13,
+        "minPrice": "$3,254,000",
+        "avgPsf": "$2,644"
+      },
+      {
+        "type": "PentHouse",
+        "units": 2,
+        "minPrice": "$7,163,000",
+        "avgPsf": "$2,940"
+      }
+    ],
+    "total": 62,
+    "checkedAt": "2026-09-04T09:00:04.495Z"
+  },
+  "hudsonplace": {
+    "rows": [
+      {
+        "type": "2 BEDROOM PREMIUM",
+        "units": 17,
+        "minPrice": "$1,723,000",
+        "avgPsf": "$2,706"
+      },
+      {
+        "type": "2 BEDROOM PREMIUM + STUDY",
+        "units": 8,
+        "minPrice": "$1,847,000",
+        "avgPsf": "$2,706"
+      },
+      {
+        "type": "3 BEDROOM PREMIUM",
+        "units": 13,
+        "minPrice": "$2,466,000",
+        "avgPsf": "$2,524"
+      },
+      {
+        "type": "3 BEDROOM PREMIUM + STUDY",
+        "units": 4,
+        "minPrice": "$2,771,000",
+        "avgPsf": "$2,646"
+      },
+      {
+        "type": "4 BEDROOM SUITE + FLEXI",
+        "units": 37,
+        "minPrice": "$3,534,000",
+        "avgPsf": "$2,601"
+      },
+      {
+        "type": "5BR + Entertainment Room + Flexi",
+        "units": 1,
+        "minPrice": "$4,779,000",
+        "avgPsf": "$2,723"
+      },
+      {
+        "type": "5BR + Study",
+        "units": 1,
+        "minPrice": "$4,629,000",
+        "avgPsf": "$2,623"
+      },
+      {
+        "type": "6BR + Entertainment rm + pte lift",
+        "units": 2,
+        "minPrice": "$5,840,000",
+        "avgPsf": "$2,708"
+      }
+    ],
+    "total": 83,
+    "checkedAt": "2026-09-04T09:00:04.559Z"
+  },
+  "lentor-gardens": {
+    "rows": [
+      {
+        "type": "2 BEDROOM + STUDY",
+        "units": 103,
+        "minPrice": "$1,715,000",
+        "avgPsf": "$2,442"
+      },
+      {
+        "type": "2 BEDROOM PREMIUM",
+        "units": 35,
+        "minPrice": "$1,558,100",
+        "avgPsf": "$2,440"
+      },
+      {
+        "type": "2 BEDROOM PREMIUM (HS)",
+        "units": 1,
+        "minPrice": "$1,705,500",
+        "avgPsf": "$2,475"
+      },
+      {
+        "type": "3 BEDROOM PREMIUM",
+        "units": 13,
+        "minPrice": "$2,297,500",
+        "avgPsf": "$2,343"
+      },
+      {
+        "type": "3 BEDROOM PREMIUM + STUDY",
+        "units": 9,
+        "minPrice": "$2,221,400",
+        "avgPsf": "$2,312"
+      },
+      {
+        "type": "4 BEDROOM COMPACT",
+        "units": 17,
+        "minPrice": "$2,738,000",
+        "avgPsf": "$2,384"
+      },
+      {
+        "type": "4 BEDROOM PREMIUM",
+        "units": 35,
+        "minPrice": "$3,129,200",
+        "avgPsf": "$2,407"
+      },
+      {
+        "type": "STRATA TERRACE HOUSE",
+        "units": 3,
+        "minPrice": "$3,515,600",
+        "avgPsf": "$2,350"
+      }
+    ],
+    "total": 216,
+    "checkedAt": "2026-09-04T09:00:04.650Z"
+  },
+  "OneMarinaGardens": {
+    "rows": [
+      {
+        "type": "2 Bedroom",
+        "units": 149,
+        "minPrice": "$1,876,500",
+        "avgPsf": "$2,980"
+      },
+      {
+        "type": "3 Bedroom",
+        "units": 46,
+        "minPrice": "$2,559,300",
+        "avgPsf": "$2,928"
+      },
+      {
+        "type": "3 Bedroom (Dual Key)",
+        "units": 14,
+        "minPrice": "$2,714,900",
+        "avgPsf": "$2,904"
+      },
+      {
+        "type": "3 Bedroom Premium",
+        "units": 52,
+        "minPrice": "$2,964,500",
+        "avgPsf": "$2,952"
+      },
+      {
+        "type": "4 Bedroom Premium",
+        "units": 9,
+        "minPrice": "$4,773,400",
+        "avgPsf": "$3,016"
+      }
+    ],
+    "total": 270,
+    "checkedAt": "2026-09-04T09:00:04.790Z"
+  },
+  "unionsquare": {
+    "rows": [
+      {
+        "type": "1 Bedroom",
+        "units": 21,
+        "minPrice": "$1,280,000",
+        "avgPsf": "$2,999"
+      },
+      {
+        "type": "1 Bedroom + Study",
+        "units": 34,
+        "minPrice": "$1,408,000",
+        "avgPsf": "$3,044"
+      },
+      {
+        "type": "2 Bedroom",
+        "units": 50,
+        "minPrice": "$1,821,000",
+        "avgPsf": "$2,806"
+      },
+      {
+        "type": "2 Bedroom + Study",
+        "units": 10,
+        "minPrice": "$2,006,000",
+        "avgPsf": "$2,932"
+      },
+      {
+        "type": "4 Bedroom Premium",
+        "units": 28,
+        "minPrice": "$4,158,000",
+        "avgPsf": "$2,917"
+      },
+      {
+        "type": "Sky Suite",
+        "units": 1,
+        "minPrice": "$9,500,000",
+        "avgPsf": "$3,837"
+      }
+    ],
+    "total": 144,
+    "checkedAt": "2026-09-04T09:00:04.866Z"
+  },
+  "narraresidences": {
+    "rows": [
+      {
+        "type": "2 BEDROOM COMPACT",
+        "units": 6,
+        "minPrice": "$1,338,000",
+        "avgPsf": "$2,409"
+      },
+      {
+        "type": "2 BEDROOM PREMIUM",
+        "units": 19,
+        "minPrice": "$1,435,000",
+        "avgPsf": "$2,302"
+      },
+      {
+        "type": "2 BEDROOM with HS",
+        "units": 43,
+        "minPrice": "$1,444,000",
+        "avgPsf": "$2,183"
+      },
+      {
+        "type": "2 BEDROOM with HS & STUDY",
+        "units": 3,
+        "minPrice": "$1,503,000",
+        "avgPsf": "$2,087"
+      },
+      {
+        "type": "2 BEDROOM with STUDY",
+        "units": 77,
+        "minPrice": "$1,517,000",
+        "avgPsf": "$2,312"
+      },
+      {
+        "type": "3 BEDROOM FLEXI",
+        "units": 5,
+        "minPrice": "$2,059,000",
+        "avgPsf": "$2,384"
+      },
+      {
+        "type": "3 BEDROOM PREMIUM",
+        "units": 69,
+        "minPrice": "$2,087,000",
+        "avgPsf": "$2,250"
+      },
+      {
+        "type": "3 BEDROOM with STUDY",
+        "units": 20,
+        "minPrice": "$2,516,000",
+        "avgPsf": "$2,262"
+      },
+      {
+        "type": "4 BEDROOM COMPACT",
+        "units": 29,
+        "minPrice": "$2,448,000",
+        "avgPsf": "$2,274"
+      },
+      {
+        "type": "4 BEDROOM PREMIUM",
+        "units": 25,
+        "minPrice": "$3,181,000",
+        "avgPsf": "$2,374"
+      },
+      {
+        "type": "5 BEDROOM with PRIVATE LIFT",
+        "units": 26,
+        "minPrice": "$3,888,000",
+        "avgPsf": "$2,422"
+      }
+    ],
+    "total": 322,
+    "checkedAt": "2026-09-04T09:00:04.969Z"
+  },
+  "velabay": {
+    "rows": [
+      {
+        "type": "1 BEDROOM + STUDY",
+        "units": 6,
+        "minPrice": "$1,466,000",
+        "avgPsf": "$3,119"
+      },
+      {
+        "type": "2 BEDROOM",
+        "units": 4,
+        "minPrice": "$1,695,000",
+        "avgPsf": "$2,876"
+      },
+      {
+        "type": "2 BEDROOM PREMIUM",
+        "units": 8,
+        "minPrice": "$1,890,000",
+        "avgPsf": "$2,886"
+      },
+      {
+        "type": "3 BEDROOM",
+        "units": 8,
+        "minPrice": "$2,314,000",
+        "avgPsf": "$2,811"
+      },
+      {
+        "type": "3 BEDROOM PREMIUM",
+        "units": 34,
+        "minPrice": "$2,832,000",
+        "avgPsf": "$2,868"
+      },
+      {
+        "type": "4 BEDROOM",
+        "units": 33,
+        "minPrice": "$3,192,000",
+        "avgPsf": "$2,902"
+      },
+      {
+        "type": "4 BEDROOM (PRIVATE LIFT)",
+        "units": 16,
+        "minPrice": "$3,839,000",
+        "avgPsf": "$2,976"
+      },
+      {
+        "type": "5 BEDROOM (PRIVATE LIFT)",
+        "units": 19,
+        "minPrice": "$4,543,000",
+        "avgPsf": "$3,060"
+      },
+      {
+        "type": "PENTHOUSE 2",
+        "units": 1,
+        "minPrice": "$5,735,000",
+        "avgPsf": "$3,249"
+      }
+    ],
+    "total": 129,
+    "checkedAt": "2026-09-04T09:00:05.059Z"
+  },
+  "thesen": {
+    "rows": [
+      {
+        "type": "2 Bedroom",
+        "units": 45,
+        "minPrice": "$1,546,000",
+        "avgPsf": "$2,506"
+      },
+      {
+        "type": "2 Bedroom + Study",
+        "units": 47,
+        "minPrice": "$1,750,000",
+        "avgPsf": "$2,420"
+      },
+      {
+        "type": "3 Bedroom",
+        "units": 26,
+        "minPrice": "$2,068,000",
+        "avgPsf": "$2,505"
+      },
+      {
+        "type": "3 Bedroom + Study",
+        "units": 36,
+        "minPrice": "$2,975,000",
+        "avgPsf": "$2,472"
+      },
+      {
+        "type": "4 Bedroom + Study",
+        "units": 34,
+        "minPrice": "$3,450,000",
+        "avgPsf": "$2,490"
+      }
+    ],
+    "total": 188,
+    "checkedAt": "2026-09-04T09:00:05.124Z"
+  },
+  "thecontinuum": {
+    "rows": [
+      {
+        "type": "4 BEDROOM PREMIER",
+        "units": 2,
+        "minPrice": "$4,945,000",
+        "avgPsf": "$2,931"
+      },
+      {
+        "type": "5 BEDROOM",
+        "units": 12,
+        "minPrice": "$5,087,000",
+        "avgPsf": "$2,779"
+      }
+    ],
+    "total": 14,
+    "checkedAt": "2026-09-04T09:00:05.243Z"
+  },
+  "BelgraviaAce": {
+    "rows": [
+      {
+        "type": "Semi-Detached",
+        "units": 23,
+        "minPrice": "$5,190,000",
+        "avgPsf": "$1,326"
+      }
+    ],
+    "total": 23,
+    "checkedAt": "2026-09-04T09:00:05.282Z"
+  },
+  "TheHillshore": {
+    "rows": [
+      {
+        "type": "2 Bedroom",
+        "units": 5,
+        "minPrice": "$1,940,000",
+        "avgPsf": "$2,699"
+      },
+      {
+        "type": "2 Bedroom Penthouse",
+        "units": 2,
+        "minPrice": "$2,187,000",
+        "avgPsf": "$2,427"
+      },
+      {
+        "type": "2 Bedroom Premium",
+        "units": 7,
+        "minPrice": "$1,868,000",
+        "avgPsf": "$2,538"
+      },
+      {
+        "type": "2 Bedroom Premium Penthouse",
+        "units": 2,
+        "minPrice": "$2,430,000",
+        "avgPsf": "$2,426"
+      },
+      {
+        "type": "3 Bedroom",
+        "units": 18,
+        "minPrice": "$2,588,000",
+        "avgPsf": "$2,580"
+      },
+      {
+        "type": "3 Bedroom Premium",
+        "units": 3,
+        "minPrice": "$2,588,000",
+        "avgPsf": "$2,520"
+      },
+      {
+        "type": "3 Bedroom Premium Penthouse",
+        "units": 1,
+        "minPrice": "$3,402,000",
+        "avgPsf": "$2,359"
+      },
+      {
+        "type": "4 Bedroom (Dual Key)",
+        "units": 3,
+        "minPrice": "$3,919,000",
+        "avgPsf": "$2,716"
+      },
+      {
+        "type": "4 Bedroom Penthouse",
+        "units": 5,
+        "minPrice": "$4,008,000",
+        "avgPsf": "$2,410"
+      }
+    ],
+    "total": 46,
+    "checkedAt": "2026-09-04T09:00:05.320Z"
+  },
+  "thecolletive": {
+    "rows": [
+      {
+        "type": "1 Bed + Study",
+        "units": 31,
+        "minPrice": "$1,476,000",
+        "avgPsf": "$2,757"
+      },
+      {
+        "type": "1 Bed Premium",
+        "units": 7,
+        "minPrice": "$1,448,000",
+        "avgPsf": "$2,768"
+      },
+      {
+        "type": "1 Bed Suite",
+        "units": 56,
+        "minPrice": "$1,330,000",
+        "avgPsf": "$2,852"
+      },
+      {
+        "type": "2 Bed Deluxe",
+        "units": 21,
+        "minPrice": "$1,728,000",
+        "avgPsf": "$2,746"
+      },
+      {
+        "type": "2 Bed Deluxe + Study",
+        "units": 34,
+        "minPrice": "$1,891,000",
+        "avgPsf": "$2,781"
+      },
+      {
+        "type": "2 Bed Premium",
+        "units": 61,
+        "minPrice": "$2,044,000",
+        "avgPsf": "$2,815"
+      },
+      {
+        "type": "2 Bed Premium + Study",
+        "units": 17,
+        "minPrice": "$2,103,000",
+        "avgPsf": "$2,826"
+      },
+      {
+        "type": "3 Bed Luxury",
+        "units": 17,
+        "minPrice": "$3,488,000",
+        "avgPsf": "$2,914"
+      },
+      {
+        "type": "3 Bed Premium",
+        "units": 15,
+        "minPrice": "$2,832,000",
+        "avgPsf": "$2,855"
+      },
+      {
+        "type": "Studio",
+        "units": 10,
+        "minPrice": "$1,250,000",
+        "avgPsf": "$2,808"
+      }
+    ],
+    "total": 269,
+    "checkedAt": "2026-09-04T09:00:05.399Z"
+  }
+}
