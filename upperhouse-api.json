@@ -1,0 +1,722 @@
+{
+ "projectId": "7cf72256c81743dfba3986a927ef79e6",
+ "info": {
+  "code": "0",
+  "msg": "SUCCESS",
+  "datas": {
+   "country": "Singapore",
+   "stageCompletion": "",
+   "postalCode": "249628",
+   "est": 0,
+   "projectType": "Residential Highrise",
+   "facilitiesMap": "[{\"type\":\"subway_station\",\"value\":[{\"name\":\"Newton\",\"location\":{\"lat\":1.31232,\"lng\":103.83799},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJr18Rv-4Z2jERXFDaPCqD8UU\",\"vicinity\":\"Singapore\",\"distance\":2192,\"duration\":1832},{\"name\":\"Stevens\",\"location\":{\"lat\":1.3199278,\"lng\":103.8261534},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJNTPucPkZ2jER7fKC_YSmscM\",\"vicinity\":\"Singapore\",\"distance\":2683,\"duration\":2207},{\"name\":\"Orchard Boulevard\",\"location\":{\"lat\":1.3024984,\"lng\":103.823893},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJC5OQmokZ2jERAYJXCzJ1c1Y\",\"vicinity\":\"Singapore\",\"distance\":17,\"duration\":16},{\"name\":\"Napier\",\"location\":{\"lat\":1.30597,\"lng\":103.81965},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJ_WzKWyAa2jERTk-p-hgrKgU\",\"vicinity\":\"Singapore\",\"distance\":716,\"duration\":633},{\"name\":\"Orchard\",\"location\":{\"lat\":1.30367,\"lng\":103.83179},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJl_5f7Y0Z2jERHoVZ2LLJFOg\",\"vicinity\":\"Singapore\",\"distance\":1005,\"duration\":824},{\"name\":\"Great World\",\"location\":{\"lat\":1.29487,\"lng\":103.83335},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJZ6DkSpsZ2jERgGDtbZEvAbY\",\"vicinity\":\"Singapore\",\"distance\":1857,\"duration\":1556},{\"name\":\"Redhill\",\"location\":{\"lat\":1.2893577,\"lng\":103.8169911},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJQ2MJTysa2jERGZ-q0JXY0qg\",\"vicinity\":\"920 Tiong Bahru Road, Singapore\",\"distance\":2607,\"duration\":2168},{\"name\":\"Somerset\",\"location\":{\"lat\":1.3005159,\"lng\":103.8385},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJl3JJzpAZ2jERwwtDj3VXBYM\",\"vicinity\":\"Singapore\",\"distance\":1901,\"duration\":1567},{\"name\":\"Havelock\",\"location\":{\"lat\":1.2902,\"lng\":103.83322},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJV9TSSp0Z2jER14AagtcQv1A\",\"vicinity\":\"Singapore\",\"distance\":2159,\"duration\":1788},{\"name\":\"Tiong Bahru\",\"location\":{\"lat\":1.285734,\"lng\":103.8269413},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJyVjyzn4Z2jERDXskfR5wNjY\",\"vicinity\":\"300 Tiong Bahru Road\",\"distance\":2640,\"duration\":2224}]},{\"type\":\"shopping_mall\",\"value\":[{\"name\":\"Wisma Atria\",\"location\":{\"lat\":1.3037148,\"lng\":103.8332642},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJSZHC-I0Z2jERm8BlwXqhcfc\",\"vicinity\":\"435 Orchard Road\",\"distance\":1298,\"duration\":1057},{\"name\":\"Paragon Shopping Centre\",\"location\":{\"lat\":1.3039633,\"lng\":103.8360565},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJl_sOMpIZ2jERKgmuCf4FCs0\",\"vicinity\":\"290 Orchard Road\",\"distance\":1809,\"duration\":1493},{\"name\":\"Cineleisure\",\"location\":{\"lat\":1.3016866,\"lng\":103.8365735},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJe3kMD5EZ2jERFGYVqhnc6DY\",\"vicinity\":\"8 Grange Road\",\"distance\":1760,\"duration\":1448},{\"name\":\"Ngee Ann City\",\"location\":{\"lat\":1.3025572,\"lng\":103.834568},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJ_7pt85EZ2jERPfKpmuwrzys\",\"vicinity\":\"391A Orchard Road\",\"distance\":1390,\"duration\":1149},{\"name\":\"Valley Point Shopping Centre\",\"location\":{\"lat\":1.2933441,\"lng\":103.8271408},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJLZ9oWoEZ2jERwxPWGD_Zpnw\",\"vicinity\":\"491 River Valley Road\",\"distance\":1596,\"duration\":1314},{\"name\":\"Forum The Shopping Mall\",\"location\":{\"lat\":1.3061667,\"lng\":103.8284991},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJQe8Ik4wZ2jERM78XCNBVhe0\",\"vicinity\":\"583 Orchard Road\",\"distance\":737,\"duration\":610},{\"name\":\"313@somerset\",\"location\":{\"lat\":1.3010451,\"lng\":103.8385792},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJHSrGJ5EZ2jERTzbUyme7KuQ\",\"vicinity\":\"313 Orchard Road\",\"distance\":1951,\"duration\":1621},{\"name\":\"Far East Plaza\",\"location\":{\"lat\":1.3070854,\"lng\":103.8333034},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJPZTUpZIZ2jERk5GUzK_g9_0\",\"vicinity\":\"14 Scotts Road\",\"distance\":1393,\"duration\":1143},{\"name\":\"Delfi Orchard\",\"location\":{\"lat\":1.3071783,\"lng\":103.8285872},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJo9rEsIwZ2jERlzp8CnVOPzE\",\"vicinity\":\"402 Orchard Road\",\"distance\":926,\"duration\":759},{\"name\":\"Lucky Plaza\",\"location\":{\"lat\":1.3045795,\"lng\":103.8340621},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJ6xFibZIZ2jERlMTu3Bo6a9c\",\"vicinity\":\"304 Orchard Road, Lucky Plaza, Singapore\",\"distance\":1858,\"duration\":1540},{\"name\":\"Orchard Central\",\"location\":{\"lat\":1.3007639,\"lng\":103.8397236},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJQfAL2JYZ2jER9v06BxkNw1k\",\"vicinity\":\"181 Orchard Road\",\"distance\":2074,\"duration\":1714},{\"name\":\"The Heeren\",\"location\":{\"lat\":1.3026882,\"lng\":103.8373695},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJt2tjaZEZ2jER1-rMADMyBFQ\",\"vicinity\":\"260 Orchard Road\",\"distance\":1901,\"duration\":1574},{\"name\":\"The Centrepoint\",\"location\":{\"lat\":1.3012253,\"lng\":103.8398652},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJRZ1c0JYZ2jER6cpyNpOyf3M\",\"vicinity\":\"176 Orchard Road\",\"distance\":2104,\"duration\":1749},{\"name\":\"TANGS at Tang Plaza\",\"location\":{\"lat\":1.3047955,\"lng\":103.8329225},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJbV9Xho0Z2jERrixofz0u32Q\",\"vicinity\":\"310 Orchard Road, Tang Plaza\",\"distance\":1744,\"duration\":1437},{\"name\":\"Great World\",\"location\":{\"lat\":1.2936417,\"lng\":103.8319293},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJB14IQoMZ2jERyjiLXouuJe0\",\"vicinity\":\"1 Kim Seng Promenade\",\"distance\":2014,\"duration\":1671},{\"name\":\"Fei Siong\",\"location\":{\"lat\":1.3039288,\"lng\":103.8319512},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJHXFAbZIZ2jERUOrXfZRU988\",\"vicinity\":\"2 Orchard Turn\",\"distance\":1252,\"duration\":1182},{\"name\":\"C.E.D.S Sunglasses\",\"location\":{\"lat\":1.302748,\"lng\":103.834616},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJAQAAIJIZ2jERYQoYVyQNeKA\",\"vicinity\":\"319 Orchard Road, Singapore\",\"distance\":1517,\"duration\":1231},{\"name\":\"Tanglin Mall\",\"location\":{\"lat\":1.3048319,\"lng\":103.8234545},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJmXU4W4oZ2jERDul4uxP0pYc\",\"vicinity\":\"163 Tanglin Road, Singapore\",\"distance\":287,\"duration\":220},{\"name\":\"Claymore Connect\",\"location\":{\"lat\":1.3073023,\"lng\":103.8288259},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJA2UPtIwZ2jERL6-px_QTr64\",\"vicinity\":\"442 Orchard Road\",\"distance\":908,\"duration\":747},{\"name\":\"Palais Renaissance\",\"location\":{\"lat\":1.306542,\"lng\":103.8295263},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJq5AW6IwZ2jERLFhlkwXcXes\",\"vicinity\":\"390 Orchard Road\",\"distance\":937,\"duration\":770}]},{\"type\":\"school\",\"value\":[{\"name\":\"Crescent Girls' School\",\"location\":{\"lat\":1.2940214,\"lng\":103.8168823},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJ5RTulSsa2jERN4w5UsB25Ws\",\"vicinity\":\"357 Tanglin Road\",\"distance\":732,\"duration\":576},{\"name\":\"Gan Eng Seng School\",\"location\":{\"lat\":1.2900347,\"lng\":103.8235117},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJJwIPJIAZ2jERQ29Xz4cafqY\",\"vicinity\":\"1 Henderson Road\",\"distance\":748,\"duration\":618},{\"name\":\"Ngee Ann Academy\",\"location\":{\"lat\":1.3026716,\"lng\":103.8343967},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJswjlkpgZ2jERaPoHNiYIZQw\",\"vicinity\":\"391A Orchard Road, Tower A, Singapore\",\"distance\":1395,\"duration\":1202},{\"name\":\"Rainbow Centre\",\"location\":{\"lat\":1.2974572,\"lng\":103.8085667},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJeV9wMDAa2jERjOejs1wCWXE\",\"vicinity\":\"501 Margaret Drive, Singapore\",\"distance\":863,\"duration\":686},{\"name\":\"Stage for Kids Global\",\"location\":{\"lat\":1.2910402,\"lng\":103.8272656},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJ00wouV4Q2jERvlXjLPFz-98\",\"vicinity\":\"77 Indus Road, #01-499\",\"distance\":851,\"duration\":674},{\"name\":\"The Schoolhouse Alexandra\",\"location\":{\"lat\":1.2911212,\"lng\":103.8254343},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJAQAA8Coa2jERkc_xFEz3kqo\",\"vicinity\":\"2 Alexandra Road, #04-00 Delta House\",\"distance\":954,\"duration\":757},{\"name\":\"Kindernomics School Private Limited\",\"location\":{\"lat\":1.3063364,\"lng\":103.8283982},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJhZhDkowZ2jERBexBs4Mg6pM\",\"vicinity\":\"583 Orchard Road, Singapore\",\"distance\":954,\"duration\":757},{\"name\":\"The Excelerate Program\",\"location\":{\"lat\":1.306303,\"lng\":103.826989},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJp-GkZosZ2jERQeM4ieJDxg8\",\"vicinity\":\"Tanglin Shopping Centre #05-10/11/29/31, 19 Tanglin Road\",\"distance\":954,\"duration\":757},{\"name\":\"SITA Tennis Academy Main Centre\",\"location\":{\"lat\":1.304527,\"lng\":103.8174061},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJ06ezqCEa2jER2epEYD1wyjI\",\"vicinity\":\"9A Sherwood Road\",\"distance\":1351,\"duration\":1121},{\"name\":\"Cornerstone Learning Needs Centre\",\"location\":{\"lat\":1.305413,\"lng\":103.830067},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJS7nkWekZ2jERkIR8OJ9zy2w\",\"vicinity\":\"545 Orchard Road, Unit 08-08A Far East Shopping Centre, Orchard\",\"distance\":1027,\"duration\":850},{\"name\":\"Unified Yi Jing Academy Pte Ltd\",\"location\":{\"lat\":1.3054879,\"lng\":103.8301266},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJKVYGQkUBBBAR7lMc-dh0CS4\",\"vicinity\":\"545 Orchard Road 09-12, Far East Shopping Centre\",\"distance\":1490,\"duration\":1205},{\"name\":\"Joinus Language School\",\"location\":{\"lat\":1.305747,\"lng\":103.830026},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJvQnE_owZ2jERKtTxxiphztU\",\"vicinity\":\"545 Orchard Road #15-01 Far East Shopping Centre, Singapore 238882\",\"distance\":136,\"duration\":101},{\"name\":\"Excel Learning Studio\",\"location\":{\"lat\":1.305769,\"lng\":103.830026},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJHau4_owZ2jER0k6HzRAibwg\",\"vicinity\":\"545 Orchard Road #06-05 Far East Shopping Centre, Singapore 238882\",\"distance\":477,\"duration\":383},{\"name\":\"Montessori Teacher Training Centre\",\"location\":{\"lat\":1.305715,\"lng\":103.830069},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJK67m_owZ2jERMU_5WeF_Ah8\",\"vicinity\":\"545 Orchard Road #11-12 Far East Shopping Centre, Singapore 238882\",\"distance\":546,\"duration\":436},{\"name\":\"Kay Poh Road Baptist Kindergarten\",\"location\":{\"lat\":1.2966789,\"lng\":103.8291795},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJWYnTs4UZ2jERFrOYryQiKeU\",\"vicinity\":\"7 Kay Poh Road\",\"distance\":543,\"duration\":440},{\"name\":\"The Schoolhouse Claymore\",\"location\":{\"lat\":1.3083036,\"lng\":103.8296967},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJSYaAMvMZ2jERrsesWXlA8u0\",\"vicinity\":\"11 Claymore Road\",\"distance\":640,\"duration\":505},{\"name\":\"Little Stars Music School\",\"location\":{\"lat\":1.2943629,\"lng\":103.8275248},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJm3k5XIMZ2jERTBpbQBtIBK4\",\"vicinity\":\"428 River Valley Road, #01-12 Loft @ Nathan\",\"distance\":1005,\"duration\":833},{\"name\":\"Blue House Kay Siang\",\"location\":{\"lat\":1.2983131,\"lng\":103.8099762},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJQX7MBjAa2jER_FIX_2qga50\",\"vicinity\":\"19 Kay Siang Road\",\"distance\":713,\"duration\":583},{\"name\":\"Brighton Montessori River Valley\",\"location\":{\"lat\":1.2960312,\"lng\":103.8306888},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJx5M6_IQZ2jERUzQxSE5OZyg\",\"vicinity\":\"370 River Valley Road\",\"distance\":713,\"duration\":583},{\"name\":\"Shineon! School On Stage\",\"location\":{\"lat\":1.3077119,\"lng\":103.8317656},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJQ0GHNY0Z2jERQkhCDZdL-Vc\",\"vicinity\":\"8 Claymore Hill\",\"distance\":862,\"duration\":728}]},{\"type\":\"restaurant\",\"value\":[{\"name\":\"Royal Plaza on Scotts Singapore\",\"location\":{\"lat\":1.3069695,\"lng\":103.8319667},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png\",\"place_id\":\"ChIJS2f6Z40Z2jERLavQ4p6-R5s\",\"vicinity\":\"25 Scotts Road\",\"distance\":220,\"duration\":165},{\"name\":\"JEN Singapore Tanglin by Shangri-La\",\"location\":{\"lat\":1.304326,\"lng\":103.8239282},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png\",\"place_id\":\"ChIJdY7JN4oZ2jERVg6-qPEGJ3U\",\"vicinity\":\"1A Cuscaden Road\",\"distance\":692,\"duration\":565},{\"name\":\"Concorde Hotel Singapore\",\"location\":{\"lat\":1.3007654,\"lng\":103.841536},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png\",\"place_id\":\"ChIJRe0Wq5cZ2jER5qoN9Q0znq8\",\"vicinity\":\"100 Orchard Road\",\"distance\":1040,\"duration\":854},{\"name\":\"Wild Honey Mandarin Gallery\",\"location\":{\"lat\":1.3019461,\"lng\":103.8368734},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJSZujEpEZ2jERc0ez6ins24Y\",\"vicinity\":\"333A Orchard Road, #03 - 01 / 02\",\"distance\":934,\"duration\":768},{\"name\":\"Blu Kouzina Dempsey\",\"location\":{\"lat\":1.3034696,\"lng\":103.81043},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJrYMeu5sQ2jERfpA5zK1UM9U\",\"vicinity\":\"10 Dempsey Road, #01-20\",\"distance\":136,\"duration\":101},{\"name\":\"SUSHI TEI\",\"location\":{\"lat\":1.3035787,\"lng\":103.8350589},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJl_sOMpIZ2jERa4tZiOdKqvc\",\"vicinity\":\"290 Orchard Road, #05 - 04 / 05, Orchard Paragon\",\"distance\":333,\"duration\":254},{\"name\":\"Tsukune Ichigo\",\"location\":{\"lat\":1.2954608,\"lng\":103.8302052},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJ1emPWIQZ2jERjoyMEdKta2k\",\"vicinity\":\"399 River Valley Road, Singapore\",\"distance\":804,\"duration\":674},{\"name\":\"Hard Rock Cafe\",\"location\":{\"lat\":1.3057768,\"lng\":103.8281191},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJpfgvhowZ2jERbVbSD5w0-FY\",\"vicinity\":\"50 Cuscaden Road, #02-01 Hpl House\",\"distance\":961,\"duration\":789},{\"name\":\"Oasis Bar & Restaurant\",\"location\":{\"lat\":1.3062616,\"lng\":103.8334004},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJKVlOYI0Z2jERbutcJw5KbxQ\",\"vicinity\":\"10 Scotts Road\",\"distance\":598,\"duration\":472},{\"name\":\"Long Beach @ DEMPSEY HILL\",\"location\":{\"lat\":1.3059056,\"lng\":103.8119806},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJVUFS5CIa2jERGicUsfSt_2w\",\"vicinity\":\"25 Dempsey Road\",\"distance\":225,\"duration\":169},{\"name\":\"Lawry's The Prime Rib Singapore\",\"location\":{\"lat\":1.3018632,\"lng\":103.8369979},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJnwvSIJIZ2jERpSK-8lcGiPk\",\"vicinity\":\"333A Orchard Road, #04 - 01 / 31\",\"distance\":765,\"duration\":626},{\"name\":\"PS.Cafe Palais Renaissance\",\"location\":{\"lat\":1.3068808,\"lng\":103.8297596},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png\",\"place_id\":\"ChIJBcxR3IwZ2jERXEfgu9SV-vs\",\"vicinity\":\"390 Orchard Road, #02 - 09A\",\"distance\":314,\"duration\":254},{\"name\":\"JUMBO Seafood - Dempsey Hill\",\"location\":{\"lat\":1.3043337,\"lng\":103.8099395},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJsfizTCMa2jER0PvLzgOm59g\",\"vicinity\":\"11 Dempsey Road, #01-16\",\"distance\":981,\"duration\":805},{\"name\":\"Subway\",\"location\":{\"lat\":1.30127,\"lng\":103.8381444},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJc6zIfr0Z2jERnBvtp3NY7yc\",\"vicinity\":\"313 Orchard Road, #B3-01, 313@Somerset\",\"distance\":1340,\"duration\":1113},{\"name\":\"Muddy Murphy's Irish Pub\",\"location\":{\"lat\":1.3074953,\"lng\":103.828947},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png\",\"place_id\":\"ChIJ-ZtvtowZ2jERyywaJQ_r4DU\",\"vicinity\":\"442 Orchard Road #01-02 to 05 Claymore Connect\",\"distance\":1274,\"duration\":1059},{\"name\":\"Boon Tong Kee @ River Valley\",\"location\":{\"lat\":1.2951632,\"lng\":103.8294461},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJHXQYQ4QZ2jERORHe3xZyKRw\",\"vicinity\":\"425 River Valley Road\",\"distance\":1105,\"duration\":894},{\"name\":\"StraitsKitchen\",\"location\":{\"lat\":1.3062611,\"lng\":103.8333999},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJKWGbYo0Z2jERgIAV9m0gT00\",\"vicinity\":\"10 Scotts Road, Grand Hyatt\",\"distance\":1124,\"duration\":907},{\"name\":\"Carousel\",\"location\":{\"lat\":1.3070085,\"lng\":103.8320447},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJY56VRY0Z2jERIgstQ462b5k\",\"vicinity\":\"25 Scotts Road, Royal Plaza\",\"distance\":314,\"duration\":254},{\"name\":\"The Halia at Singapore Botanic Gardens\",\"location\":{\"lat\":1.3113472,\"lng\":103.8149796},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJ8fTbnR8a2jERMeuOlYUiwL0\",\"vicinity\":\"1 Cluny Road, Ginger Garden Singapore Botanic Gardens\",\"distance\":604,\"duration\":477},{\"name\":\"Din Tai Fung\",\"location\":{\"lat\":1.3039532,\"lng\":103.8351014},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJl_sOMpIZ2jEROuDbvYr9GLo\",\"vicinity\":\"290 Orchard Road, #B1 - 03\",\"distance\":746,\"duration\":611}]},{\"type\":\"bus_station\",\"value\":[{\"name\":\"Orchard Blvd Stn Exit 1\",\"location\":{\"lat\":1.303528,\"lng\":103.823586},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJzdMAJYoZ2jERiPqigbfsT6Y\",\"vicinity\":\"Singapore\",\"distance\":123,\"duration\":91},{\"name\":\"Bef One Tree Hill\",\"location\":{\"lat\":1.3005898,\"lng\":103.823843},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ67q1UIgZ2jERdEgiJ7Yelg0\",\"vicinity\":\"Singapore\",\"distance\":276,\"duration\":225},{\"name\":\"Aft One Tree Hill\",\"location\":{\"lat\":1.3002272,\"lng\":103.8240714},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJFz8TWogZ2jERsHpmtIIgD_8\",\"vicinity\":\"Singapore\",\"distance\":429,\"duration\":368},{\"name\":\"Bef Rochalie Dr\",\"location\":{\"lat\":1.3026279,\"lng\":103.8204239},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ54wVRica2jER_CKMAVE6-mM\",\"vicinity\":\"Singapore\",\"distance\":671,\"duration\":565},{\"name\":\"Bef Tomlinson Rd\",\"location\":{\"lat\":1.303936,\"lng\":103.8269738},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJm_Xd8IsZ2jERH2JVLnhqqbE\",\"vicinity\":\"Singapore\",\"distance\":398,\"duration\":322},{\"name\":\"Cliveden at Grange\",\"location\":{\"lat\":1.2992831,\"lng\":103.826623},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJEVaPuogZ2jERKNBkDFBJaeE\",\"vicinity\":\"Singapore\",\"distance\":622,\"duration\":499},{\"name\":\"Gramercy Pk\",\"location\":{\"lat\":1.2990415,\"lng\":103.8266893},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJLwffpIgZ2jERXRHvDoPAWtA\",\"vicinity\":\"Singapore\",\"distance\":779,\"duration\":652},{\"name\":\"Delfi Orchard\",\"location\":{\"lat\":1.3070313,\"lng\":103.828397},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ-VJ-u4wZ2jERPvrhSe7lqKc\",\"vicinity\":\"Singapore\",\"distance\":814,\"duration\":669},{\"name\":\"Royal Thai Embassy\",\"location\":{\"lat\":1.3059203,\"lng\":103.8304349},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJi3VaAo0Z2jERzDQGVCgEgM4\",\"vicinity\":\"Singapore\",\"distance\":939,\"duration\":745},{\"name\":\"Opp Orchard Stn/ION\",\"location\":{\"lat\":1.3031167,\"lng\":103.8323596},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJzxpF_Y0Z2jERVVeB9pF_3zE\",\"vicinity\":\"Singapore\",\"distance\":1078,\"duration\":897},{\"name\":\"Orchard Stn Exit 13\",\"location\":{\"lat\":1.3024846,\"lng\":103.8324375},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ7dAREI4Z2jER0CyUuf6FKvU\",\"vicinity\":\"Singapore\",\"distance\":1109,\"duration\":922},{\"name\":\"Stellar Rv\",\"location\":{\"lat\":1.2948164,\"lng\":103.828449},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJxeYoFIQZ2jERIvtWi6vuRWg\",\"vicinity\":\"Singapore\"},{\"name\":\"Rv Residences\",\"location\":{\"lat\":1.2948634,\"lng\":103.8288737},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ90MnFYQZ2jER8PWOO-JHNLo\",\"vicinity\":\"Singapore\"},{\"name\":\"Opp Valley Pt\",\"location\":{\"lat\":1.293343,\"lng\":103.826363},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJi2JAT4EZ2jERoAdJk1AFniU\",\"vicinity\":\"Singapore\"},{\"name\":\"Valley Pt\",\"location\":{\"lat\":1.2931599,\"lng\":103.8265178},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ_xb2T4EZ2jERptzujs9WvBw\",\"vicinity\":\"Singapore\"},{\"name\":\"Royal Plaza On Scotts\",\"location\":{\"lat\":1.3069952,\"lng\":103.8326349},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJb4Z-XI0Z2jERBWEMiUNE7tM\",\"vicinity\":\"Singapore\"},{\"name\":\"Aft Tanglin Rd\",\"location\":{\"lat\":1.2966295,\"lng\":103.8155256},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJj7cpLC8a2jERaZFdzkrPmbo\",\"vicinity\":\"Singapore\"},{\"name\":\"Orchard Stn/Lucky Plaza\",\"location\":{\"lat\":1.3038979,\"lng\":103.8341038},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJFexREJIZ2jERDJ_pRqqcIH8\",\"vicinity\":\"Singapore\"},{\"name\":\"Opp Ngee Ann City\",\"location\":{\"lat\":1.302113,\"lng\":103.83432},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJvWkr6pEZ2jERNCzYI7EkFKw\",\"vicinity\":\"Singapore\"},{\"name\":\"Far East Plaza\",\"location\":{\"lat\":1.3073206,\"lng\":103.8331945},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJW8yMV40Z2jERqpcq_edXn6A\",\"vicinity\":\"Singapore\"}]},{\"type\":\"hospital\",\"value\":[{\"name\":\"Gleneagles Hospital\",\"location\":{\"lat\":1.3076174,\"lng\":103.8198659},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJWXTRJCAa2jERXNBB0kxTWSU\",\"vicinity\":\"6A Napier Road\",\"distance\":44,\"duration\":35},{\"name\":\"Mount Elizabeth Hospital\",\"location\":{\"lat\":1.305518,\"lng\":103.8355093},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJnUpJWpIZ2jERhpsQCRE_2-M\",\"vicinity\":\"3 Mount Elizabeth, Singapore\",\"distance\":176,\"duration\":153},{\"name\":\"International Urology, Fertility & Gynaecology Centre\",\"location\":{\"lat\":1.304921,\"lng\":103.8354181},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJg5Qu3pIZ2jERP5OMLGezrXg\",\"vicinity\":\"3 Mount Elizabeth, #10-09 Medical Centre, Singapore\",\"distance\":60,\"duration\":46},{\"name\":\"Ear Nose & Throat Centre CC Lau - Adult & Paediatric ENT Clinic: Dr Lau Chee Chong\",\"location\":{\"lat\":1.3055915,\"lng\":103.8354837},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJuaCiV5IZ2jERHyNUfRd0Vpo\",\"vicinity\":\"3 Mount Elizabeth, Suite 14-11 (14th Floor, Mount Elizabeth, Medical Centre\",\"distance\":60,\"duration\":46},{\"name\":\"EH Heart Specialist Clinic – Cardiologist\",\"location\":{\"lat\":1.3044718,\"lng\":103.8352639},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJEW8RUpIZ2jERNLMRNrJCtcw\",\"vicinity\":\"3 Mount Elizabeth, #03-09, Singapore\",\"distance\":60,\"duration\":46},{\"name\":\"Advanced Centre for Reproductive Medicine\",\"location\":{\"lat\":1.3059065,\"lng\":103.8314983},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJaT10PiAa2jERVOV8UCpm06k\",\"vicinity\":\"350 Orchard Road, #11-08\",\"distance\":178,\"duration\":154},{\"name\":\"Singapore Brain and Spine Specialist Singapore Brain-Spine-Nerves Center\",\"location\":{\"lat\":1.3045739,\"lng\":103.835553},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJEW8RUpIZ2jER4BbR9txZ-I4\",\"vicinity\":\"3 Mount Elizabeth, #15-03\",\"distance\":173,\"duration\":150},{\"name\":\"Complete Healthcare International\",\"location\":{\"lat\":1.3059514,\"lng\":103.8314585},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJe-oZTnga2jERpj_L2ol90lg\",\"vicinity\":\"350 Orchard Road, #08-00 Shaw House\",\"distance\":170,\"duration\":148},{\"name\":\"Hoe Ah Leong Surgery Pte Ltd\",\"location\":{\"lat\":1.3076257,\"lng\":103.8202012},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJvY5xIiAa2jERsf1-olnqzJc\",\"vicinity\":\"6 Napier Road, #03-10 Gleneagles Medical Centre\",\"distance\":170,\"duration\":148},{\"name\":\"Mak Heart Clinic\",\"location\":{\"lat\":1.3077263,\"lng\":103.8200865},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJ1-H_JyAa2jER5drnZV-f-Y8\",\"vicinity\":\"6A Napier Road, #08-13 Gleneagles Medical Centre\",\"distance\":44,\"duration\":35},{\"name\":\"Cadence Rehabilitation\",\"location\":{\"lat\":1.3031958,\"lng\":103.8238266},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJByBqiIkZ2jERYWVNUtmcra0\",\"vicinity\":\"1 Orchard Boulevard\",\"distance\":44,\"duration\":35},{\"name\":\"Orchard Medical Specialists Centre\",\"location\":{\"lat\":1.304569,\"lng\":103.833308},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJVVVVbZIZ2jERQHDDXj9OAmc\",\"vicinity\":\"304 Orchard Road, Level 5 Lucky Plaza\",\"distance\":60,\"duration\":46},{\"name\":\"Atwood Oceanics Services\",\"location\":{\"lat\":1.3070759,\"lng\":103.8293488},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJex-mwYwZ2jER-10PnSxgiWo\",\"vicinity\":\"Orchard Towers #06-09A, 400 Orchard Road (S)238875\",\"distance\":56,\"duration\":43},{\"name\":\"Thomson Women's Clinic/Specialists (Paragon) - Female Gynae, Pregnancy, Health Screening, Fibroid, Cyst, Family Planning\",\"location\":{\"lat\":1.3043067,\"lng\":103.8356995},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJoavrZ-cZ2jERxEEN2hwptXE\",\"vicinity\":\"Paragon Medical Centre, 290 Orchard Road, #19-01\",\"distance\":93,\"duration\":70},{\"name\":\"WK Cheong Gastrointestinal & Liver Specialists Pte Ltd\",\"location\":{\"lat\":1.3055915,\"lng\":103.8354837},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJuaCiV5IZ2jERmslkeDHvUeU\",\"vicinity\":\"3 Mount Elizabeth\",\"distance\":170,\"duration\":148},{\"name\":\"Charles Chan Heart Clinic\",\"location\":{\"lat\":1.30752,\"lng\":103.82035},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJuWj-GCAa2jERfXAiZgPS474\",\"vicinity\":\"6 Napier Road, Singapore\",\"distance\":170,\"duration\":148},{\"name\":\"Dr BL Lim Centre For Psychological Wellness\",\"location\":{\"lat\":1.3070598,\"lng\":103.8201775},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJuWj-GCAa2jERqhwDuqBr04g\",\"vicinity\":\"6 Napier Road, #09-09 Gleneagles Medical Centre\"},{\"name\":\"AsiaMedic Health Screening\",\"location\":{\"lat\":1.305487,\"lng\":103.831573},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJk85Oa40Z2jER8mbuli_TFe0\",\"vicinity\":\"08-00 Shaw House, 350 Orchard Road\"},{\"name\":\"Fones Clinic\",\"location\":{\"lat\":1.3073478,\"lng\":103.8202146},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJuWj-GCAa2jERs33eY9i2h10\",\"vicinity\":\"6 Napier Road, #04-11\"},{\"name\":\"Maritime Dental Surgery\",\"location\":{\"lat\":1.3031639,\"lng\":103.8239638},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJbfDuOGwZ2jER_g46GuzVhIA\",\"vicinity\":\"1 Orchard Boulevard\"}]}]",
+   "galleryLatitude": "1.3035274307899594",
+   "projectCustom": [],
+   "popEndTime": "2025-07-23",
+   "launchDate": 1752854400000,
+   "galleryLongitude": "103.82649153786717",
+   "unitsNum": "1 block of 35 storey 301 units",
+   "starbuyImg": "",
+   "facilitiesMap05": "[{\"type\":\"subway_station\",\"value\":[{\"name\":\"Orchard Boulevard\",\"location\":{\"lat\":1.3024984,\"lng\":103.823893},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJC5OQmokZ2jERAYJXCzJ1c1Y\",\"vicinity\":\"Singapore\",\"distance\":17,\"duration\":16}]},{\"type\":\"shopping_mall\",\"value\":[{\"name\":\"Tanglin Mall\",\"location\":{\"lat\":1.3048319,\"lng\":103.8234545},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJmXU4W4oZ2jERDul4uxP0pYc\",\"vicinity\":\"163 Tanglin Road, Singapore\",\"distance\":287,\"duration\":220},{\"name\":\"Tudor Court\",\"location\":{\"lat\":1.3051618,\"lng\":103.824369},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJUQIaU4oZ2jERnaLehmPG6pw\",\"vicinity\":\"131 Tanglin Road\",\"distance\":531,\"duration\":424},{\"name\":\"Tanglin Place\",\"location\":{\"lat\":1.3053255,\"lng\":103.8250604},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJt10jr4sZ2jERo_UCZbIlPvE\",\"vicinity\":\"91 Tanglin Road\",\"distance\":454,\"duration\":350},{\"name\":\"ViryaByUrbi\",\"location\":{\"lat\":1.29956,\"lng\":103.825762},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJG8ALX8QZ2jER16_eYH9P3Rc\",\"vicinity\":\"Online\",\"distance\":519,\"duration\":422}]},{\"type\":\"school\",\"value\":[{\"name\":\"SHATEC Orchard\",\"location\":{\"lat\":1.3036097,\"lng\":103.8239655},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJY9XWUxoZ2jERBlQXGIVYYBE\",\"vicinity\":\"1 Orchard Spring Lane, Level 5 Tourism Court\"},{\"name\":\"MapleBear One Tree Hill\",\"location\":{\"lat\":1.3005464,\"lng\":103.8246077},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJFT9OV-8Z2jERSE7VPxvF2jo\",\"vicinity\":\"1 One Tree Hill\"},{\"name\":\"Dr Xiang Jun TCM\",\"location\":{\"lat\":1.3051908,\"lng\":103.8245008},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJSfhmMT4Z2jER3HoA8xbhmEk\",\"vicinity\":\"131 Tanglin Road, #02-18\"},{\"name\":\"Superland Pre-School (Tanglin)\",\"location\":{\"lat\":1.3056217,\"lng\":103.8229401},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJVyJG_KEZ2jERx6xMThLSWr8\",\"vicinity\":\"56 Tanglin Road, #02-00\"}]},{\"type\":\"restaurant\",\"value\":[{\"name\":\"JEN Singapore Tanglin by Shangri-La\",\"location\":{\"lat\":1.304326,\"lng\":103.8239282},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png\",\"place_id\":\"ChIJdY7JN4oZ2jERVg6-qPEGJ3U\",\"vicinity\":\"1A Cuscaden Road\"},{\"name\":\"Fusion Bistro\",\"location\":{\"lat\":1.3036097,\"lng\":103.8239655},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJ4QSELooZ2jERfrSAcBo4Sms\",\"vicinity\":\"1 Orchard Spring Lane, #01-03, Singapore\"},{\"name\":\"Yantra\",\"location\":{\"lat\":1.3048369,\"lng\":103.8242659},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJr5S3T4oZ2jEREWMZ4HL13-w\",\"vicinity\":\"163 Tanglin Road, #01-129/130/131\"},{\"name\":\"J65\",\"location\":{\"lat\":1.3043525,\"lng\":103.8239831},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJMXEfN4oZ2jER-BqARJv_VR4\",\"vicinity\":\"1A Cuscaden Road\"},{\"name\":\"Basilico\",\"location\":{\"lat\":1.3046567,\"lng\":103.8249439},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJPTigtosZ2jERpvAxTkMlsac\",\"vicinity\":\"1 Cuscaden Road, Level 2\"},{\"name\":\"Yan Ting\",\"location\":{\"lat\":1.3055904,\"lng\":103.825905},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJb9RocosZ2jERzYkzsNVyukk\",\"vicinity\":\"29 Tanglin Road, Level 1U The St. Regis Singapore\"},{\"name\":\"Tea Lounge\",\"location\":{\"lat\":1.3046549,\"lng\":103.8249313},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJWSKZsIsZ2jER2D36xTngNME\",\"vicinity\":\"1 Cuscaden Road, Lobby Level\"},{\"name\":\"Shinji by Kanesaka\",\"location\":{\"lat\":1.3056718,\"lng\":103.8259335},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJo8XdDIsZ2jERghtpkkSHTXc\",\"vicinity\":\"29 Tanglin Road\"},{\"name\":\"Tenshin Restaurant\",\"location\":{\"lat\":1.3046549,\"lng\":103.8249313},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJPTigtosZ2jEROGhm4E1Gbm8\",\"vicinity\":\"1 Cuscaden Road, Level 3\"},{\"name\":\"Summer Palace\",\"location\":{\"lat\":1.3047183,\"lng\":103.8246565},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJPTigtosZ2jERrLUm0plK7bY\",\"vicinity\":\"1 Cuscaden Road, Level 3\"},{\"name\":\"Ah Hoi's Kitchen\",\"location\":{\"lat\":1.3050849,\"lng\":103.8239038},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJdY7JN4oZ2jER2IgcYlzJfqc\",\"vicinity\":\"1A Cuscaden Road, #04-01, Singapore\"},{\"name\":\"Fat Cow - Japanese Wagyu @ Camden Medical Centre\",\"location\":{\"lat\":1.3033039,\"lng\":103.8239218},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJbSEigYkZ2jERXX_RecpRRJI\",\"vicinity\":\"1 Orchard Boulevard, #01-01/02 Camden Medical Centre\"},{\"name\":\"PAUL Tanglin\",\"location\":{\"lat\":1.305035,\"lng\":103.823845},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJ31zEWooZ2jERhwUgBDWxuok\",\"vicinity\":\"163 Tanglin Road, #01-118/120 Tanglin Mall\"},{\"name\":\"Nassim Hill Bakery Bistro Bar\",\"location\":{\"lat\":1.3056534,\"lng\":103.8231134},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJkwE2YIoZ2jER4hA3bvwi1Cs\",\"vicinity\":\"56 Tanglin Road, #01-03\"},{\"name\":\"Oaks Grill & Bar Pte Ltd The\",\"location\":{\"lat\":1.3048414,\"lng\":103.8241062},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJARGLTooZ2jERG_n1-HSNlns\",\"vicinity\":\"Tanglin Mall #01-28/29, 163 Tanglin Road (S)247933, 163 Tanglin Road\"},{\"name\":\"Hototogisu Ramen Premium Tanglin Mall\",\"location\":{\"lat\":1.3048975,\"lng\":103.8234964},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJKRZDMFUZ2jERgOZ6AlSyfqg\",\"vicinity\":\"163 Tanglin Road, #01-111 Tanglin Mall\"},{\"name\":\"Dolcetto\",\"location\":{\"lat\":1.3046387,\"lng\":103.8248841},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJEyQNtosZ2jERhhd7qMjbS30\",\"vicinity\":\"1 Cuscaden Road, Level 1\"},{\"name\":\"Shoukouwa Shinjidai\",\"location\":{\"lat\":1.3046549,\"lng\":103.8249313},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJnf_LR4oZ2jERS47VxCa0t68\",\"vicinity\":\"1 Cuscaden Road, #01-03/04 Conrad Singapore\"},{\"name\":\"Lily.s\",\"location\":{\"lat\":1.3050125,\"lng\":103.8238002},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJt87U_I0Z2jERwEbP9yLREuA\",\"vicinity\":\"163 Tanglin Road, #01-132/133 Tanglin Mall\"},{\"name\":\"Nando's Tanglin Mall\",\"location\":{\"lat\":1.3050183,\"lng\":103.8235507},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJvwfjQYsZ2jERWUUNjTsWMGg\",\"vicinity\":\"01-115/117, Tanglin Mall, 163 Tanglin Road\"}]},{\"type\":\"bus_station\",\"value\":[{\"name\":\"Orchard Blvd Stn Exit 1\",\"location\":{\"lat\":1.303528,\"lng\":103.823586},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJzdMAJYoZ2jERiPqigbfsT6Y\",\"vicinity\":\"Singapore\"},{\"name\":\"Bef One Tree Hill\",\"location\":{\"lat\":1.3005898,\"lng\":103.823843},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ67q1UIgZ2jERdEgiJ7Yelg0\",\"vicinity\":\"Singapore\"},{\"name\":\"Aft One Tree Hill\",\"location\":{\"lat\":1.3002272,\"lng\":103.8240714},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJFz8TWogZ2jERsHpmtIIgD_8\",\"vicinity\":\"Singapore\"},{\"name\":\"Bef Rochalie Dr\",\"location\":{\"lat\":1.3026279,\"lng\":103.8204239},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ54wVRica2jER_CKMAVE6-mM\",\"vicinity\":\"Singapore\"},{\"name\":\"Bef Tomlinson Rd\",\"location\":{\"lat\":1.303936,\"lng\":103.8269738},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJm_Xd8IsZ2jERH2JVLnhqqbE\",\"vicinity\":\"Singapore\"},{\"name\":\"Cliveden at Grange\",\"location\":{\"lat\":1.2992831,\"lng\":103.826623},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJEVaPuogZ2jERKNBkDFBJaeE\",\"vicinity\":\"Singapore\"}]},{\"type\":\"hospital\",\"value\":[{\"name\":\"Cadence Rehabilitation\",\"location\":{\"lat\":1.3031958,\"lng\":103.8238266},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJByBqiIkZ2jERYWVNUtmcra0\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"Maritime Dental Surgery\",\"location\":{\"lat\":1.3031639,\"lng\":103.8239638},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJbfDuOGwZ2jER_g46GuzVhIA\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"The Rehab Practice Pte Ltd\",\"location\":{\"lat\":1.3031601,\"lng\":103.8237124},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJ5Rw7hokZ2jERry7PG9UPXa4\",\"vicinity\":\"1 Orchard Boulevard, Singapore\"},{\"name\":\"Anandakumar\",\"location\":{\"lat\":1.303152,\"lng\":103.823715},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJByBqiIkZ2jERBxuc5LoP61I\",\"vicinity\":\"\"},{\"name\":\"Ang Peng Chye Dr\",\"location\":{\"lat\":1.3031601,\"lng\":103.8237124},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJByBqiIkZ2jERKWVShdpJLFQ\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"Zoe Medical\",\"location\":{\"lat\":1.3031438,\"lng\":103.8240238},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJVXtnhokZ2jERwL93SM6X9jM\",\"vicinity\":\"One Orchard Boulevard, #03-07/08 Camden Medical Centre\"},{\"name\":\"Camden Medical\",\"location\":{\"lat\":1.3032316,\"lng\":103.8239372},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJrX8PhIkZ2jERMaxjxKf-7uU\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"International Medical Clinic - Children's\",\"location\":{\"lat\":1.3033039,\"lng\":103.8239218},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJZ2NqiIkZ2jERlNG8PAlxRNc\",\"vicinity\":\"1 Orchard Boulevard, #14-01/02/03 Camden Medical Centre\"},{\"name\":\"King's Healthcare @ Camden\",\"location\":{\"lat\":1.3033039,\"lng\":103.8239218},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJE5VKh4kZ2jER49QpsVhxh1A\",\"vicinity\":\"1 Orchard Boulevard, #10-04A/05/06/07 Camden Medical Centre\"},{\"name\":\"Ang Koh Ong & Yeoh Pte. Ltd.\",\"location\":{\"lat\":1.303098,\"lng\":103.823783},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJ5Rw7hokZ2jERnrBoAsaNqcI\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"The Straits Eye Centre\",\"location\":{\"lat\":1.3031058,\"lng\":103.8238368},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJgTrlIjQZ2jEROZZ7v3I1tb0\",\"vicinity\":\"1 Orchard Boulevard, #06-07/08 CAMDEN MEDICAL CENTRE, Singapore\"},{\"name\":\"Specialist Endocrine Clinic for Diabetes, Thyroid and Hormones\",\"location\":{\"lat\":1.30316,\"lng\":103.823712},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJZ2NqiIkZ2jERUX2MRUUnTwI\",\"vicinity\":\"1 Orchard Boulevard, #04-03 Camden Medical Centre\"},{\"name\":\"Icon Health Screening\",\"location\":{\"lat\":1.3031867,\"lng\":103.8238072},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJR5tSzuUZ2jERY5Ell6hPbVk\",\"vicinity\":\"1 Orchard Boulevard, #11-03/04 Camden Medical Centre\"},{\"name\":\"International Medical Clinic - Camden\",\"location\":{\"lat\":1.303251,\"lng\":103.8237255},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJKQCns3oa2jERjQvo3urAqHI\",\"vicinity\":\"1 Orchard Boulevard, #14-05/06/07 Camden Medical Centre, Singapore\"},{\"name\":\"ATA Medical Clinic (Orchard) - CT Scan | Health Screening | Medical Check Up\",\"location\":{\"lat\":1.3033039,\"lng\":103.8239218},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJDWjNetUZ2jERxp6ya3bvXyg\",\"vicinity\":\"1 Orchard Boulevard, #05-09 Camden Medical Centre\"},{\"name\":\"Health Screening Singapore (Orchard) by ATA Medical | 新加坡健康检查与体检中心\",\"location\":{\"lat\":1.3033039,\"lng\":103.8239218},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJUd-2RroZ2jERXHO2CNgbd8E\",\"vicinity\":\"1 Orchard Boulevard, #05-09\"}]}]",
+   "customs": [],
+   "salesContacts": null,
+   "tenure": "99 Years Commencing from 20 May 2024",
+   "longitude": "103.82374559792018",
+   "isIvt": 1,
+   "externalCommission": "",
+   "psfFromText": "3,314",
+   "starbuyStartTime": null,
+   "psfFromRea": "3,314",
+   "mapZoomLevel": "",
+   "collectId": "",
+   "facilitiesMap1": "[{\"type\":\"subway_station\",\"value\":[{\"name\":\"Orchard Boulevard\",\"location\":{\"lat\":1.3024984,\"lng\":103.823893},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJC5OQmokZ2jERAYJXCzJ1c1Y\",\"vicinity\":\"Singapore\",\"distance\":17,\"duration\":16},{\"name\":\"Napier\",\"location\":{\"lat\":1.30597,\"lng\":103.81965},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJ_WzKWyAa2jERTk-p-hgrKgU\",\"vicinity\":\"Singapore\",\"distance\":716,\"duration\":633},{\"name\":\"Orchard\",\"location\":{\"lat\":1.30367,\"lng\":103.83179},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJl_5f7Y0Z2jERHoVZ2LLJFOg\",\"vicinity\":\"Singapore\",\"distance\":1005,\"duration\":824}]},{\"type\":\"shopping_mall\",\"value\":[{\"name\":\"Forum The Shopping Mall\",\"location\":{\"lat\":1.3061667,\"lng\":103.8284991},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJQe8Ik4wZ2jERM78XCNBVhe0\",\"vicinity\":\"583 Orchard Road\",\"distance\":737,\"duration\":610},{\"name\":\"Delfi Orchard\",\"location\":{\"lat\":1.3071783,\"lng\":103.8285872},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJo9rEsIwZ2jERlzp8CnVOPzE\",\"vicinity\":\"402 Orchard Road\",\"distance\":926,\"duration\":759},{\"name\":\"Tanglin Mall\",\"location\":{\"lat\":1.3048319,\"lng\":103.8234545},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJmXU4W4oZ2jERDul4uxP0pYc\",\"vicinity\":\"163 Tanglin Road, Singapore\",\"distance\":287,\"duration\":220},{\"name\":\"Claymore Connect\",\"location\":{\"lat\":1.3073023,\"lng\":103.8288259},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJA2UPtIwZ2jERL6-px_QTr64\",\"vicinity\":\"442 Orchard Road\",\"distance\":908,\"duration\":747},{\"name\":\"Palais Renaissance\",\"location\":{\"lat\":1.306542,\"lng\":103.8295263},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJq5AW6IwZ2jERLFhlkwXcXes\",\"vicinity\":\"390 Orchard Road\",\"distance\":937,\"duration\":770},{\"name\":\"Wheelock Place\",\"location\":{\"lat\":1.3047423,\"lng\":103.8305287},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJmbzds40Z2jERALKuryaSSVI\",\"vicinity\":\"501 Orchard Road\",\"distance\":913,\"duration\":887},{\"name\":\"Shaw House\",\"location\":{\"lat\":1.3058458,\"lng\":103.8312426},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJPwWJoI0Z2jERcpYtSDNQMDg\",\"vicinity\":\"350 Orchard Road\",\"distance\":995,\"duration\":789},{\"name\":\"Fei Siong\",\"location\":{\"lat\":1.3039288,\"lng\":103.8319512},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJHXFAbZIZ2jERUOrXfZRU988\",\"vicinity\":\"2 Orchard Turn\",\"distance\":1252,\"duration\":1182},{\"name\":\"Shaw Centre\",\"location\":{\"lat\":1.3062932,\"lng\":103.8318472},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJdVshco0Z2jER5H03m10YGas\",\"vicinity\":\"1 Scotts Road\",\"distance\":1161,\"duration\":932},{\"name\":\"Tudor Court\",\"location\":{\"lat\":1.3051618,\"lng\":103.824369},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJUQIaU4oZ2jERnaLehmPG6pw\",\"vicinity\":\"131 Tanglin Road\",\"distance\":531,\"duration\":424},{\"name\":\"Tanglin Place\",\"location\":{\"lat\":1.3053255,\"lng\":103.8250604},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJt10jr4sZ2jERo_UCZbIlPvE\",\"vicinity\":\"91 Tanglin Road\",\"distance\":454,\"duration\":350},{\"name\":\"ViryaByUrbi\",\"location\":{\"lat\":1.29956,\"lng\":103.825762},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJG8ALX8QZ2jER16_eYH9P3Rc\",\"vicinity\":\"Online\",\"distance\":519,\"duration\":422},{\"name\":\"Oriental Treasures\",\"location\":{\"lat\":1.306367,\"lng\":103.8268524},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJp-GkZosZ2jERuJp5e96wHbI\",\"vicinity\":\"19 Tanglin Road, Singapore\",\"distance\":729,\"duration\":573},{\"name\":\"Orchard Towers\",\"location\":{\"lat\":1.3072293,\"lng\":103.8293323},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJ-z0z0IwZ2jERXjOtNGbV0-0\",\"vicinity\":\"400 Orchard Road\",\"distance\":971,\"duration\":796},{\"name\":\"Lady 9 Pte Ltd\",\"location\":{\"lat\":1.3071116,\"lng\":103.8285773},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJB7dC-1IZ2jERcA-uoeW6-W4\",\"vicinity\":\"402 Orchard Road, #02-06 Delfi Orchard\",\"distance\":924,\"duration\":757},{\"name\":\"SC Collection\",\"location\":{\"lat\":1.3069439,\"lng\":103.8291434},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJl4Dv838Z2jERuCIBbdwZbkk\",\"vicinity\":\"400 Orchard Road, #04-13 Orchard Towers, Singapore\",\"distance\":887,\"duration\":730},{\"name\":\"Decimal\",\"location\":{\"lat\":1.3069439,\"lng\":103.8291434},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJ9wZHdU0Z2jERS7FXOdSv4W8\",\"vicinity\":\"400 Orchard Road, #05-25 ORCHARD TOWERS, Singapore\",\"distance\":887,\"duration\":730},{\"name\":\"MAISON MARCEL\",\"location\":{\"lat\":1.3066492,\"lng\":103.8295057},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJeXY_JEAZ2jERQxZ6dO0lPF4\",\"vicinity\":\"390 Orchard Road #01-04 Palais Renaissance\",\"distance\":919,\"duration\":756},{\"name\":\"Far East Shopping Centre\",\"location\":{\"lat\":1.3056257,\"lng\":103.8301534},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJW102VIwZ2jERnOxwpL7Xju8\",\"vicinity\":\"545 Orchard Road\",\"distance\":951,\"duration\":752},{\"name\":\"Therapy Market at Wheelock Place\",\"location\":{\"lat\":1.304614599999999,\"lng\":103.8306334},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png\",\"place_id\":\"ChIJMwAvB6EZ2jERPFqNH3a9jI8\",\"vicinity\":\"501 Orchard Road, #B1-06, Singapore\",\"distance\":886,\"duration\":705}]},{\"type\":\"school\",\"value\":[{\"name\":\"The Excelerate Program\",\"location\":{\"lat\":1.306303,\"lng\":103.826989},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJp-GkZosZ2jERQeM4ieJDxg8\",\"vicinity\":\"Tanglin Shopping Centre #05-10/11/29/31, 19 Tanglin Road\",\"distance\":136,\"duration\":101},{\"name\":\"Kindernomics School Private Limited\",\"location\":{\"lat\":1.3063364,\"lng\":103.8283982},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJhZhDkowZ2jERBexBs4Mg6pM\",\"vicinity\":\"583 Orchard Road, Singapore\",\"distance\":477,\"duration\":383},{\"name\":\"SITA Tennis Academy Main Centre\",\"location\":{\"lat\":1.304527,\"lng\":103.8174061},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJ06ezqCEa2jER2epEYD1wyjI\",\"vicinity\":\"9A Sherwood Road\",\"distance\":546,\"duration\":436},{\"name\":\"Cornerstone Learning Needs Centre\",\"location\":{\"lat\":1.305413,\"lng\":103.830067},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJS7nkWekZ2jERkIR8OJ9zy2w\",\"vicinity\":\"545 Orchard Road, Unit 08-08A Far East Shopping Centre, Orchard\",\"distance\":543,\"duration\":440},{\"name\":\"Unified Yi Jing Academy Pte Ltd\",\"location\":{\"lat\":1.3054879,\"lng\":103.8301266},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJKVYGQkUBBBAR7lMc-dh0CS4\",\"vicinity\":\"545 Orchard Road 09-12, Far East Shopping Centre\"},{\"name\":\"Joinus Language School\",\"location\":{\"lat\":1.305747,\"lng\":103.830026},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJvQnE_owZ2jERKtTxxiphztU\",\"vicinity\":\"545 Orchard Road #15-01 Far East Shopping Centre, Singapore 238882\"},{\"name\":\"Excel Learning Studio\",\"location\":{\"lat\":1.305769,\"lng\":103.830026},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJHau4_owZ2jER0k6HzRAibwg\",\"vicinity\":\"545 Orchard Road #06-05 Far East Shopping Centre, Singapore 238882\"},{\"name\":\"Montessori Teacher Training Centre\",\"location\":{\"lat\":1.305715,\"lng\":103.830069},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJK67m_owZ2jERMU_5WeF_Ah8\",\"vicinity\":\"545 Orchard Road #11-12 Far East Shopping Centre, Singapore 238882\"},{\"name\":\"Kay Poh Road Baptist Kindergarten\",\"location\":{\"lat\":1.2966789,\"lng\":103.8291795},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJWYnTs4UZ2jERFrOYryQiKeU\",\"vicinity\":\"7 Kay Poh Road\"},{\"name\":\"The Schoolhouse Claymore\",\"location\":{\"lat\":1.3083036,\"lng\":103.8296967},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJSYaAMvMZ2jERrsesWXlA8u0\",\"vicinity\":\"11 Claymore Road\"},{\"name\":\"Little Stars Music School\",\"location\":{\"lat\":1.2943629,\"lng\":103.8275248},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJm3k5XIMZ2jERTBpbQBtIBK4\",\"vicinity\":\"428 River Valley Road, #01-12 Loft @ Nathan\"},{\"name\":\"SHATEC Orchard\",\"location\":{\"lat\":1.3036097,\"lng\":103.8239655},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJY9XWUxoZ2jERBlQXGIVYYBE\",\"vicinity\":\"1 Orchard Spring Lane, Level 5 Tourism Court\"},{\"name\":\"MapleBear One Tree Hill\",\"location\":{\"lat\":1.3005464,\"lng\":103.8246077},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJFT9OV-8Z2jERSE7VPxvF2jo\",\"vicinity\":\"1 One Tree Hill\"},{\"name\":\"Dr Xiang Jun TCM\",\"location\":{\"lat\":1.3051908,\"lng\":103.8245008},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJSfhmMT4Z2jER3HoA8xbhmEk\",\"vicinity\":\"131 Tanglin Road, #02-18\"},{\"name\":\"Superland Pre-School (Tanglin)\",\"location\":{\"lat\":1.3056217,\"lng\":103.8229401},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJVyJG_KEZ2jERx6xMThLSWr8\",\"vicinity\":\"56 Tanglin Road, #02-00\"},{\"name\":\"EtonHouse International School Orchard\",\"location\":{\"lat\":1.3063519,\"lng\":103.8260864},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJu2nba4sZ2jERe7gH5MSYcQk\",\"vicinity\":\"10 Tanglin Road, #01-01\"},{\"name\":\"Singapore Meditation 新加坡修心中心 Pusat Meditasi Singapura சிங்கப்பூர் தியானம்\",\"location\":{\"lat\":1.3080975,\"lng\":103.828957},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJe3kfQxMZ2jERF7Br-W_Zc9k\",\"vicinity\":\"#04-04, 7 Claymore Road\"},{\"name\":\"QUREO(キュレオ)プログラミング教室 WAM個別進学塾 オーチャード校\",\"location\":{\"lat\":1.3062035,\"lng\":103.8274452},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJgyXtnj4Z2jER_xy8_Eakh5E\",\"vicinity\":\"1 Tanglin Road, #04-15 RENDEZVOUS HOTEL\"},{\"name\":\"Fantasia Music Academy\",\"location\":{\"lat\":1.3062035,\"lng\":103.8274452},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJ6y6pIx4Z2jERhJj4hMN55sc\",\"vicinity\":\"1 Tanglin Road, #04-05 Orchard Rendezvous Hotel\"},{\"name\":\"My Tennis Coach | Singapore Lessons\",\"location\":{\"lat\":1.3051922,\"lng\":103.8284188},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png\",\"place_id\":\"ChIJ3x0AiZoZ2jERExM42DH66ng\",\"vicinity\":\"190 Orchard Boulevard, Singapore\"}]},{\"type\":\"restaurant\",\"value\":[{\"name\":\"JEN Singapore Tanglin by Shangri-La\",\"location\":{\"lat\":1.304326,\"lng\":103.8239282},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png\",\"place_id\":\"ChIJdY7JN4oZ2jERVg6-qPEGJ3U\",\"vicinity\":\"1A Cuscaden Road\",\"distance\":220,\"duration\":165},{\"name\":\"Hard Rock Cafe\",\"location\":{\"lat\":1.3057768,\"lng\":103.8281191},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJpfgvhowZ2jERbVbSD5w0-FY\",\"vicinity\":\"50 Cuscaden Road, #02-01 Hpl House\",\"distance\":136,\"duration\":101},{\"name\":\"PS.Cafe Palais Renaissance\",\"location\":{\"lat\":1.3068808,\"lng\":103.8297596},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png\",\"place_id\":\"ChIJBcxR3IwZ2jERXEfgu9SV-vs\",\"vicinity\":\"390 Orchard Road, #02 - 09A\",\"distance\":333,\"duration\":254},{\"name\":\"Muddy Murphy's Irish Pub\",\"location\":{\"lat\":1.3074953,\"lng\":103.828947},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png\",\"place_id\":\"ChIJ-ZtvtowZ2jERyywaJQ_r4DU\",\"vicinity\":\"442 Orchard Road #01-02 to 05 Claymore Connect\",\"distance\":225,\"duration\":169},{\"name\":\"Fusion Bistro\",\"location\":{\"lat\":1.3036097,\"lng\":103.8239655},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJ4QSELooZ2jERfrSAcBo4Sms\",\"vicinity\":\"1 Orchard Spring Lane, #01-03, Singapore\",\"distance\":314,\"duration\":254},{\"name\":\"Yantra\",\"location\":{\"lat\":1.3048369,\"lng\":103.8242659},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJr5S3T4oZ2jEREWMZ4HL13-w\",\"vicinity\":\"163 Tanglin Road, #01-129/130/131\",\"distance\":598,\"duration\":472},{\"name\":\"Jiang-Nan Chun\",\"location\":{\"lat\":1.3052848,\"lng\":103.8287235},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJqbrxYIwZ2jER0nv6PClRe_I\",\"vicinity\":\"190 Orchard Boulevard, Level 2\",\"distance\":314,\"duration\":254},{\"name\":\"Iggy's\",\"location\":{\"lat\":1.3060925,\"lng\":103.8292236},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJFQYC8YwZ2jERaWLMF9m1AqM\",\"vicinity\":\"581 Orchard Road, Level 3 voco Orchard Singapore by IHG\",\"distance\":604,\"duration\":477},{\"name\":\"Yan Ting\",\"location\":{\"lat\":1.3055904,\"lng\":103.825905},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJb9RocosZ2jERzYkzsNVyukk\",\"vicinity\":\"29 Tanglin Road, Level 1U The St. Regis Singapore\",\"distance\":314,\"duration\":254},{\"name\":\"J65\",\"location\":{\"lat\":1.3043525,\"lng\":103.8239831},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJMXEfN4oZ2jER-BqARJv_VR4\",\"vicinity\":\"1A Cuscaden Road\",\"distance\":364,\"duration\":279},{\"name\":\"Akashi\",\"location\":{\"lat\":1.3066703,\"lng\":103.8273242},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJp-GkZosZ2jER95PUqtZbMro\",\"vicinity\":\"1 Tanglin Road, #01-01A\",\"distance\":515,\"duration\":412},{\"name\":\"Basilico\",\"location\":{\"lat\":1.3046567,\"lng\":103.8249439},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJPTigtosZ2jERpvAxTkMlsac\",\"vicinity\":\"1 Cuscaden Road, Level 2\",\"distance\":170,\"duration\":148},{\"name\":\"il Cielo\",\"location\":{\"lat\":1.3059057,\"lng\":103.8293282},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJFQYC8YwZ2jERAoscWba7IaQ\",\"vicinity\":\"581 Orchard Road voco, Level 24 Orchard, Singapore\",\"distance\":474,\"duration\":378},{\"name\":\"Itacho Sushi\",\"location\":{\"lat\":1.3046004,\"lng\":103.8313397},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJKUyN6Y0Z2jERcH1uLMlHw6U\",\"vicinity\":\"2 Orchard Turn, #B3-20 ION Orchard\",\"distance\":533,\"duration\":431},{\"name\":\"Taste Paradise 味之楼 at Ion Orchard\",\"location\":{\"lat\":1.3043263,\"lng\":103.8317124},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJoyTzv40Z2jER7SwK5iAfrZA\",\"vicinity\":\"2 Orchard Turn, #04-07 ION Orchard\",\"distance\":323,\"duration\":247},{\"name\":\"Les Amis\",\"location\":{\"lat\":1.3066019,\"lng\":103.8314361},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJR5yDbY0Z2jER6GcsxL56OLk\",\"vicinity\":\"1 Scotts Road, #01 - 16 Shaw Centre, Singapore\",\"distance\":289,\"duration\":221},{\"name\":\"Bistro Du Vin\",\"location\":{\"lat\":1.306525,\"lng\":103.8315897},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJR5yDbY0Z2jER-OfAY_3D6kE\",\"vicinity\":\"1 Scotts Road, #01 - 14 Shaw Centre, Singapore\",\"distance\":310,\"duration\":250},{\"name\":\"Tea Lounge\",\"location\":{\"lat\":1.3046549,\"lng\":103.8249313},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJWSKZsIsZ2jER2D36xTngNME\",\"vicinity\":\"1 Cuscaden Road, Lobby Level\",\"distance\":314,\"duration\":254},{\"name\":\"Shinji by Kanesaka\",\"location\":{\"lat\":1.3056718,\"lng\":103.8259335},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJo8XdDIsZ2jERghtpkkSHTXc\",\"vicinity\":\"29 Tanglin Road\",\"distance\":467,\"duration\":371},{\"name\":\"Unos\",\"location\":{\"lat\":1.3066594,\"lng\":103.8276943},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png\",\"place_id\":\"ChIJV-4CoowZ2jERrDfuAkfmT0Y\",\"vicinity\":\"1 Tanglin Road, Singapore\",\"distance\":441,\"duration\":342}]},{\"type\":\"bus_station\",\"value\":[{\"name\":\"Orchard Blvd Stn Exit 1\",\"location\":{\"lat\":1.303528,\"lng\":103.823586},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJzdMAJYoZ2jERiPqigbfsT6Y\",\"vicinity\":\"Singapore\",\"distance\":123,\"duration\":91},{\"name\":\"Bef One Tree Hill\",\"location\":{\"lat\":1.3005898,\"lng\":103.823843},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ67q1UIgZ2jERdEgiJ7Yelg0\",\"vicinity\":\"Singapore\",\"distance\":276,\"duration\":225},{\"name\":\"Aft One Tree Hill\",\"location\":{\"lat\":1.3002272,\"lng\":103.8240714},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJFz8TWogZ2jERsHpmtIIgD_8\",\"vicinity\":\"Singapore\",\"distance\":429,\"duration\":368},{\"name\":\"Bef Rochalie Dr\",\"location\":{\"lat\":1.3026279,\"lng\":103.8204239},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ54wVRica2jER_CKMAVE6-mM\",\"vicinity\":\"Singapore\",\"distance\":671,\"duration\":565},{\"name\":\"Bef Tomlinson Rd\",\"location\":{\"lat\":1.303936,\"lng\":103.8269738},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJm_Xd8IsZ2jERH2JVLnhqqbE\",\"vicinity\":\"Singapore\",\"distance\":398,\"duration\":322},{\"name\":\"Cliveden at Grange\",\"location\":{\"lat\":1.2992831,\"lng\":103.826623},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJEVaPuogZ2jERKNBkDFBJaeE\",\"vicinity\":\"Singapore\",\"distance\":622,\"duration\":499},{\"name\":\"Gramercy Pk\",\"location\":{\"lat\":1.2990415,\"lng\":103.8266893},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJLwffpIgZ2jERXRHvDoPAWtA\",\"vicinity\":\"Singapore\"},{\"name\":\"Delfi Orchard\",\"location\":{\"lat\":1.3070313,\"lng\":103.828397},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ-VJ-u4wZ2jERPvrhSe7lqKc\",\"vicinity\":\"Singapore\"},{\"name\":\"Royal Thai Embassy\",\"location\":{\"lat\":1.3059203,\"lng\":103.8304349},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJi3VaAo0Z2jERzDQGVCgEgM4\",\"vicinity\":\"Singapore\"},{\"name\":\"Opp Orchard Stn/ION\",\"location\":{\"lat\":1.3031167,\"lng\":103.8323596},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJzxpF_Y0Z2jERVVeB9pF_3zE\",\"vicinity\":\"Singapore\"},{\"name\":\"Orchard Stn Exit 13\",\"location\":{\"lat\":1.3024846,\"lng\":103.8324375},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bus-71.png\",\"place_id\":\"ChIJ7dAREI4Z2jER0CyUuf6FKvU\",\"vicinity\":\"Singapore\"}]},{\"type\":\"hospital\",\"value\":[{\"name\":\"Gleneagles Hospital\",\"location\":{\"lat\":1.3076174,\"lng\":103.8198659},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJWXTRJCAa2jERXNBB0kxTWSU\",\"vicinity\":\"6A Napier Road\"},{\"name\":\"Cadence Rehabilitation\",\"location\":{\"lat\":1.3031958,\"lng\":103.8238266},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJByBqiIkZ2jERYWVNUtmcra0\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"Maritime Dental Surgery\",\"location\":{\"lat\":1.3031639,\"lng\":103.8239638},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJbfDuOGwZ2jER_g46GuzVhIA\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"Hoe Ah Leong Surgery Pte Ltd\",\"location\":{\"lat\":1.3076257,\"lng\":103.8202012},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJvY5xIiAa2jERsf1-olnqzJc\",\"vicinity\":\"6 Napier Road, #03-10 Gleneagles Medical Centre\"},{\"name\":\"The Rehab Practice Pte Ltd\",\"location\":{\"lat\":1.3031601,\"lng\":103.8237124},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJ5Rw7hokZ2jERry7PG9UPXa4\",\"vicinity\":\"1 Orchard Boulevard, Singapore\"},{\"name\":\"Anandakumar\",\"location\":{\"lat\":1.303152,\"lng\":103.823715},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJByBqiIkZ2jERBxuc5LoP61I\",\"vicinity\":\"\"},{\"name\":\"Ang Peng Chye Dr\",\"location\":{\"lat\":1.3031601,\"lng\":103.8237124},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJByBqiIkZ2jERKWVShdpJLFQ\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"Zoe Medical\",\"location\":{\"lat\":1.3031438,\"lng\":103.8240238},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJVXtnhokZ2jERwL93SM6X9jM\",\"vicinity\":\"One Orchard Boulevard, #03-07/08 Camden Medical Centre\"},{\"name\":\"Camden Medical\",\"location\":{\"lat\":1.3032316,\"lng\":103.8239372},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJrX8PhIkZ2jERMaxjxKf-7uU\",\"vicinity\":\"1 Orchard Boulevard\"},{\"name\":\"International Medical Clinic - Children's\",\"location\":{\"lat\":1.3033039,\"lng\":103.8239218},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJZ2NqiIkZ2jERlNG8PAlxRNc\",\"vicinity\":\"1 Orchard Boulevard, #14-01/02/03 Camden Medical Centre\"},{\"name\":\"King's Healthcare @ Camden\",\"location\":{\"lat\":1.3033039,\"lng\":103.8239218},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJE5VKh4kZ2jER49QpsVhxh1A\",\"vicinity\":\"1 Orchard Boulevard, #10-04A/05/06/07 Camden Medical Centre\"},{\"name\":\"Mak Heart Clinic\",\"location\":{\"lat\":1.3077263,\"lng\":103.8200865},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJ1-H_JyAa2jER5drnZV-f-Y8\",\"vicinity\":\"6A Napier Road, #08-13 Gleneagles Medical Centre\"},{\"name\":\"Dr BL Lim Centre For Psychological Wellness\",\"location\":{\"lat\":1.3070598,\"lng\":103.8201775},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJuWj-GCAa2jERqhwDuqBr04g\",\"vicinity\":\"6 Napier Road, #09-09 Gleneagles Medical Centre\"},{\"name\":\"Charles Chan Heart Clinic\",\"location\":{\"lat\":1.30752,\"lng\":103.82035},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJuWj-GCAa2jERfXAiZgPS474\",\"vicinity\":\"6 Napier Road, Singapore\"},{\"name\":\"Fones Clinic\",\"location\":{\"lat\":1.3073478,\"lng\":103.8202146},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJuWj-GCAa2jERs33eY9i2h10\",\"vicinity\":\"6 Napier Road, #04-11\"},{\"name\":\"ReinHealth Pte Ltd (Health Screening)\",\"location\":{\"lat\":1.3061478,\"lng\":103.8279268},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJR2YCMZIZ2jERgdrerQAKwp4\",\"vicinity\":\"21 Cuscaden Road, #02-14\"},{\"name\":\"CanHOPE\",\"location\":{\"lat\":1.3070486,\"lng\":103.8200142},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJW3TRJCAa2jER_-43sMS99yg\",\"vicinity\":\"6A Napier Road, Lvl 3 Gleneagles Hospital\"},{\"name\":\"Spine Neuro Specialist Centre\",\"location\":{\"lat\":1.3076257,\"lng\":103.8202012},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJj0VnOSAa2jERdh8fFqZL548\",\"vicinity\":\"6 Napier Road, #10-06 Gleneagles Medical Centre\"},{\"name\":\"Asian Heart & Vascular Centre (AHVC) - Gleneagles Hospital Annexe Block\",\"location\":{\"lat\":1.3073782,\"lng\":103.8198608},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png\",\"place_id\":\"ChIJj0VnOSAa2jERooipiCtPO14\",\"vicinity\":\"Gleneagles Hospital Annexe, 6 Napier Road, #01-39\"},{\"name\":\"The Harley Street Heart and Vascular Centre (Gleneagles)\",\"location\":{\"lat\":1.3073782,\"lng\":103.8198608},\"icon\":\"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png\",\"place_id\":\"ChIJ6cuDPiAa2jERTtRZRgDcVsQ\",\"vicinity\":\"6A Napier Road, #02-41\"}]}]",
+   "soldOut": 0,
+   "pdfSize": 11,
+   "launchTime": "Jul 2025",
+   "priceFromRea": "1,571,000",
+   "keyPoints": "",
+   "district": "D10",
+   "contactBrokes": {
+    "datas": [
+     {
+      "externalCommission": null,
+      "website": "https://www.propnex.com/",
+      "commissionNum": null,
+      "directIncentive": null,
+      "contactImage": null,
+      "otherGST": null,
+      "onlineNum": 0,
+      "brokeId": "25aa2d2624f54406b900cca81ccb30ae",
+      "allNum": 6,
+      "rand": 0.6320716567636203,
+      "ECBIncentive": null,
+      "brokeName": "PropNex",
+      "internalCommission": null,
+      "internalCommissionNum": null,
+      "coBrokeGST": null,
+      "logo": "/upload/broke/c16b84966acc46c6ba69dc2a6291d711/logo/20260602/25aa2d2624f54406b900cca81ccb30ae.png",
+      "defaultCommission": "",
+      "serviceAgent": null
+     }
+    ],
+    "commissionDesc": null
+   },
+   "psfFrom": "3,314",
+   "projectName": "UPPERHOUSE at Orchard Boulevard 傲杰嘉苑",
+   "projectId": "7cf72256c81743dfba3986a927ef79e6",
+   "siteArea": "7,031.4 sqm",
+   "access": {
+    "NoView_Sold_Agency": "3",
+    "View_Price7": "3",
+    "Access_Project": "3",
+    "View_Sensitive_Files": "3",
+    "View_Price1": "3",
+    "View_Price2": "3",
+    "View_Price5": "3",
+    "Receive_Sold_Available_Notification": "3",
+    "View_Price6": "3",
+    "View_Status": "3",
+    "View_Sensitive_Document": "3",
+    "View_Price3": "3",
+    "View_Price4": "3",
+    "Receive_Reserved_Notification": "3",
+    "View_Status_Reserved": "3",
+    "View_Summary_Report": "3"
+   },
+   "latitude": "1.302458634252482",
+   "cooperate": 0,
+   "description": "PHA+VVBQRVJIT1VTRSBhdCBPcmNoYXJkIEJvdWxldmFyZCBpcyBtb3JlIHRoYW4gYSByZXNpZGVuY2U7IGl0IGlzIGEgbGVnYWN5LCBib3JuIGZyb20gVU9MJ3MgcmVub3duZWQgZGVkaWNhdGlvbiB0byBjcmFmdGluZyBjb2xsZWN0aWJsZSBhbmQgbGl2ZWFibGUgbHV4dXJ5LjwvcD4KPHA+Jm5ic3A7PC9wPgo8cD5JdHMgcHJlc3RpZ2lvdXMgYWRkcmVzcyBncmFudHMgcmVzaWRlbnRzIGFuIGV4Y2x1c2l2ZSB2YW50YWdlIG92ZXIgU2luZ2Fwb3JlJ3MgbW9zdCBjb3ZldGVkIGRpc3RyaWN0LCBvZmZlcmluZyBsaWZlc3R5bGUgZGVmaW5lZCBieSByZWZpbmVtZW50IGFuZCBkaXN0aW5jdGlvbi48L3A+CjxwPiZuYnNwOzwvcD4KPHA+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNpbmdtYXAuY29tL3VwbG9hZC9icm9rZS9hMGE4N2MwOWE4ZmE0NWYxYjYyOWZkMzlmMjcyMjRjNi9lZGl0b3JJbWcvcHJvamVjdC8yMDI1MDYxMi85YzRkNzFhOWU0N2I0MmUxOTMzZGRmYzNkOTZlMTg3MC5wbmciIC8+PC9wPg==",
+   "inviteImg": null,
+   "nearbyAmenities": "PHA+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNpbmdtYXAuY29tL3VwbG9hZC9icm9rZS9hMGE4N2MwOWE4ZmE0NWYxYjYyOWZkMzlmMjcyMjRjNi9lZGl0b3JJbWcvcHJvamVjdC8yMDI1MDcwMy85OWRkYWUwY2I3MTM0N2YyYjlmOTJkYzYyMjhkMDg2NC5wbmciIC8+PC9wPg==",
+   "plotRatio": "",
+   "brokeId": "a0a87c09a8fa45f1b629fd39f27224c6",
+   "expTop": "2H 2028",
+   "starbuyEndTime": null,
+   "priceFrom": "1,571,000",
+   "share": 1,
+   "commission": "",
+   "galleryLocation": "Along Tomlinson road",
+   "popImg": "",
+   "contactImage": "",
+   "currencySymbol": "$",
+   "abbreviation": "UPPERHOUSE-at-Orchard-Boulevard",
+   "projectStatus": "By BUC",
+   "mainImage": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/imgs/20250526/1c0a48af7a7a4a94a8656152e583ef21.jpeg",
+   "streetAddress": "22 Orchard Boulevard",
+   "popStartTime": "2025-07-22",
+   "snapshotLogo": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/imgs/20250522/f1912798c214444185c7738a7f4a1b0f.png",
+   "developer": "United Venture Development (No.7) Pte, Ltd,",
+   "completionDate": 1845907200000,
+   "location": "D10 - Tanglin / Holland",
+   "facilities": "PHA+PHNwYW4gc3R5bGU9InRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOyI+PHN0cm9uZz5CQVNFTUVOVCAxPC9zdHJvbmc+PC9zcGFuPjwvcD4KPHA+MS4gRHJvcCBPZmYgKCBBcnJpdmFsIENvdXJ0eWFyZCk8L3A+CjxwPjIuIFJlc2lkZW50cycgTG91bmdlPC9wPgo8cD4zLiBXYXRlciBGZWF0dXJlPC9wPgo8cD40LiBQbGF6YSBQbGFudGluZzwvcD4KPHA+Jm5ic3A7PC9wPgo8cD48c3BhbiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7Ij48c3Ryb25nPkxFVkVMIDE8L3N0cm9uZz48L3NwYW4+PC9wPgo8cD41LiBGdW5jdGlvbiBSb29tPC9wPgo8cD42LiBTcGEgQmVkPC9wPgo8cD43LiBCdWJibGUgUG9vbDwvcD4KPHA+OC4gUGxheSBBcmVhPC9wPgo8cD45LiBHYXJkZW4gTG91bmdlPC9wPgo8cD4xMC4gVGhlIEd5bTwvcD4KPHA+MTEuIDUwbSBMYXAgUG9vbCAoSW5maW5pdHkgUG9vbCk8L3A+CjxwPjEyLiBQb29sc2lkZSBEZWNrPC9wPgo8cD4xMy4gRmFtaWx5IERlY2s8L3A+CjxwPjE0LiBTZXJlbml0eSBMYXduPC9wPgo8cD4xNS4gTGVpc3VyZSBQb29sPC9wPgo8cD4xNi4gR291cm1ldCBQYXZpbGlvbjwvcD4KPHA+MTcuIEZsb2F0aW5nIFZlcmFuZGE8L3A+CjxwPjE4LiBQbGF5IFBvb2w8L3A+CjxwPjE5LiBHcmFuZCBMb2JieTwvcD4KPHA+MjAuIFJlZmxlY3Rpb24gQnJvb2s8L3A+CjxwPiZuYnNwOzwvcD4KPHA+PHNwYW4gc3R5bGU9InRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOyI+PHN0cm9uZz5USEUgQk9UQU5JQ0FMIFZJTExBIChMRVZFTCAxKTwvc3Ryb25nPjwvc3Bhbj48L3A+CjxwPjIxLiBWaWxsYSBCcmlkZ2U8L3A+CjxwPjIyLiBIeWRyb3Bvb2w8L3A+CjxwPjIzLiBJbmRvb3IgU3BhIFBvb2w8L3A+CjxwPjI0LiBHYXJkZW4gUGF2aWxpb248L3A+CjxwPjI1LiBHYXJkZW4gUmFpbiBTaG93ZXI8L3A+CjxwPjI2LiBSZWxheGF0aW9uIERlY2s8L3A+CjxwPjI3LiBUaGUgU3BhIFNhbmN0dWFyeTwvcD4KPHA+MjguIENoYW5naW5nIFJvb208L3A+CjxwPiZuYnNwOzwvcD4KPHA+PHNwYW4gc3R5bGU9InRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOyI+PHN0cm9uZz5PVEhFUiBGQUNJTElUSUVTIEkgQkFTRU1FTlQgMyAoVVBQRVIpPC9zdHJvbmc+PC9zcGFuPjwvcD4KPHA+QS4gVHJhbnNmb3JtZXIgUm9vbTwvcD4KPHA+Qi4gQmluIENlbnRyZTwvcD4KPHA+Jm5ic3A7PC9wPgo8cD48c3BhbiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7Ij48c3Ryb25nPkJBU0VNRU5UIDI8L3N0cm9uZz48L3NwYW4+PC9wPgo8cD5DLiBCaWN5Y2xlIFBhcmtpbmc8L3A+CjxwPkQuIFNpZGUgR2F0ZShzKTwvcD4KPHA+Jm5ic3A7PC9wPgo8cD48c3BhbiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7Ij48c3Ryb25nPkJBU0VNRU5UIDE8L3N0cm9uZz48L3NwYW4+PC9wPgo8cD5FLiBFbnRyYW5jZTwvcD4KPHA+Ri4gR3VhcmRob3VzZTwvcD4KPHA+Ry4gTWFuYWdlbWVudCBPZmZpY2U8L3A+CjxwPkguIEJpY3ljbGUgcGFya2luZzwvcD4KPHA+SS4gU2lkZSBHYXRlKHMpPC9wPgo8cD5KLiBHZW5zZXQ8L3A+CjxwPiZuYnNwOzwvcD4KPHA+PHNwYW4gc3R5bGU9InRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOyI+PHN0cm9uZz5MRVZFTCAxPC9zdHJvbmc+PC9zcGFuPjwvcD4KPHA+Sy4gVmVudGlsYXRpb24gU2hhZnQ8L3A+"
+  },
+  "success": true
+ },
+ "media": {
+  "code": "0",
+  "msg": "SUCCESS",
+  "datas": {
+   "img": [
+    {
+     "groupName": "",
+     "link": "",
+     "id": "628203ae5d0f46539fea86da50f1bfe0",
+     "title": "Upperhouse  Resident's Lounge",
+     "type": 1,
+     "abbreviation": "Upperhouse--Resident's-Lounge-7580700733327360",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250703/Upperhouse__Resident's_Lounge.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "f8610ffddb3e49868a17a62bcf6809bd",
+     "title": "UPPERHOUSE_Facade",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_Facade-7552131075213312",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250613/UPPERHOUSE_Facade.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "f31ebae5b07b4275accf3a370645f53e",
+     "title": "Upperhouse  Gourmet Pavilion",
+     "type": 1,
+     "abbreviation": "Upperhouse--Gourmet-Pavilion-7580701238134784",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250703/Upperhouse__Gourmet_Pavilion.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "f309579a949b4960bf92a8e6eecd4d52",
+     "title": "UPPERHOUSE_The Botanical Villa_Indoor Spa Pool 1",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_The-Botanical-Villa_Indoor-Spa-Pool-1-7559162646595584",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250618/UPPERHOUSE_The_Botanical_Villa_Indoor_Spa_Pool_1.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "e9d0001e2a5d40cca580710af623e22e",
+     "title": "upperhouse hero shot",
+     "type": 1,
+     "abbreviation": "upperhouse-hero-shot-7528027653326848",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250527/upperhouse_hero_shot.jpeg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "cb031a1e6e724c26835604a330289284",
+     "title": "UPPERHOUSE SignatureCollection_Merlot_RGB",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-SignatureCollection_Merlot_RGB-7504243209635840",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSE_SignatureCollection_Merlot_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "c43c67f5ac0a4821a0904fdde052f829",
+     "title": "UPPERHOUSE_Infinity Pool",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_Infinity-Pool-7552130994898944",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250613/UPPERHOUSE_Infinity_Pool.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "c1a1196479424423ba7e8762b29f26c6",
+     "title": "Upperhouse_FullLogo_Icon_Ecru_RGB",
+     "type": 1,
+     "abbreviation": "Upperhouse_FullLogo_Icon_Ecru_RGB-7504244826015744",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/Upperhouse_FullLogo_Icon_Ecru_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "b847203fe89047839fe8bedfb3cfa39a",
+     "title": "UPPERHOUSE BespokeCollection_Ecru_RGB",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-BespokeCollection_Ecru_RGB-7504243525519360",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSE_BespokeCollection_Ecru_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "aaf6cc109d334f25aef4e6d5df66d903",
+     "title": "Upperhouse_FullLogo_Icon_Merlot_RGB",
+     "type": 1,
+     "abbreviation": "Upperhouse_FullLogo_Icon_Merlot_RGB-7504244964657152",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/Upperhouse_FullLogo_Icon_Merlot_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "a3c18629f5524a70af84a62cf917d1b3",
+     "title": "UPPERHOUSE BespokeCollection_Icon_Merlot_RGB",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-BespokeCollection_Icon_Merlot_RGB-7504243831293952",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSE_BespokeCollection_Icon_Merlot_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "9fbb55b2e6e542188455e957e89a2413",
+     "title": "UPPERHOUSE_The Botanical Villa_The Spa Sanctuary",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_The-Botanical-Villa_The-Spa-Sanctuary-7559162921764864",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250618/UPPERHOUSE_The_Botanical_Villa_The_Spa_Sanctuary.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "95504add69a44f98a0b77e5602b03336",
+     "title": "UPPERHOUSESignatureCollection_Ecru_RGB",
+     "type": 1,
+     "abbreviation": "UPPERHOUSESignatureCollection_Ecru_RGB-7504243315378176",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSESignatureCollection_Ecru_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "8e846d0779174e6fa2c1a5eb956b77ce",
+     "title": "UPPERHOUSE_The Botanical Villa 2",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_The-Botanical-Villa-2-7559162419611648",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250618/UPPERHOUSE_The_Botanical_Villa_2.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "871945aa7f76466f9a20577d74ef1b70",
+     "title": "Upperhouse_Logo_RGB",
+     "type": 1,
+     "abbreviation": "Upperhouse_Logo_RGB-7504245146748928",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/Upperhouse_Logo_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "7264f00986d949248dd6dd6e1d4e6c02",
+     "title": "Upperhouse_ChineseLogo_Ecru",
+     "type": 1,
+     "abbreviation": "Upperhouse_ChineseLogo_Ecru-7504244308543488",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/Upperhouse_ChineseLogo_Ecru.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "07f335caf0844a0e8364c202931d46da",
+     "title": "UPPERHOUSE SignatureCollection_Icon_Ecru",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-SignatureCollection_Icon_Ecru-7504242899830784",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSE_SignatureCollection_Icon_Ecru.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "61981dbf5c8844e993939c3f0e161b51",
+     "title": "Upperhouse_SimplifiedLogo_Address_Merlot_RGB",
+     "type": 1,
+     "abbreviation": "Upperhouse_SimplifiedLogo_Address_Merlot_RGB-7504246124414976",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/Upperhouse_SimplifiedLogo_Address_Merlot_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "60dea8909e4340eeb4d9eda5dff233f2",
+     "title": "Upperhouse_SimplifiedLogo_Address_Ecru_RGB",
+     "type": 1,
+     "abbreviation": "Upperhouse_SimplifiedLogo_Address_Ecru_RGB-7504245848901632",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/Upperhouse_SimplifiedLogo_Address_Ecru_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "5b6e832c6c594dc1825bd78817ca712d",
+     "title": "UPPERHOUSE_The Botanical Villa 1",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_The-Botanical-Villa-1-7559162196969472",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250618/UPPERHOUSE_The_Botanical_Villa_1.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "567632ab381e4e7aa03ceb537073434a",
+     "title": "UPPERHOUSE BespokeCollection_Merlot",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-BespokeCollection_Merlot-7504243983960064",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSE_BespokeCollection_Merlot.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "4f948dc7a503469ab7e778e0c230ea87",
+     "title": "Upperhouse The Gym",
+     "type": 1,
+     "abbreviation": "Upperhouse-The-Gym-7580701383395328",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250703/Upperhouse_The_Gym.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "4addb955927f48cb929ad54890f81d79",
+     "title": "UPPERHOUSE_The Botanical Villa_Hydropool",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_The-Botanical-Villa_Hydropool-7559162535266304",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250618/UPPERHOUSE_The_Botanical_Villa_Hydropool.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "48f8c5bd3a3341fb90e6f6036945ca26",
+     "title": "Upperhouse_ChineseLogo_Merlot",
+     "type": 1,
+     "abbreviation": "Upperhouse_ChineseLogo_Merlot-7504244450330624",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/Upperhouse_ChineseLogo_Merlot.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "46a8e506f27d4e329444bb7fd7f7d045",
+     "title": "UPPERHOUSE Location Map_Final",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-Location-Map_Final-7552130908964864",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250613/UPPERHOUSE_Location_Map_Final.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "3cb0fb5f4a464cf084ff6a9ef7fc5564",
+     "title": "UPPERHOUSE SignatureCollection_Icon_Merlot_RGB",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-SignatureCollection_Icon_Merlot_RGB-7504243098535936",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSE_SignatureCollection_Icon_Merlot_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "371c5fa7d2f6483187578e55bfb7f911",
+     "title": "Upperhouse  Function Room View 2",
+     "type": 1,
+     "abbreviation": "Upperhouse--Function-Room-View-2-7580700620474368",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250703/Upperhouse__Function_Room_View_2.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "2fbc1cb02b83421a942b75e68bc645cd",
+     "title": "Upperhouse 4BR Suite External",
+     "type": 1,
+     "abbreviation": "Upperhouse-4BR-Suite-External-7580700924463104",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250703/Upperhouse_4BR_Suite_External.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "2b06b26ae6684586a8aa0ce0876eb9e0",
+     "title": "UPPERHOUSE_Hydropool",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_Hydropool-7509904927049728",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250514/UPPERHOUSE_Hydropool.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "22ede697531d4fb69edec9faa91447d2",
+     "title": "UPPERHOUSE_The Botanical Villa_Indoor Spa Pool 2",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE_The-Botanical-Villa_Indoor-Spa-Pool-2-7559162801506304",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250618/UPPERHOUSE_The_Botanical_Villa_Indoor_Spa_Pool_2.jpg",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "224dba7352704e958f91954eda078350",
+     "title": "UPPERHOUSE BespokeCollection_Icon_Ecru_RGB",
+     "type": 1,
+     "abbreviation": "UPPERHOUSE-BespokeCollection_Icon_Ecru_RGB-7504243641354240",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250510/UPPERHOUSE_BespokeCollection_Icon_Ecru_RGB.png",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "13b4692fbce349edbfd858b8a75ea956",
+     "title": "Upperhouse Function Room View 1",
+     "type": 1,
+     "abbreviation": "Upperhouse-Function-Room-View-1-7580701037053952",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/imgs/20250703/Upperhouse_Function_Room_View_1.jpg",
+     "logoUrl": ""
+    }
+   ],
+   "pdf": [
+    {
+     "restrictEmail": "1",
+     "groupName": "Forms / Admin",
+     "createTime": "07/08/2025 03:16PM",
+     "id": "a4408e998f1f4fc69223b4b3b3f187fc",
+     "title": "UPPERHOUSE 190725 Commission",
+     "type": 2,
+     "abbreviation": "UPPERHOUSE-190725-Commission-7630291296143360",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250807/UPPERHOUSE_190725_Commission.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "03/07/2025 02:30PM",
+     "id": "092b6210b72e42a08ce0be22d4ba4bb5",
+     "title": "UPPERHOUSE E-Brochure",
+     "type": 2,
+     "abbreviation": "UPPERHOUSE-E-Brochure-7580699959920640",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250703/UPPERHOUSE_E-Brochure.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "03/07/2025 02:29PM",
+     "id": "22ff46732ec3499fadccefc6732e9535",
+     "title": "UPPERHOUSE Developer Factsheet Final",
+     "type": 2,
+     "abbreviation": "UPPERHOUSE-Developer-Factsheet-Final-7559160539891712",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250618/UPPERHOUSE_Developer_Factsheet_Final.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "13/06/2025 10:07AM",
+     "id": "0a26628ee3f0437a9a2ff867295fabd4",
+     "title": "UPPERHOUSE Location Map_Final",
+     "type": 2,
+     "abbreviation": "UPPERHOUSE-Location-Map_Final-7552129789872128",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250613/UPPERHOUSE_Location_Map_Final.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "13/06/2025 10:07AM",
+     "id": "d16bcadf0102461bb6eb5915dd2a0295",
+     "title": "PN UPPERHOUSE Preliminary Factsheet _16 May 2025",
+     "type": 2,
+     "abbreviation": "PN-UPPERHOUSE-Preliminary-Factsheet-_16-May-2025-7547892378355712",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250610/PN_UPPERHOUSE_Preliminary_Factsheet__16_May_2025.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "03/06/2025 09:08AM",
+     "id": "87fd8f745dc14d99b2ae218c81a710c6",
+     "title": "UPPERHOUSE At Orchard Boulevard - Our World Class Fittings 05032025",
+     "type": 2,
+     "abbreviation": "UPPERHOUSE-At-Orchard-Boulevard---Our-World-Class--7537916350564352",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250603/UPPERHOUSE_At_Orchard_Boulevard_-_Our_World_Class_Fittings_05032025.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "03/06/2025 09:08AM",
+     "id": "46533c0c16f743619e7a372ae4f4d67b",
+     "title": "中文版UPPERHOUSE At Orchard Boulevard Preliminary Brochure V2",
+     "type": 2,
+     "abbreviation": "中文版UPPERHOUSE-At-Orchard-Boulevard-Preliminary-Bro-7537916239939584",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250603/中文版UPPERHOUSE_At_Orchard_Boulevard_Preliminary_Brochure_V2.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "31/05/2025 08:51AM",
+     "id": "d8fc9f66be36477882b636adeb2a3d11",
+     "title": "Upperhouse - eBrochure Our World Class Fittings",
+     "type": 2,
+     "abbreviation": "UPPERHOUSE-At-Orchard-Boulevard---eBrochure-Our-Wo-7533651752585216",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250531/UPPERHOUSE_At_Orchard_Boulevard_-_eBrochure_Our_World_Class_Fittings.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "PN Sales & Marketing",
+     "createTime": "30/05/2025 09:04PM",
+     "id": "07b51798e27d44388a34e82829360e59",
+     "title": "Upperhouse - Location Map",
+     "type": 2,
+     "abbreviation": "Upperhouse---Location-Map-7532958098507776",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250530/Upperhouse_-_Location_Map.pdf"
+    },
+    {
+     "restrictEmail": "1",
+     "groupName": "Developer Info",
+     "createTime": "10/05/2025 02:29PM",
+     "id": "406fd4a3a942488c8fce2b7739b03aa7",
+     "title": "Upperhouse Final BrandGuide FA_For JMA",
+     "type": 2,
+     "abbreviation": "Upperhouse-Final-BrandGuide-FA_For-JMA-7504257975011328",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/pdf/20250510/Upperhouse_Final_BrandGuide_FA_For_JMA.pdf"
+    }
+   ],
+   "ivt": [
+    {
+     "groupName": "",
+     "link": "https://pano360client.com/onc3d/orchard_boulevard/aerialview.html",
+     "id": "3d3b3ed2a398471f86134e01b3e86dbb",
+     "title": "360 Aeriel View",
+     "type": 4,
+     "abbreviation": null,
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/ivt/20250604/b94b1af08f8c43f3819eaef9a60368bf.png",
+     "logoUrl": ""
+    }
+   ],
+   "video": [
+    {
+     "groupName": "",
+     "link": "",
+     "id": "1d1eab465595461f857e92ece2733b1c",
+     "title": "Upperhouse Full Flythrough Video",
+     "type": 3,
+     "abbreviation": "Upperhouse-Full-Flythrough-Video-7580702211753984",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/video/20250703/Upperhouse_Full_Flythrough_Video.mp4",
+     "logoUrl": ""
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "30fad6cd98074bf389b180f774fb92e1",
+     "title": "Upperhouse - Address Says It All",
+     "type": 3,
+     "abbreviation": "Upperhouse---Address-Says-It-All-7503289635653632",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/video/20250509/Upperhouse_-_Address_Says_It_All.mp4",
+     "logoUrl": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/video/logo/20250509/5409457b4a70482bb8861ccf1870da1d.jpg"
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "4a25f04f85224561a9eeebaa57f6bf85",
+     "title": "UPPERHOUSE at Orchard Boulevard_Flythrough teaser video 30s",
+     "type": 3,
+     "abbreviation": "UPPERHOUSE-at-Orchard-Boulevard_Flythrough-teaser--7552128891602944",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/video/20250613/UPPERHOUSE_at_Orchard_Boulevard_Flythrough_teaser_video_30s.mp4",
+     "logoUrl": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/video/logo/20250613/d443185045104c04891c84c7a4f9cda8.png"
+    },
+    {
+     "groupName": "",
+     "link": "",
+     "id": "e898b6b62d244838aa1ce9630129833e",
+     "title": "Upperhouse Bespoke 4 Bedroom Suite - Brand Provision Video",
+     "type": 3,
+     "abbreviation": "Upperhouse-Bespoke-4-Bedroom-Suite---Brand-Provisi-7580701950478336",
+     "url": "/upload/broke/25aa2d2624f54406b900cca81ccb30ae/7cf72256c81743dfba3986a927ef79e6/video/20250703/Upperhouse_Bespoke_4_Bedroom_Suite_-_Brand_Provision_Video.mp4",
+     "logoUrl": ""
+    }
+   ]
+  },
+  "success": true
+ },
+ "unitTypes": {
+  "code": "0",
+  "msg": "SUCCESS",
+  "datas": [
+   "1 Bedroom + Study",
+   "2 Bedroom Premium",
+   "2 Bedroom Premium + Study",
+   "3 Bedroom Premium",
+   "4 Bedroom Suite (With Private Lift & Carpark Lot)"
+  ],
+  "success": true
+ },
+ "floorPlans": {
+  "code": "0",
+  "msg": "SUCCESS",
+  "datas": {
+   "lists": [
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/AS1.png",
+     "floorPlanName": "AS1",
+     "type": "1 Bedroom + Study"
+    },
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/BP1.png",
+     "floorPlanName": "BP1",
+     "type": "2 Bedroom Premium"
+    },
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/BP2.png",
+     "floorPlanName": "BP2",
+     "type": "2 Bedroom Premium"
+    },
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/BPS1.png",
+     "floorPlanName": "BPS1",
+     "type": "2 Bedroom Premium + Study"
+    },
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/BPS2.png",
+     "floorPlanName": "BPS2",
+     "type": "2 Bedroom Premium + Study"
+    },
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/CP1.png",
+     "floorPlanName": "CP1",
+     "type": "3 Bedroom Premium"
+    },
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/DP1.png",
+     "floorPlanName": "DP1",
+     "type": "4 Bedroom Suite (With Private Lift & Carpark Lot)"
+    },
+    {
+     "img": "/upload/broke/a0a87c09a8fa45f1b629fd39f27224c6/7cf72256c81743dfba3986a927ef79e6/floorPlanImg/20250714/DP2.png",
+     "floorPlanName": "DP2",
+     "type": "4 Bedroom Suite (With Private Lift & Carpark Lot)"
+    }
+   ],
+   "count": 8
+  },
+  "success": true
+ },
+ "siteplan": {
+  "code": "-1003",
+  "msg": "invalid request",
+  "success": false
+ },
+ "unitTypeReport": {
+  "code": "0",
+  "msg": "SUCCESS",
+  "datas": [
+   {
+    "max_price2": 1844000.0,
+    "minAreaSqm": 44,
+    "maxAreaSqm": 44,
+    "max_price1": 1715000.0,
+    "avgPsf": "$3,466",
+    "min_price2": 1689000.0,
+    "unitNum": 26,
+    "min_price1": 1571000.0,
+    "type": "1 Bedroom + Study",
+    "allNum": 67,
+    "min_price": "$1,571,000",
+    "maxArea": 474.0,
+    "maxPrice": "$1,715,000",
+    "minArea": 474.0
+   },
+   {
+    "max_price2": 2756000.0,
+    "minAreaSqm": 65,
+    "maxAreaSqm": 65,
+    "max_price1": 2564000.0,
+    "avgPsf": "$3,617",
+    "min_price2": 2659000.0,
+    "unitNum": 18,
+    "min_price1": 2500000.0,
+    "type": "2 Bedroom Premium",
+    "allNum": 102,
+    "min_price": "$2,500,000",
+    "maxArea": 700.0,
+    "maxPrice": "$2,564,000",
+    "minArea": 700.0
+   },
+   {
+    "max_price2": 8444000.0,
+    "minAreaSqm": 191,
+    "maxAreaSqm": 191,
+    "max_price1": 7853000.0,
+    "avgPsf": "$3,644",
+    "min_price2": 7667000.0,
+    "unitNum": 10,
+    "min_price1": 7131000.0,
+    "type": "4 Bedroom Suite (With Private Lift & Carpark Lot)",
+    "allNum": 31,
+    "min_price": "$7,131,000",
+    "maxArea": 2056.0,
+    "maxPrice": "$7,853,000",
+    "minArea": 2056.0
+   }
+  ],
+  "success": true
+ }
+}

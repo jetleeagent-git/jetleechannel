@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Marina Gardens | Kingsford Marina Development | New Launch D01</title>
+<meta name="description" content="One Marina Gardens at Marina Gardens Lane, D01. 937 units by Kingsford Marina Development Pte Ltd. 99-year leasehold. Register for VVIP preview.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#0d1b2a;color:#fafaf8;min-height:100vh}
+:root{--gold:#c9a84c;--muted:rgba(255,255,255,.55);--dark:#0d1b2a;--navy:#1a3c5e}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(13,27,42,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,.1);padding:0 20px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo .logo-icon{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--gold);border-radius:6px;color:#0d1b2a;font-size:1rem;font-weight:700}
+.nav-logo span{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:#fafaf8;font-weight:600}
+.nav-links{display:flex;list-style:none;gap:4px;overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links li a{display:block;padding:8px 14px;font-size:.74rem;color:var(--muted);text-decoration:none;letter-spacing:.04em;transition:color .25s;white-space:nowrap;border-radius:6px}
+.nav-links li a:hover{color:#fafaf8}
+.menu-btn{display:none;background:none;border:none;color:#fafaf8;font-size:1.5rem;cursor:pointer}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(13,27,42,.97);backdrop-filter:blur(12px);flex-direction:column;padding:12px 20px 20px;border-bottom:1px solid rgba(201,168,76,.1)}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+}
+
+/* Hero */
+.hero{height:100vh;min-height:600px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#0d1b2a}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,27,42,.2) 0%,rgba(13,27,42,.88) 70%,#0d1b2a 100%)}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:800px}
+.hero-content .badge{display:inline-block;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25);color:var(--gold);padding:6px 18px;border-radius:100px;font-size:.72rem;letter-spacing:.1em;margin-bottom:20px}
+.hero-content h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5.2rem);font-weight:600;color:#fafaf8;margin-bottom:6px;line-height:1.05}
+.hero-content .subh{font-size:1.1rem;color:var(--muted);font-weight:300;margin-bottom:4px;letter-spacing:.03em}
+.hero-content p{font-size:.92rem;color:var(--muted);max-width:550px;margin:0 auto 28px;line-height:1.7;font-weight:300}
+.hero-content .cta{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid rgba(201,168,76,.4);color:var(--gold);padding:12px 28px;border-radius:6px;text-decoration:none;font-size:.8rem;letter-spacing:.06em;transition:all .3s}
+.hero-content .cta:hover{background:rgba(201,168,76,.1)}
+
+/* Section common */
+section{padding:80px 24px;border-bottom:1px solid rgba(255,255,255,.03)}
+.si{max-width:1100px;margin:0 auto}
+.stg{font-size:.7rem;color:var(--gold);text-transform:uppercase;letter-spacing:.14em;margin-bottom:8px;font-weight:500}
+.sh{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:600;color:#fafaf8;margin-bottom:4px;line-height:1.2}
+.sh em{font-style:italic;color:var(--gold)}
+.gl{width:50px;height:2px;background:var(--gold);margin:16px 0 28px}
+
+/* Overview */
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin-bottom:40px}
+.ov-item{background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.1);border-radius:10px;padding:20px 14px;text-align:center}
+.ov-item .ol{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+.ov-item .ov{font-size:1rem;color:#fafaf8;font-family:'Cormorant Garamond',serif;font-weight:500}
+.ov-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+.ov-row img{width:100%;border-radius:12px}
+.ov-row .ov-text{font-size:.88rem;color:var(--muted);line-height:1.8;font-weight:300}
+
+/* Floor Plans with tabs */
+.fp-tabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
+.fp-tab{background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.12);color:var(--muted);padding:8px 18px;border-radius:6px;font-size:.76rem;cursor:pointer;transition:all .3s;letter-spacing:.04em}
+.fp-tab:hover{border-color:rgba(201,168,76,.3);color:#fafaf8}
+.fp-tab.active{background:rgba(201,168,76,.12);border-color:var(--gold);color:var(--gold)}
+.fp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.fp-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden;transition:all .3s;cursor:pointer}
+.fp-card:hover{border-color:rgba(201,168,76,.25);transform:translateY(-3px)}
+.fp-card .fp-img-wrap{width:100%;aspect-ratio:4/3;background:#152238;display:flex;align-items:center;justify-content:center;position:relative}
+.fp-card .fp-img-wrap .fp-placeholder{font-size:.78rem;color:var(--muted);text-align:center;padding:20px;line-height:1.6}
+.fp-card .fp-img-wrap .fp-placeholder strong{color:var(--gold);display:block;font-family:'Cormorant Garamond',serif;font-size:1rem}
+.fp-card .fp-body{padding:14px 16px 16px}
+.fp-card .fp-body .fp-name{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:#fafaf8;margin-bottom:2px}
+.fp-card .fp-body .fp-type{font-size:.75rem;color:var(--muted)}
+
+/* Gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.gal-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;transition:transform .4s}
+.gal-grid img:hover{transform:scale(1.02)}
+.gal-placeholder{width:100%;aspect-ratio:16/10;border-radius:10px;background:linear-gradient(135deg,#152238,#1a3c5e);display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--muted);text-align:center;padding:20px}
+
+/* Location */
+.loc-map{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+.loc-map .map-placeholder{width:100%;aspect-ratio:16/11;border-radius:12px;background:linear-gradient(135deg,#152238,#1a3c5e);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:20px;text-align:center}
+.loc-map .map-placeholder span{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--gold)}
+.loc-map .map-placeholder small{font-size:.75rem;color:var(--muted)}
+.loc-table{width:100%;border-collapse:collapse}
+.loc-table th{text-align:left;font-size:.72rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.06)}
+.loc-table td{padding:10px 12px;font-size:.82rem;color:var(--muted);border-bottom:1px solid rgba(255,255,255,.04)}
+
+/* Amenities badges */
+.amenities-badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-bottom:28px}
+.amenity-badge{background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.1);border-radius:8px;padding:14px 12px;text-align:center;font-size:.78rem;color:var(--muted);line-height:1.4}
+.amenity-badge strong{display:block;color:#fafaf8;font-family:'Cormorant Garamond',serif;font-size:.9rem;margin-bottom:2px}
+
+/* Developer */
+.dev-logos{width:100%;max-width:800px;margin-bottom:28px;border-radius:12px;overflow:hidden;background:rgba(201,168,76,.03);padding:24px;text-align:center;border:1px solid rgba(201,168,76,.08)}
+.dev-logos .dev-brand{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:#fafaf8;letter-spacing:.04em}
+.dev-logos .dev-brand em{color:var(--gold);font-style:italic}
+.dev-logos .dev-sub{font-size:.75rem;color:var(--muted);margin-top:6px}
+.dev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-bottom:24px}
+.dev-card{background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.1);border-radius:10px;padding:22px}
+.dev-card .dl{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+.dev-card .dv{font-size:1rem;color:#fafaf8;font-family:'Cormorant Garamond',serif}
+.dev-desc{background:rgba(201,168,76,.03);border-radius:12px;padding:24px;border:1px solid rgba(201,168,76,.06);margin-bottom:28px}
+.dev-desc p{font-size:.85rem;color:var(--muted);line-height:1.8;font-weight:300}
+.dev-desc strong{color:#fafaf8}
+.track-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.track-item{background:rgba(201,168,76,.03);border:1px solid rgba(201,168,76,.06);border-radius:8px;padding:14px 12px;text-align:center}
+.track-item span{color:#fafaf8;font-family:'Cormorant Garamond',serif;font-size:.9rem}
+
+/* FAQ */
+.faq-grid{max-width:800px}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.05);padding:18px 0}
+.faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:.9rem;color:#fafaf8;font-weight:400}
+.faq-q .faq-icon{font-size:1.3rem;color:var(--gold);transition:transform .3s;flex-shrink:0;margin-left:12px}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a.open{max-height:600px}
+.faq-a-inner{padding-top:14px;font-size:.82rem;color:var(--muted);line-height:1.7}
+
+/* Floating WhatsApp */
+.fwa{position:fixed;bottom:24px;right:24px;z-index:9999;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35);text-decoration:none;transition:all .3s;animation:waPulse 2s infinite}
+.fwa:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.5)}
+.fwa svg{width:28px;height:28px;fill:#fff}
+@keyframes waPulse{0%{box-shadow:0 4px 20px rgba(37,211,102,.35)}50%{box-shadow:0 4px 30px rgba(37,211,102,.6)}100%{box-shadow:0 4px 20px rgba(37,211,102,.35)}}
+@media(max-width:768px){.fwa{width:50px;height:50px;bottom:16px;right:16px}.fwa svg{width:24px;height:24px}}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.contact-form{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:32px}
+.contact-form h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#fafaf8;margin-bottom:6px}
+.contact-form .cs{font-size:.8rem;color:var(--muted);margin-bottom:20px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fg{margin-bottom:14px}
+.fg label{font-size:.72rem;color:var(--gold);display:block;margin-bottom:4px;letter-spacing:.06em}
+.fg input,.fg select,.fg textarea{width:100%;padding:10px 14px;border:1px solid rgba(255,255,255,.1);border-radius:8px;background:rgba(13,27,42,.6);color:#fafaf8;font-size:.82rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .3s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold)}
+.fg textarea{resize:vertical;min-height:80px}
+.fsub{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:6px;font-size:.8rem;letter-spacing:.06em;cursor:pointer;transition:all .3s;width:100%}
+.fsub:hover{background:rgba(201,168,76,.1)}
+.contact-info h4{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#fafaf8;margin-bottom:8px}
+.contact-info h4 em{color:var(--gold);font-style:italic}
+.contact-info .cp{font-size:.82rem;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.crow{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+.cic{width:34px;height:34px;border:1px solid rgba(201,168,76,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.cll{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.clv{font-size:.82rem;color:#fafaf8;margin-top:2px}
+.wa-cta{display:flex;align-items:center;gap:8px;background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.2);color:#25D366;padding:12px 22px;border-radius:6px;text-decoration:none;font-size:.78rem;letter-spacing:.06em;margin-top:24px;transition:all .3s}
+.wa-cta:hover{background:rgba(37,211,102,.15);gap:12px}
+
+/* Footer */
+footer{padding:40px 24px;text-align:center;border-top:1px solid rgba(201,168,76,.06)}
+footer .fl{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fafaf8;margin-bottom:6px}
+footer .fd{font-size:.72rem;color:var(--muted);max-width:700px;margin:0 auto 12px;line-height:1.6}
+footer .fb{font-size:.7rem;color:var(--muted)}
+footer .footer-links{display:flex;justify-content:center;gap:16px;margin:14px 0;flex-wrap:wrap}
+footer .footer-links a{color:var(--muted);font-size:.72rem;text-decoration:none;transition:color .25s}
+footer .footer-links a:hover{color:var(--gold)}
+
+@media(max-width:768px){
+  section{padding:56px 16px}
+  .ov-row,.loc-map,.contact-grid{grid-template-columns:1fr}
+  .contact-form{padding:24px 20px}
+}
+
+/* Scroll reveal */
+.fu{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.fu.v{opacity:1;transform:translateY(0)}
+
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out;padding:40px}
+.modal-overlay img{max-width:100%;max-height:100%;border-radius:12px;object-fit:contain}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">OMG</span>
+      <span>One Marina Gardens</span>
+    </a>
+    <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="#ov">Overview</a></li>
+      <li><a href="#fp">Floor Plans</a></li>
+      <li><a href="#gal">Gallery</a></li>
+      <li><a href="#loc">Location</a></li>
+      <li><a href="#dev">Developer</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#ct">Register</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg"><img src="/OneMarinaGardens/images/hero-bg.jpg" alt="One Marina Gardens Marina South" loading="lazy"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content fu">
+    <div class="badge">New Launch · District 01 · Marina South</div>
+    <h1>One Marina Gardens</h1>
+    <div class="subh">by Kingsford Marina Development Pte Ltd</div>
+    <p>937 exquisite residences rising across two elegant towers in the vibrant Marina South waterfront precinct. Direct linkway to Marina South MRT. A landmark address in Singapore's most prestigious district.</p>
+    <a href="#ct" class="cta">Register Interest →</a>
+  </div>
+</section>
+
+<!-- Overview -->
+<section id="ov">
+  <div class="si">
+    <p class="stg fu">Overview</p>
+    <h2 class="sh fu">One Marina Gardens <em>at a Glance</em></h2>
+    <div class="gl fu"></div>
+
+    <div class="ov-grid fu">
+      <div class="ov-item"><div class="ol">Units</div><div class="ov">937</div></div>
+      <div class="ov-item"><div class="ol">Tenure</div><div class="ov">99 yrs</div></div>
+      <div class="ov-item"><div class="ol">District</div><div class="ov">D01</div></div>
+      <div class="ov-item"><div class="ol">TOP</div><div class="ov">Apr 2029</div></div>
+      <div class="ov-item"><div class="ol">Storeys</div><div class="ov">44 &amp; 30</div></div>
+      <div class="ov-item"><div class="ol">Blocks</div><div class="ov">2 Towers</div></div>
+      <div class="ov-item"><div class="ol">Plot Ratio</div><div class="ov">5.6</div></div>
+      <div class="ov-item"><div class="ol">Site Area</div><div class="ov">12,245 sqm</div></div>
+    </div>
+
+    <div class="ov-row fu">
+      <img src="/OneMarinaGardens/images/hero-bg.jpg" alt="One Marina Gardens Development View">
+      <div>
+        <div class="ov-text" style="margin-bottom:16px">One Marina Gardens, developed by <strong style="color:#fafaf8">Kingsford Marina Development Pte Ltd</strong>, is an exclusive new launch nestled at 1, 3, 5 Marina Gardens Lane in prestigious District 1 — Boat Quay / Raffles Place.</div>
+        <div class="ov-text" style="margin-bottom:16px">Comprising <strong style="color:#fafaf8">937 residential units</strong> across 8 bedroom types, 3 shops, 1 restaurant and a childcare centre, this 99-year leasehold development rises across two stunning towers — one soaring 44 storeys and another 30 storeys.</div>
+        <div class="ov-text">With a prime waterfront location in the Marina South precinct, residents enjoy seamless connectivity via Marina South MRT (TEL) with a direct covered linkway, plus world-class amenities at their doorstep.</div>
+      </div>
+    </div>
+
+    <!-- Amenities -->
+    <h3 class="sh" style="font-size:1.4rem;margin-top:40px">World-Class <em>Amenities</em></h3>
+    <div class="gl" style="margin:10px 0 20px"></div>
+    <div class="amenities-badges fu">
+      <div class="amenity-badge"><strong>🏊 50m Lap Pool</strong>Resort-style swimming</div>
+      <div class="amenity-badge"><strong>💪 Sky Gym</strong>Fitness with a view</div>
+      <div class="amenity-badge"><strong>🌿 Sky Terraces</strong>4 levels of greenery</div>
+      <div class="amenity-badge"><strong>🌊 Cascading Waterfalls</strong>Tranquil ambiance</div>
+      <div class="amenity-badge"><strong>🏠 Clubhouse</strong>Social gatherings</div>
+      <div class="amenity-badge"><strong>📅 Function Rooms</strong>Private events</div>
+      <div class="amenity-badge"><strong>🧒 Kids Club</strong>Children's play area</div>
+      <div class="amenity-badge"><strong>🧘 Meditation Lawn</strong>Peaceful retreat</div>
+      <div class="amenity-badge"><strong>🌄 Yoga Terrace</strong>Open-air wellness</div>
+      <div class="amenity-badge"><strong>🌳 Landscape Deck</strong>Grand garden space</div>
+    </div>
+  </div>
+</section>
+
+<!-- Floor Plans -->
+<section id="fp">
+  <div class="si">
+    <p class="stg fu">Floor Plans</p>
+    <h2 class="sh fu">Thoughtfully <em>Designed</em></h2>
+    <div class="gl fu"></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:24px;font-weight:300" class="fu">Choose your ideal layout. Click any unit to view full size. Floor plans coming soon — contact us for details.</p>
+
+    <div class="fp-tabs fu" id="fpTabs"></div>
+    <div class="fp-grid" id="fpGrid"></div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gal">
+  <div class="si">
+    <p class="stg fu">Gallery</p>
+    <h2 class="sh fu">A Glimpse of <em>One Marina Gardens</em></h2>
+    <div class="gl fu"></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;font-weight:300" class="fu">Artist impressions and renderings are for illustration purposes only.</p>
+    <div class="gal-grid fu" id="galGrid">
+      <img src="/OneMarinaGardens/images/gallery/01.jpg" alt="One Marina Gardens Exterior" loading="lazy">
+      <img src="/OneMarinaGardens/images/gallery/02.jpg" alt="50m Lap Pool & Cascading Waterfalls" loading="lazy">
+      <img src="/OneMarinaGardens/images/gallery/03.jpg" alt="Resort Facilities" loading="lazy">
+      <img src="/OneMarinaGardens/images/gallery/04.jpg" alt="One Marina Gardens Views" loading="lazy">
+      <img src="/OneMarinaGardens/images/gallery/05.jpg" alt="Premium Living" loading="lazy">
+      <img src="/OneMarinaGardens/images/gallery/06.jpg" alt="One Marina Gardens Amenities" loading="lazy">
+      <img src="/OneMarinaGardens/images/gallery/07.jpg" alt="Sky Terrace" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Location -->
+<section id="loc">
+  <div class="si">
+    <p class="stg fu">Location</p>
+    <h2 class="sh fu">Everything <em>Within Reach</em></h2>
+    <div class="gl fu"></div>
+
+    <div class="loc-map fu">
+      <img src="/OneMarinaGardens/images/location-map.jpg" alt="One Marina Gardens Location Map">
+      <div>
+        <div class="ov-text" style="margin-bottom:16px">Nestled at 1, 3 &amp; 5 Marina Gardens Lane in <strong style="color:#fafaf8">District 1</strong>, One Marina Gardens sits within the vibrant Marina South waterfront precinct, offering direct covered linkway access to <strong style="color:#fafaf8">Marina South MRT</strong> on the Thomson-East Coast Line.</div>
+        <div class="ov-text" style="margin-bottom:20px">Major expressways (AYE, MCE, ECP, CTE) provide seamless connectivity to the city and beyond.</div>
+
+        <h4 style="font-size:.82rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">🚇 MRT Connectivity</h4>
+        <table class="loc-table" style="margin-bottom:20px">
+          <tr><th>Category</th><th>Name</th><th>Distance</th></tr>
+          <tr><td>🚇 MRT</td><td>Marina South (TEL) — covered linkway</td><td>Direct</td></tr>
+          <tr><td>🚇 MRT</td><td>Gardens by the Bay (TEL)</td><td>0.6 km</td></tr>
+          <tr><td>🚇 MRT</td><td>Marina Bay (NSL/CCL/TEL)</td><td>1.0 km</td></tr>
+          <tr><td>🚇 MRT</td><td>Bayfront (CCL/DTL)</td><td>1.2 km</td></tr>
+          <tr><td>🚇 MRT</td><td>Downtown (DTL)</td><td>1.6 km</td></tr>
+        </table>
+
+        <h4 style="font-size:.82rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">🏫 Schools</h4>
+        <table class="loc-table" style="margin-bottom:20px">
+          <tr><th>Category</th><th>Name</th></tr>
+          <tr><td>🏫 Primary</td><td>Cantonment Primary School</td></tr>
+          <tr><td>🏫 Primary</td><td>Tao Nan School</td></tr>
+          <tr><td>🏫 Secondary</td><td>Outram Secondary School</td></tr>
+          <tr><td>🏫 School</td><td>Raffles Girls' School</td></tr>
+          <tr><td>🌍 Int'l</td><td>EtonHouse International School</td></tr>
+        </table>
+
+        <h4 style="font-size:.82rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">🛍️ Shopping & Amenities</h4>
+        <table class="loc-table">
+          <tr><th>Category</th><th>Name</th></tr>
+          <tr><td>🛍️ Mall</td><td>Marina Bay Sands (The Shoppes)</td></tr>
+          <tr><td>🛍️ Mall</td><td>Marina Bay Link Mall</td></tr>
+          <tr><td>🛒 Groceries</td><td>Cold Storage @ Marina One</td></tr>
+          <tr><td>🛒 Groceries</td><td>Jason's Deli @ Marina Bay Sands</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Developer -->
+<section id="dev">
+  <div class="si">
+    <p class="stg fu">Developer</p>
+    <h2 class="sh fu">Behind the <em>Project</em></h2>
+    <div class="gl fu"></div>
+
+    <div class="dev-logos fu">
+      <div class="dev-brand">Kingsford Marina <em>Development</em></div>
+      <div class="dev-sub">Proudly bringing One Marina Gardens to District 01</div>
+    </div>
+
+    <div class="dev-grid fu">
+      <div class="dev-card"><div class="dl">Developer</div><div class="dv">Kingsford Marina Development Pte Ltd (Kingsford Group)</div></div>
+      <div class="dev-card"><div class="dl">Developer's License</div><div class="dv">C1507</div></div>
+      <div class="dev-card"><div class="dl">Expected TOP</div><div class="dv">30 April 2029</div></div>
+    </div>
+
+    <div class="dev-desc fu">
+      <p style="margin-bottom:14px"><strong>Kingsford Development Pte Ltd</strong>, founded in 2011, is a trusted award-winning Singapore developer celebrated for landmark projects including <strong>Normanton Park</strong>, <strong>Kingsford Waterbay</strong> and <strong>Kingsford Hillview Peak</strong>.</p>
+      <p>With a proven track record of delivering quality homes across Singapore, Kingsford now proudly brings <strong>One Marina Gardens</strong> to the prestigious District 1 — an iconic waterfront address in the heart of Marina South.</p>
+    </div>
+
+    <div class="track-grid fu">
+      <div class="track-item"><span>Normanton Park</span></div>
+      <div class="track-item"><span>Kingsford Waterbay</span></div>
+      <div class="track-item"><span>Kingsford Hillview Peak</span></div>
+      <div class="track-item"><span>One Marina Gardens</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="si">
+    <p class="stg fu">FAQ</p>
+    <h2 class="sh fu">Frequently Asked <em>Questions</em></h2>
+    <div class="gl fu"></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:8px;font-weight:300">Click any question to expand.</p>
+    <div class="faq-grid fu">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is the tenure of One Marina Gardens?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">99-Year Leasehold.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How many units does One Marina Gardens have?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">937 residential units + 3 shops + 1 restaurant + 1 childcare centre, across 2 towers (44 storeys and 30 storeys).</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>When is the expected TOP?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Expected TOP is 30 April 2029 (subject to change).</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What unit types are available?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">8 bedroom types ranging from 1 Bedroom (420 sqft) to 4 Bedroom Premium (1,647 sqft), including Penthouse units.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Who is the developer?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Kingsford Marina Development Pte Ltd (Kingsford Group). Developer's License: C1507. Award-winning developer behind Normanton Park, Kingsford Waterbay and Kingsford Hillview Peak.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Where is One Marina Gardens located?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">1, 3, 5 Marina Gardens Lane, District 01 (Boat Quay / Raffles Place), within the Marina South waterfront precinct.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Which MRT station is nearest?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Marina South MRT on the Thomson-East Coast Line (TEL), directly connected via a covered linkway. Also close to Gardens by the Bay, Marina Bay, Bayfront and Downtown MRT stations.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What amenities are available?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">50m Lap Pool, Sky Gym, Sky Terraces (4 levels), Cascading Waterfalls, Clubhouse, Function Rooms, Kids Club, Meditation Lawn, Yoga Terrace, and a grand Landscape Deck.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="ct">
+  <div class="si">
+    <div class="contact-grid">
+      <div class="contact-form fu">
+        <h3>Register Interest</h3>
+        <p class="cs">Be first for VVIP preview access, floor plans &amp; exclusive pricing for One Marina Gardens.</p>
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return handleForm(event)">
+          <input type="hidden" name="access_key" value="80bb82c8-aa68-4974-b63b-66bac63a8016">
+          <input type="hidden" name="subject" value="One Marina Gardens - New Registration">
+          <input type="hidden" name="from_name" value="One Marina Gardens Website">
+          <div class="form-row">
+            <div class="fg"><label>First Name</label><input type="text" name="First Name" placeholder="John" required></div>
+            <div class="fg"><label>Last Name</label><input type="text" name="Last Name" placeholder="Doe" required></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" name="Email" placeholder="john@example.com" required></div>
+          <div class="fg"><label>Mobile</label><input type="tel" name="Mobile" placeholder="+65 9XXX XXXX" required></div>
+          <div class="fg"><label>Unit Interest</label><select name="Unit Interest">
+            <option value="">— Select —</option>
+            <option>1 Bedroom (420+ sqft)</option>
+            <option>2 Bedroom</option>
+            <option>3 Bedroom</option>
+            <option>4 Bedroom</option>
+            <option>4 Bedroom Premium (1,647 sqft)</option>
+            <option>Penthouse</option>
+          </select></div>
+          <div class="fg"><label>Message</label><textarea name="Message" placeholder="Any questions..."></textarea></div>
+          <button class="fsub" type="submit">Submit Registration →</button>
+        </form>
+      </div>
+      <div class="contact-info fu">
+        <h4>Let's Find Your<br><em>Perfect</em> Home</h4>
+        <p class="cp">Register for priority access to floor plans, pricing, and VVIP preview before public launch at One Marina Gardens.</p>
+        <div class="crow"><div class="cic">📍</div><div><div class="cll">Location</div><div class="clv">1, 3, 5 Marina Gardens Lane, D01</div></div></div>
+        <div class="crow"><div class="cic">🏢</div><div><div class="cll">Developer</div><div class="clv">Kingsford Marina Development Pte Ltd</div></div></div>
+        <div class="crow"><div class="cic">📅</div><div><div class="cll">Expected TOP</div><div class="clv">30 April 2029</div></div></div>
+        <div class="crow"><div class="cic">🏠</div><div><div class="cll">Total Units</div><div class="clv">937 Residential + 3 Shops + 1 Restaurant</div></div></div>
+        <a href="https://wa.me/6587649315?text=Hi%2C%20interested%20in%20One%20Marina%20Gardens" class="wa-cta" target="_blank"><span>💬</span><span>WhatsApp Us Now</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/6587649315?text=Hi%2C%20interested%20in%20One%20Marina%20Gardens" class="fwa" target="_blank" title="WhatsApp Us">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- Footer -->
+<footer>
+  <div class="fl">One Marina Gardens · Marina South · D01</div>
+  <div class="footer-links">
+    <a href="https://jetleechannel.sg" target="_blank">jetleechannel.sg</a>
+    <a href="https://www.tiktok.com/@jetleechannel" target="_blank">TikTok</a>
+    <a href="#home">Back to Top ↑</a>
+  </div>
+  <p class="fd">All renderings, artist impressions, and specifications are subject to change without prior notice. Floor areas are approximate and subject to survey. This website does not constitute an offer or contract. E&amp;OE.</p>
+  <div class="fb">© 2026 One Marina Gardens · Represented by Jet Lee (CEA R007613B) · Property Journey Advisor Realty Pte Ltd</div>
+</footer>
+
+<script>
+// Toggle FAQ
+function toggleFaq(el) {
+  el.classList.toggle('open');
+  const answer = el.nextElementSibling;
+  answer.classList.toggle('open');
+}
+
+// Floor plans data
+const floorplans = [
+  { type: "1BR", name: "Type A1 · 1 Bedroom", sqft: "420 sqft", label: "1 Bedroom" },
+  { type: "1BR", name: "Type A2 · 1 Bedroom+", sqft: "474 sqft", label: "1 Bedroom" },
+  { type: "2BR", name: "Type B1 · 2 Bedroom", sqft: "624 sqft", label: "2 Bedroom" },
+  { type: "2BR", name: "Type B2 · 2 Bedroom", sqft: "678 sqft", label: "2 Bedroom" },
+  { type: "2BR", name: "Type B3 · 2 Bedroom", sqft: "732 sqft", label: "2 Bedroom" },
+  { type: "3BR", name: "Type C1 · 3 Bedroom", sqft: "893 sqft", label: "3 Bedroom" },
+  { type: "3BR", name: "Type C2 · 3 Bedroom", sqft: "1,001 sqft", label: "3 Bedroom" },
+  { type: "3BR", name: "Type C3 · 3 Bedroom Premium", sqft: "1,076 sqft", label: "3 Bedroom" },
+  { type: "4BR", name: "Type D1 · 4 Bedroom", sqft: "1,216 sqft", label: "4 Bedroom" },
+  { type: "4BR", name: "Type D2 · 4 Bedroom Premium", sqft: "1,356 sqft", label: "4 Bedroom" },
+  { type: "4BR-P", name: "Type E1 · 4BR Premium", sqft: "1,452 sqft", label: "4BR Premium" },
+  { type: "4BR-P", name: "Type E2 · 4BR Premium", sqft: "1,647 sqft", label: "4BR Premium" },
+  { type: "PH", name: "Type PH1 · Penthouse", sqft: "1,800+ sqft", label: "Penthouse" },
+  { type: "PH", name: "Type PH2 · Penthouse", sqft: "2,000+ sqft", label: "Penthouse" }
+];
+
+// Render floor plans with tab filtering
+function renderFloorplans(filter) {
+  const grid = document.getElementById('fpGrid');
+  const filtered = filter ? floorplans.filter(f => f.type === filter) : floorplans;
+  grid.innerHTML = filtered.map(f => `
+    <div class="fp-card" onclick="openModal('/OneMarinaGardens/images/floorplan-${f.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'')}.webp','${f.name}')">
+      <div class="fp-img-wrap">
+        <div class="fp-placeholder">
+          <strong>${f.name}</strong>
+          ${f.sqft}<br><br>
+          <span style="font-size:.7rem;color:rgba(255,255,255,.35)">Floor plan coming soon — contact us for details</span>
+        </div>
+      </div>
+      <div class="fp-body">
+        <div class="fp-name">${f.name}</div>
+        <div class="fp-type">${f.sqft}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Tab rendering
+function setupTabs() {
+  const categories = [
+    { type: '', label: 'All Units' },
+    { type: '1BR', label: '1BR' },
+    { type: '2BR', label: '2BR' },
+    { type: '3BR', label: '3BR' },
+    { type: '4BR', label: '4BR' },
+    { type: '4BR-P', label: '4BR Premium' },
+    { type: 'PH', label: 'Penthouse' }
+  ];
+  const tabsEl = document.getElementById('fpTabs');
+  tabsEl.innerHTML = categories.map((c, i) =>
+    `<button class="fp-tab${i===0?' active':''}" data-type="${c.type}" onclick="switchTab(this,'${c.type}')">${c.label}</button>`
+  ).join('');
+  renderFloorplans('');
+}
+
+function switchTab(el, type) {
+  document.querySelectorAll('.fp-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  renderFloorplans(type);
+}
+
+// Modal
+function openModal(src, name) {
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  const content = document.createElement('div');
+  content.style.cssText = 'text-align:center;max-width:800px;width:100%';
+  content.innerHTML = `
+    <div style="background:#152238;border-radius:12px;padding:60px 30px;margin-bottom:16px;border:1px solid rgba(201,168,76,.15)">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold);margin-bottom:8px)">${name}</div>
+      <div style="color:var(--muted);font-size:.9rem;margin-bottom:20px">Floor plan image coming soon</div>
+      <div style="color:rgba(255,255,255,.3);font-size:.75rem">Contact Jet Lee for detailed floor plans</div>
+    </div>
+    <div style="color:var(--muted);font-size:.8rem">Click anywhere to close</div>
+  `;
+  overlay.appendChild(content);
+  overlay.onclick = () => overlay.remove();
+  document.body.appendChild(overlay);
+}
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('v');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: .1 });
+document.querySelectorAll('.fu').forEach(el => observer.observe(el));
+
+// Form handler
+function handleForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.fsub');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  fetch(e.target.action, { method: 'POST', body: new FormData(e.target) })
+    .then(r => r.json())
+    .then(d => { btn.textContent = d.success ? '✓ Submitted!' : 'Error — try WhatsApp'; if(d.success) e.target.reset(); })
+    .catch(() => { btn.textContent = 'Error — try WhatsApp'; })
+    .finally(() => { setTimeout(() => { btn.textContent = 'Submit Registration →'; btn.disabled = false; }, 3000); });
+  return false;
+}
+
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+});
+
+// Init tabs
+document.addEventListener('DOMContentLoaded', setupTabs);
+</script>
+</body>
+</html>

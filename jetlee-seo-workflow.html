@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jetlee Property SEO Workflow</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: #1a1a2e; background: #f8f9fa; padding: 40px; line-height: 1.7; }
+  .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 48px; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; color: #0a0a1a; }
+  .subtitle { color: #666; font-size: 15px; margin-bottom: 32px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e8e8f0; color: #1a1a2e; }
+  h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d2d4e; }
+  p, li { font-size: 14px; color: #333; }
+  .step-box { background: #f0f4ff; border-left: 4px solid #4f6ef7; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 16px 0; }
+  .step-box strong { color: #4f6ef7; }
+  ul, ol { padding-left: 22px; margin: 8px 0 16px; }
+  li { margin-bottom: 6px; }
+  .highlight { background: #fff9e6; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+  .badge { display: inline-block; background: #4f6ef7; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 12px; font-weight: 600; margin-right: 6px; }
+  .badge-green { background: #10b981; }
+  .badge-orange { background: #f59e0b; }
+  .badge-red { background: #ef4444; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { background: #f0f4ff; text-align: left; padding: 10px 14px; font-weight: 600; color: #1a1a2e; border-bottom: 2px solid #d0d8f0; }
+  td { padding: 10px 14px; border-bottom: 1px solid #e8e8f0; }
+  tr:hover td { background: #fafbff; }
+  .divider { height: 1px; background: #e0e0ea; margin: 24px 0; }
+  .footer { text-align: center; color: #999; font-size: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e8e8f0; }
+  .toc-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #f0f0f5; }
+  .toc-item span { background: #4f6ef7; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .emoji-big { font-size: 32px; }
+  @media print { body { padding: 0; background: #fff; } .container { box-shadow: none; border-radius: 0; padding: 32px; } .step-box { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>🏗️ Jetlee Property — SEO & Lead Generation Workflow</h1>
+<p class="subtitle">Complete step-by-step guide for getting property sites online, indexed on Google, and generating leads. Last updated: 11 June 2026</p>
+
+<!-- TABLE OF CONTENTS -->
+<h2>📋 Table of Contents</h2>
+<div class="toc-item"><span>1</span> Project Structure</div>
+<div class="toc-item"><span>2</span> Go-Live Workflow (Upload to Hostinger)</div>
+<div class="toc-item"><span>3</span> Google Indexing Workflow</div>
+<div class="toc-item"><span>4</span> SEO Optimization Checklist</div>
+<div class="toc-item"><span>5</span> Lead Generation Channels</div>
+<div class="toc-item"><span>6</span> Automation & Reporting</div>
+<div class="toc-item"><span>7</span> Troubleshooting</div>
+<div class="toc-item"><span>8</span> Quick Reference</div>
+
+<!-- 1. PROJECT STRUCTURE -->
+<h2>1️⃣ Project Structure</h2>
+
+<h3>Sites Managed</h3>
+<table>
+  <tr><th>Site</th><th>Subdomain</th><th>Status</th><th>Built By</th></tr>
+  <tr><td>Dunearn House</td><td>dunernhouse.jetleechannel.sg</td><td><span class="badge badge-green">✅ Live & Indexed</span></td><td>Claude (Natasha)</td></tr>
+  <tr><td>Lentor Gardens</td><td>lentorgardens.jetleechannel.sg</td><td><span class="badge badge-green">✅ Live & Indexed</span></td><td>Claude (Natasha)</td></tr>
+  <tr><td>Thomson Reserve</td><td>thomsonreserve.jetleechannel.sg</td><td><span class="badge badge-green">✅ Live & Indexed</span></td><td>Claude (Natasha)</td></tr>
+</table>
+
+<p><strong>Hosting:</strong> Hostinger hPanel → jetleechannel.sg<br>
+<strong>Contact form leads:</strong> WhatsApp → +65 8764 9315<br>
+<strong>SEO files location (backup):</strong> /all-sites-seo/[project-name]/index.html</p>
+
+<!-- 2. GO-LIVE WORKFLOW -->
+<h2>2️⃣ Go-Live Workflow (Upload to Hostinger)</h2>
+
+<div class="step-box">
+<strong>Step 1:</strong> Login to Hostinger → <a href="https://hpanel.hostinger.com">hpanel.hostinger.com</a>
+</div>
+
+<div class="step-box">
+<strong>Step 2:</strong> Create a subdomain for each project<br>
+<small>Domains → Subdomains → Create: e.g. <code>dunernhouse.jetleechannel.sg</code><br>
+Set document root to e.g. <code>/dunernhouse</code></small>
+</div>
+
+<div class="step-box">
+<strong>Step 3:</strong> Upload the SEO-optimized <code>index.html</code><br>
+<small>File Manager → navigate to subdomain folder → Upload</small>
+</div>
+
+<div class="step-box">
+<strong>Step 4:</strong> Upload images folder alongside <code>index.html</code><br>
+<small>Folder structure should be:<br>
+<code>/dunernhouse/</code><br>
+&nbsp;&nbsp;├── <code>index.html</code><br>
+&nbsp;&nbsp;└── <code>images/</code> (hero, gallery, etc.)</small>
+</div>
+
+<div class="step-box">
+<strong>Step 5:</strong> Test the site<br>
+<small>Visit <code>https://dunernhouse.jetleechannel.sg</code> — should load immediately</small>
+</div>
+
+<div class="step-box">
+<strong>Step 6:</strong> Submit to Google Search Console<br>
+<small>Add property → verify ownership (DNS TXT record or HTML file → submit sitemap)</small>
+</div>
+
+<!-- 3. GOOGLE INDEXING -->
+<h2>3️⃣ Google Indexing Workflow</h2>
+
+<h3>Step-by-Step to Get Indexed</h3>
+
+<ol>
+  <li><strong>Site must be live</strong> — upload to Hostinger first, verify it loads</li>
+  <li><strong>Submit to Google Search Console</strong>
+    <ul>
+      <li>Go to <a href="https://search.google.com/search-console">search.google.com/search-console</a></li>
+      <li>Add property (URL prefix): e.g. <code>https://dunernhouse.jetleechannel.sg</code></li>
+      <li>Verify ownership — easiest: DNS TXT record at domain registrar</li>
+    </ul>
+  </li>
+  <li><strong>Request indexing</strong>
+    <ul>
+      <li>In Search Console → URL Inspection → paste your URL → "Request Indexing"</li>
+    </ul>
+  </li>
+  <li><strong>Submit sitemap</strong>
+    <ul>
+      <li>Sitemap URL: <code>https://[subdomain].jetleechannel.sg/sitemap.xml</code></li>
+      <li>This helps Google discover all pages faster</li>
+    </ul>
+  </li>
+  <li><strong>Wait</strong>
+    <ul>
+      <li>Typically 1-7 days for initial indexing</li>
+      <li>Search "site:[subdomain].jetleechannel.sg" to verify</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="step-box" style="background: #e8f5e9; border-left-color: #10b981;">
+<strong>✅ Known Status (8 June 2026):</strong><br>
+Dunearn House — Indexed ✅<br>
+Lentor Gardens — Indexed ✅<br>
+Thomson Reserve — Indexed ✅</div>
+
+<!-- 4. SEO CHECKLIST -->
+<h2>4️⃣ SEO Optimization Checklist</h2>
+
+<table>
+  <tr><th>Element</th><th>What to Include</th><th>Priority</th></tr>
+  <tr><td>Page Title (&lt;title&gt;)</td><td>"Dunearn House | New Launch Bukit Timah 2026 | Call Jetlee"</td><td><span class="badge badge-red">Critical</span></td></tr>
+  <tr><td>Meta Description</td><td>"Preview Dunearn House — 380 exclusive units in D11. 2BR to 4BR+Study. Register your interest today."</td><td><span class="badge badge-red">Critical</span></td></tr>
+  <tr><td>H1 Tag</td><td>Project Name + District: "Dunearn House — District 11"</td><td><span class="badge badge-red">Critical</span></td></tr>
+  <tr><td>Image Alt Text</td><td>Descriptive: "Dunearn House Bukit Timah condo" not "image001.jpg"</td><td><span class="badge badge-orange">High</span></td></tr>
+  <tr><td>Schema Markup</td><td>RealEstateAgent + Product schema (already embedded in HTML)</td><td><span class="badge badge-orange">High</span></td></tr>
+  <tr><td>Open Graph Tags</td><td>Facebook/Twitter preview cards (already embedded)</td><td><span class="badge badge-orange">High</span></td></tr>
+  <tr><td>Mobile Responsive</td><td>Must work on phones (already responsive)</td><td><span class="badge badge-red">Critical</span></td></tr>
+  <tr><td>Page Speed</td><td>Optimize images, minify CSS/JS</td><td><span class="badge badge-orange">High</span></td></tr>
+  <tr><td>Canonical URL</td><td>Prevents duplicate content issues</td><td><span class="badge badge-green">Medium</span></td></tr>
+</table>
+
+<h3>Keywords to Target Per Project</h3>
+
+<table>
+  <tr><th>Project</th><th>Primary Keywords</th></tr>
+  <tr><td>Dunearn House</td><td>"Dunearn House Singapore", "new launch Bukit Timah 2026", "D11 condo", "Bukit Timah condo"</td></tr>
+  <tr><td>Lentor Gardens</td><td>"Lentor Gardens Singapore", "Lentor new launch", "Lentor Hills estate", "D26 condo"</td></tr>
+  <tr><td>Thomson Reserve</td><td>"Thomson Reserve Singapore", "Thomson condo new launch", "Upper Thomson property"</td></tr>
+  <tr><td>Jetlee (Brand)</td><td>"Jetlee property agent", "property agent Singapore", "Bukit Timah agent"</td></tr>
+</table>
+
+<!-- 5. LEAD GENERATION -->
+<h2>5️⃣ Lead Generation Channels</h2>
+
+<h3>Weekly Actions</h3>
+
+<table>
+  <tr><th>Channel</th><th>Action</th><th>Effort</th><th>Impact</th></tr>
+  <tr><td>Google Business Profile</td><td>Claim & verify with site URL. Post updates weekly.</td><td>15 min</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td>Facebook Property Groups</td><td>Join SG property groups. Share project pages with value-add posts.</td><td>15 min</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td>Instagram / TikTok</td><td>Link in bio → specific project page. Reels of show units.</td><td>20 min</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td>WhatsApp Status</td><td>Share direct links to your sites with your contact list.</td><td>5 min</td><td>⭐⭐⭐</td></tr>
+  <tr><td>PropertyGuru / 99.co</td><td>Add your website URL to agent profiles.</td><td>10 min</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td>Blog / Area Guides</td><td>Write 300-word guides (Natasha can write these). Post as pages.</td><td>30 min</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<h3>Lead Tracking</h3>
+<p>Currently: WhatsApp leads → +65 8764 9315</p>
+<p><strong>Recommended upgrade:</strong></p>
+<ul>
+  <li><strong>Google Analytics 4 (GA4)</strong> — free, shows which pages drive leads</li>
+  <li><strong>Google Sheets CRM</strong> — simple lead log with source tracking</li>
+</ul>
+
+<!-- 6. AUTOMATION -->
+<h2>6️⃣ Automation & Reporting</h2>
+
+<h3>Available Automated Services</h3>
+
+<table>
+  <tr><th>Task</th><th>Frequency</th><th>Description</th></tr>
+  <tr><td>Daily Property News Brief</td><td>Daily</td><td>Top 3 SG property news highlights</td></tr>
+  <tr><td>Weekly Traffic Report</td><td>Weekly</td><td>Visitor count per site + trending pages</td></tr>
+  <tr><td>Google Search Console Insights</td><td>Weekly</td><td>Keywords people used to find your sites</td></tr>
+  <tr><td>Backlink Check</td><td>Monthly</td><td>Who's linking to your sites</td></tr>
+</table>
+
+<p>All reports can be delivered via Telegram. Just ask and I'll set them up! 🗂️</p>
+
+<!-- 7. TROUBLESHOOTING -->
+<h2>7️⃣ Troubleshooting</h2>
+
+<table>
+  <tr><th>Issue</th><th>Cause</th><th>Fix</th></tr>
+  <tr><td>Site not loading</td><td>DNS propagation (new subdomain)</td><td>Wait 5-30 min, or flush DNS</td></tr>
+  <tr><td>403 Forbidden</td><td>Wrong file permissions</td><td>Set to 644 (File Manager → Permissions)</td></tr>
+  <tr><td>Images not loading</td><td>Path starts with <code>/images/</code> instead of <code>images/</code></td><td>Use relative paths, no leading slash</td></tr>
+  <tr><td>Not indexed on Google</td><td>New site, no backlinks, no sitemap</td><td>Submit to Search Console + request indexing</td></tr>
+  <tr><td>Google indexed but not showing for searches</td><td>Too new, low authority</td><td>Build backlinks, post to social media, wait 2-4 weeks</td></tr>
+</table>
+
+<!-- 8. QUICK REFERENCE -->
+<h2>8️⃣ Quick Reference</h2>
+
+<h3>Key Links</h3>
+<table>
+  <tr><th>Resource</th><th>URL</th></tr>
+  <tr><td>Hostinger hPanel</td><td><a href="https://hpanel.hostinger.com">hpanel.hostinger.com</a></td></tr>
+  <tr><td>Google Search Console</td><td><a href="https://search.google.com/search-console">search.google.com/search-console</a></td></tr>
+  <tr><td>Google Business Profile</td><td><a href="https://business.google.com">business.google.com</a></td></tr>
+  <tr><td>Dunearn House</td><td><a href="https://dunernhouse.jetleechannel.sg">dunernhouse.jetleechannel.sg</a></td></tr>
+  <tr><td>Lentor Gardens</td><td><a href="https://lentorgardens.jetleechannel.sg">lentorgardens.jetleechannel.sg</a></td></tr>
+  <tr><td>Thomson Reserve</td><td><a href="https://thomsonreserve.jetleechannel.sg">thomsonreserve.jetleechannel.sg</a></td></tr>
+</table>
+
+<h3>Contact</h3>
+<p>Agent: Natasha 🗂️ (via Telegram)<br>
+Lead WhatsApp: +65 8764 9315</p>
+
+<div class="divider"></div>
+<div class="footer">
+Generated by Natasha 🗂️ — 11 June 2026<br>
+Part of Jetlee Property Digital Assistant Setup
+</div>
+
+</div>
+</body>
+</html>

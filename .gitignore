@@ -1,0 +1,8 @@
+node_modules/
+.openclaw/
+.clawhub/
+browsers/
+*.tar.gz
+*.zip
+*.gz
+batch2-backup.tar.gz

@@ -1,0 +1,97 @@
+# jetleechannel.sg - Static Site
+# Old WordPress .htaccess backed up to .htaccess.wp.backup
+
+# Serve index.html first (home.htm is corrupted)
+DirectoryIndex index.html home.htm
+
+# Disable HTML caching completely (bypass CDN issues)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresDefault "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header set Cache-Control "no-cache, must-revalidate" "expr=%{CONTENT_TYPE} =~ m|text/html|"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Case-insensitive redirect for OneMarinaGardens (lowercase → correct case)
+    RewriteRule ^onemarinagardens(/.*)?$ /OneMarinaGardens$1 [R=301,L,NC]
+
+    # Case-insensitive redirect for BelgraviaAce (lowercase → correct case)
+    RewriteRule ^belgraviaace(/.*)?$ /BelgraviaAce$1 [R=301,L,NC]
+
+    # Case-insensitive redirects for camelCase project dirs
+    RewriteRule ^thecolletive(/.*)?$ /theColletive$1 [R=301,L,NC]
+    RewriteRule ^thesierra(/.*)?$ /TheSierra$1 [R=301,L,NC]
+    RewriteRule ^theorie(/.*)?$ /TheOrie$1 [R=301,L,NC]
+
+    # Don't apply the catch-all to project subdirectory files or directories
+    RewriteRule ^(lentor-gardens|amberwood|hudsonplace|unionsquare|hougangcentral|lucernegrand|articles|projects|thesen|elta|narraprices|narraresidences|aurea|Aurea|robertsonOpus|eltasingapore|dunearnhouse|thecontinuum|arcady|OneMarinaGardens|generations-tannery|BelgraviaAce|theColletive|TheSierra|TheOrie)(/.*)?$ - [L]
+
+    # Blog → Articles redirect (canonical listing is /articles/)
+    RewriteRule ^blog/?$ /articles/ [R=301,L]
+    RewriteRule ^blog\.html$ /articles/ [R=301,L]
+    RewriteRule ^blog/([^/]+)/?$ /articles/ [R=301,L]
+
+    # Old root-level article URLs → /articles/ canonical (SEO preservation, 301)
+    RewriteRule ^article-1km-school-2026\.html$ https://jetleechannel.sg/articles/article-1km-school-2026.html [R=301,L]
+    RewriteRule ^article-absd-guide-2026\.html$ https://jetleechannel.sg/articles/article-absd-guide-2026.html [R=301,L]
+    RewriteRule ^article-absd-timing-trap\.html$ https://jetleechannel.sg/articles/article-absd-timing-trap.html [R=301,L]
+    RewriteRule ^article-amberwood-gcb-enclave\.html$ https://jetleechannel.sg/articles/article-amberwood-gcb-enclave.html [R=301,L]
+    RewriteRule ^article-arcady-boon-keng\.html$ https://jetleechannel.sg/articles/article-arcady-boon-keng.html [R=301,L]
+    RewriteRule ^article-cdl-track-record-lucerne-grand\.html$ https://jetleechannel.sg/articles/article-cdl-track-record-lucerne-grand.html [R=301,L]
+    RewriteRule ^article-crl-phase-3-stations\.html$ https://jetleechannel.sg/articles/article-crl-phase-3-stations.html [R=301,L]
+    RewriteRule ^article-d10-generational-wealth\.html$ https://jetleechannel.sg/articles/article-d10-generational-wealth.html [R=301,L]
+    RewriteRule ^article-elta-balance-units\.html$ https://jetleechannel.sg/articles/article-elta-balance-units.html [R=301,L]
+    RewriteRule ^article-en-bloc-thresholds-2026\.html$ https://jetleechannel.sg/articles/article-en-bloc-thresholds-2026.html [R=301,L]
+    RewriteRule ^article-gcb-scarcity-value\.html$ https://jetleechannel.sg/articles/article-gcb-scarcity-value.html [R=301,L]
+    RewriteRule ^article-hdb-upgrade-guide\.html$ https://jetleechannel.sg/articles/article-hdb-upgrade-guide.html [R=301,L]
+    RewriteRule ^article-hdb-vs-condo-2026\.html$ https://jetleechannel.sg/articles/article-hdb-vs-condo-2026.html [R=301,L]
+    RewriteRule ^article-hdb-waitout-removed\.html$ https://jetleechannel.sg/articles/article-hdb-waitout-removed.html [R=301,L]
+    RewriteRule ^article-home-loan-guide-2026\.html$ https://jetleechannel.sg/articles/article-home-loan-guide-2026.html [R=301,L]
+    RewriteRule ^article-hougang-central-guide\.html$ https://jetleechannel.sg/articles/article-hougang-central-guide.html [R=301,L]
+    RewriteRule ^article-hudson-place-transport\.html$ https://jetleechannel.sg/articles/article-hudson-place-transport.html [R=301,L]
+    RewriteRule ^article-jld-lucerne-grand\.html$ https://jetleechannel.sg/articles/article-jld-lucerne-grand.html [R=301,L]
+    RewriteRule ^article-lentor-gardens-guide\.html$ https://jetleechannel.sg/articles/article-lentor-gardens-guide.html [R=301,L]
+    RewriteRule ^article-lucerne-grand-review\.html$ https://jetleechannel.sg/articles/article-lucerne-grand-review.html [R=301,L]
+    RewriteRule ^article-million-dollar-hdb-buyers\.html$ https://jetleechannel.sg/articles/article-million-dollar-hdb-buyers.html [R=301,L]
+    RewriteRule ^article-omg-record-3290\.html$ https://jetleechannel.sg/articles/article-omg-record-3290.html [R=301,L]
+    RewriteRule ^article-p1-phase-2c-ballots-2026\.html$ https://jetleechannel.sg/articles/article-p1-phase-2c-ballots-2026.html [R=301,L]
+    RewriteRule ^article-quiet-luxury-trend\.html$ https://jetleechannel.sg/articles/article-quiet-luxury-trend.html [R=301,L]
+    RewriteRule ^article-selling-hdb-2026\.html$ https://jetleechannel.sg/articles/article-selling-hdb-2026.html [R=301,L]
+    RewriteRule ^article-tan-boon-liat\.html$ https://jetleechannel.sg/articles/article-tan-boon-liat.html [R=301,L]
+    RewriteRule ^article-top-new-launches-2026\.html$ https://jetleechannel.sg/articles/article-top-new-launches-2026.html [R=301,L]
+    RewriteRule ^article-union-square-investment\.html$ https://jetleechannel.sg/articles/article-union-square-investment.html [R=301,L]
+    RewriteRule ^article-wealth-preservation\.html$ https://jetleechannel.sg/articles/article-wealth-preservation.html [R=301,L]
+    RewriteRule ^article-wealthy-families-condo\.html$ https://jetleechannel.sg/articles/article-wealthy-families-condo.html [R=301,L]
+    RewriteRule ^cov-back-2026\.html$ https://jetleechannel.sg/articles/cov-back-2026.html [R=301,L]
+
+    RewriteRule ^absd-timing-trap.html$ https://jetleechannel.sg/articles/article-absd-timing-trap.html [R=301,L]
+    RewriteRule ^amberwood.html$ https://jetleechannel.sg/amberwood/ [R=301,L]
+
+    # If the request is not an existing file, serve index.html (SPA-like for direct paths)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.html [L]
+
+    # Rewrite home.htm to index.html (catch attempts to access it)
+    RewriteRule ^home\.htm$ /index.html [L,R=301]
+</IfModule>

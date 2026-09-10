@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LFG5HCYKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6LFG5HCYKP');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Arcady at Boon Keng Mortgage Calculator: Monthly Instalment, BSD & ABSD Singapore 2026</title>
+<meta name="description" content="Free mortgage and stamp duty calculator for The Arcady at Boon Keng, Boon Keng. Estimate your monthly instalment, Buyer's Stamp Duty (BSD), and Additional Buyer's Stamp Duty (ABSD) instantly using current 2026 IRAS rates.">
+<meta name="keywords" content="The Arcady at Boon Keng mortgage calculator, condo loan calculator Singapore, BSD ABSD calculator 2026, Boon Keng new launch monthly instalment, how much downpayment condo Singapore">
+<link rel="canonical" href="https://jetleechannel.sg/arcady/mortgage-calculator.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is Buyer's Stamp Duty (BSD) calculated in Singapore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BSD in Singapore is calculated on a progressive scale based on the purchase price or market value, whichever is higher. The rate starts at 1% on the first $180,000 and rises in tiers up to 6% on amounts above $3,000,000, as set by IRAS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to pay ABSD for The Arcady at Boon Keng if it's my first property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Singapore Citizens purchasing their first residential property do not pay Additional Buyer's Stamp Duty. ABSD applies from the second property onward for citizens, and from the first property for Permanent Residents and foreigners, at rates set by IRAS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum loan I can get for The Arcady at Boon Keng?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The maximum Loan-to-Value ratio for a bank loan on a private residential property in Singapore is typically 75%, provided the buyer has no other outstanding housing loans and meets the bank's TDSR and MSR assessment criteria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the Progressive Payment Scheme affect my mortgage for The Arcady at Boon Keng?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under the Progressive Payment Scheme, buyers of a new launch like The Arcady at Boon Keng pay in stages tied to construction milestones, rather than drawing down the full loan at once. This means actual monthly cash outlay during construction is typically lower than the full loan instalment shown in a standard mortgage calculator, since the loan is disbursed gradually."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --gold: #c9a24b;
+    --gold-light: #e6c878;
+    --bg-black: #0a0a0a;
+    --bg-panel: #131313;
+    --bg-panel-2: #1a1a1a;
+    --text-main: #ece7dd;
+    --text-muted: #a8a196;
+    --border-line: #2a2620;
+    --green: #6fae7c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg-black);
+    color: var(--text-main);
+    font-family: 'DM Sans', 'Raleway', sans-serif;
+    line-height: 1.7;
+  }
+  h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--gold-light); }
+  .top-bar {
+    background: var(--bg-panel); border-bottom: 1px solid var(--border-line);
+    padding: 16px 20px; text-align: center; font-size: 14px; color: var(--text-muted);
+  }
+  .top-bar strong { color: var(--gold-light); }
+  header.hero { padding: 60px 20px 40px; max-width: 800px; margin: 0 auto; text-align: center; }
+  header.hero .eyebrow { text-transform: uppercase; letter-spacing: 3px; font-size: 12px; color: var(--gold); margin-bottom: 16px; }
+  header.hero h1 { font-size: 36px; margin-bottom: 16px; }
+  header.hero p { color: var(--text-muted); font-size: 17px; max-width: 600px; margin: 0 auto; }
+
+  main { max-width: 1000px; margin: 0 auto; padding: 20px 20px 60px; }
+
+  .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 850px) { .calc-grid { grid-template-columns: 1fr; } }
+
+  .panel {
+    background: var(--bg-panel); border: 1px solid var(--border-line);
+    border-radius: 8px; padding: 28px;
+  }
+  .panel h2 { font-size: 22px; margin-bottom: 20px; border-left: 3px solid var(--gold); padding-left: 12px; }
+
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
+  .field input, .field select {
+    width: 100%; padding: 11px 12px; background: var(--bg-black);
+    border: 1px solid var(--border-line); color: var(--text-main);
+    border-radius: 4px; font-size: 15px;
+  }
+  .field .hint { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+  .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .result-item {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 14px 0; border-bottom: 1px solid var(--border-line);
+  }
+  .result-item:last-child { border-bottom: none; }
+  .result-item .label { color: var(--text-muted); font-size: 14px; }
+  .result-item .value { font-size: 18px; font-weight: 600; color: var(--text-main); }
+  .result-item.highlight .value { color: var(--gold-light); font-size: 24px; }
+  .result-item.total .value { color: var(--green); font-size: 22px; }
+
+  .badge {
+    display: inline-block; background: var(--bg-panel-2); color: var(--gold);
+    font-size: 11px; padding: 3px 10px; border-radius: 12px; margin-bottom: 14px;
+    border: 1px solid var(--border-line);
+  }
+
+  .disclaimer {
+    font-size: 13px; color: var(--text-muted); margin-top: 30px;
+    border-top: 1px solid var(--border-line); padding-top: 16px;
+  }
+
+  .cta-section {
+    text-align: center; padding: 50px 20px 60px; background: var(--bg-panel);
+    border-top: 1px solid var(--border-line); margin-top: 40px;
+  }
+  .cta-section h2 { border: none; padding: 0; font-size: 28px; margin-bottom: 12px; }
+  .cta-section p { color: var(--text-muted); margin-bottom: 24px; }
+  .btn-whatsapp {
+    display: inline-block; background: var(--gold); color: #0a0a0a; font-weight: 700;
+    padding: 16px 32px; border-radius: 4px; text-decoration: none; font-size: 16px;
+  }
+  .btn-whatsapp:hover { background: var(--gold-light); }
+
+  footer { text-align: center; padding: 26px 20px; color: var(--text-muted); font-size: 13px; }
+
+  .seo-content { margin-top: 50px; padding-top: 10px; border-top: 1px solid var(--border-line); }
+  .seo-content h2 { font-size: 28px; margin-bottom: 18px; border-left: 3px solid var(--gold); padding-left: 14px; }
+  .seo-content h3 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; }
+  .seo-content h4 { font-family: 'Cormorant Garamond', serif; color: var(--gold-light); font-size: 18px; margin-bottom: 8px; }
+  .seo-content p { color: var(--text-main); margin-bottom: 16px; font-size: 15.5px; }
+  .faq-item { background: var(--bg-panel); border: 1px solid var(--border-line); border-left: 3px solid var(--gold); border-radius: 4px; padding: 18px 20px; margin-bottom: 14px; }
+  .faq-item p { margin-bottom: 0; color: var(--text-muted); font-size: 15px; }
+  .related-links { list-style: none; margin: 0; padding: 0; }
+  .related-links li { margin-bottom: 10px; }
+  .related-links a { color: var(--gold); text-decoration: none; font-size: 15.5px; }
+  .related-links a:hover { color: var(--gold-light); text-decoration: underline; }
+
+  .pps-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14.5px; }
+  .pps-table th, .pps-table td { padding: 11px 12px; text-align: left; border-bottom: 1px solid var(--border-line); }
+  .pps-table th { color: var(--gold-light); font-family: 'Cormorant Garamond', serif; font-size: 16px; }
+  .pps-table td:nth-child(2), .pps-table th:nth-child(2) { text-align: center; }
+  .pps-table td:nth-child(3), .pps-table th:nth-child(3) { text-align: right; }
+  .pps-table tfoot td { border-bottom: none; border-top: 2px solid var(--gold); font-weight: 700; color: var(--gold-light); padding-top: 14px; }
+</style>
+</head>
+<body>
+
+<div class="top-bar"><a href="/arcady/" style="color:var(--gold); text-decoration:none;">&larr; Back to Arcady Home</a> &nbsp;|&nbsp; <strong>The Arcady at Boon Keng</strong> · District 20, Boon Keng · By Tamarind Development Pte. Ltd.</div>
+
+<header class="hero">
+  <div class="eyebrow">Financial Planning Tool</div>
+  <h1>Mortgage &amp; Stamp Duty Calculator</h1>
+  <p>Estimate your monthly instalment, Buyer's Stamp Duty (BSD), and Additional Buyer's Stamp Duty (ABSD) for your The Arcady at Boon Keng purchase — based on current IRAS rates.</p>
+</header>
+
+<main>
+  <div class="calc-grid">
+
+    <div class="panel">
+      <h2>Your Details</h2>
+
+      <div class="field">
+        <label for="price">Purchase Price (S$)</label>
+        <input type="number" id="price" value="2000000" min="0" step="10000">
+      </div>
+
+      <div class="field">
+        <label for="profile">Buyer Profile</label>
+        <select id="profile">
+          <option value="sc1">Singapore Citizen — 1st property</option>
+          <option value="sc2">Singapore Citizen — 2nd property</option>
+          <option value="sc3">Singapore Citizen — 3rd+ property</option>
+          <option value="pr1">PR — 1st property</option>
+          <option value="pr2">PR — 2nd property</option>
+          <option value="pr3">PR — 3rd+ property</option>
+          <option value="fr">Foreigner</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="loanPct">Loan Amount (% of price)</label>
+        <input type="number" id="loanPct" value="75" min="0" max="75" step="1">
+        <div class="hint">Max LTV is typically 75% for a first home loan with no other outstanding property loans, subject to TDSR/MSR assessment by your bank.</div>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="rate">Interest Rate (% p.a.)</label>
+          <input type="number" id="rate" value="3.5" min="0" step="0.05">
+        </div>
+        <div class="field">
+          <label for="tenure">Loan Tenure (years)</label>
+          <input type="number" id="tenure" value="25" min="1" max="35" step="1">
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="hint">Interest rate is an indicative placeholder — actual rates vary by bank and loan package. Please check current packages with your banker.</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Your Estimate</h2>
+      <div class="badge">Updates automatically</div>
+
+      <div class="result-item">
+        <span class="label">Loan Amount</span>
+        <span class="value" id="outLoanAmount">—</span>
+      </div>
+      <div class="result-item highlight">
+        <span class="label">Monthly Instalment</span>
+        <span class="value" id="outMonthly">—</span>
+      </div>
+      <div class="result-item">
+        <span class="label">Total Interest Paid</span>
+        <span class="value" id="outInterest">—</span>
+      </div>
+      <div class="result-item">
+        <span class="label">Total Repayment</span>
+        <span class="value" id="outTotalRepay">—</span>
+      </div>
+      <div class="result-item">
+        <span class="label">Down Payment Needed</span>
+        <span class="value" id="outDownpayment">—</span>
+      </div>
+      <div class="result-item">
+        <span class="label">Buyer's Stamp Duty (BSD)</span>
+        <span class="value" id="outBSD">—</span>
+      </div>
+      <div class="result-item">
+        <span class="label">Additional BSD (ABSD)</span>
+        <span class="value" id="outABSD">—</span>
+      </div>
+      <div class="result-item total">
+        <span class="label">Total Upfront Cash Needed*</span>
+        <span class="value" id="outUpfront">—</span>
+      </div>
+      <div class="hint" style="margin-top:10px;">*Down payment + BSD + ABSD. Excludes legal fees, valuation, and other miscellaneous costs.</div>
+    </div>
+
+  </div>
+
+  <div class="panel" id="ppsPanel" style="margin-top:28px;">
+    <h2>Progressive Payment Schedule (BUC)</h2>
+    <div class="badge">Based on Schedule 4, Housing Developers Rules</div>
+    <p class="hint" style="margin-bottom:18px;">The Arcady at Boon Keng is sold under the Progressive Payment Scheme (PPS). Instead of paying the full price upfront, you pay in stages as construction hits each milestone below — this updates automatically based on the purchase price you entered above.</p>
+
+    <table class="pps-table" id="ppsTable">
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>% of Price</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="ppsBody"></tbody>
+      <tfoot>
+        <tr class="pps-total-row">
+          <td>Total</td>
+          <td>100%</td>
+          <td id="ppsTotalAmount">—</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <p class="hint" style="margin-top:14px;">The 5% booking fee and 15% on signing the Sale &amp; Purchase Agreement (20% combined) are typically paid largely in cash/CPF before any bank loan disbursement begins. Your bank loan is drawn down progressively from the foundation stage onward, matching each milestone billed by the developer. Actual construction timeline and milestone dates are set by the developer and may vary.</p>
+  </div>
+
+  <p class="disclaimer">
+    This calculator provides indicative estimates only and does not constitute financial advice. BSD and ABSD are calculated based on current IRAS rates as published, which are subject to change by the Singapore government. Interest rates, loan eligibility (TDSR/MSR), and actual bank offers vary and should be confirmed directly with your mortgage banker or financial advisor. The Arcady at Boon Keng is sold under the Progressive Payment Scheme — actual disbursement follows construction milestones, not a single lump-sum loan drawdown as shown here for simplicity.
+  </p>
+
+  <section class="seo-content">
+    <h2>Understanding Your Mortgage for The Arcady at Boon Keng</h2>
+    <p>Buying a new launch condo like The Arcady at Boon Keng in Boon Keng involves more than just the purchase price. Your total upfront commitment includes the down payment, Buyer's Stamp Duty (BSD), and — depending on your citizenship and existing property count — Additional Buyer's Stamp Duty (ABSD). This calculator brings all three together so you can see a realistic picture before booking a unit at the VVIP preview.</p>
+
+    <h3>How Buyer's Stamp Duty (BSD) Works in Singapore</h3>
+    <p>BSD applies to every residential property purchase, calculated on a progressive scale against the purchase price or market valuation, whichever is higher. The rate starts at 1% on the first $180,000 and climbs in stages to 6% on the portion above $3,000,000. Unlike ABSD, BSD applies to every buyer regardless of citizenship or how many properties they already own.</p>
+
+    <h3>How ABSD Affects Your The Arcady at Boon Keng Purchase</h3>
+    <p>Additional Buyer's Stamp Duty depends entirely on your profile. Singapore Citizens buying their first home pay no ABSD at all. It's only from a second property onward that ABSD kicks in for citizens, while Permanent Residents and foreigners face ABSD from their very first purchase. This is a major reason many HDB upgraders choose to sell their existing flat before committing to a new launch — it keeps them in the 0% ABSD bracket as first-time private property buyers.</p>
+
+    <h3>Progressive Payment: Why Your Actual Monthly Cash Outlay Differs</h3>
+    <p>Because The Arcady at Boon Keng is still under construction, your loan isn't disbursed as one lump sum. Instead, both your cash/CPF payment and your bank loan follow the Progressive Payment Scheme, released in stages as construction milestones are completed — foundation, structural work, roofing, and so on. This calculator shows the full loan's eventual monthly instalment once fully drawn down at TOP; your actual cash flow during construction will typically be lower, since you're only paying against the portion disbursed so far.</p>
+
+    <h3>Frequently Asked Questions</h3>
+
+    <div class="faq-item">
+      <h4>How is Buyer's Stamp Duty (BSD) calculated in Singapore?</h4>
+      <p>BSD is calculated on a progressive scale based on the purchase price or market value, whichever is higher — starting at 1% on the first $180,000 and rising in tiers up to 6% on amounts above $3,000,000, per current IRAS rates.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Do I need to pay ABSD for The Arcady at Boon Keng if it's my first property?</h4>
+      <p>No. Singapore Citizens buying their first residential property pay 0% ABSD. It only applies from the second property onward for citizens, and from the first property for PRs and foreigners.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>What is the maximum loan I can get for The Arcady at Boon Keng?</h4>
+      <p>Typically up to 75% Loan-to-Value for a first home loan with no other outstanding property loans, subject to your bank's TDSR and MSR assessment.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How does the Progressive Payment Scheme affect my mortgage?</h4>
+      <p>Your loan is drawn down gradually as construction milestones are hit, rather than all at once — so your actual monthly cash outlay during the build period is generally lower than the full instalment figure shown above, which reflects the fully disbursed loan.</p>
+    </div>
+
+    <h3>Explore More on The Arcady at Boon Keng</h3>
+    <ul class="related-links">
+      <li><a href="/articles/price-guide-2026.html">The Arcady at Boon Keng Price Guide 2026</a></li>
+      <li><a href="/articles/absd-timing-trap.html">The ABSD Timing Trap Every Upgrader Should Know</a></li>
+      <li><a href="/articles/should-you-sell-hdb-before-buying-condo.html">Should You Sell Your HDB Before Buying a New Launch?</a></li>
+      <li><a href="/articles/should-you-buy-thomson-reserve.html">Should You Buy The Arcady at Boon Keng?</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<div class="cta-section">
+  <h2>Want a Personalised Breakdown?</h2>
+  <p>I can run the exact numbers for your situation, including progressive payment staging for The Arcady at Boon Keng.</p>
+  <a class="btn-whatsapp" href="https://wa.me/6587649315?text=Hi%20Jet%2C%20I%20used%20the%20mortgage%20calculator%20on%20Thomson%20Reserve%2C%20I'd%20like%20a%20personalised%20breakdown" target="_blank">Chat with Jet on WhatsApp →</a>
+  <div style="margin-top:18px;">
+    <a href="/arcady/" style="color:var(--gold); text-decoration:none;">&larr; Back to Home</a>
+  </div>
+</div>
+
+<footer>
+  Jet Lee · Senior Associate Group District Director, PropNex Realty · CEA Reg No. R007613B<br>
+  The Arcady at Boon Keng is marketed by Jet Lee Channel. Developer: Tamarind Development Pte. Ltd.
+</footer>
+
+<script>
+function fmt(n) {
+  return 'S$' + Math.round(n).toLocaleString('en-SG');
+}
+
+function calcBSD(price) {
+  let remaining = price;
+  let bsd = 0;
+  const brackets = [
+    [180000, 0.01],
+    [180000, 0.02],
+    [640000, 0.03],
+    [500000, 0.04],
+    [1500000, 0.05]
+  ];
+  for (const [amt, rate] of brackets) {
+    if (remaining <= 0) break;
+    const portion = Math.min(remaining, amt);
+    bsd += portion * rate;
+    remaining -= portion;
+  }
+  if (remaining > 0) bsd += remaining * 0.06;
+  return bsd;
+}
+
+function getABSDRate(profile) {
+  const rates = {
+    sc1: 0, sc2: 0.20, sc3: 0.30,
+    pr1: 0.05, pr2: 0.30, pr3: 0.35,
+    fr: 0.60
+  };
+  return rates[profile] ?? 0;
+}
+
+const PPS_STAGES = [
+  { name: 'Booking Fee (on OTP)', pct: 5 },
+  { name: 'On Signing S&P Agreement (within 8 wks of OTP)', pct: 15 },
+  { name: 'Completion of Foundation Work', pct: 10 },
+  { name: 'Completion of Reinforced Concrete Framework', pct: 10 },
+  { name: 'Completion of Partition Walls', pct: 5 },
+  { name: 'Completion of Roofing/Ceiling', pct: 5 },
+  { name: 'Completion of Electrical Wiring, Plumbing, Doors/Windows', pct: 5 },
+  { name: 'Completion of Car Park, Roads & Drains', pct: 5 },
+  { name: 'Temporary Occupation Permit (TOP)', pct: 25 },
+  { name: 'Certificate of Statutory Completion (CSC)', pct: 15 }
+];
+
+function renderPPS(price) {
+  const tbody = document.getElementById('ppsBody');
+  tbody.innerHTML = '';
+  PPS_STAGES.forEach(stage => {
+    const amount = price * (stage.pct / 100);
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${stage.name}</td><td>${stage.pct}%</td><td>${fmt(amount)}</td>`;
+    tbody.appendChild(tr);
+  });
+  document.getElementById('ppsTotalAmount').textContent = fmt(price);
+}
+
+function calculate() {
+  const price = parseFloat(document.getElementById('price').value) || 0;
+  const loanPct = parseFloat(document.getElementById('loanPct').value) || 0;
+  const rate = parseFloat(document.getElementById('rate').value) || 0;
+  const tenure = parseFloat(document.getElementById('tenure').value) || 1;
+  const profile = document.getElementById('profile').value;
+
+  const loanAmount = price * (loanPct / 100);
+  const downPayment = price - loanAmount;
+
+  const monthlyRate = (rate / 100) / 12;
+  const n = tenure * 12;
+  let monthlyPayment = 0;
+  if (monthlyRate > 0) {
+    monthlyPayment = loanAmount * monthlyRate * Math.pow(1 + monthlyRate, n) / (Math.pow(1 + monthlyRate, n) - 1);
+  } else {
+    monthlyPayment = loanAmount / n;
+  }
+  const totalRepay = monthlyPayment * n;
+  const totalInterest = totalRepay - loanAmount;
+
+  const bsd = calcBSD(price);
+  const absdRate = getABSDRate(profile);
+  const absd = price * absdRate;
+
+  const totalUpfront = downPayment + bsd + absd;
+
+  document.getElementById('outLoanAmount').textContent = fmt(loanAmount);
+  document.getElementById('outMonthly').textContent = fmt(monthlyPayment) + ' /mo';
+  document.getElementById('outInterest').textContent = fmt(totalInterest);
+  document.getElementById('outTotalRepay').textContent = fmt(totalRepay);
+  document.getElementById('outDownpayment').textContent = fmt(downPayment);
+  document.getElementById('outBSD').textContent = fmt(bsd);
+  document.getElementById('outABSD').textContent = absdRate === 0 ? 'S$0 (not applicable)' : fmt(absd);
+  document.getElementById('outUpfront').textContent = fmt(totalUpfront);
+
+  renderPPS(price);
+}
+
+document.querySelectorAll('input, select').forEach(el => {
+  el.addEventListener('input', calculate);
+});
+calculate();
+</script>
+
+</body>
+</html>
