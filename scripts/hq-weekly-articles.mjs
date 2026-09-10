@@ -341,7 +341,7 @@ function main() {
 
   // Telegram notification to Jetlee
   try {
-    const TOKEN = '8124287935:AAHlC8ylOK8IEuSQRLjKGJKLYaMu77ndHsU';
+    const TOKEN = process.env.TELEGRAM_BOT_TOKEN || "";
     const CHAT_ID = '87383567';
     const msg = `📰 New article published on JetleeChannel.sg:\n\n${postObj.title}\n\n${SITE_URL}/articles/${slug}.html`;
     execSync(`curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(msg)}" --max-time 20`, { encoding: 'utf-8', maxBuffer: 1024 * 1024 });

@@ -494,7 +494,7 @@ async function uploadSite(site, ftpDir) {
 
 /** Telegram notification (same as granddunman script). */
 async function sendTelegram(message) {
-  const TOKEN = '8124287935:AAHlC8ylOK8IEuSQRLjKGJKLYaMu77ndHsU';
+  const TOKEN = process.env.TELEGRAM_BOT_TOKEN || "";
   const CHAT_ID = '87383567';
   const url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(message)}`;
   try {
