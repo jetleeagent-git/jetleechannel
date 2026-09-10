@@ -1,0 +1,30 @@
+📰 The Continuum weekly article generator — 2026-08-17T01:05:01.931Z
+Fetched 17 posts from PropNex channel
+✅ Generated new-orchard-road-park-to-treble-istana-park-s-size-serve-as.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/thecontinuum/articles/new-orchard-road-park-to-treble-istana-park-s-size-serve-as.html
+📨 Telegram notification sent
+📰 The Continuum weekly article generator — 2026-08-21T09:05:01.515Z
+Fetched 19 posts from PropNex channel
+✅ Generated wee-hur-wee-hur-was-founded-in-1980-by-goh-yeow-lian-along-w.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/thecontinuum/articles/wee-hur-wee-hur-was-founded-in-1980-by-goh-yeow-lian-along-w.html
+📨 Telegram notification sent
+📰 The Continuum weekly article generator — 2026-08-24T09:05:01.684Z
+Fetched 18 posts from PropNex channel
+✅ Generated financial-planners-urge-investors-to-consider-other-options.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/thecontinuum/articles/financial-planners-urge-investors-to-consider-other-options.html
+📨 Telegram notification sent
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
