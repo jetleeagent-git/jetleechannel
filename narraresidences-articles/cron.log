@@ -1,0 +1,30 @@
+📰 Narra Residences weekly article generator — 2026-08-17T01:10:01.337Z
+Fetched 17 posts from PropNex channel
+✅ Generated ho-bee-land-ho-bee-land-was-founded-in-1987-by-chua-thian-po.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/narraresidences/articles/ho-bee-land-ho-bee-land-was-founded-in-1987-by-chua-thian-po.html
+📨 Telegram notification sent
+📰 Narra Residences weekly article generator — 2026-08-21T09:10:01.952Z
+Fetched 19 posts from PropNex channel
+✅ Generated mortgage-rate-fall-policy-changes-to-bolster-housing-market.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/narraresidences/articles/mortgage-rate-fall-policy-changes-to-bolster-housing-market.html
+📨 Telegram notification sent
+📰 Narra Residences weekly article generator — 2026-08-24T09:10:01.607Z
+Fetched 18 posts from PropNex channel
+✅ Generated developer-sales-pick-up-in-july-with-731-new-homes-sold-main.html
+✅ Index updated
+Upload article: ✅ | index: ✅
+
+🎉 Published: https://jetleechannel.sg/narraresidences/articles/developer-sales-pick-up-in-july-with-731-new-homes-sold-main.html
+📨 Telegram notification sent
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
+Usage: node scripts/weekly-articles.mjs <site> [--force]
+Sites: loyang (use hq-weekly-articles.mjs for HQ, thomson-weekly-articles.mjs for thomson)
