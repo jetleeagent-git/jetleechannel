@@ -45,3 +45,4 @@ AddDefaultCharset UTF-8
 </IfModule>
 /* deploy trigger */
 /* trigger */
+/* redeploy */
