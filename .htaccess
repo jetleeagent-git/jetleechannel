@@ -8,3 +8,45 @@ AddDefaultCharset UTF-8
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
 </IfModule>
+
+# Enable Case-Insensitive URL Matching (Fixes camelCase / lowercase 404s)
+<IfModule mod_spelling.c>
+    CheckSpelling On
+    CheckCaseOnly On
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Case-insensitive and spelling fallbacks for The Collective
+    RewriteCond %{REQUEST_URI} ^/(theColletive|thecollective|TheCollective|TheColletive)(/.*)?$ [NC]
+    RewriteRule ^ /thecolletive/ [R=301,L]
+
+    # Casing fallbacks for other projects
+    RewriteCond %{REQUEST_URI} ^/belgraviaace(/.*)?$ [NC]
+    RewriteCond %{REQUEST_URI} !^/BelgraviaAce
+    RewriteRule ^ /BelgraviaAce/ [R=301,L]
+
+    RewriteCond %{REQUEST_URI} ^/onemarinagardens(/.*)?$ [NC]
+    RewriteCond %{REQUEST_URI} !^/OneMarinaGardens
+    RewriteRule ^ /OneMarinaGardens/ [R=301,L]
+
+    RewriteCond %{REQUEST_URI} ^/sophiameadow(/.*)?$ [NC]
+    RewriteCond %{REQUEST_URI} !^/SophiaMeadow
+    RewriteRule ^ /SophiaMeadow/ [R=301,L]
+
+    RewriteCond %{REQUEST_URI} ^/thehillshore(/.*)?$ [NC]
+    RewriteCond %{REQUEST_URI} !^/TheHillshore
+    RewriteRule ^ /TheHillshore/ [R=301,L]
+
+    RewriteCond %{REQUEST_URI} ^/theorie(/.*)?$ [NC]
+    RewriteCond %{REQUEST_URI} !^/TheOrie
+    RewriteRule ^ /TheOrie/ [R=301,L]
+
+    RewriteCond %{REQUEST_URI} ^/theserra(/.*)?$ [NC]
+    RewriteCond %{REQUEST_URI} !^/TheSerra
+    RewriteRule ^ /TheSerra/ [R=301,L]
+
+    RewriteCond %{REQUEST_URI} ^/thesierra(/.*)?$ [NC]
+    RewriteRule ^ /TheSerra/ [R=301,L]
+</IfModule>
