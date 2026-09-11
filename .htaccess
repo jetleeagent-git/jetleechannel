@@ -1,6 +1,7 @@
 RewriteEngine On
 
-# Case-insensitive / spelling redirects for project folders
+# Hyphenated & casing redirects
+RewriteRule ^(?i)grand-dunman/?(.*)$ /granddunman/$1 [R=301,L]
 RewriteRule ^(?i)thecolletive/?(.*)$ /thecolletive/$1 [R=301,L]
 RewriteRule ^(?i)thecollective/?(.*)$ /thecolletive/$1 [R=301,L]
 RewriteRule ^(?i)belgraviaace/?(.*)$ /BelgraviaAce/$1 [R=301,L]

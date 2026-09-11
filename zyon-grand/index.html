@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zyon Grand | 706 Units D03 Kim Seng Road | Direct Developer Price | Jet Lee</title>
+<meta name="description" content="Zyon Grand – 706 units at 3 & 5 Kim Seng Road, District 3. Two 62-storey towers + 36-storey serviced residences by CDL & Mitsui Fudosan. 1BR+Study to 5BR Supreme & Penthouse. 99-year leasehold, TOP Sep 2032. Register interest with Jet Lee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #B8975A;
+    --gold-light: #D4B47A;
+    --gold-dark: #8A6E3A;
+    --dark: #0E0D0B;
+    --dark2: #1A1915;
+    --dark3: #252420;
+    --cream: #F5F0E8;
+    --cream2: #EDE8DC;
+    --text: #2C2A25;
+    --text-light: #7A7668;
+    --white: #FFFFFF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 48px;
+    background: rgba(14,13,11,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,151,90,0.2);
+    transition: all 0.3s ease;
+  }
+  .nav-logo {
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .nav-logo .logo-dh {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 500; letter-spacing: 4px;
+    color: var(--gold); text-transform: uppercase;
+  }
+  .nav-logo .logo-sub {
+    font-size: 9px; letter-spacing: 3px; color: rgba(184,151,90,0.6);
+    text-transform: uppercase;
+  }
+  .nav-links {
+    display: flex; gap: 32px; list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold); color: var(--dark);
+    padding: 10px 24px; border: none; cursor: pointer;
+    font-family: 'Jost', sans-serif; font-size: 11px;
+    letter-spacing: 2px; text-transform: uppercase; font-weight: 500;
+    text-decoration: none; display: inline-block;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-light); }
+
+  #home {
+    position: relative; height: 100vh; min-height: 700px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    background: var(--dark);
+  }
+  #home .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(14,13,11,0.50) 0%, rgba(14,13,11,0.30) 38%, rgba(14,13,11,0.12) 68%, rgba(14,13,11,0.03) 100%),
+      url('/TheSerra/images/facade.jpg') right center / auto 100% no-repeat,
+      var(--dark);
+  }
+  #home .hero-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(14,13,11,0.08) 0%, rgba(14,13,11,0.04) 15%, rgba(14,13,11,0.25) 50%, rgba(14,13,11,0.55) 100%);
+  }
+  .hero-pattern {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: repeating-linear-gradient(
+      0deg, transparent, transparent 60px,
+      rgba(184,151,90,0.5) 60px, rgba(184,151,90,0.5) 61px
+    ),
+    repeating-linear-gradient(
+      90deg, transparent, transparent 60px,
+      rgba(184,151,90,0.5) 60px, rgba(184,151,90,0.5) 61px
+    );
+  }
+  .hero-content {
+    position: relative; z-index: 2; text-align: center;
+    padding: 0 24px;
+    animation: heroFadeIn 1.2s ease forwards;
+  }
+  @keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-tag {
+    display: inline-block;
+    font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--gold); border: 1px solid rgba(184,151,90,0.4);
+    padding: 7px 20px; margin-bottom: 32px;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(56px, 8vw, 100px);
+    font-weight: 300; line-height: 0.95;
+    color: var(--white); letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .hero-title em {
+    font-style: italic; color: var(--gold);
+  }
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-weight: 300; font-style: italic;
+    color: rgba(255,255,255,0.55); letter-spacing: 1px;
+    margin-bottom: 48px;
+  }
+  .hero-stats {
+    display: flex; gap: 48px; justify-content: center;
+    margin-bottom: 52px;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px; font-weight: 500; color: var(--gold);
+    display: block; line-height: 1;
+  }
+  .hero-stat .lbl {
+    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: rgba(255,255,255,0.4); margin-top: 6px;
+  }
+  .hero-divider {
+    width: 1px; height: 50px; background: rgba(184,151,90,0.3);
+    align-self: center;
+  }
+  .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold); color: var(--dark);
+    padding: 14px 36px; text-decoration: none;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 600;
+    transition: all 0.2s; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-outline {
+    border: 1px solid rgba(184,151,90,0.5); color: var(--gold);
+    padding: 14px 36px; text-decoration: none;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 400;
+    transition: all 0.2s; display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold); background: rgba(184,151,90,0.08); }
+  .hero-scroll {
+    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    color: rgba(255,255,255,0.3); font-size: 9px; letter-spacing: 3px;
+    text-transform: uppercase; animation: bounce 2s infinite;
+  }
+  .scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, rgba(184,151,90,0.6), transparent);
+  }
+  @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+  /* ⚠️ Blinking red hero badge (left side, black blank area) */
+  .hero-badge {
+    position: absolute; left: 5%; top: 50%; transform: translateY(-50%);
+    z-index: 3; max-width: 300px; text-align: left;
+    animation: badgeBlink 1s steps(1) infinite;
+    pointer-events: none;
+  }
+  .hero-badge .badge-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(30px, 4.2vw, 52px);
+    font-weight: 700; line-height: 1.05;
+    color: #ff1a1a; letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 18px rgba(255,26,26,0.85), 0 0 42px rgba(255,26,26,0.5);
+  }
+  .hero-badge .badge-sub {
+    display: block; margin-top: 6px;
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    color: #ff4d4d; font-weight: 600;
+  }
+  @keyframes badgeBlink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+  @media (max-width: 900px) {
+    .hero-badge { left: 50%; transform: translateX(-50%); top: auto; bottom: 130px; max-width: 90%; text-align: center; }
+    .hero-badge .badge-line { font-size: clamp(26px, 7vw, 40px); }
+  }
+
+  section { padding: 100px 48px; }
+  .section-label {
+    font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px; display: block;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 5vw, 60px); font-weight: 300; line-height: 1.1;
+    color: var(--dark); margin-bottom: 24px;
+  }
+  .section-title em { font-style: italic; color: var(--gold-dark); }
+  .section-divider {
+    width: 60px; height: 1px; background: var(--gold); margin-bottom: 40px;
+  }
+
+  .ticker {
+    background: var(--gold); padding: 12px 0; overflow: hidden;
+    white-space: nowrap;
+  }
+  .ticker-inner {
+    display: inline-block; animation: ticker 25s linear infinite;
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--dark); font-weight: 600;
+  }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  #details { background: var(--cream); }
+  .overview-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+    max-width: 1200px; margin: 0 auto;
+    align-items: start;
+  }
+  .overview-text p {
+    font-size: 16px; line-height: 1.8; color: var(--text-light);
+    margin-bottom: 20px;
+  }
+  .fact-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+    background: rgba(184,151,90,0.15);
+  }
+  .fact-item {
+    background: var(--cream); padding: 20px 24px;
+  }
+  .fact-label {
+    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 6px;
+  }
+  .fact-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px; font-weight: 500; color: var(--dark);
+  }
+
+  #pricing { background: var(--dark2); }
+  #pricing .section-title { color: var(--white); }
+  #pricing .section-label { color: var(--gold); }
+  .unit-table {
+    width: 100%; border-collapse: collapse; max-width: 960px;
+  }
+  .unit-table thead tr {
+    border-bottom: 1px solid rgba(184,151,90,0.3);
+  }
+  .unit-table th {
+    font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--gold); padding: 0 0 16px 0; text-align: left; font-weight: 400;
+  }
+  .unit-table th:not(:first-child) { text-align: center; }
+  .unit-table tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: background 0.2s;
+  }
+  .unit-table tbody tr:hover { background: rgba(184,151,90,0.05); }
+  .unit-table td {
+    padding: 22px 0; color: rgba(255,255,255,0.8);
+    font-size: 14px;
+  }
+  .unit-table td:not(:first-child) { text-align: center; }
+  .unit-table td:first-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-weight: 400; color: var(--white);
+  }
+  .unit-table .total td {
+    border-top: 1px solid rgba(184,151,90,0.4);
+    color: var(--gold); font-weight: 500; font-size: 14px;
+  }
+  .unit-table .total td:first-child {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px; font-weight: 500; color: var(--gold);
+    letter-spacing: 1px;
+  }
+
+  .stack-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px; margin-top: 48px;
+  }
+  .stack-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px; padding: 22px 20px;
+    transition: all 0.3s;
+  }
+  .stack-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .stack-card .slevel {
+    font-size: 10px; letter-spacing: 2px;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 8px;
+  }
+  .stack-card .stype {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px; color: var(--white); line-height: 1.35;
+  }
+
+  #amenities { background: var(--cream); }
+  .amenities-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    max-width: 1200px; margin: 0 auto;
+  }
+  .amenities-col h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 400; margin-bottom: 20px;
+    color: var(--dark);
+  }
+  .amenity-item {
+    display: flex; gap: 16px; margin-bottom: 18px;
+  }
+  .amenity-item .icon { font-size: 20px; flex-shrink: 0; width: 28px; }
+  .amenity-item .lbl { font-size: 9px; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; }
+  .amenity-item .val { font-size: 15px; color: var(--text); }
+  .amenity-item .val small { color: var(--text-light); font-size: 12px; }
+
+  #faq { background: var(--dark2); }
+  #faq .section-title { color: var(--white); }
+  .faq-item {
+    max-width: 720px; margin: 0 auto;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 20px 0;
+  }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center;
+    cursor: pointer; font-size: 15px; font-weight: 400;
+    color: rgba(255,255,255,0.85); letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .faq-q:hover { color: var(--gold); }
+  .faq-q .arrow {
+    font-size: 12px; transition: transform 0.3s; color: var(--gold);
+  }
+  .faq-q.active .arrow { transform: rotate(180deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden; transition: max-height 0.4s, padding 0.3s;
+    font-size: 13px; line-height: 1.8; color: rgba(255,255,255,0.55);
+  }
+  .faq-a.open { max-height: 400px; padding-top: 16px; }
+
+  #contact {
+    background: var(--dark); color: var(--white);
+  }
+  .contact-wrap {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    max-width: 1200px; margin: 0 auto;
+  }
+  .contact-left h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3vw, 40px); font-weight: 300;
+    margin-bottom: 16px; line-height: 1.2;
+  }
+  .contact-left p { font-size: 14px; opacity: 0.6; line-height: 1.7; margin-bottom: 32px; }
+  .contact-detail {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 16px;
+  }
+  .contact-detail .icon {
+    width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.08); border-radius: 50%;
+    font-size: 16px; flex-shrink: 0;
+  }
+  .contact-detail .lbl { font-size: 9px; letter-spacing: 2px; opacity: 0.5; text-transform: uppercase; }
+  .contact-detail .val { font-size: 14px; opacity: 0.9; }
+  .contact-form {
+    background: rgba(255,255,255,0.06); padding: 36px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .contact-form h3 {
+    font-size: 16px; font-weight: 500; margin-bottom: 24px;
+    color: rgba(255,255,255,0.9);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label {
+    display: block; font-size: 10px; letter-spacing: 1.5px;
+    text-transform: uppercase; margin-bottom: 6px; opacity: 0.6;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,0.12); border-radius: 4px;
+    font-size: 14px; background: rgba(255,255,255,0.06);
+    color: var(--white); font-family: 'Jost', sans-serif;
+    transition: border-color 0.3s;
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.25); }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none; border-color: var(--gold);
+  }
+  .form-group select option { background: var(--dark); color: var(--white); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%; padding: 14px; border: none; border-radius: 4px;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    font-weight: 600; cursor: pointer; transition: all 0.3s;
+    background: var(--gold); color: var(--dark);
+  }
+  .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  footer {
+    background: var(--dark); padding: 32px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .footer-links a {
+    color: rgba(255,255,255,0.35); text-decoration: none;
+    font-size: 11px; letter-spacing: 1.5px; margin-left: 24px;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-note {
+    font-size: 10px; color: rgba(255,255,255,0.2); max-width: 400px;
+    line-height: 1.6;
+  }
+
+  .gallery-section { background: var(--dark2); }
+  .gallery-section .section-title { color: var(--white); }
+  .gallery-header {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .gallery-header .section-title { margin-bottom: 0; }
+  .gallery-badge-big {
+    font-size: 22px; font-weight: 700; letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #4FC3F7; text-transform: uppercase;
+    background: rgba(79,195,247,0.1);
+    padding: 8px 20px; border-radius: 4px;
+    border: 1px solid rgba(79,195,247,0.3);
+    white-space: nowrap;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px; max-width: 1200px; margin: 0 auto;
+  }
+  .gallery-item {
+    aspect-ratio: 4/3; overflow: hidden; border-radius: 4px;
+    background: var(--dark3);
+    position: relative;
+  }
+  .gallery-badge {
+    position: absolute; top: 16px; left: 16px; z-index: 2;
+    background: var(--gold); color: var(--dark);
+    padding: 6px 16px; font-size: 10px; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 600; border-radius: 2px;
+  }
+  .gallery-item img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.4s;
+  }
+  .gallery-item:hover img { transform: scale(1.05); }
+
+  .features-section { background: var(--cream2); }
+  .brochure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .brochure-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px; overflow: hidden;
+    transition: all 0.3s;
+  }
+  .brochure-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  }
+  .brochure-img {
+    aspect-ratio: 4/3; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--dark3);
+  }
+  .brochure-img img {
+    width: 100%; height: 100%; object-fit: contain;
+    transition: transform 0.4s;
+    padding: 8px;
+  }
+  .brochure-card:hover .brochure-img img { transform: scale(1.03); }
+  .brochure-label {
+    padding: 14px 16px;
+  }
+  .brochure-label h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px; color: var(--white);
+  }
+
+  .siteplan-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    max-width: 1200px; margin: 0 auto;
+  }
+  .siteplan-item {
+    border-radius: 4px; overflow: hidden;
+    background: var(--dark3);
+    transition: all 0.3s;
+  }
+  .siteplan-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  }
+  .siteplan-item img {
+    width: 100%; height: auto; display: block;
+    transition: transform 0.4s;
+  }
+  .siteplan-item:hover img { transform: scale(1.02); }
+
+  .features-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+    max-width: 1200px; margin: 40px auto 0;
+  }
+  .feature-card {
+    background: var(--white); padding: 36px 28px;
+    border-radius: 4px;
+  }
+  .feature-card .f-icon { font-size: 32px; margin-bottom: 16px; }
+  .feature-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; color: var(--dark); margin-bottom: 10px;
+  }
+  .feature-card p {
+    font-size: 13px; line-height: 1.7; color: var(--text-light);
+  }
+
+  @media (max-width: 900px) {
+    nav { height: 72px; padding: 0 24px; }
+    .mobile-toggle { display: flex; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; margin-left: auto; }
+    .mobile-toggle span { display: block; width: 24px; height: 2px; background: #fafaf8; transition: .3s; }
+    .nav-links { display: none; position: absolute; top: 72px; left: 0; right: 0; background: #0f0f1a; padding: 16px 24px; gap: 14px; border-bottom: 1px solid rgba(201,169,110,.15); }
+    .nav-links.open { display: flex; flex-direction: column; }
+    .nav-cta { display: none; }
+    #home .hero-bg {
+      background:
+        linear-gradient(180deg, rgba(14,13,11,0.30) 0%, rgba(14,13,11,0.42) 50%, rgba(14,13,11,0.60) 100%),
+        url('/TheSerra/images/facade.jpg') center 25% / auto 55% no-repeat,
+        var(--dark);
+    }
+    section { padding: 80px 24px; }
+    .overview-grid, .amenities-grid, .contact-wrap { grid-template-columns: 1fr; gap: 48px; }
+    .features-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 24px; flex-wrap: wrap; }
+    footer { flex-direction: column; text-align: center; gap: 16px; }
+    .footer-links a { margin: 0 12px; }
+    .form-row { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .siteplan-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+  <meta name="keywords" content="The Serra Residences, Serra Residences, Bassein Road condo, District 11 condo, Novena condo, freehold condo Novena, 7 Bassein Road, Transurban Properties, new launch Singapore, Novena MRT condo">
+  <link rel="canonical" href="https://jetleechannel.sg/zyongrand/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Serra Residences | Freehold D11 Bassein Road | Direct Developer Price | Jet Lee">
+  <meta property="og:description" content="The Serra Residences – 133 freehold units at 7 Bassein Road, District 11. 28 storeys by Transurban Properties. 2BR+Study to 5BR Premium & Penthouse with private lift. 8-min stroll to Novena MRT.">
+  <meta property="og:url" content="https://jetleechannel.sg/zyongrand/">
+  <meta property="og:image" content="https://jetleechannel.sg/zyongrand/images/facade.jpg">
+  <meta property="og:site_name" content="The Serra Residences">
+  <meta property="og:locale" content="en_SG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Serra Residences | Freehold D11 Bassein Road">
+  <meta name="twitter:description" content="133 freehold units at 7 Bassein Road, District 11. By Transurban Properties.">
+  <meta name="twitter:image" content="https://jetleechannel.sg/zyongrand/images/facade.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "The Serra Residences",
+    "description": "133 freehold residential units at 7 Bassein Road, District 11. 28 storeys, 2BR+Study to 5BR Premium & Penthouse. By Transurban Properties Pte Ltd.",
+    "brand": { "@type": "Brand", "name": "Transurban Properties Pte Ltd" },
+    "offers": { "@type": "AggregateOffer", "offerCount": "133", "availability": "https://schema.org/InStock" },
+    "address": { "@type": "PostalAddress", "streetAddress": "7 Bassein Road", "addressLocality": "Singapore", "addressCountry": "SG" }
+  }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LFG5HCYKP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6LFG5HCYKP');
+  </script>
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-dh">Zyon Grand</div>
+    <div class="logo-sub">3 & 5 Kim Seng Road · District 3</div>
+  </div>
+  <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#details">Overview</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#floorplans">Floorplans</a></li>
+    <li><a href="#pricing">Balance Units</a></li>
+    <li><a href="#siteplan">Location</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://jetleechannel.sg/articles/" target="_blank" rel="noopener">Articles</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Register Interest</a>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-tag">99-Year Leasehold · District 3</div>
+    <h1 class="hero-title"><em>Zyon</em> Grand</h1>
+    <p class="hero-subtitle">A New Icon on Kim Seng Road.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">706</span><span class="lbl">Units</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="num">2 × 62</span><span class="lbl">Storeys</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="num">15,277</span><span class="lbl">Sqm Land</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="num">D3</span><span class="lbl">District</span></div>
+    </div>
+    <div class="hero-actions">
+      <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20Zyon%20Grand" target="_blank" rel="noopener" class="btn-primary">💬 WhatsApp Jet Lee</a>
+      <a href="#contact" class="btn-outline">Register Interest →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    Scroll
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    ZYON GRAND · 3 & 5 KIM SENG ROAD · DISTRICT 3 · 99-YEAR LEASEHOLD · 706 UNITS · 2 TOWERS OF 62 STOREYS · CDL · MITSUI FUDOSAN &nbsp;·&nbsp;&nbsp;&nbsp;
+    ZYON GRAND · 3 & 5 KIM SENG ROAD · DISTRICT 3 · 99-YEAR LEASEHOLD · 706 UNITS · 2 TOWERS OF 62 STOREYS · CDL · MITSUI FUDOSAN &nbsp;·&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section id="details">
+  <div class="overview-grid">
+    <div class="overview-text">
+      <span class="section-label">Project Overview</span>
+      <h2 class="section-title">A New Icon on <em>Kim Seng Road</em></h2>
+      <div class="section-divider"></div>
+      <p><strong>Zyon Grand</strong> is an integrated mixed-development by <strong>CDL and Mitsui Fudosan</strong> — two iconic <strong>62-storey residential towers</strong> with a connected <strong>36-storey serviced apartment tower</strong> offering restaurants, a supermarket and an early childhood development centre. North-south orientation delivers panoramic views towards Sentosa, the CBD and Marina Bay Sands.</p>
+      <p>With <strong>direct access to Havelock MRT Station</strong>, Zyon Grand sits at the heart of the Alexandra/Commonwealth district — one stop to Outram Park interchange, two stops to Orchard, and a short walk to Great World City. Designed by world-class architects <strong>Nikken Sekkei × ADDP Architects LLP</strong>.</p>
+      <p>Residents enjoy comprehensive facilities including a 50m lap pool, tennis/pickleball court, clubhouses, hydro spa, yoga studio and lush lagoon pools — all wrapped in premium kitchen appliances and Italian master wardrobes.</p>
+    </div>
+    <div>
+      <div class="fact-grid">
+        <div class="fact-item"><div class="fact-label">Project Name</div><div class="fact-value">Zyon Grand 卓悦峰</div></div>
+        <div class="fact-item"><div class="fact-label">Developer</div><div class="fact-value">CDL · Mitsui Fudosan</div></div>
+        <div class="fact-item"><div class="fact-label">Tenure</div><div class="fact-value">99 Years (from 15 Jul 2024)</div></div>
+        <div class="fact-item"><div class="fact-label">District</div><div class="fact-value">District 3 (Alexandra / Commonwealth)</div></div>
+        <div class="fact-item"><div class="fact-label">Address</div><div class="fact-value">3 & 5 Kim Seng Road</div></div>
+        <div class="fact-item"><div class="fact-label">Site Area</div><div class="fact-value">15,276.8 sqm</div></div>
+        <div class="fact-item"><div class="fact-label">Total Units</div><div class="fact-value">706 Units</div></div>
+        <div class="fact-item"><div class="fact-label">Towers</div><div class="fact-value">2 × 62 Storeys + 36 Storeys</div></div>
+        <div class="fact-item"><div class="fact-label">Architect</div><div class="fact-value">Nikken Sekkei × ADDP Architects LLP</div></div>
+        <div class="fact-item"><div class="fact-label">Expected T.O.P.</div><div class="fact-value">Sep 2032</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <div class="gallery-header">
+      <div>
+        <span class="section-label">Gallery</span>
+        <h2 class="section-title" style="margin-bottom:0">Zyon <em>Grand</em></h2>
+      </div>
+      <div class="gallery-badge-big">REGISTER NOW</div>
+    </div>
+    <div class="section-divider"></div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><span class="gallery-badge">Perspective</span><img src="/zyongrand/images/hero-day.jpg" alt="Hero Perspective" loading="lazy"></div>
+      <div class="gallery-item"><span class="gallery-badge">Facilities</span><img src="/zyongrand/images/relaxation-lagoon.jpg" alt="Relaxation Lagoon" loading="lazy"></div>
+      <div class="gallery-item"><span class="gallery-badge">Facilities</span><img src="/zyongrand/images/waterfall-cove.jpg" alt="Waterfall Cove" loading="lazy"></div>
+      <div class="gallery-item"><span class="gallery-badge">Facilities</span><img src="/zyongrand/images/lap-pool.jpg" alt="50m Lap Pool" loading="lazy"></div>
+      <div class="gallery-item"><span class="gallery-badge">Perspective</span><img src="/zyongrand/images/perspective-2.jpg" alt="Perspective View" loading="lazy"></div>
+      <div class="gallery-item"><span class="gallery-badge">Perspective</span><img src="/zyongrand/images/hero-evening.jpg" alt="Evening View" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOOR PLANS -->
+<section class="floorplan-section" id="floorplans" style="background:var(--cream2)">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Floor Plans</span>
+    <h2 class="section-title">Explore the <em>Layouts</em></h2>
+    <div class="section-divider"></div>
+    <p style="font-size:15px;line-height:1.8;color:var(--text-light);margin-bottom:20px;max-width:800px">
+      Explore the full range of Zyon Grand floor plans — from 1-Bedroom + Study to 5-Bedroom Supreme and Penthouses. Click any layout to view it full size, or download the official e-brochure below.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px">
+      <a href="/zyongrand/docs/Zyon_Grand_eBrochure.pdf" target="_blank" rel="noopener" class="btn-primary">📐 Official E-Brochure</a>
+      <a href="/zyongrand/docs/Zyon_Grand_2025.09.11-Brochure_Plans.pdf" target="_blank" rel="noopener" class="btn-primary">📖 Brochure Floor Plans</a>
+    </div>
+    <div class="floorplan-grid">
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/A1s.jpg" target="_blank" data-lightbox="floorplans" data-title="A1s · 1 Bedroom + Study">
+          <img src="/zyongrand/images/floorplans/A1s.jpg" alt="Zyon Grand A1s Floor Plan 1 Bedroom + Study" loading="lazy">
+        </a>
+        <div class="floorplan-label">A1s · 1 Bedroom + Study</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/B1.jpg" target="_blank" data-lightbox="floorplans" data-title="B1 · 2 Bedroom">
+          <img src="/zyongrand/images/floorplans/B1.jpg" alt="Zyon Grand B1 Floor Plan 2 Bedroom" loading="lazy">
+        </a>
+        <div class="floorplan-label">B1 · 2 Bedroom</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/BP1.jpg" target="_blank" data-lightbox="floorplans" data-title="BP1 · 2 Bedroom Premium">
+          <img src="/zyongrand/images/floorplans/BP1.jpg" alt="Zyon Grand BP1 Floor Plan 2 Bedroom Premium" loading="lazy">
+        </a>
+        <div class="floorplan-label">BP1 · 2 Bedroom Premium</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/BP2s.jpg" target="_blank" data-lightbox="floorplans" data-title="BP2s · 2 Bedroom Premium + Study">
+          <img src="/zyongrand/images/floorplans/BP2s.jpg" alt="Zyon Grand BP2s Floor Plan 2 Bedroom Premium + Study" loading="lazy">
+        </a>
+        <div class="floorplan-label">BP2s · 2 Bedroom Premium + Study</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/C1.jpg" target="_blank" data-lightbox="floorplans" data-title="C1 · 3 Bedroom">
+          <img src="/zyongrand/images/floorplans/C1.jpg" alt="Zyon Grand C1 Floor Plan 3 Bedroom" loading="lazy">
+        </a>
+        <div class="floorplan-label">C1 · 3 Bedroom</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/CD1.jpg" target="_blank" data-lightbox="floorplans" data-title="CD1 · 3 Bedroom Deluxe">
+          <img src="/zyongrand/images/floorplans/CD1.jpg" alt="Zyon Grand CD1 Floor Plan 3 Bedroom Deluxe" loading="lazy">
+        </a>
+        <div class="floorplan-label">CD1 · 3 Bedroom Deluxe</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/CP1s.jpg" target="_blank" data-lightbox="floorplans" data-title="CP1s · 3 Bedroom Premium + Study">
+          <img src="/zyongrand/images/floorplans/CP1s.jpg" alt="Zyon Grand CP1s Floor Plan 3 Bedroom Premium + Study" loading="lazy">
+        </a>
+        <div class="floorplan-label">CP1s · 3 Bedroom Premium + Study</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/CP2s.jpg" target="_blank" data-lightbox="floorplans" data-title="CP2s · 3 Bedroom Premium + Study">
+          <img src="/zyongrand/images/floorplans/CP2s.jpg" alt="Zyon Grand CP2s Floor Plan 3 Bedroom Premium + Study" loading="lazy">
+        </a>
+        <div class="floorplan-label">CP2s · 3 Bedroom Premium + Study</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/DP1.jpg" target="_blank" data-lightbox="floorplans" data-title="DP1 · 4 Bedroom Premium (Private Lift)">
+          <img src="/zyongrand/images/floorplans/DP1.jpg" alt="Zyon Grand DP1 Floor Plan 4 Bedroom Premium (Private Lift)" loading="lazy">
+        </a>
+        <div class="floorplan-label">DP1 · 4 Bedroom Premium (Private Lift)</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/DS1.jpg" target="_blank" data-lightbox="floorplans" data-title="DS1 · 4 Bedroom Supreme (Private Lift)">
+          <img src="/zyongrand/images/floorplans/DS1.jpg" alt="Zyon Grand DS1 Floor Plan 4 Bedroom Supreme (Private Lift)" loading="lazy">
+        </a>
+        <div class="floorplan-label">DS1 · 4 Bedroom Supreme (Private Lift)</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/DS2s.jpg" target="_blank" data-lightbox="floorplans" data-title="DS2s · 4 Bedroom Supreme + Study (Private Lift)">
+          <img src="/zyongrand/images/floorplans/DS2s.jpg" alt="Zyon Grand DS2s Floor Plan 4 Bedroom Supreme + Study (Private Lift)" loading="lazy">
+        </a>
+        <div class="floorplan-label">DS2s · 4 Bedroom Supreme + Study (Private Lift)</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/ES1.jpg" target="_blank" data-lightbox="floorplans" data-title="ES1 · 5 Bedroom Supreme (Private Lift)">
+          <img src="/zyongrand/images/floorplans/ES1.jpg" alt="Zyon Grand ES1 Floor Plan 5 Bedroom Supreme (Private Lift)" loading="lazy">
+        </a>
+        <div class="floorplan-label">ES1 · 5 Bedroom Supreme (Private Lift)</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/PH1.jpg" target="_blank" data-lightbox="floorplans" data-title="PH1 · Penthouse 5BR (Private Lift)">
+          <img src="/zyongrand/images/floorplans/PH1.jpg" alt="Zyon Grand PH1 Floor Plan Penthouse 5BR (Private Lift)" loading="lazy">
+        </a>
+        <div class="floorplan-label">PH1 · Penthouse 5BR (Private Lift)</div>
+      </div>
+      <div class="floorplan-item">
+        <a href="/zyongrand/images/floorplans/PH2.jpg" target="_blank" data-lightbox="floorplans" data-title="PH2 · Penthouse 5BR (Private Lift)">
+          <img src="/zyongrand/images/floorplans/PH2.jpg" alt="Zyon Grand PH2 Floor Plan Penthouse 5BR (Private Lift)" loading="lazy">
+        </a>
+        <div class="floorplan-label">PH2 · Penthouse 5BR (Private Lift)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BALANCE UNITS -->
+<section id="pricing">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label" style="color:var(--gold)">Balance Units</span>
+    <h2 class="section-title">A Mix for <em>Every Lifestyle</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:rgba(255,255,255,0.5);font-size:14px;margin-bottom:24px;max-width:600px">
+      Zyon Grand offers a wide range of unit types. Areas are subject to final verification by surveyor and authorities approval.
+    </p>
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);margin-bottom:14px">Current Balance · as of 4 Aug 2026</h3>
+    <div class="unit-table" style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;min-width:640px">
+        <thead>
+          <tr>
+            <th>Unit Type</th>
+            <th>No. of Units</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 Bedroom + Study</td>
+            <td>27</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>2 Bedroom Premium + Study</td>
+            <td>9</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>3 Bedroom</td>
+            <td>4</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>4 Bedroom Supreme + Study</td>
+            <td>11</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>5 Bedroom Supreme</td>
+            <td>18</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>Penthouse (5BR + Private Lift)</td>
+            <td>1</td>
+            <td>Available</td>
+          </tr>
+          <tr class="total">
+            <td>Current Available</td>
+            <td>70 Units</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:48px;padding:32px;background:rgba(255,255,255,0.04);border:1px solid rgba(184,151,90,0.2);border-radius:4px;text-align:center">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold);margin-bottom:12px">Need Full Pricelist?</h3>
+      <p style="color:rgba(255,255,255,0.5);font-size:14px;margin-bottom:20px">Get the complete pricelist, e-brochure, and floor plans sent to your phone.</p>
+      <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20Zyon%20Grand" target="_blank" rel="noopener" class="btn-primary">📱 Request Full Pricelist on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION MAP / SITE PLAN -->
+<section id="siteplan" style="background:var(--cream)">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Location</span>
+    <h2 class="section-title">Heart of <em>Kim Seng</em></h2>
+    <div class="section-divider"></div>
+    <p style="font-size:15px;line-height:1.8;color:var(--text-light);margin-bottom:32px;max-width:800px">
+      Zyon Grand enjoys exceptional connectivity — <strong>direct access to Havelock MRT (466m)</strong>, Great World MRT 657m, Tiong Bahru MRT 1.5km. One stop to Outram Park Interchange, two stops to Orchard Road, four stops to Marina Bay. Schools nearby: River Valley Primary, Alexandra Primary, Zhangde Primary, Gan Eng Seng School, Crescent Girls’ School.
+    </p>
+    <div class="siteplan-grid">
+      <div class="siteplan-item">
+        <a href="/zyongrand/images/siteplan.jpg" target="_blank">
+          <img src="/zyongrand/images/siteplan.jpg" alt="Zyon Grand Site Plan" loading="lazy">
+        </a>
+      </div>
+      <div class="siteplan-item">
+        <a href="/zyongrand/images/location-map.jpg" target="_blank">
+          <img src="/zyongrand/images/location-map.jpg" alt="Zyon Grand Location Map" loading="lazy">
+        </a>
+      </div>
+    </div>
+    <div class="loc-grid">
+        <div class="loc-item"><div class="loc-name">Havelock MRT</div><div class="loc-dist">Direct Access</div></div>
+        <div class="loc-item"><div class="loc-name">Great World MRT</div><div class="loc-dist">657m</div></div>
+        <div class="loc-item"><div class="loc-name">Outram Park Interchange</div><div class="loc-dist">1 Stop</div></div>
+        <div class="loc-item"><div class="loc-name">Orchard Interchange</div><div class="loc-dist">2 Stops</div></div>
+        <div class="loc-item"><div class="loc-name">Marina Bay</div><div class="loc-dist">4 Stops</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES & LOCATION -->
+<section id="amenities">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Amenities</span>
+    <h2 class="section-title">A Lifestyle <em>Above the Rest</em></h2>
+    <div class="section-divider"></div>
+    <div class="amenities-grid">
+      <div>
+        <div class="amenity-item">
+          <div class="icon">✦</div>
+          <div><div class="lbl">Arrival Sanctuary</div><div class="val">Grand Pavilion <small>· Reflective Court · Arrival Cascades · Water Reflexology</small></div></div>
+        </div>
+        <div class="amenity-item">
+          <div class="icon">✦</div>
+          <div><div class="lbl">Social Habitat</div><div class="val">Central Club <small>· Tennis / Pickleball Court · Adventure Playground · Pets Play</small></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="amenity-item">
+          <div class="icon">✦</div>
+          <div><div class="lbl">Relaxation Lagoon</div><div class="val">Lagoon Deck <small>· Bubbling Pool · Hydro Splash · Hydro Spa · Family Pool</small></div></div>
+        </div>
+        <div class="amenity-item">
+          <div class="icon">✦</div>
+          <div><div class="lbl">Wellness Oasis</div><div class="val">50m Lap Pool <small>· Waterfall Cove · Fitness Suite · Yoga Studio · Steam Room</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label">Why Zyon</span>
+    <h2 class="section-title">Key <em>Selling Points</em></h2>
+    <div class="section-divider"></div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="f-icon">👑</div>
+        <h4>CDL × Mitsui Fudosan</h4>
+        <p>Renowned developers with a track record of quality and innovation.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🚇</div>
+        <h4>Direct Havelock MRT</h4>
+        <p>Integrated access to Havelock MRT Station at your doorstep.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🏙️</div>
+        <h4>Iconic 62-Storey Towers</h4>
+        <p>Two landmark towers with panoramic Sentosa, CBD & MBS views.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🎨</div>
+        <h4>World-Class Design</h4>
+        <p>Nikken Sekkei × ADDP Architects LLP collaboration.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">🏬</div>
+        <h4>Integrated Living</h4>
+        <p>Restaurants, supermarket & ECDC within the development.</p>
+      </div>
+      <div class="feature-card">
+        <div class="f-icon">✨</div>
+        <h4>Premium Interiors</h4>
+        <p>Italian master wardrobes & premium kitchen appliances.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label" style="color:var(--gold)">FAQ</span>
+    <h2 class="section-title">Frequently <em>Asked Questions</em></h2>
+    <div class="section-divider"></div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is Zyon Grand?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Zyon Grand is a 706-unit integrated mixed development at 3 & 5 Kim Seng Road, District 3, by CDL and Mitsui Fudosan.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is the tenure?<span class="faq-icon">+</span></div>
+      <div class="faq-a">99-year leasehold commencing from 15 July 2024.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">When is TOP?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Expected T.O.P. in September 2032.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What unit types are available?<span class="faq-icon">+</span></div>
+      <div class="faq-a">From 1-Bedroom + Study to 5-Bedroom Supreme (with private lift) and Penthouses.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How near is the MRT?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Direct access to Havelock MRT Station — one stop to Outram Park Interchange.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container" style="max-width:1200px;margin:0 auto">
+    <span class="section-label" style="color:var(--gold)">Contact</span>
+    <h2 class="section-title" style="color:var(--white)">Register <em>Interest</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:rgba(255,255,255,0.5);font-size:14px;margin-bottom:32px;max-width:600px;text-align:center;margin-left:auto;margin-right:auto">
+      Get direct developer pricing, exclusive previews, and the latest e-brochure with floor plans and complete pricelist. No obligation, no commission payable.
+    </p>
+    <div class="contact-grid">
+      <div>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="80bb82c8-aa68-4974-b63b-66bac63a8016">
+          <input type="hidden" name="subject" value="Zyon Grand Enquiry via jetleechannel.sg">
+          <input type="hidden" name="redirect" value="https://jetleechannel.sg/zyongrand/thanks">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="email" name="email" placeholder="Email (optional)">
+          <textarea name="message" placeholder="I am interested in Zyon Grand — please send me the e-brochure and pricelist." rows="4" required></textarea>
+          <button type="submit" class="btn-primary">Submit Enquiry</button>
+        </form>
+      </div>
+      <div>
+        <div class="contact-detail">
+          <div class="icon">📞</div>
+          <div><div class="lbl">Call / WhatsApp</div><div class="val">+65 8764 9315</div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">🏢</div>
+          <div><div class="lbl">License</div><div class="val">CEA Reg R007613B · Estate Agent L3008022J · PropNex Realty</div></div>
+        </div>
+        <div style="margin-top:32px">
+          <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20Zyon%20Grand" target="_blank" rel="noopener" class="btn-primary">💬 WhatsApp Jet Lee Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-note">
+    CEA Reg R007613B · Estate Agent L3008022J · PropNex Realty<br>
+    <a href="https://jetleechannel.sg" style="color:var(--gold);text-decoration:none">jetleechannel.sg</a>
+  </div>
+  <div class="footer-links">
+    <a href="https://jetleechannel.sg">Home</a>
+    <a href="https://www.tiktok.com/@jetleechannel" target="_blank" rel="noopener">@jetleechannel</a>
+    <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20The%20Serra%20Residences" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+<!-- ===== Thomson Reserve Promo Banner (injected by scripts/inject-thomson-banner.mjs) ===== -->
+<div class="tr-banner" style="background:linear-gradient(135deg,#141414 0%,#1E1E1E 60%,#2A2318 100%);border-top:1px solid rgba(184,151,90,0.35);border-bottom:1px solid rgba(184,151,90,0.35);padding:0;margin:0;width:100%;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:28px 24px;">
+    <div style="flex:1;min-width:260px;">
+      <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold,#C9A84C);font-weight:600;margin-bottom:6px;">&#127881; Coming Soon &mdash; October 2026</div>
+      <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(24px,3.5vw,38px);font-weight:500;color:#FFFFFF;line-height:1.1;letter-spacing:0.5px;">Thomson Reserve</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:6px;">UOL / CapitaLand / SingLand &middot; Upper Thomson D20 &middot; 1,268 Units &middot; Direct Developer Price</div>
+    </div>
+    <div style="flex-shrink:0;">
+      <a href="https://thomson-reserve-direct-developer.com/" target="_blank" rel="noopener" style="display:inline-block;background:#000;color:var(--gold,#C9A84C);border:1px solid rgba(201,168,76,0.6);padding:12px 30px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;text-decoration:none;transition:all .25s;border-radius:2px;">Learn More &#8594;</a>
+    </div>
+  </div>
+</div>
+<!-- ===== /Thomson Reserve Promo Banner ===== -->
+</footer>
+
+<script>
+function toggleFaq(el) {
+  el.classList.toggle('active');
+  var answer = el.nextElementSibling;
+  answer.classList.toggle('open');
+}
+function toggleMobileMenu(){
+  document.getElementById("navLinks").classList.toggle("open");
+}
+document.querySelectorAll(".nav-links a").forEach(function(a){
+  a.addEventListener("click",function(){
+    document.getElementById("navLinks").classList.remove("open");
+  });
+});
+</script>
+
+
+<style>
+  .wa-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+    width: 60px; height: 60px; border-radius: 50%;
+    background: #25D366; display: flex; align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,.4);
+    transition: transform .2s, box-shadow .2s; text-decoration: none;
+  }
+  .wa-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,.55); }
+  .wa-float svg { width: 32px; height: 32px; fill: white; }
+  @media (max-width: 600px) {
+    .wa-float { width: 52px; height: 52px; bottom: 18px; right: 18px; }
+    .wa-float svg { width: 28px; height: 28px; }
+  }
+</style>
+<a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20interested%20in%20The%20Serra%20Residences"
+   class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+</body>
+</html>
