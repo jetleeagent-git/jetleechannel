@@ -1,17 +1,23 @@
 RewriteEngine On
 
-# Hyphenated & casing redirects (using [NC] flag)
-RewriteRule ^lentor-gardens/?(.*)$ /lentorgardens/$1 [NC,R=301,L]
-RewriteRule ^grand-dunman/?(.*)$ /granddunman/$1 [NC,R=301,L]
-RewriteRule ^thecolletive/?(.*)$ /thecolletive/$1 [NC,R=301,L]
-RewriteRule ^thecollective/?(.*)$ /thecolletive/$1 [NC,R=301,L]
-RewriteRule ^belgraviaace/?(.*)$ /BelgraviaAce/$1 [NC,R=301,L]
-RewriteRule ^onemarinagardens/?(.*)$ /OneMarinaGardens/$1 [NC,R=301,L]
-RewriteRule ^sophiameadow/?(.*)$ /SophiaMeadow/$1 [NC,R=301,L]
-RewriteRule ^thehillshore/?(.*)$ /TheHillshore/$1 [NC,R=301,L]
-RewriteRule ^theorie/?(.*)$ /TheOrie/$1 [NC,R=301,L]
-RewriteRule ^theserra/?(.*)$ /TheSerra/$1 [NC,R=301,L]
-RewriteRule ^thesierra/?(.*)$ /TheSerra/$1 [NC,R=301,L]
+# Prevent infinite rewrite loops: match specific non-canonical aliases only
+RewriteCond %{REQUEST_URI} ^/theColletive/? [NC]
+RewriteRule ^ /thecolletive/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/thecollective/? [NC]
+RewriteRule ^ /thecolletive/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/TheCollective/? [NC]
+RewriteRule ^ /thecolletive/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/grand-dunman/? [NC]
+RewriteRule ^ /granddunman/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/lentor-gardens/? [NC]
+RewriteRule ^ /lentorgardens/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/thesierra/? [NC]
+RewriteRule ^ /TheSerra/ [R=301,L]
 
 # Force UTF-8 Encoding across all sites
 AddDefaultCharset UTF-8
