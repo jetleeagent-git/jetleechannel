@@ -1,20 +1,17 @@
 RewriteEngine On
 
-# Amberwood casing & alias redirects
-RewriteCond %{REQUEST_URI} ^/Amberwood/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
-
-RewriteCond %{REQUEST_URI} ^/AmberWood/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+# Redirect Amberwood to external custom domain
+RewriteCond %{REQUEST_URI} ^/amberwood/? [NC]
+RewriteRule ^ https://amberwood-jetlee.jetlee-agent.chatgpt.site/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/amber-wood/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+RewriteRule ^ https://amberwood-jetlee.jetlee-agent.chatgpt.site/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/amberwood-residences/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+RewriteRule ^ https://amberwood-jetlee.jetlee-agent.chatgpt.site/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/amberwoodresidences/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+RewriteRule ^ https://amberwood-jetlee.jetlee-agent.chatgpt.site/ [R=301,L]
 
 # Prevent infinite rewrite loops: match specific non-canonical aliases only
 RewriteCond %{REQUEST_URI} ^/theColletive/? [NC]
