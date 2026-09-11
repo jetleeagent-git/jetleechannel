@@ -1,16 +1,16 @@
 RewriteEngine On
 
-# Hyphenated & casing redirects
-RewriteRule ^(?i)grand-dunman/?(.*)$ /granddunman/$1 [R=301,L]
-RewriteRule ^(?i)thecolletive/?(.*)$ /thecolletive/$1 [R=301,L]
-RewriteRule ^(?i)thecollective/?(.*)$ /thecolletive/$1 [R=301,L]
-RewriteRule ^(?i)belgraviaace/?(.*)$ /BelgraviaAce/$1 [R=301,L]
-RewriteRule ^(?i)onemarinagardens/?(.*)$ /OneMarinaGardens/$1 [R=301,L]
-RewriteRule ^(?i)sophiameadow/?(.*)$ /SophiaMeadow/$1 [R=301,L]
-RewriteRule ^(?i)thehillshore/?(.*)$ /TheHillshore/$1 [R=301,L]
-RewriteRule ^(?i)theorie/?(.*)$ /TheOrie/$1 [R=301,L]
-RewriteRule ^(?i)theserra/?(.*)$ /TheSerra/$1 [R=301,L]
-RewriteRule ^(?i)thesierra/?(.*)$ /TheSerra/$1 [R=301,L]
+# Hyphenated & casing redirects (using [NC] flag)
+RewriteRule ^grand-dunman/?(.*)$ /granddunman/$1 [NC,R=301,L]
+RewriteRule ^thecolletive/?(.*)$ /thecolletive/$1 [NC,R=301,L]
+RewriteRule ^thecollective/?(.*)$ /thecolletive/$1 [NC,R=301,L]
+RewriteRule ^belgraviaace/?(.*)$ /BelgraviaAce/$1 [NC,R=301,L]
+RewriteRule ^onemarinagardens/?(.*)$ /OneMarinaGardens/$1 [NC,R=301,L]
+RewriteRule ^sophiameadow/?(.*)$ /SophiaMeadow/$1 [NC,R=301,L]
+RewriteRule ^thehillshore/?(.*)$ /TheHillshore/$1 [NC,R=301,L]
+RewriteRule ^theorie/?(.*)$ /TheOrie/$1 [NC,R=301,L]
+RewriteRule ^theserra/?(.*)$ /TheSerra/$1 [NC,R=301,L]
+RewriteRule ^thesierra/?(.*)$ /TheSerra/$1 [NC,R=301,L]
 
 # Force UTF-8 Encoding across all sites
 AddDefaultCharset UTF-8
