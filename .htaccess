@@ -1,6 +1,7 @@
 RewriteEngine On
 
 # Hyphenated & casing redirects (using [NC] flag)
+RewriteRule ^lentor-gardens/?(.*)$ /lentorgardens/$1 [NC,R=301,L]
 RewriteRule ^grand-dunman/?(.*)$ /granddunman/$1 [NC,R=301,L]
 RewriteRule ^thecolletive/?(.*)$ /thecolletive/$1 [NC,R=301,L]
 RewriteRule ^thecollective/?(.*)$ /thecolletive/$1 [NC,R=301,L]
