@@ -1,0 +1,10 @@
+# Force UTF-8 Encoding across all sites
+AddDefaultCharset UTF-8
+<IfModule mod_headers.c>
+    Header set Content-Type "text/html; charset=UTF-8"
+</IfModule>
+
+# Enable Browser Caching & Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
