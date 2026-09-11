@@ -72,7 +72,8 @@ export function uploadFile(localPath, remotePath) {
               reject(new Error(`Failed to parse PASV response: ${line}`));
               return;
             }
-            const dataIp = `${m[1]}.${m[2]}.${m[3]}.${m[4]}`;
+            let dataIp = `${m[1]}.${m[2]}.${m[3]}.${m[4]}`;
+            if (dataIp === '0.0.0.0') dataIp = FTP.host;
             const dataPort = parseInt(m[5], 10) * 256 + parseInt(m[6], 10);
             console.log(`[FTP DATA] Connecting to ${dataIp}:${dataPort} via proxy...`);
 

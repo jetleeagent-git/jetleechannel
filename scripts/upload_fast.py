@@ -9,8 +9,8 @@ FTP_HOST = "191.101.228.66"
 FTP_USER = "u851958941.jetleechannel.sg"
 FTP_PASS = "Jetleechannel12345&"
 
-FILE1_LOCAL = "/home/ubuntu/.openclaw/workspace/articles/article-bt-q4-launches-2026.html"
-FILE1_REMOTE = "articles/article-bt-q4-launches-2026.html"
+FILE1_LOCAL = "/home/ubuntu/.openclaw/workspace/articles/no-longer-a-rising-tide-upcoming-q4-launches-will-test-singa.html"
+FILE1_REMOTE = "articles/no-longer-a-rising-tide-upcoming-q4-launches-will-test-singa.html"
 
 FILE2_LOCAL = "/home/ubuntu/.openclaw/workspace/articles/index.html"
 FILE2_REMOTE = "articles/index.html"

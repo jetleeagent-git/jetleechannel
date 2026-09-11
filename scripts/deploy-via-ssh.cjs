@@ -100,7 +100,7 @@ sshConn.on('ready', async () => {
   console.log('✅ SSH tunnel ready. Starting FTP uploads...');
 
   const files = [
-    { local: '/home/ubuntu/.openclaw/workspace/articles/article-bt-q4-launches-2026.html', remote: '/articles/article-bt-q4-launches-2026.html' },
+    { local: '/home/ubuntu/.openclaw/workspace/articles/no-longer-a-rising-tide-upcoming-q4-launches-will-test-singa.html', remote: '/articles/no-longer-a-rising-tide-upcoming-q4-launches-will-test-singa.html' },
     { local: '/home/ubuntu/.openclaw/workspace/articles/index.html', remote: '/articles/index.html' }
   ];
 

@@ -10,7 +10,7 @@ login_data = {
     "ftpserver": "191.101.228.66",
     "ftpserverport": "21",
     "username": "u851958941.jetleechannel.sg",
-    "password": "Jetleechannel12345&",
+    "password": "Jetleechannel87649315$",
     "directory": "/articles",
     "language": "en",
     "state": "login",
