@@ -70,9 +70,9 @@ body { font-family: var(--font-sans); color: var(--text); background: var(--whit
 }
 .hero-content { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; padding: 60px 24px; width: 100%; text-align: center; }
 .hero-copy { position: relative; max-width: 780px; margin: 0 auto; }
-.hero-copy .coming-soon-badge { position: static; right: auto; top: auto; margin: 28px 0 0; text-align: center; }
-.hero-copy .coming-soon-badge-inner { display: inline-block; padding: 18px 26px; }
-.hero-copy .hero-btns { justify-content: center; }
+
+
+
 @media (max-width: 1024px) {
   .hero-content { padding: 40px 24px; }
 }
@@ -223,16 +223,156 @@ section { padding: 100px 24px; }
 }
 .container { max-width: 1200px; margin: 0 auto; }
 
-/* Coming soon badge - right side of hero (static, no flash) */
-.coming-soon-badge{position:absolute;right:24px;top:80px;z-index:50;pointer-events:none}
-.coming-soon-badge-inner{background:linear-gradient(135deg,#C9A84C,#e4c97e,#C9A84C);color:#1A1A2E;padding:28px 38px;border-radius:12px;text-align:center;box-shadow:0 8px 40px rgba(201,168,76,.6);min-width:220px;border:2px solid rgba(26,26,46,.15)}
-.coming-soon-badge-inner .big{font-size:1.5rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;line-height:1.3}
-.coming-soon-badge-inner .small{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;margin-top:6px;opacity:.85}
-.coming-soon-badge-inner .btn-blink{display:inline-block;margin-top:10px;padding:10px 24px;background:#1A1A2E;color:#C9A84C;text-decoration:none;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;border-radius:6px;pointer-events:auto;transition:all .2s}
-.coming-soon-badge-inner .btn-blink:hover{background:#2a2a4e;transform:scale(1.08)}
 
 
-@media(max-width:1024px){.coming-soon-badge{position:relative;right:0;top:0;margin:0 auto 20px;text-align:center}.coming-soon-badge-inner{display:inline-block;padding:20px 28px}}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 80px 24px 60px;
+  width: 100%;
+}
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+}
+.hero-copy {
+  flex: 1 1 52%;
+  max-width: 640px;
+  margin: 0;
+}
+.hero-price-card {
+  flex: 0 0 440px;
+  width: 100%;
+  max-width: 460px;
+  background: linear-gradient(145deg, rgba(20, 20, 32, 0.94), rgba(12, 12, 22, 0.97));
+  border: 1px solid rgba(201, 168, 76, 0.45);
+  border-radius: 16px;
+  padding: 22px 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+.hero-price-card .hpc-badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent, #C9A84C);
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.hero-price-card .hpc-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero-price-card .hpc-highlight {
+  font-size: 14px;
+  color: var(--accent, #C9A84C);
+  font-weight: 700;
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+.hero-price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  color: #E2E2EC;
+}
+.hero-price-table th {
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+  padding: 6px 4px 8px;
+}
+.hero-price-table td {
+  padding: 7px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.hero-price-table tr:last-child td {
+  border-bottom: none;
+}
+.hero-price-table td.type {
+  font-weight: 600;
+  color: #FFF;
+}
+.hero-price-table td.size {
+  color: rgba(255, 255, 255, 0.65);
+}
+.hero-price-table td.price {
+  font-weight: 700;
+  color: var(--accent, #C9A84C);
+  text-align: right;
+}
+.hero-price-table td.psf {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11.5px;
+  text-align: right;
+}
+.hero-price-card .hpc-note {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 10px;
+  font-style: italic;
+  display: block;
+}
+.hero-price-card .hpc-btn {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #C9A84C, #e4c97e, #C9A84C);
+  color: #1A1A2E;
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+}
+.hero-price-card .hpc-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .hero-content { padding: 40px 20px; }
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-copy {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .hero-stats {
+    justify-content: center;
+  }
+  .hero-btns {
+    justify-content: center;
+  }
+  .hero-price-card {
+    max-width: 520px;
+    margin: 28px auto 0;
+    text-align: left;
+  }
+}
 
 /* Overview */
 .overview-grid {
@@ -873,6 +1013,7 @@ footer a { color: var(--accent); text-decoration: none; }
   <a href="/amberwood/" class="nav-logo">A<span>t</span>H</a>
   <div class="nav-links" id="amberwoodNavLinks">
     <a href="#overview">Overview</a>
+    <a href="#pricing">Price Guide</a>
     <a href="#location">Location</a>
     <a href="#floorplans">Floorplans</a>
     <a href="#srpu">SRPU Framework</a>
@@ -890,31 +1031,82 @@ footer a { color: var(--accent); text-decoration: none; }
 <header class="hero" id="top">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <!-- Copy (centered) -->
-    <div class="hero-copy">
-      <div class="hero-badge">Sim Lian Group · District 10</div>
-      <h1>Amberwood<br><span class="accent">at Holland</span></h1>
-      <p class="hero-sub">Holland Link · King Albert Park MRT</p>
-      <p class="hero-desc">
-        A landmark development by Sim Lian Group. ~212 exclusive residences in the prestigious Holland Plain precinct. Where heritage meets modern luxury.
-      </p>
-      <div class="hero-stats">
-        <div class="hero-stat"><h3>212</h3><p>Units</p></div>
-        <div class="hero-stat"><h3>D10</h3><p>District</p></div>
-        <div class="hero-stat"><h3>99 yr</h3><p>Leasehold</p></div>
-        <div class="hero-stat"><h3>2026</h3><p>Preview</p></div>
-      </div>
-      <div class="hero-btns">
-        <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I'm%20interested%20in%20Amberwood%20at%20Holland" target="_blank" class="btn btn-primary">WhatsApp Enquiry</a>
-        <a href="#contact" class="btn btn-outline">Register Interest</a>
-      </div>
-      <!-- Coming Soon Badge under buttons -->
-      <div class="coming-soon-badge">
-        <div class="coming-soon-badge-inner">
-          <div class="big">🎯 Coming<br>September</div>
-          <div class="small">Preview Launch</div>
-          <a href="#contact" class="btn-blink">Register Now →</a>
+    <div class="hero-flex">
+      <!-- Copy -->
+      <div class="hero-copy">
+        <div class="hero-badge">Sim Lian Group · District 10</div>
+        <h1>Amberwood<br><span class="accent">at Holland</span></h1>
+        <p class="hero-sub">Holland Link · King Albert Park MRT</p>
+        <p class="hero-desc">
+          A landmark development by Sim Lian Group. ~212 exclusive residences in the prestigious Holland Plain precinct. Where heritage meets modern luxury.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat"><h3>212</h3><p>Units</p></div>
+          <div class="hero-stat"><h3>D10</h3><p>District</p></div>
+          <div class="hero-stat"><h3>99 yr</h3><p>Leasehold</p></div>
+          <div class="hero-stat"><h3>2026</h3><p>Preview</p></div>
         </div>
+        <div class="hero-btns">
+          <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I'm%20interested%20in%20Amberwood%20at%20Holland" target="_blank" class="btn btn-primary">WhatsApp Enquiry</a>
+          <a href="#pricing" class="btn btn-outline">Price Guide</a>
+        </div>
+      </div>
+
+      <!-- Price Guide Widget (Right Side) -->
+      <div class="hero-price-card">
+        <div class="hpc-badge">PropNex Indicative Pricing</div>
+        <div class="hpc-title">Amberwood Price Guide</div>
+        <div class="hpc-highlight">Starting from $2,921 PSF</div>
+        <table class="hero-price-table">
+          <thead>
+            <tr>
+              <th>Unit Type</th>
+              <th>Sq Ft</th>
+              <th style="text-align:right">Price From</th>
+              <th style="text-align:right">PSF</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="type">3 Bedroom</td>
+              <td class="size">872</td>
+              <td class="price">$2,568,000</td>
+              <td class="psf">$2,945</td>
+            </tr>
+            <tr>
+              <td class="type">3 Bed Flexi</td>
+              <td class="size">958</td>
+              <td class="price">$2,841,000</td>
+              <td class="psf">$2,966</td>
+            </tr>
+            <tr>
+              <td class="type">4 Bedroom</td>
+              <td class="size">1,087</td>
+              <td class="price">$3,175,000</td>
+              <td class="psf">$2,921</td>
+            </tr>
+            <tr>
+              <td class="type">4 Bed Prem</td>
+              <td class="size">1,227</td>
+              <td class="price">$3,674,000</td>
+              <td class="psf">$2,994</td>
+            </tr>
+            <tr>
+              <td class="type">5 Bed Prem</td>
+              <td class="size">1,335</td>
+              <td class="price">$3,992,000</td>
+              <td class="psf">$2,990</td>
+            </tr>
+            <tr>
+              <td class="type">5 Bed Luxe</td>
+              <td class="size">1,561</td>
+              <td class="price">$4,699,000</td>
+              <td class="psf">$3,010</td>
+            </tr>
+          </tbody>
+        </table>
+        <span class="hpc-note">*Prices indicative. Subject to change without notice.</span>
+        <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I%20would%20like%20the%20latest%20Amberwood%20price%20list%20and%20available%20units." target="_blank" class="hpc-btn">Request Price List →</a>
       </div>
     </div>
   </div>
