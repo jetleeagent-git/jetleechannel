@@ -679,6 +679,144 @@
   @media (max-width: 780px) {
     section[id] { scroll-margin-top: 56px; }
   }
+
+  /* ── SHOW UNIT FLOOR PLANS ── */
+  .showunit-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .showunit-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(184, 154, 90, 0.25);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .showunit-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  .showunit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(184, 154, 90, 0.2);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .showunit-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .showunit-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--cream);
+    margin-top: 0.2rem;
+  }
+  .showunit-size-pill {
+    background: rgba(184, 154, 90, 0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .showunit-body {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  @media (max-width: 850px) {
+    .showunit-body { grid-template-columns: 1fr; }
+  }
+  .showunit-img-wrapper {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  .showunit-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .showunit-img-wrapper:hover img {
+    transform: scale(1.03);
+  }
+  .showunit-zoom-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(30, 58, 47, 0.88);
+    color: var(--cream);
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+  .showunit-features {
+    color: var(--mist);
+    font-size: 0.9rem;
+  }
+  .showunit-features-title {
+    color: var(--gold-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .showunit-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .showunit-features li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.45;
+  }
+  .showunit-features li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 0.75rem;
+  }
+  .showunit-btn {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .unit-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--forest);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+
 </style>
 
   <!-- SEO: JSON-LD Structured Data -->
@@ -947,6 +1085,10 @@
     <div class="scroll-line"></div>
     Discover
   </div>
+
+  <div style="text-align:center; margin-top:3.5rem;">
+    <a class="btn-primary" href="floor-plans.html" style="font-size:1rem; padding:0.9rem 2.5rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:600; text-decoration:none;">Explore Full Floor Plans Breakdown Page &rarr;</a>
+  </div>
 </section>
 
 <!-- TICKER -->
@@ -1026,41 +1168,300 @@
 </section>
 
 <!-- UNIT MIX -->
+<!-- UNIT MIX & SHOW UNIT FLOOR PLANS -->
+<!-- UNIT MIX & SHOW UNIT FLOOR PLANS -->
+<!-- UNIT MIX & SHOW UNIT FLOOR PLANS -->
 <section id="floor-plans">
-  <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto;">
-    <p class="section-tag">Unit Mix & Floor Plans</p>
-    <h2 class="section-title">Thoughtfully <em>Crafted</em> Homes</h2>
+  <div class="reveal" style="text-align:center; max-width:750px; margin:0 auto;">
+    <p class="section-tag">Unit Mix & Official Show Unit Floor Plans</p>
+    <h2 class="section-title">Thoughtfully <em>Crafted</em> Residences</h2>
     <div class="gold-rule" style="margin:1.5rem auto;"></div>
-    <p class="section-body" style="margin:0 auto;">From efficient 2-Bedroom homes to generous 5-Bedroom residences with private lifts — 1,268 homes designed to complement Singapore's most nature-rich corridor.</p>
+    <p class="section-body" style="margin:0 auto;">Explore the 4 official show unit layouts — from efficient 2-Bedroom Premium + Study homes to expansive 5-Bedroom Suites featuring private lift access and unblocked views of Windsor Nature Park and MacRitchie Reservoir.</p>
   </div>
-  <div class="unit-cards reveal" style="margin-top:4rem;">
+
+  <!-- Unit Mix Overview Cards -->
+  <div class="unit-cards reveal" style="margin-top:3.5rem;">
     <div class="unit-card">
-      <div class="unit-type">2</div>
-      <div class="unit-name">2 Bedroom</div>
-      <div class="unit-size">Sizes To Be Confirmed</div>
-      <div class="unit-bar"><div class="unit-bar-fill" style="width:65%;"></div></div>
+      <div class="unit-type">2BR</div>
+      <div class="unit-name">2-Bedroom Premium + Study</div>
+      <div class="unit-size">Type BPS1 &middot; 732 sqft (68 sqm)</div>
+      <div class="unit-badge">Show Unit</div>
+      <div class="unit-bar"><div class="unit-bar-fill" style="width:100%;"></div></div>
     </div>
     <div class="unit-card">
-      <div class="unit-type">3</div>
-      <div class="unit-name">3 Bedroom</div>
-      <div class="unit-size">Sizes To Be Confirmed</div>
-      <div class="unit-bar"><div class="unit-bar-fill" style="width:80%;"></div></div>
+      <div class="unit-type">3BR</div>
+      <div class="unit-name">3-Bedroom Premium</div>
+      <div class="unit-size">Type CP1 &middot; 1,055 sqft (98 sqm)</div>
+      <div class="unit-badge">Show Unit</div>
+      <div class="unit-bar"><div class="unit-bar-fill" style="width:100%;"></div></div>
     </div>
     <div class="unit-card">
-      <div class="unit-type">4</div>
-      <div class="unit-name">4 Bedroom</div>
-      <div class="unit-size">Sizes To Be Confirmed</div>
-      <div class="unit-bar"><div class="unit-bar-fill" style="width:60%;"></div></div>
+      <div class="unit-type">4BR</div>
+      <div class="unit-name">4-Bedroom Premium (Private Lift)</div>
+      <div class="unit-size">Type DP1 (L) &middot; 1,367 sqft (127 sqm)</div>
+      <div class="unit-badge">Show Unit</div>
+      <div class="unit-bar"><div class="unit-bar-fill" style="width:100%;"></div></div>
     </div>
     <div class="unit-card">
-      <div class="unit-type">5</div>
-      <div class="unit-name">5 Bedroom + Private Lift</div>
-      <div class="unit-size">Sizes To Be Confirmed</div>
-      <div class="unit-bar"><div class="unit-bar-fill" style="width:25%;"></div></div>
+      <div class="unit-type">5BR</div>
+      <div class="unit-name">5-Bedroom Suite (Private Lift)</div>
+      <div class="unit-size">Type E1 (L) &middot; 1,808 sqft (168 sqm)</div>
+      <div class="unit-badge">Show Unit</div>
+      <div class="unit-bar"><div class="unit-bar-fill" style="width:100%;"></div></div>
     </div>
   </div>
-  <p class="reveal" style="text-align:center; margin-top:2.5rem; font-size:0.78rem; color:rgba(200,217,193,0.5); letter-spacing:0.1em;">*Unit mix and sizes are subject to authorities' approval and subject to changes. Targeted Preview: Oct 2026.</p>
+
+  <!-- Show Unit Showcase Grid -->
+  <div class="showunit-grid reveal" style="margin-top:4rem;">
+
+    <!-- 2 BR SHOW UNIT -->
+    <div class="showunit-card">
+      <div class="showunit-header">
+        <div>
+          <span class="showunit-tag">SHOW UNIT TYPE BPS1</span>
+          <h3 class="showunit-title">2-Bedroom Premium + Study</h3>
+        </div>
+        <div class="showunit-size-pill">732 sqft / 68 sqm</div>
+      </div>
+      <div class="showunit-body">
+        <div class="showunit-img-wrapper" onclick="openFpModal('images/thomson-floorplans/floorplan-2br-bps1.jpg', '2-Bedroom Premium + Study (Type BPS1)')">
+          <picture>
+            <source srcset="images/thomson-floorplans/floorplan-2br-bps1.webp" type="image/webp">
+            <img src="images/thomson-floorplans/floorplan-2br-bps1.jpg" alt="Thomson Reserve 2-Bedroom Premium + Study Floor Plan Type BPS1 732 sqft" loading="lazy">
+          </picture>
+          <div class="showunit-zoom-overlay">🔍 Click to View High-Res Floor Plan</div>
+        </div>
+        <div class="showunit-features">
+          <h4 class="showunit-features-title">Layout & Design Highlights:</h4>
+          <ul>
+            <li><strong>Dumbbell Layout:</strong> Highly efficient layout with zero wasted corridor space</li>
+            <li><strong>Enclosable Kitchen:</strong> Fully equipped with branded appliances</li>
+            <li><strong>Master Study Nook:</strong> Integrated flexibility for remote work or personal space</li>
+            <li><strong>Ensuite Bathrooms:</strong> All bedrooms enjoy direct ensuite bath access</li>
+            <li><strong>Full Frontage:</strong> Living room and all bedrooms capture maximum natural daylight</li>
+          </ul>
+          <a class="btn-primary showunit-btn" href="https://wa.me/6587649315?text=Hi%20Jetlee%2C%20I%20would%20like%20to%20request%20the%202-Bedroom%20floor%20plan%20and%20pricing%20for%20Thomson%20Reserve." target="_blank">Enquire 2BR Floor Plan</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 BR SHOW UNIT -->
+    <div class="showunit-card">
+      <div class="showunit-header">
+        <div>
+          <span class="showunit-tag">SHOW UNIT TYPE CP1</span>
+          <h3 class="showunit-title">3-Bedroom Premium</h3>
+        </div>
+        <div class="showunit-size-pill">1,055 sqft / 98 sqm</div>
+      </div>
+      <div class="showunit-body">
+        <div class="showunit-img-wrapper" onclick="openFpModal('images/thomson-floorplans/floorplan-3br-cp1.jpg', '3-Bedroom Premium (Type CP1)')">
+          <picture>
+            <source srcset="images/thomson-floorplans/floorplan-3br-cp1.webp" type="image/webp">
+            <img src="images/thomson-floorplans/floorplan-3br-cp1.jpg" alt="Thomson Reserve 3-Bedroom Premium Floor Plan Type CP1 1055 sqft" loading="lazy">
+          </picture>
+          <div class="showunit-zoom-overlay">🔍 Click to View High-Res Floor Plan</div>
+        </div>
+        <div class="showunit-features">
+          <h4 class="showunit-features-title">Layout & Design Highlights:</h4>
+          <ul>
+            <li><strong>Spacious Living & Dining:</strong> Seamless extension onto a generous viewing balcony</li>
+            <li><strong>3.0m Full Frontage:</strong> Living and all bedrooms feature extensive window frontage</li>
+            <li><strong>Ventilated Kitchen & Yard:</strong> Large kitchen with dedicated utility yard & appliances</li>
+            <li><strong>Utility / Maid's Room:</strong> Household shelter doubles as helper's room or extra storage</li>
+            <li><strong>Naturally Ventilated Baths:</strong> All bathrooms fitted with direct window ventilation</li>
+          </ul>
+          <a class="btn-primary showunit-btn" href="https://wa.me/6587649315?text=Hi%20Jetlee%2C%20I%20would%20like%20to%20request%20the%203-Bedroom%20floor%20plan%20and%20pricing%20for%20Thomson%20Reserve." target="_blank">Enquire 3BR Floor Plan</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 BR SHOW UNIT -->
+    <div class="showunit-card">
+      <div class="showunit-header">
+        <div>
+          <span class="showunit-tag">SHOW UNIT TYPE DP1 (L) &middot; PRIVATE LIFT</span>
+          <h3 class="showunit-title">4-Bedroom Premium (Private Lift)</h3>
+        </div>
+        <div class="showunit-size-pill">1,367 sqft / 127 sqm</div>
+      </div>
+      <div class="showunit-body">
+        <div class="showunit-img-wrapper" onclick="openFpModal('images/thomson-floorplans/floorplan-4br-dp1l.jpg', '4-Bedroom Premium Private Lift (Type DP1 L)')">
+          <picture>
+            <source srcset="images/thomson-floorplans/floorplan-4br-dp1l.webp" type="image/webp">
+            <img src="images/thomson-floorplans/floorplan-4br-dp1l.jpg" alt="Thomson Reserve 4-Bedroom Premium Private Lift Floor Plan Type DP1 L 1367 sqft" loading="lazy">
+          </picture>
+          <div class="showunit-zoom-overlay">🔍 Click to View High-Res Floor Plan</div>
+        </div>
+        <div class="showunit-features">
+          <h4 class="showunit-features-title">Layout & Design Highlights:</h4>
+          <ul>
+            <li><strong>Private Lift Foyer:</strong> Direct private elevator opening into marble-clad lobby & living</li>
+            <li><strong>Ducted Air-Conditioning:</strong> Concealed ducted cooling for living/dining and master bedroom</li>
+            <li><strong>Sliding Glass Kitchen:</strong> Creates a grand open flow between kitchen, living & balcony</li>
+            <li><strong>3.4m Living Frontage:</strong> Expansive living and bedroom glass frontage</li>
+            <li><strong>Walk-In Wardrobe:</strong> Luxurious master suite with dedicated wardrobe and vanity</li>
+          </ul>
+          <a class="btn-primary showunit-btn" href="https://wa.me/6587649315?text=Hi%20Jetlee%2C%20I%20would%20like%20to%20request%20the%204-Bedroom%20floor%20plan%20and%20pricing%20for%20Thomson%20Reserve." target="_blank">Enquire 4BR Floor Plan</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 BR SHOW UNIT -->
+    <div class="showunit-card">
+      <div class="showunit-header">
+        <div>
+          <span class="showunit-tag">SHOW UNIT TYPE E1 (L) &middot; PRIVATE LIFT</span>
+          <h3 class="showunit-title">5-Bedroom Suite (Private Lift)</h3>
+        </div>
+        <div class="showunit-size-pill">1,808 sqft / 168 sqm</div>
+      </div>
+      <div class="showunit-body">
+        <div class="showunit-img-wrapper" onclick="openFpModal('images/thomson-floorplans/floorplan-5br-e1l.jpg', '5-Bedroom Suite Private Lift (Type E1 L)')">
+          <picture>
+            <source srcset="images/thomson-floorplans/floorplan-5br-e1l.webp" type="image/webp">
+            <img src="images/thomson-floorplans/floorplan-5br-e1l.jpg" alt="Thomson Reserve 5-Bedroom Suite Private Lift Floor Plan Type E1 L 1808 sqft" loading="lazy">
+          </picture>
+          <div class="showunit-zoom-overlay">🔍 Click to View High-Res Floor Plan</div>
+        </div>
+        <div class="showunit-features">
+          <h4 class="showunit-features-title">Layout & Design Highlights:</h4>
+          <ul>
+            <li><strong>Grand ~6m Frontage:</strong> Unblocked panoramic views of Windsor Nature Park & MacRitchie</li>
+            <li><strong>Private Lift & Marble Finish:</strong> Elegant arrival hall with premium imported marble</li>
+            <li><strong>Sophisticated Show Kitchen:</strong> Glass-enclosed show kitchen & separate wet kitchen with store</li>
+            <li><strong>Junior Master Suite:</strong> Sizable 2nd master bedroom with naturally ventilated ensuite</li>
+            <li><strong>Master Suite Sanctuary:</strong> Corner window, walk-in closet with full glass door, sensor lights & ensuite bathtub with "His & Her" basins</li>
+          </ul>
+          <a class="btn-primary showunit-btn" href="https://wa.me/6587649315?text=Hi%20Jetlee%2C%20I%20would%20like%20to%20request%20the%205-Bedroom%20floor%20plan%20and%20pricing%20for%20Thomson%20Reserve." target="_blank">Enquire 5BR Floor Plan</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="reveal" style="text-align:center; margin-top:2.5rem; font-size:0.78rem; color:rgba(200,217,193,0.5); letter-spacing:0.1em;">*Floor plans are for illustration purposes and subject to final authorities' approval. Full floor plan brochure available upon request.</p>
+  <div style="text-align:center; margin-top:3.5rem;">
+    <a class="btn-primary" href="floor-plans.html" style="font-size:1rem; padding:0.9rem 2.5rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:600; text-decoration:none;">Explore Full Floor Plans Breakdown Page &rarr;</a>
+  </div>
 </section>
+
+<!-- Floor Plan Lightbox Modal -->
+<div id="fp-modal" class="fp-modal" onclick="closeFpModal(event)">
+  <div class="fp-modal-content">
+    <span class="fp-modal-close" onclick="closeFpModal(event)">&times;</span>
+    <h3 id="fp-modal-title" style="color:var(--gold-light); font-family:'Cormorant Garamond',serif; font-size:1.5rem; margin-bottom:1rem; text-align:center;">Floor Plan</h3>
+    <img id="fp-modal-img" src="" alt="Floor Plan High-Res View" style="max-width:100%; max-height:80vh; display:block; margin:0 auto; border-radius:4px; box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+  </div>
+</div>
+<style>
+  .fp-modal {
+    display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(10, 20, 15, 0.92); backdrop-filter: blur(5px);
+    align-items: center; justify-content: center; padding: 1.5rem;
+  }
+  .fp-modal-content {
+    position: relative; background: var(--forest); border: 1px solid var(--gold);
+    border-radius: 8px; padding: 2rem 1.5rem 1.5rem; max-width: 1000px; width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  }
+  .fp-modal-close {
+    position: absolute; top: 0.8rem; right: 1.2rem; color: var(--cream); font-size: 2rem;
+    font-weight: bold; cursor: pointer; transition: color 0.2s;
+  }
+  .fp-modal-close:hover { color: var(--gold); }
+</style>
+<script>
+  function openFpModal(imgSrc, title) {
+    document.getElementById('fp-modal-img').src = imgSrc;
+    document.getElementById('fp-modal-title').textContent = title;
+    document.getElementById('fp-modal').style.display = 'flex';
+  }
+  function closeFpModal(e) {
+    if (e.target.id === 'fp-modal' || e.target.className === 'fp-modal-close') {
+      document.getElementById('fp-modal').style.display = 'none';
+    }
+  }
+</script>
+
+
+<!-- Floor Plan Lightbox Modal -->
+<div id="fp-modal" class="fp-modal" onclick="closeFpModal(event)">
+  <div class="fp-modal-content">
+    <span class="fp-modal-close" onclick="closeFpModal(event)">&times;</span>
+    <h3 id="fp-modal-title" style="color:var(--gold-light); font-family:'Cormorant Garamond',serif; font-size:1.5rem; margin-bottom:1rem; text-align:center;">Floor Plan</h3>
+    <img id="fp-modal-img" src="" alt="Floor Plan High-Res View" style="max-width:100%; max-height:80vh; display:block; margin:0 auto; border-radius:4px; box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+  </div>
+</div>
+<style>
+  .fp-modal {
+    display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(10, 20, 15, 0.92); backdrop-filter: blur(5px);
+    align-items: center; justify-content: center; padding: 1.5rem;
+  }
+  .fp-modal-content {
+    position: relative; background: var(--forest); border: 1px solid var(--gold);
+    border-radius: 8px; padding: 2rem 1.5rem 1.5rem; max-width: 1000px; width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  }
+  .fp-modal-close {
+    position: absolute; top: 0.8rem; right: 1.2rem; color: var(--cream); font-size: 2rem;
+    font-weight: bold; cursor: pointer; transition: color 0.2s;
+  }
+  .fp-modal-close:hover { color: var(--gold); }
+</style>
+<script>
+  function openFpModal(imgSrc, title) {
+    document.getElementById('fp-modal-img').src = imgSrc;
+    document.getElementById('fp-modal-title').textContent = title;
+    document.getElementById('fp-modal').style.display = 'flex';
+  }
+  function closeFpModal(e) {
+    if (e.target.id === 'fp-modal' || e.target.className === 'fp-modal-close') {
+      document.getElementById('fp-modal').style.display = 'none';
+    }
+  }
+</script>
+
+
+<!-- Floor Plan Lightbox Modal -->
+<div id="fp-modal" class="fp-modal" onclick="closeFpModal(event)">
+  <div class="fp-modal-content">
+    <span class="fp-modal-close" onclick="closeFpModal(event)">&times;</span>
+    <h3 id="fp-modal-title" style="color:var(--gold-light); font-family:'Cormorant Garamond',serif; font-size:1.5rem; margin-bottom:1rem; text-align:center;">Floor Plan</h3>
+    <img id="fp-modal-img" src="" alt="Floor Plan High-Res View" style="max-width:100%; max-height:80vh; display:block; margin:0 auto; border-radius:4px; box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+  </div>
+</div>
+<style>
+  .fp-modal {
+    display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(10, 20, 15, 0.92); backdrop-filter: blur(5px);
+    align-items: center; justify-content: center; padding: 1.5rem;
+  }
+  .fp-modal-content {
+    position: relative; background: var(--forest); border: 1px solid var(--gold);
+    border-radius: 8px; padding: 2rem 1.5rem 1.5rem; max-width: 1000px; width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  }
+  .fp-modal-close {
+    position: absolute; top: 0.8rem; right: 1.2rem; color: var(--cream); font-size: 2rem;
+    font-weight: bold; cursor: pointer; transition: color 0.2s;
+  }
+  .fp-modal-close:hover { color: var(--gold); }
+</style>
+<script>
+  function openFpModal(imgSrc, title) {
+    document.getElementById('fp-modal-img').src = imgSrc;
+    document.getElementById('fp-modal-title').textContent = title;
+    document.getElementById('fp-modal').style.display = 'flex';
+  }
+  function closeFpModal(e) {
+    if (e.target.id === 'fp-modal' || e.target.className === 'fp-modal-close') {
+      document.getElementById('fp-modal').style.display = 'none';
+    }
+  }
+</script>
+
 
 <!-- LOCATION -->
 <section id="site-plan">
@@ -1282,6 +1683,144 @@
   .ebook-dot-active, .ebook-dot:hover {
     background:var(--gold); transform:scale(1.3);
   }
+
+  /* ── SHOW UNIT FLOOR PLANS ── */
+  .showunit-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .showunit-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(184, 154, 90, 0.25);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .showunit-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  .showunit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(184, 154, 90, 0.2);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .showunit-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .showunit-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--cream);
+    margin-top: 0.2rem;
+  }
+  .showunit-size-pill {
+    background: rgba(184, 154, 90, 0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .showunit-body {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  @media (max-width: 850px) {
+    .showunit-body { grid-template-columns: 1fr; }
+  }
+  .showunit-img-wrapper {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  .showunit-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .showunit-img-wrapper:hover img {
+    transform: scale(1.03);
+  }
+  .showunit-zoom-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(30, 58, 47, 0.88);
+    color: var(--cream);
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+  .showunit-features {
+    color: var(--mist);
+    font-size: 0.9rem;
+  }
+  .showunit-features-title {
+    color: var(--gold-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .showunit-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .showunit-features li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.45;
+  }
+  .showunit-features li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 0.75rem;
+  }
+  .showunit-btn {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .unit-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--forest);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+
 </style>
 
 <script>
@@ -1599,6 +2138,144 @@
     .wa-float { bottom: 1.2rem; right: 1.2rem; padding: 0.75rem; border-radius: 50%; }
     .wa-float-label { display: none; }
   }
+
+  /* ── SHOW UNIT FLOOR PLANS ── */
+  .showunit-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .showunit-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(184, 154, 90, 0.25);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .showunit-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  .showunit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(184, 154, 90, 0.2);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .showunit-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .showunit-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--cream);
+    margin-top: 0.2rem;
+  }
+  .showunit-size-pill {
+    background: rgba(184, 154, 90, 0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .showunit-body {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  @media (max-width: 850px) {
+    .showunit-body { grid-template-columns: 1fr; }
+  }
+  .showunit-img-wrapper {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  .showunit-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .showunit-img-wrapper:hover img {
+    transform: scale(1.03);
+  }
+  .showunit-zoom-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(30, 58, 47, 0.88);
+    color: var(--cream);
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+  .showunit-features {
+    color: var(--mist);
+    font-size: 0.9rem;
+  }
+  .showunit-features-title {
+    color: var(--gold-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .showunit-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .showunit-features li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.45;
+  }
+  .showunit-features li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 0.75rem;
+  }
+  .showunit-btn {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .unit-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--forest);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+
 </style>
 
 
