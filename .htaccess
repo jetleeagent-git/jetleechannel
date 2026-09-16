@@ -1,37 +1,22 @@
 RewriteEngine On
 
-# Case-insensitive redirects to exact lowercase canonical paths
-RewriteCond %{REQUEST_URI} !^/amberwood/
-RewriteCond %{REQUEST_URI} ^/amberwood/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+# Case-insensitive canonical redirects — subpath-PRESERVING.
+# The RewriteCond case-sensitive guard (no [NC]) prevents the canonical path from
+# redirecting to itself, which previously swallowed /thecolletive/images/* etc.
+RewriteCond %{REQUEST_URI} !^/amberwood(/|$)
+RewriteRule ^/(amberwood|amber-wood|amberwood-residences|amberwoodresidences)(/.*)?$ /amberwood$2 [R=301,NC,L]
 
-RewriteCond %{REQUEST_URI} ^/amber-wood/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/thecolletive(/|$)
+RewriteRule ^/(theColletive|thecollective|TheCollective|Thecolletive|thecolletive)(/.*)?$ /thecolletive$2 [R=301,NC,L]
 
-RewriteCond %{REQUEST_URI} ^/amberwood-residences/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/granddunman(/|$)
+RewriteRule ^/(grand-dunman|granddunman)(/.*)?$ /granddunman$2 [R=301,NC,L]
 
-RewriteCond %{REQUEST_URI} ^/amberwoodresidences/? [NC]
-RewriteRule ^ /amberwood/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/lentorgardens(/|$)
+RewriteRule ^/(lentor-gardens|lentorgardens)(/.*)?$ /lentorgardens$2 [R=301,NC,L]
 
-# Prevent infinite rewrite loops: match specific non-canonical aliases only
-RewriteCond %{REQUEST_URI} ^/theColletive/? [NC]
-RewriteRule ^ /thecolletive/ [R=301,L]
-
-RewriteCond %{REQUEST_URI} ^/thecollective/? [NC]
-RewriteRule ^ /thecolletive/ [R=301,L]
-
-RewriteCond %{REQUEST_URI} ^/TheCollective/? [NC]
-RewriteRule ^ /thecolletive/ [R=301,L]
-
-RewriteCond %{REQUEST_URI} ^/grand-dunman/? [NC]
-RewriteRule ^ /granddunman/ [R=301,L]
-
-RewriteCond %{REQUEST_URI} ^/lentor-gardens/? [NC]
-RewriteRule ^ /lentorgardens/ [R=301,L]
-
-RewriteCond %{REQUEST_URI} ^/thesierra/? [NC]
-RewriteRule ^ /TheSerra/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/TheSerra(/|$)
+RewriteRule ^/(thesierra|TheSierra|theserra|Theserra|THESERRA)(/.*)?$ /TheSerra$2 [R=301,NC,L]
 
 # Force UTF-8 Encoding across all sites
 AddDefaultCharset UTF-8
