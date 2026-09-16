@@ -122,6 +122,22 @@ Passwords follow pattern: `SiteName87649315$` (case-sensitive!)
 - ⚠️ **execSync gotcha**: don't pass `timeout` option to execSync for FTP curl — causes spurious `spawnSync /bin/sh ETIMEDOUT`. Use curl's own `--max-time` + `maxBuffer` instead.
 - ⚠️ **Deepseek billing scare Aug 24**: balance-units + grand-dunman cron failed with "deepseek out of credits / provider cooldown (billing)". Resolved Aug 25 — deepseek API works again (direct test 200). OpenAI sk-proj key IS out of credits (insufficient_quota) — don't switch to it.
 
+## 🔑 DEPLOY ROUTE — git push auto-deploys (discovered 2026-09-16)
+**FTP is DEAD from this container** (191.101.228.66:21 + :22 blocked; HTTP CONNECT proxy 47.91.121.127:8443 flaky). But **`git push origin main`** on repo `jetleeagent-git/jetleechannel` auto-deploys repo root → `jetleechannel.sg` web root in ~60–120s. Verified repeatedly.
+- Use git push for jetleechannel.sg assets (incl. all project subdirs). `deploy.sh` uses FTP → will FAIL. Don't use it.
+- `site-*.html` files are 0 bytes → `deploy.sh` would push empty files. Hazard.
+- Git creds are embedded in the `origin` remote URL in `.git/config`.
+
+## ⚠️ .htaccess LANDMINES (fixed 2026-09-16)
+1. **MIME bug**: unscoped `Header set Content-Type "text/html; charset=UTF-8"` forced EVERY file (images/CSS/JS) to text/html for ~5 days (added Sep 11). **Fix**: wrap in `<FilesMatch "\.html?$">`. → all 24 projects now 0 wrong-MIME.
+2. **Alias rewrite bug**: `RewriteRule ^ /thecolletive/ [R=301,L]` dropped subpaths → `/thecolletive/images/*` all 404'd. **Fix**: match in `RewriteCond` with `^/(alias)(/.*)?$ [NC]` + case-sensitive `!^/canonical(/|$)` guard + `RewriteRule ^ /canonical%2`. Per-dir rules have NO leading slash on pattern.
+
+## Image Audit — jetleechannel.sg (2026-09-16)
+Audited live refs across 24 projects. **Broken: 73 → 12. Wrong-MIME: 204 → 0.** Restored via git: thecolletive(24, .htaccess fix), arcady(9), TheSerra(8), lucernegrand(19), amberwood(20), OneMarinaGardens(15), TheOrie/SophiaMeadow/bagnallhous(48 microsite icons), hougangcentral(1), TheHillshore(1).
+- **PropNex microsite icons**: pages reference `microsite/img/*` RELATIVE but assets only existed at `<project>-87649315.propnex.net`. Downloaded 16 icons → committed to each project. Source site works (needs `curl -k`, container lacks CA certs).
+- **STILL MISSING (12)**: amberwood `location-map-v2.jpg`; unionsquare `usq-4bedroom-d1p.jpg`; lucernegrand `dev-cdl-1/2.jpg`; OMG `floorplan-3br-premium.jpg`, `floorplan-3br-904.jpg`, `location-map.jpg`, `location-stylized.jpg`, `gallery/08-09.jpg`. Not in git ever, not local. Wayback CDX rate-limited (429) — retry later.
+- **Danger**: server returns 200 + HTML page for missing files (catch-all). Always verify magic bytes, not just status code.
+
 ## Pending Issues
 - **Lentor Gardens FTP** — password unknown, can't upload (live site works via HTTPS)
 - **Dunearn House** — separate Hostinger account, needs `deploy.sh dunearnhouse` for updates
