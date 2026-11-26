@@ -259,6 +259,16 @@ input,textarea,select{font-family:inherit;font-size:inherit}
 .hero-search-input::placeholder{color:rgba(255,255,255,.4);font-size:.88rem}
 .hero-search-btn{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:var(--gold);color:var(--white);padding:10px 22px;border:none;border-radius:50px;font-weight:600;font-size:.82rem;cursor:pointer;transition:all .3s}
 .hero-search-btn:hover{background:var(--gold-light)}
+.jl-search-results{width:100%;max-width:560px;margin:0 0 16px;background:#fff;color:#263044;border-radius:14px;text-align:left;max-height:440px;overflow:auto;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+.jl-search-results[hidden]{display:none}
+.jl-search-heading,.jl-search-note{padding:14px 16px;font-size:.9rem}
+.jl-search-heading{font-weight:700;border-bottom:1px solid #e6ded4}
+.jl-search-result{display:flex;flex-direction:column;gap:4px;padding:12px 16px;border-bottom:1px solid #eee;color:#263044;text-decoration:none}
+.jl-search-result:hover,.jl-search-result:focus-visible{background:#f6f1e8}
+.jl-search-type{font-size:.72rem;color:#80612f;font-weight:600}
+.jl-search-desc{font-size:.8rem;color:#565d68;line-height:1.5}
+.jl-search-contact{display:block;padding:12px 16px;color:#285c3b;font-size:.85rem;font-weight:600}
+
 .hero-chips{display:flex;flex-wrap:wrap;gap:6px;max-width:560px;margin-bottom:24px}
 .hero-chip{padding:5px 14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:50px;font-size:.75rem;color:rgba(255,255,255,.85);cursor:pointer;transition:all .2s;backdrop-filter:blur(4px)}
 .hero-chip:hover{background:var(--gold);color:var(--white);border-color:var(--gold)}
@@ -451,13 +461,14 @@ footer .footer-cea{font-size:.72rem;color:var(--gold);margin-top:4px;letter-spac
       <h1>Your Trusted <em>Real Estate</em> Partner Since 2008</h1>
       <p class="hero-desc">From your first HDB to your next investment property — I guide you to the right decision, at the right price.</p>
 
-      <!-- Ask Jet Lee search -->
+      <!-- Internal website search -->
       <div class="hero-search-wrap">
-        <input id="askJetLee" class="hero-search-input" type="text" placeholder="Ask a property question, search a project, MRT or neighbourhood..."
+        <input id="askJetLee" class="hero-search-input" type="text" placeholder="Search projects, districts, MRT or property guides..." aria-label="Search website" aria-controls="jlSearchResults"
           onkeydown="if(event.key==='Enter')askJetLeeNow()">
-        <button class="hero-search-btn" onclick="askJetLeeNow()">Ask Jet Lee</button>
+        <button class="hero-search-btn" onclick="askJetLeeNow()">Search</button>
       </div>
 
+      <div id="jlSearchResults" class="jl-search-results" aria-live="polite" hidden></div>
       <!-- Quick keyword chips -->
       <div class="hero-chips">
         <button class="hero-chip" onclick="askJetLee('Can I afford a condo?')">Can I afford a condo?</button>
@@ -993,8 +1004,48 @@ footer .footer-cea{font-size:.72rem;color:var(--gold);margin-top:4px;letter-spac
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
 function toggleFaq(btn){const a=btn.nextElementSibling;btn.classList.toggle('active');a.classList.toggle('open')}
-function askJetLeeNow(){var q=document.getElementById('askJetLee').value.trim();if(!q)return;askJetLee(q)}
-function askJetLee(q){window.open('https://wa.me/6587649315?text=Hi%20Jet%20Lee,%20I%20have%20a%20question%20from%20jetleechannel.sg:%0A%0A'+encodeURIComponent(q),'_blank')}
+let jlSearchRequest=0,jlArticleIndex;
+function jlNormalize(s){return s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
+function jlSearchEntries(){
+ const entries=[];
+ document.querySelectorAll('#projects a.project-card').forEach(a=>entries.push({title:a.querySelector('.project-card-name').textContent,desc:a.querySelector('.project-card-info').textContent,extra:a.closest('.district-group').querySelector('.district-label').textContent,url:a.href,type:'Project'}));
+ document.querySelectorAll('#latest-articles a.article-card').forEach(a=>entries.push({title:a.querySelector('.article-card-title').textContent,desc:a.querySelector('.article-card-desc').textContent,url:a.href,type:'Article'}));
+ document.querySelectorAll('#faq .faq-item').forEach((item,i)=>{item.id='search-faq-'+i;entries.push({title:item.querySelector('.faq-q').textContent.replace('▼','').trim(),desc:item.querySelector('.faq-a').textContent.trim(),url:'#'+item.id,type:'FAQ'})});
+ entries.push({title:'Mortgage Calculator',desc:'Calculate home loan monthly repayments and affordability',url:'/mortgage-calculator.html',type:'Tool'},{title:'All Projects',desc:'Browse new launches by district',url:'/projects/',type:'Page'},{title:'Property Articles and Guides',desc:'Property news, buying, selling and investment guides',url:'/articles/',type:'Page'});
+ return entries;
+}
+function jlLoadArticles(){
+ if(!jlArticleIndex)jlArticleIndex=fetch('/articles/').then(r=>{if(!r.ok)throw Error('Articles unavailable');return r.text()}).then(html=>{
+ const doc=new DOMParser().parseFromString(html,'text/html');
+ return Array.from(doc.querySelectorAll('a[href]')).filter(a=>a.querySelector('h2')).map(a=>({title:a.querySelector('h2').textContent.trim(),desc:Array.from(a.querySelectorAll('p')).map(p=>p.textContent.trim()).join(' '),url:new URL(a.getAttribute('href'),location.origin+'/articles/').href,type:'Article'})).filter(e=>new URL(e.url).origin===location.origin);
+ }).catch(()=>{jlArticleIndex=null;return []});
+ return jlArticleIndex;
+}
+function jlRank(entries,q){
+ const normalized=jlNormalize(q),stop=new Set(['a','an','the','i','can','how','what','is','are','to','for','of','in','me','my','now','review','about','much','vs','and','does']);
+ const terms=normalized.split(' ').filter(t=>t&&!stop.has(t));if(!terms.length&&normalized)terms.push(normalized);
+ if(!terms.length)return [];
+ const unique=new Map();
+ entries.forEach(e=>{const key=new URL(e.url,location.href).href;if(!unique.has(key))unique.set(key,e)});
+ return Array.from(unique.values()).map(e=>{
+ const title=jlNormalize(e.title),body=jlNormalize(e.desc+' '+(e.extra||''));
+ const hits=terms.filter(t=>title.split(' ').some(w=>w.startsWith(t))||body.split(' ').some(w=>w.startsWith(t))).length;
+ const titleHits=terms.filter(t=>title.split(' ').some(w=>w.startsWith(t))).length;
+ const score=hits?hits/terms.length*20+titleHits*8+(title===normalized?100:title.includes(normalized)?50:body.includes(normalized)?10:0):0;
+ return {e,score};
+ }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,15).map(x=>x.e);
+}
+function jlRenderResults(entries,q,loading){
+ const panel=document.getElementById('jlSearchResults');panel.hidden=false;panel.replaceChildren();
+ const header=document.createElement('div');header.className='jl-search-heading';header.textContent=entries.length?'Search results for “'+q+'”':loading?'Searching…':'No matching results for “'+q+'”';panel.append(header);
+ entries.forEach(e=>{const a=document.createElement('a');a.className='jl-search-result';a.href=e.url;const label=document.createElement('span');label.className='jl-search-type';label.textContent=e.type+(e.extra?' · '+e.extra:'');const title=document.createElement('strong');title.textContent=e.title;const desc=document.createElement('span');desc.className='jl-search-desc';desc.textContent=e.desc.length>180?e.desc.slice(0,180)+'…':e.desc;a.append(label,title,desc);if(e.type==='FAQ')a.addEventListener('click',()=>{const item=document.getElementById(e.url.slice(1));const btn=item.querySelector('.faq-q');if(!btn.classList.contains('active'))toggleFaq(btn)});panel.append(a)});
+ if(loading){const p=document.createElement('div');p.className='jl-search-note';p.textContent='Checking property articles…';panel.append(p)}
+ else if(!entries.length){const p=document.createElement('div');p.className='jl-search-note';p.textContent='Try a project name, district, MRT, or a shorter keyword.';panel.append(p)}
+ const wa=document.createElement('a');wa.className='jl-search-contact';wa.href='https://wa.me/6587649315?text='+encodeURIComponent('Hi Jet Lee, I have a question from jetleechannel.sg: '+q);wa.target='_blank';wa.rel='noopener';wa.textContent='Still need help? WhatsApp Jet Lee';panel.append(wa);
+}
+function askJetLeeNow(){askJetLee(document.getElementById('askJetLee').value)}
+async function askJetLee(q){q=q.trim();if(!q)return;document.getElementById('askJetLee').value=q;const request=++jlSearchRequest;const base=jlSearchEntries();jlRenderResults(jlRank(base,q),q,true);const articles=await jlLoadArticles();if(request===jlSearchRequest)jlRenderResults(jlRank(base.concat(articles),q),q,false)}
+
 
 document.getElementById('jlContactForm').addEventListener('submit', function(e) {
   e.preventDefault();
