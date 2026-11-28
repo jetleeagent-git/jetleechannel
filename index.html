@@ -508,51 +508,78 @@ footer .footer-cea{font-size:.72rem;color:var(--gold);margin-top:4px;letter-spac
 </section>
 
 
-<!-- Featured launch: Wynwood Grand -->
+<!-- Featured upcoming launches -->
 <style>
-.wyn-feature{padding:36px 0;background:#f7f4ee}
-.wyn-feature-card{background:linear-gradient(120deg,#112b46,#204b70);color:#fff;border-radius:20px;padding:clamp(22px,4vw,46px);display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:center;border:1px solid #b8935a}
-.wyn-kicker{color:#f1d39a;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
-.wyn-feature h2{color:white;font-family:var(--font-heading);font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;margin:8px 0}
-.wyn-feature p{color:#e0e8ef;line-height:1.6;margin:12px 0}
-.wyn-preview{color:#f1d39a;font-size:1.25rem;font-weight:700;margin:12px 0}
-.wyn-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:16px}
-.wyn-stat{padding:14px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:12px}
-.wyn-stat strong{display:block;font-size:1.55rem;color:#f1d39a;line-height:1.2}
-.wyn-stat span{font-size:.8rem;color:#e0e8ef}
-.wyn-feature table{width:100%;border-collapse:collapse;font-size:.85rem;color:white}
-.wyn-feature th,.wyn-feature td{padding:8px 4px;border-bottom:1px solid rgba(255,255,255,.16);text-align:left}
-.wyn-feature th{color:#f1d39a}
-.wyn-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.wyn-feature small{display:block;color:#d9e0e8;margin-top:14px;font-size:.75rem}
-@media(max-width:760px){.wyn-feature-card{grid-template-columns:1fr;gap:20px}.wyn-feature table{font-size:.8rem}}
+.launch-feature{padding:36px 0;background:#f7f4ee}
+.launch-feature h2,.launch-feature h3{font-family:var(--font-heading);line-height:1.12}
+.launch-feature h2{color:#112b46;font-size:clamp(1.9rem,3.4vw,2.7rem);margin:0 0 20px}
+.launch-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.launch-card{display:flex;flex-direction:column;min-width:0;padding:clamp(18px,2.2vw,30px);border:1px solid #b8935a;border-radius:20px;background:linear-gradient(135deg,#112b46,#204b70);color:#fff}
+.launch-card:first-child{box-shadow:0 8px 20px rgba(17,43,70,.15)}
+.launch-card h3{color:#fff;font-size:clamp(1.7rem,2.65vw,2.45rem);margin:12px 0 10px}
+.launch-type,.launch-card .launch-date,.launch-card summary{color:#f1d39a;font-weight:700}
+.launch-type{font-size:.875rem}
+.launch-card p{margin:0 0 12px;color:#e0e8ef;line-height:1.5}
+.launch-card .launch-date{font-size:1.08rem}
+.launch-card details{margin:0 0 16px}
+.launch-card summary{cursor:pointer;font-size:.9rem}
+.launch-card table{width:100%;margin-top:6px;border-collapse:collapse;font-size:.875rem}
+.launch-card th,.launch-card td{padding:5px 3px;border-bottom:1px solid #ffffff32;text-align:left}
+.launch-card th{color:#f1d39a}
+.launch-actions{display:grid;gap:8px;margin-top:auto;padding-top:8px}
+.launch-actions a{display:flex;justify-content:center;align-items:center;text-align:center;padding:10px 12px;border-radius:30px;font-weight:700;color:#112b46;text-decoration:none}
+.launch-actions a:hover{text-decoration:underline}
+.launch-actions a:focus-visible,.launch-card summary:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.launch-details{background:#f1d39a}
+.launch-whatsapp{background:#25d366}
+.launch-note{font-size:.875rem;color:#4b5563;margin:12px 0 0}
+@media(min-width:851px){.launch-card h3{min-height:2.24em}}
+@media(max-width:850px){.launch-grid{grid-template-columns:1fr}}
 </style>
-<section class="wyn-feature" id="wynwood-feature" aria-label="Featured upcoming executive condominium">
+<section class="launch-feature" id="wynwood-feature" aria-labelledby="featured-launches-title">
  <div class="container">
-  <div class="wyn-feature-card">
-   <div>
-    <div class="wyn-kicker">Featured upcoming launch · D25 Woodlands</div>
-    <h2>Wynwood Grand EC</h2>
-    <div class="wyn-preview">December 2026 Showflat Preview</div>
-    <p>Expected to be the final new launch preview of 2026. Discover the upcoming executive condominium at Woodlands Drive 17, with spacious 3- to 5-bedroom homes.</p>
-    <div class="wyn-actions">
-     <a href="https://wynwood-grand.jetlee-agent.chatgpt.site/" class="btn btn--gold" target="_blank" rel="noopener">Explore Wynwood Grand →</a>
-     <a href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I%20would%20like%20to%20register%20for%20the%20Wynwood%20Grand%20EC%20showflat%20preview." class="btn btn--wa" target="_blank" rel="noopener">Register Preview Interest</a>
-    </div>
-    <small>Estimated preview timeline and unit details are subject to developer confirmation and changes.</small>
-   </div>
-   <div>
-    <div class="wyn-stats">
-     <div class="wyn-stat"><strong>430</strong><span>Total units</span></div>
-     <div class="wyn-stat"><strong>62.8%</strong><span>4- and 5-bedroom units</span></div>
-    </div>
-    <table aria-label="Wynwood Grand bedroom distribution">
+  <h2 id="featured-launches-title">Featured Upcoming Launches</h2>
+  <div class="launch-grid">
+   <article class="launch-card">
+    <div class="launch-type">Executive condominium · D25 Woodlands</div>
+    <h3>Wynwood Grand EC</h3>
+    <p class="launch-date">December 2026 showflat preview</p>
+    <p>3- to 5-bedroom homes at Woodlands Drive 17.</p>
+    <p>430 units · 62.8% are 4- or 5-bedroom homes</p>
+    <details>
+     <summary>View unit mix</summary>
+     <table aria-label="Wynwood Grand bedroom distribution">
      <thead><tr><th>Unit type</th><th>Size (sqft)</th><th>Units</th></tr></thead>
      <tbody><tr><td>3-bedroom</td><td>829–915</td><td>160</td></tr><tr><td>4-bedroom</td><td>1,066–1,173</td><td>248</td></tr><tr><td>5-bedroom</td><td>1,313</td><td>22</td></tr></tbody>
     </table>
-    <small>Only 22 five-bedroom premium homes.</small>
-   </div>
+    </details>
+    <div class="launch-actions">
+     <a class="launch-details" href="https://wynwood-grand.jetlee-agent.chatgpt.site/" aria-label="Explore Wynwood Grand EC" target="_blank" rel="noopener">Explore project</a>
+     <a class="launch-whatsapp" href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I%20would%20like%20to%20register%20my%20interest%20in%20Wynwood%20Grand%20EC." aria-label="Register interest in Wynwood Grand EC on WhatsApp" target="_blank" rel="noopener">Register interest on WhatsApp</a>
+    </div>
+   </article>
+   <article class="launch-card">
+    <div class="launch-type">Executive condominium · D23 Senja</div>
+    <h3>Solano Grand EC</h3>
+    <p class="launch-date">Coming January 2027</p>
+    <p>An upcoming executive condominium at Senja Close in Bukit Panjang.</p>
+    <div class="launch-actions">
+     <a class="launch-details" href="https://solano-grand.jetlee-agent.chatgpt.site/" aria-label="Explore Solano Grand EC" target="_blank" rel="noopener">Explore project</a>
+     <a class="launch-whatsapp" href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I%20would%20like%20to%20register%20my%20interest%20in%20Solano%20Grand%20EC." aria-label="Register interest in Solano Grand EC on WhatsApp" target="_blank" rel="noopener">Register interest on WhatsApp</a>
+    </div>
+   </article>
+   <article class="launch-card">
+    <div class="launch-type">Private condominium · D27 Khatib</div>
+    <h3>Chencharu Central Residences</h3>
+    <p class="launch-date">Tentative preview 16 January 2027</p>
+    <p>An integrated private development near Khatib MRT with a bus interchange and hawker centre.</p>
+    <div class="launch-actions">
+     <a class="launch-details" href="https://chencharu-central-residences.jetlee-agent.chatgpt.site/" aria-label="Explore Chencharu Central Residences" target="_blank" rel="noopener">Explore project</a>
+     <a class="launch-whatsapp" href="https://wa.me/6587649315?text=Hi%20Jet%20Lee%2C%20I%20would%20like%20to%20register%20my%20interest%20in%20Chencharu%20Central%20Residences." aria-label="Register interest in Chencharu Central Residences on WhatsApp" target="_blank" rel="noopener">Register interest on WhatsApp</a>
+    </div>
+   </article>
   </div>
+  <p class="launch-note">Timelines and unit details are subject to developer confirmation and changes.</p>
  </div>
 </section>
 
